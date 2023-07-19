@@ -12,9 +12,9 @@ export default function Home() {
       <HomeHeader />
       <About />
       <Services />
-      <ChooseUs />
-      <Portfolio />
-      <Blog />
+      {/* <ChooseUs /> */}
+      {/* <Portfolio /> */}
+      {/* <Blog /> */}
       <ContactUs />
     </>
   )
