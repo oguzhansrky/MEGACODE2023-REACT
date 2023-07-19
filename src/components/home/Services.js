@@ -5,7 +5,7 @@ const Services = () => {
     <section className="services section-padding style-1">
       <div className="container">
         <div className="row">
-          <div className="col offset-lg-1">
+          <div className="col">
             <div className="section-head mb-60">
               <h2 className="wow fadeInUp">Hizmetlerimiz</h2>
             </div>
