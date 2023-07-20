@@ -13,12 +13,11 @@ const Services = () => {
         </div>
         <div className="content">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
                 <h5>
                   <a href="page-services-5.html">İnovatif Dijital Çözümler </a>
-                  <span className="num">01</span>
-                </h5>
+                </h5><br></br>
                 <div className="icon">
                   <img src="assets/img/icons/keep7.png" alt="" />
                 </div>
@@ -31,7 +30,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div
                 className="service-box mb-4 wow fadeInUp"
                 data-wow-delay="0.2s"
@@ -41,7 +40,6 @@ const Services = () => {
                     {" "}
                     Siber Güvenlik ve Bilgi Güvenliği{" "}
                   </a>
-                  <span className="num">02</span>
                 </h5>
                 <div className="icon">
                   <img src="assets/img/icons/keep1.png" alt="" />
@@ -55,7 +53,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div
                 className="service-box mb-4 wow fadeInUp"
                 data-wow-delay="0.4s"
@@ -65,7 +63,6 @@ const Services = () => {
                     {" "}
                     Native Mobil Uygulama ve Geliştirme{" "}
                   </a>
-                  <span className="num">03</span>
                 </h5>
                 <div className="icon">
                   <img src="assets/img/icons/mobile2.png" alt="" />
@@ -78,7 +75,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div
                 className="service-box mb-4 mb-md-0 wow fadeInUp"
                 data-wow-delay={0}
@@ -87,7 +84,6 @@ const Services = () => {
                   <a href="page-services-5.html">
                     İhtiyaca Yönelik Yazılım Geliştirme{" "}
                   </a>
-                  <span className="num">04</span>
                 </h5>
                 <div className="icon">
                   <img src="assets/img/icons/product-banner-point.png" alt="" />
@@ -100,7 +96,51 @@ const Services = () => {
                 </div>
               </div>
             </div>
+            <div className="col-lg-4">
+              <div
+                className="service-box mb-4 wow fadeInUp"
+                data-wow-delay="0.4s"
+              >
+                <h5>
+                  <a href="page-services-5.html">
+                    {" "}
+                    Ana Sistemler ve Donanım Altyapı Desteği{" "}
+                  </a>
+                </h5>
+                <div className="icon">
+                  <img src="assets/img/icons/keep3.png" alt="" />
+                </div>
+                <div className="info">
+                  <div className="text">
+                    Farklı tedarikçi yazılımlar ile şirketler arasında köprü
+                    olur ve teknoloji ile alakalı tüm süreçlerini yöneterek
+                    zamandan tasarruf ettiririz.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div
+                className="service-box mb-4 mb-md-0 wow fadeInUp"
+                data-wow-delay="0.4s"
+              >
+                <h5>
+                  <a href="page-services-5.html">Sosyal Medya Yönetimi</a>
+                </h5><br></br>
+                <div className="icon">
+                  <img src="assets/img/icons/keep2.png" alt="" />
+                </div>
+                <div className="info">
+                  <div className="text">
+                    Marka kişiliğini oluşturur, hedef kitle ve rakip
+                    analizlerini gerçekleştirerek şirketler için en doğru sosyal
+                    medya stratejisini belirleriz.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          
         </div>
       </div>
       <img
