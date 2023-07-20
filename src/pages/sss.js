@@ -13,7 +13,7 @@ export default function SSS() {
       key: "1",
       label: "Yazılım Geliştirme",
       children: (
-        <div class="card-body ">
+        <div className="card-body ">
           <dl>
             <dt>- Hangi teknolojileri kullanıyorsunuz?</dt>
             <dd>
@@ -67,7 +67,7 @@ export default function SSS() {
       key: "2",
       label: "Web Sitesi Tasarımı",
       children: (
-        <div class="card-body text-justify">
+        <div className="card-body text-justify">
           <dl>
             <dt>- Web sitem responsive olacak mı?</dt>
             <dd>
@@ -104,7 +104,7 @@ export default function SSS() {
       key: "3",
       label: "Mobil Uygulama Geliştirme",
       children: (
-        <div class="card-body text-justify">
+        <div className="card-body text-justify">
           <dl>
             <dt>- Mobil uygulamam tüm platformlarda çalışır mı?</dt>
             <dd>
@@ -145,7 +145,7 @@ export default function SSS() {
       key: "4",
       label: "Kurumsal Kimlik Hizmetleri",
       children: (
-        <div class="card-body text-justify">
+        <div className="card-body text-justify">
           <dl>
             <dt>- Kurumsal kimlik çalışması neden önemlidir?</dt>
             <dd>
@@ -188,7 +188,7 @@ export default function SSS() {
       key: "5",
       label: "Sosyal Medya Yönetimi",
       children: (
-        <div class="card-body text-justify">
+        <div className="card-body text-justify">
           <dl>
             <dt>- Hangi sosyal medya hesaplarını yönetiyorsunuz?</dt>
             <dd>

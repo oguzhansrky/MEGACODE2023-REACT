@@ -55,13 +55,13 @@ const Header = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  pages
+                  projeler
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown1">
                   <li>
-                    <a className="dropdown-item" href="page-about-5.html">
-                      about
-                    </a>
+                    <Link className="dropdown-item" href="/projeler/acente365">
+                      Acente365
+                    </Link>
                   </li>
                   <li>
                     <a className="dropdown-item" href="page-product-5.html">
