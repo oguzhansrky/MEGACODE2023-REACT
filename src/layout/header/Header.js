@@ -46,6 +46,11 @@ const Header = () => {
                   SSS
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/referanslar">
+                  Referanslar
+                </Link>
+              </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
