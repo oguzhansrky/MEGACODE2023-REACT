@@ -5,10 +5,12 @@ import ContactUs from "@/components/home/ContactUs";
 import HomeHeader from "@/components/home/HomeHeader";
 import Portfolio from "@/components/home/Portfolio";
 import Services from "@/components/home/Services";
+import Head from "@/layout/head/Head";
 
 export default function Home() {
   return (
     <>
+      <Head title={"Anasayfa"} />
       <HomeHeader />
       <About />
       <Services />
@@ -17,5 +19,5 @@ export default function Home() {
       {/* <Blog /> */}
       <ContactUs />
     </>
-  )
+  );
 }
