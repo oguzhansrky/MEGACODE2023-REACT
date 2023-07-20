@@ -18,8 +18,8 @@ const HomeHeader = () => {
                   </h2>
                 </div>
                 <div className="text">
-                  
-                Geniş Hizmet Yelpazesi Sunuyor ve Tam Müşteri Memnuniyeti Sağlıyoruz
+                  Geniş Hizmet Yelpazesi Sunuyor ve Tam Müşteri Memnuniyeti
+                  Sağlıyoruz
                 </div>
                 <div className="bttns mt-5">
                   <a href="page-services-5.html" className="btn btn-dark">
@@ -30,7 +30,7 @@ const HomeHeader = () => {
             </div>
             <div className="col-lg-5 offset-lg-1">
               <div className="img">
-                <img src="assets/img/header/head.png" alt="" />
+                <img src="assets/img/header/head-2.png" alt="" />
               </div>
             </div>
           </div>
