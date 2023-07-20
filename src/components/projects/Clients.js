@@ -6,7 +6,7 @@ import "swiper/css/autoplay";
 
 const Clients = () => {
   return (
-    <section className="clients style-5 pb-100 my-5">
+    <section className="clients style-5 my-5">
       {/*     <div className="section-head text-center mb-40 style-5">
         <h2 className="mb-20">
           Trusted By Thoudsands <span> Business </span>{" "}

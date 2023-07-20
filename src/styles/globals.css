@@ -9468,9 +9468,7 @@ header.style-15 .countdown-content .logos img {
 
 .pricing.style-5 .content .price-body .price-bodyItems .price-bodyTitle {
   width: 34%;
-  padding: 15px 0;
   font-size: 14px;
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9503,7 +9501,6 @@ header.style-15 .countdown-content .logos img {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  padding: 20px;
   border-radius: 10px;
   background-color: #f7f7f7;
   text-align: center;
@@ -9530,9 +9527,7 @@ header.style-15 .countdown-content .logos img {
 
 .pricing.style-5 .content .price-body .price-bodyItems .price-item {
   width: 22%;
-  padding: 15px 0;
   text-align: center;
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

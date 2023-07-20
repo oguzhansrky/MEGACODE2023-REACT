@@ -1,5 +1,6 @@
 import { Content } from "@/components/Content";
 import Clients from "@/components/projects/Clients";
+import PricingTable from "@/components/projects/PricingTable";
 import { Tabs } from "antd";
 import React from "react";
 
@@ -290,7 +291,7 @@ const Acente365 = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 p-3 text-center">
+          <div className="col-lg-3 service-box p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
               <h5>
                 <a href="page-services-5.html">Uzman Ekip Desteği </a>
@@ -308,6 +309,37 @@ const Acente365 = () => {
             </div>
           </div>
         </div>
+        <div className="row align-items-center my-5">
+          <div className="col-sm-6">
+            <img src="/assets/img/header/3d_vector_head8.svg" alt="" />
+          </div>
+          <div className="col-lg-6">
+            <div className="p_service_item pl_50 pr_20 mt_70">
+              <h3 className="f_p f_size_28 l_height50 f_500 t_color2 mb-4">
+                Acente365 Bulut Tabanlı Bir Sistemdir
+              </h3>
+              <p className="mb-3 fs-6">
+                Acente 365 bilgi işlem yatırımınızı sizin yerinize yapar.
+                Sunucu, güvenlik, lisans, antivirüs gibi tüm hizmetler servis
+                edilir.
+              </p>
+              <p className="mb-3 fs-6">
+                Acente 365 güvenlidir. Size özel veriler, veri merkezimizde
+                güvenle saklanır ve her gün yedeklenir.
+              </p>
+              <p className="mb-3 fs-6">
+                Acente 365 günceldir. Geliştirilen her özellik, düzeltme tüm
+                kullanıcılar için devamlı güncellenir.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 className="f_p f_size_28 l_height50 f_500 t_color2 my-5">
+          Acente365 Fonksiyonları
+        </h3>
+        <img src="https://megacode.com.tr/img/mega/function.png"></img>
+
+        <PricingTable />
       </Content>
     </>
   );
