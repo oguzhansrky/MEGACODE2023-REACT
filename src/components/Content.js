@@ -4,7 +4,7 @@ import React from "react";
 export const Content = (props) => {
   return (
     <>
-      <PageHead title={"Sıkça Sorulan Sorular"} />
+      <PageHead title={props.title + (props.title_2 ?? "")} />
       <div className="container my-5">
         <div class="row justify-content-center">
           <div class="col-lg-8">
