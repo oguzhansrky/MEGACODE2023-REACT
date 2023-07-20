@@ -35,21 +35,59 @@ const About = () => {
                 <div className="info">
                   <h6 className=" wow fadeInUp slow">
                     Mega Code Yazılım 2012 yılında İstanbul’da kurulmuş yazılım
-                    şirketidir. Tecrübeli ve uzman kadrosu sayesinde şirketlere sadece
-                    yazılım değil dijital çözümlerde üretir.
+                    şirketidir. Tecrübeli ve uzman kadrosu sayesinde şirketlere
+                    sadece yazılım değil dijital çözümlerde üretir.
                   </h6>
                   <p className=" wow fadeInUp slow">
-                    Teknolojinin
-                    sunduğu hizmetler ile yenilikler sayesinde tüm sektörlere ve
-                    her büyüklükte firmalara çözüm ortaklığı yapar. Mega Code
-                    sadece Türkiye’de değil başta Amerika ve İngiltere olmak
-                    üzere tüm dünyaya yazılım ihracatı yapar.
+                    Teknolojinin sunduğu hizmetler ile yenilikler sayesinde tüm
+                    sektörlere ve her büyüklükte firmalara çözüm ortaklığı
+                    yapar. Mega Code sadece Türkiye’de değil başta Amerika ve
+                    İngiltere olmak üzere tüm dünyaya yazılım ihracatı yapar.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-         
+          <div class="about-numbers">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="num-item wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="num">
+                    <span class="counter">2</span>
+                  </div>
+                  <div class="inf">Ülke</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="num-item wow fadeInUp" data-wow-delay="0">
+                  <div class="num">
+                    <span class="counter">8</span>
+                    <span>
+                      <i class="fas fa-plus"></i>
+                    </span>
+                  </div>
+                  <div class="inf">Yıllık Deneyim</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="num-item wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="num">
+                    <span class="counter">320</span>
+                  </div>
+                  <div class="inf">Tamamlanan proje</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="num-item wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="num">
+                    <span class="counter">3</span>
+                    <span>B</span>
+                  </div>
+                  <div class="inf">Mutlu kullanıcı</div>
+                </div>
+              </div>
+            </div>
+          </div>
           <img
             src="assets/img/about/num_shap.png"
             alt=""
