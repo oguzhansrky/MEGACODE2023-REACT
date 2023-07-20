@@ -12,8 +12,8 @@ function hizmetlerimiz() {
       >
         <div className="container mt-6">
           <div className="row">
-            <div class="col-lg-6">
-              <div class="img mb-4 mb-lg-0 wow fadeIn">
+            <div className="col-lg-6">
+              <div className="img mb-4 mb-lg-0 wow fadeIn">
                 <img src="assets/img/about/3d_vector2.svg" alt=""></img>
               </div>
             </div>
@@ -35,7 +35,6 @@ function hizmetlerimiz() {
           </div>
         </div>
         <Services></Services>
-        
       </Content>
     </>
   );

@@ -10,44 +10,46 @@ const Footer = () => {
               <div className="col-lg-4">
                 <div className="foot_info">
                   <a href="#" className="logo mb-3">
-                    <img src="assets/img/logo_cl.png" alt="" />
+                    <img src="assets/img/logos/logo-footer.png" alt="" />
                   </a>
                   <div className="text mb-4">
-                    Best IT Solutions &amp; Technology WordPress <br /> Theme
-                    for Your Busines
+                    Sizin memnuniyetiniz bizim referansımız…
                   </div>
                   <ul className="mb-4">
                     <li className="d-flex">
                       <i className="bi bi-house me-3" />
                       <a href="#">
-                        <span>58 Howard St, San Francisco, CA 941</span>
+                        <span>
+                          Turgut Özal Mahallesi 68. Sokak - Otoport No: 46/222
+                          Esenyurt - Istanbul
+                        </span>
                       </a>
                     </li>
                     <li className="d-flex">
                       <i className="bi bi-envelope me-3" />
                       <a href="#">
-                        <span>contact@Iteck.co</span>
+                        <span>info@megacode.com.tr</span>
                       </a>
                     </li>
                     <li className="d-flex">
                       <i className="bi bi-phone me-3" />
                       <a href="#">
-                        <span>(+23) 5535 68 68</span>
+                        <span>0850 346 22 01</span>
                       </a>
                     </li>
                   </ul>
                   <div className="social_icons">
-                    <a href="#">
+                    <a href="https://twitter.com/megacodeyazilim">
                       <i className="fab fa-twitter" />
                     </a>
-                    <a href="#">
+                    <a href="https://www.facebook.com/Megacode-106846034289825">
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/company/megacode/?originalSubdomain=tr">
                       <i className="fab fa-linkedin-in" />
                     </a>
-                    <a href="#">
-                      <i className="fab fa-github" />
+                    <a href="https://www.instagram.com/megacodetech/">
+                      <i className="fab fa-instagram" />
                     </a>
                   </div>
                 </div>
@@ -156,15 +158,11 @@ const Footer = () => {
             <div className="col-lg-12">
               <div className="foot">
                 <p>
-                  © 2022 Copyrights by{" "}
-                  <a href="#" className="text-white text-decoration-underline">
-                    Iteck Co.
-                  </a>{" "}
-                  All Rights Reserved by{" "}
-                  <a href="#" className="text-white text-decoration-underline">
-                    {" "}
-                    ThemesCamp{" "}
+                  © 2023{" "}
+                  <a href="/" className="text-white text-decoration-underline">
+                    Megacode
                   </a>
+                  . Tüm hakları saklıdır.
                 </p>
               </div>
             </div>

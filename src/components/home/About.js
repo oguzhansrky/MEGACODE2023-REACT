@@ -48,42 +48,42 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div class="about-numbers">
-            <div class="row">
-              <div class="col-lg-3 col-sm-6">
-                <div class="num-item wow fadeInUp" data-wow-delay="0.6s">
-                  <div class="num">
-                    <span class="counter">2</span>
+          <div className="about-numbers">
+            <div className="row">
+              <div className="col-lg-3 col-sm-6">
+                <div className="num-item wow fadeInUp" data-wow-delay="0.6s">
+                  <div className="num">
+                    <span className="counter">2</span>
                   </div>
-                  <div class="inf">Ülke</div>
+                  <div className="inf">Ülke</div>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="num-item wow fadeInUp" data-wow-delay="0">
-                  <div class="num">
-                    <span class="counter">8</span>
+              <div className="col-lg-3 col-sm-6">
+                <div className="num-item wow fadeInUp" data-wow-delay="0">
+                  <div className="num">
+                    <span className="counter">8</span>
                     <span>
-                      <i class="fas fa-plus"></i>
+                      <i className="fas fa-plus"></i>
                     </span>
                   </div>
-                  <div class="inf">Yıllık Deneyim</div>
+                  <div className="inf">Yıllık Deneyim</div>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="num-item wow fadeInUp" data-wow-delay="0.2s">
-                  <div class="num">
-                    <span class="counter">320</span>
+              <div className="col-lg-3 col-sm-6">
+                <div className="num-item wow fadeInUp" data-wow-delay="0.2s">
+                  <div className="num">
+                    <span className="counter">320</span>
                   </div>
-                  <div class="inf">Tamamlanan proje</div>
+                  <div className="inf">Tamamlanan proje</div>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="num-item wow fadeInUp" data-wow-delay="0.4s">
-                  <div class="num">
-                    <span class="counter">3</span>
+              <div className="col-lg-3 col-sm-6">
+                <div className="num-item wow fadeInUp" data-wow-delay="0.4s">
+                  <div className="num">
+                    <span className="counter">3</span>
                     <span>B</span>
                   </div>
-                  <div class="inf">Mutlu kullanıcı</div>
+                  <div className="inf">Mutlu kullanıcı</div>
                 </div>
               </div>
             </div>
