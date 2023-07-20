@@ -5,10 +5,10 @@ const ContactUs = () => {
     <section className="contact section-padding bg-gradient style-1">
       <div className="container">
         <div className="section-head mb-60 text-center">
-          <h6 className="text-white text-uppercase wow fadeInUp"> İletişim</h6>
-          <h2 className="wow fadeInUp text-white">
+          <h5 className="text-white text-uppercase wow fadeInUp"> İLETİŞİM</h5>
+          {/*           <h2 className="wow fadeInUp text-white">
             İş ortaklarımızın memnuniyeti en iyi referansımızdır
-          </h2>
+          </h2> */}
         </div>
         <div className="content">
           <div className="row justify-content-center">
@@ -97,7 +97,6 @@ const ContactUs = () => {
                       >
                         Mega Code Yazılım ve Ticaret A.Ş.'nin{" "}
                         <a href="#" className="text-decoration-underline">
-                          {" "}
                           Kişisel Verilerin İşlenmesine İlişkin Aydınlatma
                           Metnini
                         </a>
@@ -108,7 +107,6 @@ const ContactUs = () => {
                   <div className="col-lg-12">
                     <input
                       type="submit"
-                      defaultValue="Request Now"
                       className="btn btn-dark wow fadeInUp text-light fs-14px"
                     />
                   </div>

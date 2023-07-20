@@ -1,6 +1,7 @@
 import About from "@/components/home/About";
 import ContactUs from "@/components/home/ContactUs";
 import HomeHeader from "@/components/home/HomeHeader";
+import Projects from "@/components/home/Projects";
 import Services from "@/components/home/Services";
 import Head from "@/layout/head/Head";
 
@@ -14,6 +15,7 @@ export default function Home() {
       {/* <ChooseUs /> */}
       {/* <Portfolio /> */}
       {/* <Blog /> */}
+      <Projects />
       <ContactUs />
     </>
   );
