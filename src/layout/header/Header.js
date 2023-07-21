@@ -32,22 +32,22 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/hakkimizda">
+                <Link className="nav-link" href="/about-us">
                   Hakkımızda
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/hizmetlerimiz">
+                <Link className="nav-link" href="/services">
                   Hizmetlerimiz
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/sss">
+                <Link className="nav-link" href="/faq">
                   SSS
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/referanslar">
+                <Link className="nav-link" href="/references">
                   Referanslar
                 </Link>
               </li>
@@ -64,14 +64,14 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown1">
                   <li>
-                    <Link className="dropdown-item" href="/projeler/acente365">
+                    <Link className="dropdown-item" href="/projects/acente365">
                       Acente365
                     </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="page-product-5.html">
-                      product
-                    </a>
+                    <Link className="dropdown-item" href="/projects/digital-signage">
+                      Digital Signage
+                    </Link>
                   </li>
                   <li>
                     <a className="dropdown-item" href="page-services-5.html">
