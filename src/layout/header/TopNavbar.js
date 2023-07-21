@@ -1,6 +1,8 @@
+import { useRouter } from "next/router";
 import React from "react";
 
 const TopNavbar = () => {
+  const router = useRouter();
   return (
     <div className="top-navbar style-1">
       <div className="container">
@@ -40,6 +42,7 @@ const TopNavbar = () => {
                     id="dropdownMenuLink"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    onClick={(e) => { e.preventDefault(); router.push(router.pathname, router.asPath, { locale: "en" }) }}
                   >
                     <img className="me-1" src="/assets/img/lang.png" alt="" />{" "}
                     English
@@ -49,13 +52,8 @@ const TopNavbar = () => {
                     aria-labelledby="dropdownMenuLink"
                   >
                     <li>
-                      <a className="dropdown-item" href="#">
-                        French
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Arabic
+                      <a onClick={(e) => { e.preventDefault(); router.push(router.pathname, router.asPath, { locale: "tr" }) }} className="dropdown-item" href="#">
+                        Türkçe
                       </a>
                     </li>
                   </ul>
