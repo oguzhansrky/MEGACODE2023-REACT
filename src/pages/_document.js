@@ -4,16 +4,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="stylesheet" href="../assets/css/lib/all.min.css" />
-        <link rel="stylesheet" href="../assets/css/lib/animate.css" />
-        <link rel="stylesheet" href="../assets/css/lib/jquery.fancybox.css" />
-        <link rel="stylesheet" href="../assets/css/lib/lity.css" />
-        <link rel="stylesheet" href="../assets/css/lib/swiper.min.css" />
-        <link
-          rel="stylesheet"
-          href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css"
-        />
-        <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/lib/all.min.css" />
+        <link rel="stylesheet" href="/assets/css/lib/animate.css" />
+        <link rel="stylesheet" href="/assets/css/lib/jquery.fancybox.css" />
+        <link rel="stylesheet" href="/assets/css/lib/lity.css" />
+        <link rel="stylesheet" href="/assets/css/lib/swiper.min.css" />
+        <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
@@ -31,8 +27,6 @@ export default function Document() {
         <script src="/assets/js/lib/swiper.min.js"></script>
         <script src="/assets/js/lib/jquery.waypoints.min.js"></script>
         <script src="/assets/js/lib/jquery.counterup.js"></script>
-        <script src="/assets/js/lib/pace.js"></script>
-        <script src="/assets/landing-preview/js/countdown.js"></script>
         <script src="/assets/js/lib/scrollIt.min.js"></script>
         <script src="/assets/js/demo.js"></script>
       </body>
