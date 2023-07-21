@@ -3,7 +3,7 @@ import React from "react";
 import useTranslation from 'next-translate/useTranslation';
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <nav className="navbar navbar-expand-lg navbar-light style-1">
       <div className="container">
