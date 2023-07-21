@@ -2845,7 +2845,6 @@ small.text {
   font-weight: 700;
   line-height: 2;
   margin: 0 7px;
-  text-transform: capitalize;
 }
 
 .navbar.style-1 .navbar-nav .nav-item .nav-link.active {

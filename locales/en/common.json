@@ -1,1 +1,7 @@
-{}
+{
+    "main_menu": {
+        "homepage": "Homepage",
+        "about": "About"
+    },
+    "contact": {}
+}

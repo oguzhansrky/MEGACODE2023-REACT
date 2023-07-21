@@ -1,8 +1,9 @@
-import { Content } from "@/components/Content";
 import Link from "next/link";
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 
 const Header = () => {
+  const { t } = useTranslation();
   return (
     <nav className="navbar navbar-expand-lg navbar-light style-1">
       <div className="container">
@@ -29,12 +30,12 @@ const Header = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" href="/">
-                  Anasayfa
+                  {t('main_menu.homepage')}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/about-us">
-                  Hakkımızda
+                  {t('main_menu.about')}
                 </Link>
               </li>
               <li className="nav-item">

@@ -1,1 +1,6 @@
-{}
+{
+    "main_menu": {
+        "homepage": "Anasayfa",
+        "about": "Hakkımızda"
+    }
+}
