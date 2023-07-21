@@ -8,7 +8,7 @@ const Header = () => {
         <Link className="navbar-brand" href="/">
           <img
             style={{ width: "200px" }}
-            src="assets/img/megacode-logo.png"
+            src="/assets/img/megacode-logo.png"
             alt=""
           />
         </Link>
@@ -42,7 +42,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/">
+                <Link className="nav-link" href="/sss">
                   SSS
                 </Link>
               </li>

@@ -41,7 +41,7 @@ const TopNavbar = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img className="me-1" src="assets/img/lang.png" alt="" />{" "}
+                    <img className="me-1" src="/assets/img/lang.png" alt="" />{" "}
                     English
                   </a>
                   <ul

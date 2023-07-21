@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -9,9 +10,9 @@ const Footer = () => {
             <div className="row justify-content-center">
               <div className="col-lg-4">
                 <div className="foot_info">
-                  <a href="#" className="logo mb-3">
-                    <img src="assets/img/logos/logo-footer.png" alt="" />
-                  </a>
+                  <Link href="/" className="logo mb-3">
+                    <img src="/assets/img/logos/logo-footer.png" alt="" />
+                  </Link>
                   <div className="text mb-4">
                     Sizin memnuniyetiniz bizim referansımız…
                   </div>
