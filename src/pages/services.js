@@ -14,7 +14,7 @@ function hizmetlerimiz() {
           <div className="row">
             <div className="col-lg-6">
               <div className="img mb-4 mb-lg-0 wow fadeIn">
-                <img src="assets/img/about/3d_vector2.svg" alt=""></img>
+                <img src="/assets/img/about/3d_vector2.svg" alt=""></img>
               </div>
             </div>
             <div className="col-lg-6">
