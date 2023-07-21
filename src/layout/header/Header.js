@@ -96,9 +96,9 @@ const Header = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="page-portfolio-5.html">
-                  portfolio
-                </a>
+                <Link className="nav-link" href="/career">
+                  Kariyer
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="page-blog-5.html">
