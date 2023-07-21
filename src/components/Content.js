@@ -6,7 +6,7 @@ export const Content = (props) => {
     <>
       <PageHead title={props.title + (props.title_2 ?? "")} />
       <div className="container my-5">
-        {!props.hideTitle &&
+        {!props.hideTitle && (
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="section-head text-center mb-60 style-5">
@@ -17,7 +17,8 @@ export const Content = (props) => {
                 {props.desc && <p>{props.desc}</p>}
               </div>
             </div>
-          </div>}
+          </div>
+        )}
         {props.children}
       </div>
     </>

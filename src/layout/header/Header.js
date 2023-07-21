@@ -1,3 +1,4 @@
+import { Content } from "@/components/Content";
 import Link from "next/link";
 import React from "react";
 
@@ -104,9 +105,9 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="page-contact-5.html">
-                  contact
-                </a>
+                <Link className="nav-link" href="/contact">
+                  İletişim
+                </Link>
               </li>
             </ul>
           </div>
