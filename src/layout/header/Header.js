@@ -83,19 +83,6 @@ const Header = () => {
                       Sea365
                     </a>
                   </li>
-                  <li>
-                    <a className="dropdown-item" href="page-shop-5.html">
-                      shop
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="dropdown-item"
-                      href="page-single-project-5.html"
-                    >
-                      single project
-                    </a>
-                  </li>
                 </ul>
               </li>
               <li className="nav-item">
