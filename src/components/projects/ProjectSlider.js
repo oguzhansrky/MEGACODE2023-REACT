@@ -40,13 +40,6 @@ const ProjectSlider = () => {
                         </Swiper>
                     </div>
                 </div>
-
-
-                {/* ====== pagination ====== */}
-                <div className="swiper-pagination" />
-                {/* ====== arrows ====== */}
-                <div className="swiper-button-next" />
-                <div className="swiper-button-prev" />
             </section >
         </main>
     )
