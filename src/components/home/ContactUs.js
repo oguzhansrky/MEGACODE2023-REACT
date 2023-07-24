@@ -1,11 +1,13 @@
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 
 const ContactUs = () => {
+  const { t } = useTranslation("common");
   return (
     <section className="contact section-padding bg-gradient style-1">
       <div className="container">
         <div className="section-head mb-60 text-center">
-          <h5 className="text-white text-uppercase wow fadeInUp"> İLETİŞİM</h5>
+          <h5 className="text-white text-uppercase wow fadeInUp"> {t('contact.Contact')}</h5>
           {/*           <h2 className="wow fadeInUp text-white">
             İş ortaklarımızın memnuniyeti en iyi referansımızdır
           </h2> */}
@@ -17,8 +19,7 @@ const ContactUs = () => {
                 <h4 className="wow fadeInUp">0850 346 22 01</h4>
                 <ul>
                   <li className="wow fadeInUp">
-                    <strong>Address : </strong> Turgut Özal Mahallesi 68. Sokak
-                    - Otoport No: 46/222 Esenyurt - Istanbul
+                    <strong>{t('contact.Adress1')} : </strong> {t('contact.Adress')}
                   </li>
                   <li className="wow fadeInUp">
                     <strong>Email : </strong> info@megacode.com.tr
@@ -95,12 +96,11 @@ const ContactUs = () => {
                         className="form-check-label text-light small"
                         htmlFor="flexCheckDefault"
                       >
-                        Mega Code Yazılım ve Ticaret A.Ş.'nin{" "}
+                        {t('contact.description')}{" "}
                         <a href="#" className="text-decoration-underline">
-                          Kişisel Verilerin İşlenmesine İlişkin Aydınlatma
-                          Metnini
+                        {t('contact.des2')}
                         </a>
-                        'ni okudum, onaylıyorum
+                        {t('contact.des3')}
                       </label>
                     </div>
                   </div>

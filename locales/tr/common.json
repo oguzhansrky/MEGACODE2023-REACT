@@ -2,5 +2,106 @@
     "main_menu": {
         "homepage": "Anasayfa",
         "about": "Hakkımızda"
+    },
+    "header":{
+        "referance": "Referanslar",
+        "sss":"SSS",
+        "projects": "Projeler",
+        "acenta365":"Acenta365",
+        "digital_signage":"Dijital Sinyal",
+        "services":"Servisler",
+        "shop":"Mağaza",
+        "single_project":"Tek Proje",
+        "career":"Kariyer",
+        "blog":"Blog",
+        "communication":"İletişim"
+    },
+    "topnavbar":{
+        "text":"Zaman ve maliyet yönetiminiz için size dijital çözümler üretiyoruz"
+     },
+     "404":{
+        "h1":"Opps! Görünüşe göre burada bir şey yok .",
+        "h2":"Aradığınız sayfa bulunamadı. Eve dönmenizi öneririz. Gerçekten kolay...",
+        "back_to_home":"Anasayfaya Dön"
+     },
+     "about":{
+        "label_about_us":"Hakkımızda",
+        "about_us_text":"Mega Code Yazılım 2012 yılında İstanbul’da kurulmuş yazılım şirketidir. Tecrübeli ve uzman kadrosu sayesinde şirketlere sadece yazılım değil dijital çözümlerde üretir. Teknolojinin sunduğu hizmetler ile yenilikler sayesinde tüm sektörlere ve her büyüklükte firmalara çözüm ortaklığı yapar. Mega Code sadece Türkiye’de değil başta Amerika ve İngiltere olmak üzere tüm dünyaya yazılım ihracatı yapar.",
+        "our_principles":"İlkelerimiz",
+        "our_principles_text1":"Önceliğimiz Müşterilerimiz.",
+        "our_principles_text2":"En iyi hizmet ilkesiyle müşterilerimizi karşılar tüm soru ve sorunlarına cevap veririz.",
+        "label_sustainable_projects;":"Sürdürülebilir Projeler",
+        "sustainable_projects_text1":"Sunduğumuz tüm projelerin sürdürülebilir ve geliştirilebilir olmasına özen gösteririz.",
+        "label_ınnovation":"İnovasyon;",
+        "ınnovation":"İhtiyaçlara uygun yeni fikirler uygular, dinamik ürünler üretir veya var olan hizmetleri geliştiririz.",
+        "label_technology;":"Teknoloji;",
+        "technology;":"Teknolojiyi size en iyi ve doğru hizmeti sunabilmek için kullanırız.",
+        "label_ınformation_security_policy":"Bilgi Güvenliği Politikası",
+        "ınformation_security_policy":"Bilgi Güvenliği Politikası",
+        "label_quality_and_environmental_policy":"Kalite ve Çevre Politikası",
+        "quality_and_environmental_policy_text":"Kalite ve Çevre Politikası",
+        "label_kvkk":"KVKK ve Gizlilik",
+        "kvkk_legal_warning":"YASAL UYARI",
+        "kvkk_text":"Kişisel verileriniz, sayılanlar ile sınırlı olmamak üzere; genel müdürlük, bölge müdürlükleri, tedarikçilerimiz, iş ortaklarımız, yetkili/resmi kurum kuruluşlar, özel ve resmi tüm sağlık kişi, kurum, kuruluşları, diğer sigorta şirketleri ve diğer ilgili üçüncü kişi/kurumlardan internet şubesi, çağrı merkezi, kapalı devre kamera sistemi ve diğer tüm fiziki, yazılı, sözlü ve elektronik ortamlar/kanallar vasıtasıyla bizzat tarafınızca ve/veya bilginiz dahilinde gönderilen/sağlanan/doldurulmuş formlar, belgeler, sözlü/yazılı beyanlar, poliçeler, muvafakatnameler, özgeçmiş, kimlik belgeniz, elektronik posta, ses/görüntü kayıtlarından elde edilmekte olup, KVKK m. 4/2 hükmünde öngörülen ilkelere uygun olarak KVKK m.5/2 ve 6/3 hükümlerinde öngörülen durumların haricinde açık rızanıza istinaden işlenebilmekte ve aktarılabilmektedir.",
+        "kvkk_text1":"KVKK’nın 11. maddesinde Sayılan Hakları",
+        "kvkk_text2":"Şirketimize başvurarak, kişisel verilerinizin;",
+        "kvkk_text3":"İşlenip işlenmediğini öğrenme,",
+        "kvkk_text4":"İşlenmişse buna ilişkin bilgi talep etme",
+        "kvkk_text5":"İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme,",
+        "kvkk_text6":"Yurt içinde/yurt dışında aktarıldığı 3 kişileri bilme,",
+        "kvkk_text7":"Eksik/yanlış işlenmişse düzeltilmesini isteme,",
+        "kvkk_text8":"KVKK’nın md. 7’deki şartlar çerçevesinde silinmesini / yok edilmesini / anonimleştirilmesini isteme,",
+        "kvkk_text9":" Düzeltme, silme/yok etme işlemlerinin verilerin aktarıldığı 3 kişilere bildirilmesini isteme,",
+        "kvkk_text10":"Münhasıran otomatik sistemler ile analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,",
+        "kvkk_text11":"Kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme haklarına sahip olduğunuzu bildirir, sizlere sunduğumuz tüm ürün ve hizmetlerimizde kişisel veri güvenliğinin ön planda olduğu bilinciyle faaliyetlerimize devam ettiğimizi bilgilerinize sunarız.",
+        "kvkk_text12":"Kişisel Veri Sahibi Başvuru Usulü",
+        "kvkk_text13":"Yukarıda belirtilen haklarınıza ilişkin taleplerinizi iletmek için bu aydınlatma metninin en alt kısmında yer alan linkte bulunan Başvuru Formu’nu kullanabilirsiniz.",
+        "kvkk_text14":"Taleplerinize ilişkin başvurularınızı;",
+        "kvkk_text15":"Elden",
+        "kvkk_text16":"İadeli taahhütlü mektupla",
+        "kvkk_text17":"Noter aracılığıyla Turgut Özal mah. 68.Sk Otoport Avm Kat/8 No/247 Esenyurt / İstanbul adresine ıslak imzalı kopyası ile veya",
+        "kvkk_text18":"Kişisel Verileri Koruma Kurulu tarafından öngörülen başkaca bir yöntem ile, iletebilirsiniz.",
+        "kvkk_h6":"Talebiniz mümkün olan en kısa sürede ve her halükarda KVKK’da belirtilen süre içerisinde değerlendirilerek sonuçlandırılacaktır. Sizin adınıza 3. kişilerin başvuru talebinde bulunabilmesi için başvuruda bulunacak kişi adına noter kanalıyla düzenlenmiş özel vekaletname bulunmalıdır. Başvurunuzun incelenmesi ve sonuçlandırılmasına ilişkin işlemin bir maliyet gerektirmesi halinde Şirketimizce Kurul tarafından belirlenen tarifedeki ücret alınabilir.",
+        "label_quality_certificates":"Kalite Belgelerimiz",
+        "quality_certificates":"Kalite Belgelerimiz",
+        "quality_certificates_text1":"Bağımsız denetim kurumları tarafından verilen ulusal ve uluslararası kalite belgeleri sayesinde Mega Code Yazılım A.Ş.’nin Türkiye Bilişim Sektöründe ki farkını ortaya koymaktadır. Daha sürdürülebilir, etkin bir şekilde rekabet etmemize olanak sağlamıştır.",
+        "quality_certificates_text2":"Kalite belgelerimiz, müşteri beklentilerini en uygun, doğru şekilde karşılayacağımızın ve memnuniyeti en önde tutacağımızın bir göstergesidir. Entegre Yönetim Sistemine uyum sürecimizi başlatırken Mega Code Yazılım A.Ş.’nin de kurumsal yapısı buna göre hazırlanmıştır.",
+        "title_about_us":"Hakkımızda",
+        "title_desc":"Zaman ve maliyet yönetimisniz için size dijital çözümler üretiyoruz."
+     },
+     "homeheader":{
+        "baslık1":"MegaCode Yazılım",
+        "technology":"Teknoloji",
+        "it":"IT",
+        "text1":"Geniş Hizmet Yelpazesi Sunuyor ve Tam Müşteri Memnuniyeti Sağlıyoruz",
+        "service":"Hizmetlerimiz",
+        "Solution":"Çözümleri"
+  
+       },
+       "services":{
+        "services_h1":"Hizmetlerimiz",
+        "digital_solutions":"İnovatif Dijital Çözümler",
+        "services_text":"Hayatın her alanında birçok kolaylık sağlayan dijital çözümler sayesinde sizin için sürdürülebilir, maliyet avantajı sağlayan çözümler üretiriz",
+        "siber_sec":"Siber Güvenlik ve Bilgi Güvenliği",
+        "siber_sec_text":"Kurumların güvenlik ihtiyaçlarını tespit edip olası saldırılara karşı güvenlik testi yapıyor ve doğru yatırımlar yapmasını sağlarız.",
+        "mobil_dev_head":"Native Mobil Uygulama ve Geliştirme",
+        "mobil_dev_text":"Gün geçtikçe değişen ve gelişen mobil uygulama dünyasında teknolojiye uygun mobil yazılım geliştiririz.",
+        "app_dev":"İhtiyaca Yönelik Yazılım Geliştirme",
+        "app_dev_text":"Süreçlerin pratik, çok daha kolay ve uygun maliyetlerle sürdürülebilmesi için modüler yazılım çözümleri sağlarız.",
+        "main_system":"Farklı tedarikçi yazılımlar ile şirketler arasında köprü olur ve teknoloji ile alakalı tüm süreçlerini yöneterek zamandan tasarruf ettiririz.",
+        "social_media":"Sosyal Medya Yönetimi",
+        "social_media_text":"Marka kişiliğini oluşturur, hedef kitle ve rakip analizlerini gerçekleştirerek şirketler için en doğru sosyal medya stratejisini belirleriz.",
+        "main_system_text":"Ana Sistemler ve Donanım Altyapı Desteği"
+    },
+    "contact":{
+     "Contact":"İletişim",
+     "Adress1":"Adres",
+     "Adress":"Turgut Özal Mahallesi 68. Sokak- Otoport No: 46/222 Esenyurt - Istanbul",
+     "description":"Mega Code Yazılım ve Ticaret A.Ş.'nin",
+     "des2":"Kişisel Verilerin İşlenmesine İlişkin Aydınlatma Metnini",
+     "des3":"'ni okudum, onaylıyorum"
+
     }
-}
+    
+
+}   

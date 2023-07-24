@@ -40,17 +40,17 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/services">
-                  Hizmetlerimiz
+                  {t('header.services')}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/faq">
-                  SSS
+             {t('header.sss')}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/references">
-                  Referanslar
+                  {t('header.referance')}
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -62,27 +62,27 @@ const Header = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  projeler
+                  {t('header.projects')}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown1">
                   <li>
                     <Link className="dropdown-item" href="/projects/acente365">
-                      Acente365
+                    {t('header.acenta365',)}
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" href="/projects/digital-signage">
-                      Digital Signage
+                    {t('header.digital_signage')}
                     </Link>
                   </li>
                   <li>
                     <a className="dropdown-item" href="page-services-5.html">
-                      services
+                    {t('header.services')}
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="page-shop-5.html">
-                      shop
+                    {t('header.shop')}
                     </a>
                   </li>
                   <li>
@@ -90,24 +90,24 @@ const Header = () => {
                       className="dropdown-item"
                       href="page-single-project-5.html"
                     >
-                      single project
+                      {t('header.single_project')}
                     </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/career">
-                  Kariyer
+                {t('header.career')}
                 </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="page-blog-5.html">
-                  blog
+                {t('header.blog')}
                 </a>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/contact">
-                  İletişim
+                {t('header.communication')}
                 </Link>
               </li>
             </ul>

@@ -1,13 +1,15 @@
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 
 const Services = () => {
+  const { t } = useTranslation("common");
   return (
     <section className="services section-padding style-1">
       <div className="container">
         <div className="row">
           <div className="col">
             <div className="section-head mb-60">
-              <h2 className="wow fadeInUp">Hizmetlerimiz</h2>
+              <h2 className="wow fadeInUp">{t('services.services_h1')}</h2>
             </div>
           </div>
         </div>
@@ -16,16 +18,14 @@ const Services = () => {
             <div className="col-lg-4">
               <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
                 <h5>
-                  <a href="page-services-5.html">İnovatif Dijital Çözümler </a>
+                  <a href="page-services-5.html">{t('services.digital_solutions')} </a>
                 </h5><br></br>
                 <div className="icon">
                   <img src="assets/img/icons/keep7.png" alt="" />
                 </div>
                 <div className="info">
                   <div className="text">
-                    Hayatın her alanında birçok kolaylık sağlayan dijital
-                    çözümler sayesinde sizin için sürdürülebilir, maliyet
-                    avantajı sağlayan çözümler üretiriz
+                  {t('services.services_text')}
                   </div>
                 </div>
               </div>
@@ -38,7 +38,7 @@ const Services = () => {
                 <h5>
                   <a href="page-services-5.html">
                     {" "}
-                    Siber Güvenlik ve Bilgi Güvenliği{" "}
+                   {t('services.siber_sec')}{" "}
                   </a>
                 </h5>
                 <div className="icon">
@@ -46,9 +46,7 @@ const Services = () => {
                 </div>
                 <div className="info">
                   <div className="text">
-                    Kurumların güvenlik ihtiyaçlarını tespit edip olası
-                    saldırılara karşı güvenlik testi yapıyor ve doğru yatırımlar
-                    yapmasını sağlarız.
+                  {t('services.siber_sec_text')}
                   </div>
                 </div>
               </div>
@@ -61,7 +59,7 @@ const Services = () => {
                 <h5>
                   <a href="page-services-5.html">
                     {" "}
-                    Native Mobil Uygulama ve Geliştirme{" "}
+                    {t('services.mobil_dev_head')}{" "}
                   </a>
                 </h5>
                 <div className="icon">
@@ -69,8 +67,7 @@ const Services = () => {
                 </div>
                 <div className="info">
                   <div className="text">
-                    Gün geçtikçe değişen ve gelişen mobil uygulama dünyasında
-                    teknolojiye uygun mobil yazılım geliştiririz.
+                  {t('services.mobil_dev_text')}
                   </div>
                 </div>
               </div>
@@ -82,7 +79,7 @@ const Services = () => {
               >
                 <h5>
                   <a href="page-services-5.html">
-                    İhtiyaca Yönelik Yazılım Geliştirme{" "}
+                  {t('services.app_dev')}{" "}
                   </a>
                 </h5>
                 <div className="icon">
@@ -90,8 +87,7 @@ const Services = () => {
                 </div>
                 <div className="info">
                   <div className="text">
-                    Süreçlerin pratik, çok daha kolay ve uygun maliyetlerle
-                    sürdürülebilmesi için modüler yazılım çözümleri sağlarız.
+                  {t('services.app_dev_text')}
                   </div>
                 </div>
               </div>
@@ -104,7 +100,7 @@ const Services = () => {
                 <h5>
                   <a href="page-services-5.html">
                     {" "}
-                    Ana Sistemler ve Donanım Altyapı Desteği{" "}
+                    {t('services.main_system_text')}{" "}
                   </a>
                 </h5>
                 <div className="icon">
@@ -112,9 +108,7 @@ const Services = () => {
                 </div>
                 <div className="info">
                   <div className="text">
-                    Farklı tedarikçi yazılımlar ile şirketler arasında köprü
-                    olur ve teknoloji ile alakalı tüm süreçlerini yöneterek
-                    zamandan tasarruf ettiririz.
+                  {t('services.main_system')}
                   </div>
                 </div>
               </div>
@@ -125,16 +119,14 @@ const Services = () => {
                 data-wow-delay="0.4s"
               >
                 <h5>
-                  <a href="page-services-5.html">Sosyal Medya Yönetimi</a>
+                  <a href="page-services-5.html">{t('services.social_media')}</a>
                 </h5><br></br>
                 <div className="icon">
                   <img src="assets/img/icons/keep2.png" alt="" />
                 </div>
                 <div className="info">
                   <div className="text">
-                    Marka kişiliğini oluşturur, hedef kitle ve rakip
-                    analizlerini gerçekleştirerek şirketler için en doğru sosyal
-                    medya stratejisini belirleriz.
+                  {t('services.social_media_text')}
                   </div>
                 </div>
               </div>

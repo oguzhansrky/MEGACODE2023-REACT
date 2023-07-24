@@ -1,6 +1,8 @@
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 
 const HomeHeader = () => {
+  const { t } = useTranslation("common");
   return (
     <header className="section-padding style-1">
       <div className="container">
@@ -10,20 +12,19 @@ const HomeHeader = () => {
               <div className="info">
                 <div className="section-head mb-60">
                   <h6 className="color-main text-uppercase">
-                    MegaCode Yazılım
+                  {t('homeheader.baslık1')}
                   </h6>
                   <h2>
-                    Teknoloji &amp; IT{" "}
-                    <span className="fw-normal">Çözümleri</span>
+                    {t('homeheader.technology')} &amp; {t('homeheader.it')}{" "}
+                    <span className="fw-normal">{t('homeheader.Solution')}</span>
                   </h2>
                 </div>
                 <div className="text">
-                  Geniş Hizmet Yelpazesi Sunuyor ve Tam Müşteri Memnuniyeti
-                  Sağlıyoruz
+                {t('homeheader.text1')}
                 </div>
                 <div className="bttns mt-5">
                   <a href="page-services-5.html" className="btn btn-dark">
-                    <span>Hizmetlerimiz</span>
+                    <span>{t('homeheader.service')}</span>
                   </a>
                 </div>
               </div>

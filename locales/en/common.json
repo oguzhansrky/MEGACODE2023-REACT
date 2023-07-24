@@ -3,5 +3,107 @@
         "homepage": "Homepage",
         "about": "About"
     },
-    "contact": {}
+    "header":{
+        "referance": "Referance",
+        "sss":"SSS",
+        "projects": "Projects",
+        "acenta365":"Acenta365",
+        "digital_signage":"Digital Signage",
+        "services":"Services",
+        "shop":"Shop",
+        "single_project":"Single Project",
+        "career":"Career",
+        "blog":"Blog",
+        "communication":"Communication"
+     },
+     "topnavbar":{
+        "text":"We produce digital solutions for your time and cost management."
+     },
+     "404":{
+        "h1":"Opps! Looks Like Here is Nothing.",
+        "h2":"The page you’re looking for isn’t found. We suggest you back to home. It’s easy...",
+        "back_to_home":"Back to Home"
+     },
+     "about":{
+        "label_about_us":"About Us",
+        "about_us_text":"Mega Code Software is a software company founded in 2012 in Istanbul. Thanks to its experienced and expert team, the company not only provides software solutions but also digital solutions to businesses. By leveraging the services offered by technology and innovations, Mega Code becomes a solution partner for companies in all sectors and of all sizes. Not only in Turkey but also primarily in the United States and the United Kingdom, Mega Code engages in software exports to the entire world.",
+        "our_principles":"Our Principles",
+        "our_principles_text1":"Our priority is our customers.",
+        "our_principles_text2":"With the best service principle, you meet the consumption and answer all questions and difficulties.",
+        "label_sustainable_projects;":"Sustainable Projects",
+        "sustainable_projects_text1":"We take care that all the projects we offer are sustainable and developable.",
+        "label_ınnovation":"Innovation;",
+        "ınnovation":"We implement new ideas according to needs, produce dynamic products or carry out various services.",
+        "label_technology;":"Technology;",
+        "technology;":"We use technology to provide you with the best and correct service.",
+        "label_ınformation_security_policy":"Information Security Policy",
+        "ınformation_security_policy":"Information Security Policy",
+        "label_quality_and_environmental_policy":"Quality and Environmental Policy",
+        "quality_and_environmental_policy_text":"Quality and Environmental Policy",
+        "label_kvkk":"KVKK and Privacy",
+        "kvkk_legal_warning":"LEGAL WARNING",
+        "kvkk_text":"Your personal data, but not limited to those listed; General directorate, regional offices, our suppliers, business partners, authorized/official institutions, all private and official health persons, institutions, organizations, other insurance companies and other relevant third parties/institutions, such as internet branch, call center, closed circuit camera system and all other physical, written, verbal and electronic media/channels/channels personally and/or within your knowledge sent/provided/provided by you and/or within your knowledge, documents, resumes, written documents, resumes, written forms, written statements, written forms Your e-mail is obtained from e-mail, audio/video recordings, KVKK art. It can be processed and transferred based on your explicit consent, except for the cases stipulated in the provisions of Article 5/2 and 6/3 of the KVKK in accordance with the principles stipulated in the provisions of 4/2.",
+        "kvkk_text1":"Rights Enumerated in Article 11 of KVKK",
+        "kvkk_text2":"By applying to our company, your personal data;",
+        "kvkk_text3":"Learning whether it is processed or not,",
+        "kvkk_text4":"Requesting information about it if it has been processed",
+        "kvkk_text5":"Learning the purpose of processing and whether it is used appropriately,",
+        "kvkk_text6":"Knowing the 3 people to whom it was transferred in the country / abroad,",
+        "kvkk_text7":"Requesting correction if it is incomplete/wrongly processed,",
+        "kvkk_text8":"KVKK's art. Requesting deletion / destruction / anonymization within the framework of the conditions in 7,",
+        "kvkk_text9":"Requesting notification of correction, deletion/destruction processes to the 3 persons to whom the data has been transferred,",
+        "kvkk_text10":"Objecting to the emergence of a result against you because it is analyzed exclusively by automated systems,",
+        "kvkk_text11":"We inform you that you have the right to demand the compensation of the damage in case you suffer damage due to unlawful processing, and inform you that we continue our activities with the awareness that personal data security is at the forefront in all our products and services we offer you.",
+        "kvkk_text12":"Personal Data Owner Application Procedure",
+        "kvkk_text13":"You can use the Application Form at the link at the bottom of this clarification text to submit your requests regarding your rights mentioned above.",
+        "kvkk_text14":"Your applications regarding your requests;",
+        "kvkk_text15":"From hand",
+        "kvkk_text16":"By registered letter with return receipt",
+        "kvkk_text17":"Via notary public Turgut Özal mah. 68.Sk Otoport Avm Kat/8 No/247 Esenyurt / Istanbul with a wet signed copy or",
+        "kvkk_text18":"You can send it by another method prescribed by the Personal Data Protection Board.",
+        "kvkk_h6":"Your request will be evaluated and finalized as soon as possible and in any case within the time specified in the KVKK. In order for third parties to apply on your behalf, there must be a special power of attorney issued through a notary public on behalf of the applicant. If the process of examining and finalizing your application requires a cost, our Company may charge the fee in the tariff determined by the Board.",
+        "label_quality_certificates":"Quality Certificates",
+        "quality_certificates":"Quality Certificates",
+        "quality_certificates_text1":"Thanks to the national and international quality certificates issued by independent audit institutions, Mega Code Yazılım A.Ş. reveals its difference in the Turkish IT Sector. It has allowed us to compete more sustainably and effectively.",
+        "quality_certificates_text2":"Our quality certificates are an indication that we will meet customer expectations in the most appropriate and correct way and keep satisfaction at the forefront. While starting our adaptation process to the Integrated Management System, the corporate structure of Mega Code Yazılım A.Ş. was prepared accordingly.",
+        "title_about_us":"About Us",
+        "title_desc":"We produce digital solutions for your time and cost management."
+     },
+     "homeheader":{
+      "baslık1":"MegaCode Software",
+      "technology":"Technology",
+      "it":"IT",
+      "text1":"We Offer a Wide Range of Services and Ensure Complete Customer Satisfaction",
+      "service":"Our services",
+      "Solution":"Solution"
+
+     },
+     "services":{
+      "services_h1":"Our Services",
+      "digital_solutions":"Innovative Digital Solutions",
+      "services_text":"Digital, which provides many conveniences in all areas of life. sustainable, cost-effective solutions for you We produce solutions that provide advantage",
+      "siber_sec":"Cyber ​​Security and Information Security",
+      "siber_sec_text":"Determining the security needs of institutions and possible security testing against attacks and making the right investments we make it do it.",
+      "mobil_dev_head":"Native Mobile Application and Development",
+      "mobil_dev_text":"In the world of mobile applications that are changing and developing day by day We develop mobile software suitable for technology.",
+      "app_dev":"Need-Oriented Software Development",
+      "app_dev_text":"Practical, much easier and cost-effective processes We provide modular software solutions to sustain",
+      "main_system":"Bridge between different supplier software and companies and by managing all technology-related processes we save time.",
+      "social_media":"Social media management",
+      "social_media_text":"Creates brand personality, target audience and competitor by performing the most accurate social analysis for companies. We determine the media strategy.",
+      "main_system_text":"Main Systems and Hardware Infrastructure Support"
+     },
+     "contact":{
+      "Contact":"Contact",
+      "Adress1":"Adress",
+      "Adress":"Turgut Özal Neighborhood, 68th Street - Otoport No: 46/222 Esenyurt - Istanbul.",
+      "description":"Mega Code Software and Trade Inc.",
+      "des2":"Privacy Notice for Processing of Personal Data",
+      "des3":"'I have read it, I approve."
+ 
+     }
+
+
+
+   
 }
