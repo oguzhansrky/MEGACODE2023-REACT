@@ -104,9 +104,14 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/blog">
-                  blog
-                </a>
+                <Link className="nav-link" href="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/BlogContent">
+                  Blog İçeriği
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/contact">
