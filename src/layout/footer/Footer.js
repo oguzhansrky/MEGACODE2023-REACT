@@ -55,10 +55,10 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-2">
+              <div className="col-lg-4">
                 <div className="links">
                   <div className="cont">
-                    <h6 className="link_title">Services</h6>
+                    <h6 className="link_title">Links</h6>
                     <ul>
                       <li>
                         <a href="#">IT Consultations </a>
@@ -81,15 +81,6 @@ const Footer = () => {
                       <li>
                         <a href="#">CRM &amp; Software </a>
                       </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-2">
-                <div className="links">
-                  <div className="cont">
-                    <h6 className="link_title">Information</h6>
-                    <ul>
                       <li>
                         <a href="#">About Iteck </a>
                       </li>
