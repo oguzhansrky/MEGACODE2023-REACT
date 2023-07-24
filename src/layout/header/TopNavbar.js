@@ -3,6 +3,20 @@ import React from "react";
 
 const TopNavbar = () => {
   const router = useRouter();
+
+  const languages = [
+    {
+      name: "Turkish",
+      value: "tr",
+      icon: "/assets/img/turkish.png.png",
+    },
+    {
+      name: "English",
+      value: "en",
+      icon: "/assets/img/lang.png",
+    },
+  ];
+
   return (
     <div className="top-navbar style-1">
       <div className="container">
@@ -42,20 +56,46 @@ const TopNavbar = () => {
                     id="dropdownMenuLink"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    onClick={(e) => { e.preventDefault(); router.push(router.pathname, router.asPath, { locale: "en" }) }}
                   >
-                    <img className="me-1" src="/assets/img/lang.png" alt="" />{" "}
-                    English
+                    <img
+                      className="me-1"
+                      src={
+                        languages?.find((item) => item.value === router?.locale)
+                          ?.icon
+                      }
+                      alt=""
+                    />
+                    {
+                      languages?.find((item) => item.value === router?.locale)
+                        ?.name
+                    }
                   </a>
                   <ul
                     className="dropdown-menu"
                     aria-labelledby="dropdownMenuLink"
                   >
-                    <li>
-                      <a onClick={(e) => { e.preventDefault(); router.push(router.pathname, router.asPath, { locale: "tr" }) }} className="dropdown-item" href="#">
-                        Türkçe
-                      </a>
-                    </li>
+                    {languages
+                      .filter((item) => item.value !== router?.locale)
+                      .map((item) => (
+                        <li>
+                          <a
+                            className="dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            aria-expanded="false"
+                            onClick={(e) => {
+                              e.preventDefault(false);
+                              router.push(router.pathname, router.asPath, {
+                                locale: item.value,
+                              });
+                            }}
+                          >
+                            <img className="me-1" src={item.icon} alt="" />
+                            {item.name}
+                          </a>
+                        </li>
+                      ))}
                   </ul>
                 </div>
               </div>
