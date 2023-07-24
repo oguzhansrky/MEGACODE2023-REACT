@@ -60,6 +60,21 @@ const Projects = () => {
               <img src="assets/img/screenshots/10.png" alt="" />
             </div>
           </SwiperSlide>
+          <SwiperSlide>
+            <div className="img">
+              <img src="assets/img/screenshots/image.png" alt="" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="img">
+              <img src="assets/img/screenshots/image10.png" alt="" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="img">
+              <img src="assets/img/screenshots/seat.png" alt="" />
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
       <img src="assets/img/screenshots/hand.png" alt="" className="mob-hand" />

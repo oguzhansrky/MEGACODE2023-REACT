@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from "next-translate/useTranslation";
 
 const Header = () => {
   const { t } = useTranslation("common");
@@ -30,12 +30,12 @@ const Header = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" href="/">
-                  {t('main_menu.homepage')}
+                  {t("main_menu.homepage")}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/about-us">
-                  {t('main_menu.about')}
+                  {t("main_menu.about")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -71,6 +71,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
+<<<<<<< HEAD
                     <Link className="dropdown-item" href="/projects/digital-signage">
                     {t('header.digital_signage')}
                     </Link>
@@ -91,6 +92,18 @@ const Header = () => {
                       href="page-single-project-5.html"
                     >
                       {t('header.single_project')}
+=======
+                    <Link
+                      className="dropdown-item"
+                      href="/projects/digital-signage"
+                    >
+                      Digital Signage
+                    </Link>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/projects/sea365">
+                      Sea365
+>>>>>>> c78afbefad9af9e983bf94220b4a4576e5d0aee6
                     </a>
                   </li>
                 </ul>
@@ -101,9 +114,20 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
+<<<<<<< HEAD
                 <a className="nav-link" href="page-blog-5.html">
                 {t('header.blog')}
                 </a>
+=======
+                <Link className="nav-link" href="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/BlogContent">
+                  Blog İçeriği
+                </Link>
+>>>>>>> c78afbefad9af9e983bf94220b4a4576e5d0aee6
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/contact">
