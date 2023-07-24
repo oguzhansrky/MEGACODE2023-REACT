@@ -288,7 +288,7 @@ export const AllNews = () => {
                   <div className="col-lg-5">
                     <div className="img img-cover">
                       <img
-                        src="assets/img/blog/3.jpeg"
+                        src="assets/img/blog/6.png"
                         className="radius-7"
                         alt="..."
                       />
