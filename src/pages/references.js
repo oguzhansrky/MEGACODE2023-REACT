@@ -39,7 +39,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://www.dijipol.com/">Dijipol.com</a>
+                      <p className="fs-6">Dijipol Web Sitesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -57,9 +57,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://play.google.com/store/apps/details?id=com.wcdagency.dtoimeak">
-                        Deniz Ticaret Odası Mobile App
-                      </a>
+                      <p className="fs-6">Deniz Ticaret Odası Mobile App</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -77,9 +75,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://www.kargotek.com.tr/">
-                        Kargotek Web Sitesi
-                      </a>
+                      <p className="fs-6">Kargotek Web Sitesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -97,9 +93,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://www.maxibillion.co.uk/">
-                        Maxibillion Web Sitesi
-                      </a>
+                      <p className="fs-6">Maxibillion Web Sitesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -117,9 +111,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://collectiveindigo.com/">
-                        Collective Indigo Web Sitesi
-                      </a>
+                      <p className="fs-6">Collective Indigo Web Sitesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -137,7 +129,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://sea365.net/">Sea365 Web Sitesi</a>
+                      <p className="fs-6">Sea365 Web Sitesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -155,7 +147,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://postkolik.com/">Postkolik Web Sitesi</a>
+                      <p className="fs-6">Postkolik Web Sitesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -173,7 +165,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://flomak.com/">Flomak Web Sitesi</a>
+                      <p className="fs-6">Flomak Web Sitesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -191,9 +183,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://demirclub.demirdokum.com.tr/Login.aspx">
-                        Flomak Web Sitesi
-                      </a>
+                      <p className="fs-6">DemirClub Web Sitesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -211,9 +201,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://porsche.wcdagency.com/">
-                        Porsche Digital Signate Projesi
-                      </a>
+                      <p className="fs-6">Porsche Digital Signate Projesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -231,9 +219,7 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://advert.wcdagency.com/">
-                        Seat Digital Signate Projesi
-                      </a>
+                      <p className="fs-6">Seat Digital Signate Projesi</p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
@@ -251,9 +237,9 @@ const referanslar = () => {
                   </div>
                   <div class="card-body px-0">
                     <h5 class="fw-bold mt-10 title">
-                      <a href="https://megacode.com.tr/Home/work-default.html">
+                      <p className="fs-6 ">
                         Deniz Ticaret Odası Toplantı Uygulaması
-                      </a>
+                      </p>
                     </h5>
                     <div class="links">
                       <a>Design &amp;</a>
