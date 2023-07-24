@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from "next-translate/useTranslation";
 
 const Header = () => {
   const { t } = useTranslation("common");
@@ -30,12 +30,12 @@ const Header = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" href="/">
-                  {t('main_menu.homepage')}
+                  {t("main_menu.homepage")}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/about-us">
-                  {t('main_menu.about')}
+                  {t("main_menu.about")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -71,13 +71,16 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="/projects/digital-signage">
+                    <Link
+                      className="dropdown-item"
+                      href="/projects/digital-signage"
+                    >
                       Digital Signage
                     </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="page-services-5.html">
-                      services
+                    <a className="dropdown-item" href="/projects/sea365">
+                      Sea365
                     </a>
                   </li>
                   <li>
