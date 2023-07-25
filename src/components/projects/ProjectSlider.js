@@ -4,6 +4,7 @@ import { Autoplay, Navigation, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
+import { v4 as uuid } from "uuid";
 
 const ProjectSlider = ({ slides }) => {
   return (
@@ -26,7 +27,7 @@ const ProjectSlider = ({ slides }) => {
               speed={1000}
             >
               {slides.map((item) => (
-                <SwiperSlide>
+                <SwiperSlide key={uuid()}>
                   <div className="content-card">
                     <div className="img overlay">
                       <img src={item} alt="" />
