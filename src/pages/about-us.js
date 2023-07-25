@@ -1,73 +1,63 @@
 import { Content } from "@/components/Content";
 import { Radio, Space, Tabs } from "antd";
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 
 const Hakkimizda = () => {
+  const { t } = useTranslation("common");
   const items = [
     {
       key: 1,
-      label: "Hakkımızda",
+      label: t('about.label_about_us'),
       children: (
         <div className="row flex-row-reverse">
           <div className="col-lg-12">
             <div className="details_content">
               <div className="sec_title mb-20">
                 <p className="f_400 f_size_15">
-                  Mega Code Yazılım 2012 yılında İstanbul’da kurulmuş yazılım
-                  şirketidir. Tecrübeli ve uzman kadrosu sayesinde şirketlere
-                  sadece yazılım değil dijital çözümlerde üretir. Teknolojinin
-                  sunduğu hizmetler ile yenilikler sayesinde tüm sektörlere ve
-                  her büyüklükte firmalara çözüm ortaklığı yapar. Mega Code
-                  sadece Türkiye’de değil başta Amerika ve İngiltere olmak üzere
-                  tüm dünyaya yazılım ihracatı yapar.
+                {t('about.about_us_text')}
                 </p>
               </div>
               <div className="job_deatails_content">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                  İLKELERİMİZ:
+                {t('about.our_principles')}
                 </h5>
                 <p className="f_400 f_size_15 mb-20">
-                  Önceliğimiz Müşterilerimiz.
+                {t('about.our_principles_text1')}
                 </p>
                 <ul className="list-unstyled mb-20">
                   <li>
-                    <i className="bi bi-chevron-right"></i> En iyi hizmet
-                    ilkesiyle müşterilerimizi karşılar tüm soru ve sorunlarına
-                    cevap veririz.
+                    <i className="bi bi-chevron-right"></i>
+                    {t('about.our_principles_text2')}
                   </li>
                 </ul>
               </div>
               <div className="job_deatails_content">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                  Sürdürülebilir Projeler;
+                {t('about.label_sustainable_projects;')}
                 </h5>
                 <ul className="list-unstyled mb-20">
                   <li>
-                    <i className="ti-arrow-right"></i> Sunduğumuz tüm projelerin
-                    sürdürülebilir ve geliştirilebilir olmasına özen gösteririz.{" "}
+                    <i className="ti-arrow-right"></i> {t('about.sustainable_projects_text1')}{" "}
                   </li>
                 </ul>
               </div>
               <div className="job_deatails_content">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                  İnovasyon;
+                {t('about.label_ınnovation')}
                 </h5>
                 <ul className="list-unstyled mb-20">
                   <li>
-                    <i className="ti-arrow-right"></i>İhtiyaçlara uygun yeni
-                    fikirler uygular, dinamik ürünler üretir veya var olan
-                    hizmetleri geliştiririz.
+                    <i className="ti-arrow-right"></i>{t('about.ınnovation')}
                   </li>
                 </ul>
               </div>
               <div className="job_deatails_content">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                  Teknoloji;
+                {t('about.label_technology;')}
                 </h5>
                 <ul className="list-unstyled mb-20">
-                  <li>
-                    <i className="ti-arrow-right"></i> Teknolojiyi size en iyi
-                    ve doğru hizmeti sunabilmek için kullanırız.{" "}
+                  <li>{t('about.technology;')}{" "}
                   </li>
                 </ul>
               </div>
@@ -78,14 +68,14 @@ const Hakkimizda = () => {
     },
     {
       key: 2,
-      label: "Bilgi Güvenliği Politikası",
+      label: t('about.label_ınformation_security_policy'),
       children: (
         <div className="row flex-row-reverse">
           <div className="col-lg-12">
             <div className="details_content">
               <div className="sec_title mb-20">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb_20">
-                  Bilgi Güvenliği Politikası
+                {t('about.ınformation_security_policy')}
                 </h5>
                 <img
                   className="politikaimg"
@@ -99,14 +89,14 @@ const Hakkimizda = () => {
     },
     {
       key: 3,
-      label: "Kalite ve Çevre Politikası",
+      label: t('about.label_quality_and_environmental_policy'),
       children: (
         <div className="row ">
           <div className="col-lg-12">
             <div className="details_content">
               <div className="sec_title mb_70">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                  Kalite ve Çevre Politikası
+                {t('about.quality_and_environmental_policy_text')}
                 </h5>
                 <img
                   className="politikaimg"
@@ -120,97 +110,62 @@ const Hakkimizda = () => {
     },
     {
       key: 4,
-      label: "KVKK ve Gizlilik",
+      label: t('about.label_kvkk'),
       children: (
         <div className="row flex-row-reverse">
           <div className="col-lg-12">
             <div className="details_content">
               <div className="reading">
-                <h5>YASAL UYARI</h5>
+                <h5>{t('about.kvkk_legal_warning')}</h5>
                 <p className="yasalp_two">
-                  Kişisel verileriniz, sayılanlar ile sınırlı olmamak üzere;
-                  genel müdürlük, bölge müdürlükleri, tedarikçilerimiz, iş
-                  ortaklarımız, yetkili/resmi kurum kuruluşlar, özel ve resmi
-                  tüm sağlık kişi, kurum, kuruluşları, diğer sigorta şirketleri
-                  ve diğer ilgili üçüncü kişi/kurumlardan internet şubesi, çağrı
-                  merkezi, kapalı devre kamera sistemi ve diğer tüm fiziki,
-                  yazılı, sözlü ve elektronik ortamlar/kanallar vasıtasıyla
-                  bizzat tarafınızca ve/veya bilginiz dahilinde
-                  gönderilen/sağlanan/doldurulmuş formlar, belgeler,
-                  sözlü/yazılı beyanlar, poliçeler, muvafakatnameler, özgeçmiş,
-                  kimlik belgeniz, elektronik posta, ses/görüntü kayıtlarından
-                  elde edilmekte olup, KVKK m. 4/2 hükmünde öngörülen ilkelere
-                  uygun olarak KVKK m.5/2 ve 6/3 hükümlerinde öngörülen
-                  durumların haricinde açık rızanıza istinaden işlenebilmekte ve
-                  aktarılabilmektedir.
+                {t('about.kvkk_text')}
                 </p>
                 <p className="yasalp_three">
-                  KVKK’nın 11. maddesinde Sayılan Hakları
+                {t('about.kvkk_text1')}
                 </p>
                 <p className="yasalp_three">
-                  Şirketimize başvurarak, kişisel verilerinizin;
+                {t('about.kvkk_text2')}
                 </p>
                 <ol>
-                  <li>İşlenip işlenmediğini öğrenme,</li>
-                  <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+                  <li>{t('about.kvkk_text3')}</li>
+                  <li>{t('about.kvkk_text4')}</li>
                   <li>
-                    İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını
-                    öğrenme,
+                  {t('about.kvkk_text5')}
                   </li>
                   <li>
-                    Yurt içinde/yurt dışında aktarıldığı 3 kişileri bilme,
+                  {t('about.kvkk_text6')}
                   </li>
-                  <li>Eksik/yanlış işlenmişse düzeltilmesini isteme,</li>
+                  <li>{t('about.kvkk_text7')}</li>
                   <li>
-                    KVKK’nın md. 7’deki şartlar çerçevesinde silinmesini / yok
-                    edilmesini / anonimleştirilmesini isteme,
-                  </li>
-                  <li>
-                    Düzeltme, silme/yok etme işlemlerinin verilerin aktarıldığı
-                    3 kişilere bildirilmesini isteme,
+                  {t('about.kvkk_text8')}
                   </li>
                   <li>
-                    Münhasıran otomatik sistemler ile analiz edilmesi nedeniyle
-                    aleyhinize bir sonucun ortaya çıkmasına itiraz etme,
+                  {t('about.kvkk_text9')}
                   </li>
                   <li>
-                    Kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız
-                    hâlinde zararın giderilmesini talep etme haklarına sahip
-                    olduğunuzu bildirir, sizlere sunduğumuz tüm ürün ve
-                    hizmetlerimizde kişisel veri güvenliğinin ön planda olduğu
-                    bilinciyle faaliyetlerimize devam ettiğimizi bilgilerinize
-                    sunarız.
+                  {t('about.kvkk_text10')}
+                  </li>
+                  <li>
+                  {t('about.kvkk_text11')}
                   </li>
                 </ol>
-                <p>Kişisel Veri Sahibi Başvuru Usulü</p>
+                <p>{t('about.kvkk_text12')}</p>
                 <p>
-                  Yukarıda belirtilen haklarınıza ilişkin taleplerinizi iletmek
-                  için bu aydınlatma metninin en alt kısmında yer alan linkte
-                  bulunan Başvuru Formu’nu kullanabilirsiniz.
+                {t('about.kvkk_text13')}.
                 </p>
-                <p>Taleplerinize ilişkin başvurularınızı;</p>
+                <p>{t('about.kvkk_text14')}</p>
                 <ol>
-                  <li>Elden</li>
-                  <li>İadeli taahhütlü mektupla</li>
+                  <li>{t('about.kvkk_text15')}</li>
+                  <li>{t('about.kvkk_text16')}</li>
                   <li>
-                    Noter aracılığıyla Turgut Özal mah. 68.Sk Otoport Avm Kat/8
-                    No/247 Esenyurt / İstanbul adresine ıslak imzalı kopyası ile
-                    veya
+                  {t('about.kvkk_text17')}
                   </li>
                   <li>
-                    Kişisel Verileri Koruma Kurulu tarafından öngörülen başkaca
-                    bir yöntem ile, iletebilirsiniz.
+                  {t('about.kvkk_text18')}
                   </li>
                 </ol>
                 <h6>
-                  Talebiniz mümkün olan en kısa sürede ve her halükarda KVKK’da
-                  belirtilen süre içerisinde değerlendirilerek
-                  sonuçlandırılacaktır. Sizin adınıza 3. kişilerin başvuru
-                  talebinde bulunabilmesi için başvuruda bulunacak kişi adına
-                  noter kanalıyla düzenlenmiş özel vekaletname bulunmalıdır.
-                  Başvurunuzun incelenmesi ve sonuçlandırılmasına ilişkin
-                  işlemin bir maliyet gerektirmesi halinde Şirketimizce Kurul
-                  tarafından belirlenen tarifedeki ücret alınabilir.
+                {t('about.kvkk_h6')}
                 </h6>
               </div>
             </div>
@@ -220,28 +175,20 @@ const Hakkimizda = () => {
     },
     {
       key: 5,
-      label: "Kalite Belgelerimiz",
+      label: t('about.label_quality_certificates'),
       children: (
         <div className="row ">
           <div className="col-lg-12">
             <div className="details_content">
               <div className="sec_title">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                  Kalite Belgelerimiz
+                {t('about.quality_certificates')}
                 </h5>
                 <p>
-                  Bağımsız denetim kurumları tarafından verilen ulusal ve
-                  uluslararası kalite belgeleri sayesinde Mega Code Yazılım
-                  A.Ş.’nin Türkiye Bilişim Sektöründe ki farkını ortaya
-                  koymaktadır. Daha sürdürülebilir, etkin bir şekilde rekabet
-                  etmemize olanak sağlamıştır. <br />
+                {t('about.quality_certificates_text1')} <br />
                 </p>
                 <p>
-                  Kalite belgelerimiz, müşteri beklentilerini en uygun, doğru
-                  şekilde karşılayacağımızın ve memnuniyeti en önde
-                  tutacağımızın bir göstergesidir. Entegre Yönetim Sistemine
-                  uyum sürecimizi başlatırken Mega Code Yazılım A.Ş.’nin de
-                  kurumsal yapısı buna göre hazırlanmıştır.
+                {t('about.quality_certificates_text2')}
                 </p>
                 <div className="row mt-20">
                   <div className="col-lg-4">
@@ -336,9 +283,9 @@ const Hakkimizda = () => {
   return (
     <>
       <Content
-        title={"Hakkımızda"}
+        title={t('about.title_about_us')}
         desc={
-          "Zaman ve maliyet yönetiminiz için size dijital çözümler üretiyoruz."
+          t('about.title_desc')
         }
       >
         <Tabs defaultActiveKey="1" tabPosition={"left"} items={items} />

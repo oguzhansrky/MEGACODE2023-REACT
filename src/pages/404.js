@@ -1,8 +1,10 @@
 import { Content } from '@/components/Content'
 import Link from 'next/link'
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation';
 
 const Error404 = () => {
+const { t } = useTranslation("common");
     return (
         <>
             <Content hideTitle title={"404"}>
@@ -15,10 +17,10 @@ const Error404 = () => {
                                         <div className="icon">
                                             <img src="/assets/img/icons/rocket.png" alt="" />
                                         </div>
-                                        <h2 className="mb-30"> Opps! Looks Like Here is Nothing. </h2>
-                                        <p className="color-777"> The page you’re looking for isn’t found. We suggest you back to home. It’s easy... </p>
+                                        <h2 className="mb-30"> {t('404.h1')} </h2>
+                                        <p className="color-777"> {t('404.h2')} </p>
                                         <Link href="/" className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-40">
-                                            <span> <i className="fas fa-long-arrow-left me-2" /> Back To Home </span>
+                                            <span> <i className="fas fa-long-arrow-left me-2" /> {t('404.back_to_home')}</span>
                                         </Link>
                                     </div>
                                 </div>

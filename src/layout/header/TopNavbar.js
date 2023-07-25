@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
 const TopNavbar = () => {
   const router = useRouter();
@@ -17,6 +18,8 @@ const TopNavbar = () => {
     },
   ];
 
+  const { t } = useTranslation("common");
+
   return (
     <div className="top-navbar style-1">
       <div className="container">
@@ -25,10 +28,7 @@ const TopNavbar = () => {
             <div className="col-lg-8">
               <div className="top-links">
                 <div className="text text-white my-2">
-                  <span>
-                    Zaman ve maliyet yönetiminiz için size dijital çözümler
-                    üretiyoruz.
-                  </span>
+                  <span>{t("topnavbar.text")}</span>
                 </div>
               </div>
             </div>
