@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
 const Footer = () => {
+  const { t } = useTranslation("common");
   return (
     <>
       <footer className="style-1">
@@ -14,15 +16,14 @@ const Footer = () => {
                     <img src="/assets/img/logos/logo-footer.png" alt="" />
                   </Link>
                   <div className="text mb-4">
-                    Sizin memnuniyetiniz bizim referansımız…
+                  {t("footer.footer_text")}
                   </div>
                   <ul className="mb-4">
                     <li className="d-flex">
                       <i className="bi bi-house me-3" />
                       <a href="#">
                         <span>
-                          Turgut Özal Mahallesi 68. Sokak - Otoport No: 46/222
-                          Esenyurt - Istanbul
+                        {t("footer.footer_adress")}
                         </span>
                       </a>
                     </li>
@@ -154,7 +155,7 @@ const Footer = () => {
                   <a href="/" className="text-white text-decoration-underline">
                     Megacode
                   </a>
-                  . Tüm hakları saklıdır.
+                  {t("footer.footer_privite")}
                 </p>
               </div>
             </div>
