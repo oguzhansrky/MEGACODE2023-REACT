@@ -15,27 +15,24 @@ const Footer = () => {
                   <Link href="/" className="logo mb-3">
                     <img src="/assets/img/logos/logo-footer.png" alt="" />
                   </Link>
-                  <div className="text mb-4">
-                  {t("footer.footer_text")}
-                  </div>
+                  <div className="text mb-4">{t("footer.footer_text")}</div>
                   <ul className="mb-4">
                     <li className="d-flex">
                       <i className="bi bi-house me-3" />
-                      <a href="#">
-                        <span>
-                        {t("footer.footer_adress")}
-                        </span>
-                      </a>
+                      <span>
+                        Turgut Özal Neighborhood, 68th Street - Otoport No:
+                        46/222 Esenyurt - Istanbul.
+                      </span>
                     </li>
                     <li className="d-flex">
                       <i className="bi bi-envelope me-3" />
-                      <a href="#">
+                      <a href="https://mail.google.com/mail/u/0/?hl=tr#inbox?compose=new">
                         <span>info@megacode.com.tr</span>
                       </a>
                     </li>
                     <li className="d-flex">
                       <i className="bi bi-phone me-3" />
-                      <a href="#">
+                      <a href="tel:0850 346 22 01">
                         <span>0850 346 22 01</span>
                       </a>
                     </li>
