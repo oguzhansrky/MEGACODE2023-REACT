@@ -1,6 +1,7 @@
 import React from "react";
-
+import useTranslation from 'next-translate/useTranslation';
 const About = () => {
+  const { t } = useTranslation("common");
   return (
     <section className="about style-1">
       <div className="container">
@@ -27,22 +28,17 @@ const About = () => {
               <div className="col-lg-5">
                 <div className="title">
                   <h3 className=" wow fadeInUp slow">
-                    “Sizin memnuniyetiniz bizim referansımız…”
+                  {t('about1.h3')}
                   </h3>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="info">
                   <h6 className=" wow fadeInUp slow">
-                    Mega Code Yazılım 2012 yılında İstanbul’da kurulmuş yazılım
-                    şirketidir. Tecrübeli ve uzman kadrosu sayesinde şirketlere
-                    sadece yazılım değil dijital çözümlerde üretir.
+                  {t('about1.h6')}.
                   </h6>
                   <p className=" wow fadeInUp slow">
-                    Teknolojinin sunduğu hizmetler ile yenilikler sayesinde tüm
-                    sektörlere ve her büyüklükte firmalara çözüm ortaklığı
-                    yapar. Mega Code sadece Türkiye’de değil başta Amerika ve
-                    İngiltere olmak üzere tüm dünyaya yazılım ihracatı yapar.
+                  {t('about1.h6_p')}.
                   </p>
                 </div>
               </div>
@@ -55,7 +51,7 @@ const About = () => {
                   <div className="num">
                     <span className="counter">2</span>
                   </div>
-                  <div className="inf">Ülke</div>
+                  <div className="inf">{t('about1.country')}</div>
                 </div>
               </div>
               <div className="col-lg-3 col-sm-6">
@@ -66,7 +62,7 @@ const About = () => {
                       <i className="fas fa-plus"></i>
                     </span>
                   </div>
-                  <div className="inf">Yıllık Deneyim</div>
+                  <div className="inf">{t('about1.exp')}</div>
                 </div>
               </div>
               <div className="col-lg-3 col-sm-6">
@@ -74,7 +70,7 @@ const About = () => {
                   <div className="num">
                     <span className="counter">320</span>
                   </div>
-                  <div className="inf">Tamamlanan proje</div>
+                  <div className="inf">{t('about1.complate_task')}</div>
                 </div>
               </div>
               <div className="col-lg-3 col-sm-6">
@@ -83,7 +79,7 @@ const About = () => {
                     <span className="counter">3</span>
                     <span>B</span>
                   </div>
-                  <div className="inf">Mutlu kullanıcı</div>
+                  <div className="inf">{t('about1.happy_cust')}</div>
                 </div>
               </div>
             </div>

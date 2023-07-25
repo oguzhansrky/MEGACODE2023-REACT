@@ -1,6 +1,8 @@
 import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
 export const footercontact = () => {
+  const { t } = useTranslation("common");
   return (
     <section className="partner_logo_area_two ">
       <div
@@ -12,17 +14,15 @@ export const footercontact = () => {
         <div className="subscribe_form_info row">
           <div className="col-lg-7">
             <h4 className="f_p f_size_30 l_height50 f_400 w_color mb-0 ">
-              Hedeflerinize ulaşabileceğiniz interaktif çözümler üreten bir
-              teknoloji şirketi mi arıyorsunuz?
+            {t("footer_contact.footer_contact_des")}
             </h4>
             <p className="w_color">
-              Mega Code Yazılım sayesinde teknolojinin tüm yeniliklerinden
-              yararlanmak için,
+            {t("footer_contact.footer_contact_des2")}
             </p>
           </div>
           <div className="col-lg-3 text-end">
             <a href="page-services-5.html" className="btn btn-dark">
-              <span> İletişime Geç</span>
+              <span> {t("footer_contact.footer_contact")}</span>
             </a>
           </div>
           <div className="col-lg-2">

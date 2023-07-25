@@ -101,7 +101,28 @@
       "des2":"Privacy Notice for Processing of Personal Data",
       "des3":"'I have read it, I approve."
  
-     }
+     },
+     "about1":{
+      "h3":"“Your satisfaction is our reference…”",
+        "h6":"Mega Code Software is a software company founded in 2012 in Istanbul. Thanks to its experienced and expert team, the company not only provides software but also produces digital solutions for businesses.",
+        "h6_p":"Through the services offered by technology and innovations, Mega Code collaborates with companies of all sectors and sizes as a solution partner. Mega Code not only operates in Turkey but also engages in software exports to various countries, including the United States and the United Kingdom, reaching out to the global market.",
+        "country":"Country",
+        "exp":"Years of Experience",
+        "complate_task":"Completed Project",
+        "happy_cust":"Happy User"
+      },
+      "footer":{
+         "footer_text":"Your satisfaction is our reference...",
+         "footer_adress":"Turgut Özal Neighborhood, 68th Street - Otoport No: 46/222 Esenyurt - Istanbul.",
+         "footer_privite":"Copyright, All rights reserved."
+      },
+      "footer_contact":{
+        "footer_contact_des":"Are you looking for a technology company that produces interactive solutions where you can reach your goals?",
+        "footer_contact_des2":"In order to benefit from all the innovations of technology thanks to Mega Code Software,",
+        "footer_contact":"Contact Us"
+
+
+        }
 
 
 

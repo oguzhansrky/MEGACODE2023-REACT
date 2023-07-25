@@ -71,7 +71,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-<<<<<<< HEAD
+
                     <Link className="dropdown-item" href="/projects/digital-signage">
                     {t('header.digital_signage')}
                     </Link>
@@ -90,9 +90,9 @@ const Header = () => {
                     <a
                       className="dropdown-item"
                       href="page-single-project-5.html"
-                    >
+                      />
                       {t('header.single_project')}
-=======
+
                     <Link
                       className="dropdown-item"
                       href="/projects/digital-signage"
@@ -103,7 +103,7 @@ const Header = () => {
                   <li>
                     <a className="dropdown-item" href="/projects/sea365">
                       Sea365
->>>>>>> c78afbefad9af9e983bf94220b4a4576e5d0aee6
+
                     </a>
                   </li>
                 </ul>
@@ -114,20 +114,16 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-<<<<<<< HEAD
-                <a className="nav-link" href="page-blog-5.html">
-                {t('header.blog')}
-                </a>
-=======
+
                 <Link className="nav-link" href="/blog">
-                  Blog
+                {t('header.blog')}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/BlogContent">
                   Blog İçeriği
                 </Link>
->>>>>>> c78afbefad9af9e983bf94220b4a4576e5d0aee6
+
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/contact">

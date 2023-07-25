@@ -101,7 +101,28 @@
      "des2":"Kişisel Verilerin İşlenmesine İlişkin Aydınlatma Metnini",
      "des3":"'ni okudum, onaylıyorum"
 
-    }
+    },
+    "about1":{
+        "h3":"“Sizin memnuniyetiniz bizim referansımız…”",
+        "h6":"Mega Code Yazılım 2012 yılında İstanbul’da kurulmuş yazılım şirketidir. Tecrübeli ve uzman kadrosu sayesinde şirketlere sadece yazılım değil dijital çözümlerde üretir.",
+        "h6_p":"Teknolojinin sunduğu hizmetler ile yenilikler sayesinde tüm sektörlere ve her büyüklükte firmalara çözüm ortaklığı yapar. Mega Code sadece Türkiye’de değil başta Amerika ve İngiltere olmak üzere tüm dünyaya yazılım ihracatı yapar.",
+        "country":"Ülke",
+        "exp":"Yıllık Deneyim",
+        "complate_task":"Tamamlanan Proje",
+        "happy_cust":"Mutlu Kullanıcı"
+
+    },
+      "footer":{
+         "footer_text":"Sizin Memnuniyetiniz bizim referansımız...",
+         "footer_adress":"Turgut Özal Mahallesi 68. Sokak - Otoport No: 46/222 Esenyurt - Istanbul",
+         "footer_privite":"Tüm hakları saklıdır."
+      },
+      "footer_contact":{
+        "footer_contact_des":"Hedeflerinize ulaşabileceğiniz interaktif çözümler üreten bir teknoloji şirketi mi arıyorsunuz?",
+        "footer_contact_des2":"Mega Code Yazılım sayesinde teknolojinin tüm yeniliklerinden yararlanmak için,",
+        "footer_contact_":"İletişime Geç"
+        }
+     
     
 
 }   
