@@ -111,35 +111,22 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-lg-4">
-                <div className="foot_subscribe">
-                  <h6 className="link_title">Newsletter</h6>
-                  <p>
-                    Register now to get latest updates on promotions &amp;
-                    coupons.
-                  </p>
-                  <div className="input-group my-4">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter your email"
-                      aria-label="Enter your email"
-                      aria-describedby="button-addon2"
-                    />
-                    <button
-                      className="btn butn-gard border-0 text-white px-3"
-                      type="button"
-                      id="button-addon2"
-                    >
-                      <span>Subscribe</span>
-                    </button>
-                  </div>
-                  <p className="fst-italic">
-                    By subscribing, you accepted the our{" "}
-                    <a href="#" className="text-decoration-underline">
-                      {" "}
-                      Policy
-                    </a>
-                  </p>
+                <div className="cont">
+                  
+                  <ul>
+                    <li>
+                      <a href="#">Kurumsal</a>
+                    </li>
+                    <li>
+                      <a href="#">Hizmetlerimiz</a>
+                    </li>
+                    <li>
+                      <a href="#">Referanslar</a>
+                    </li>
+                    <li>
+                      <a href="#">İletişim</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
