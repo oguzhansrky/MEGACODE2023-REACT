@@ -67,7 +67,7 @@
         "quality_certificates_text1":"Bağımsız denetim kurumları tarafından verilen ulusal ve uluslararası kalite belgeleri sayesinde Mega Code Yazılım A.Ş.’nin Türkiye Bilişim Sektöründe ki farkını ortaya koymaktadır. Daha sürdürülebilir, etkin bir şekilde rekabet etmemize olanak sağlamıştır.",
         "quality_certificates_text2":"Kalite belgelerimiz, müşteri beklentilerini en uygun, doğru şekilde karşılayacağımızın ve memnuniyeti en önde tutacağımızın bir göstergesidir. Entegre Yönetim Sistemine uyum sürecimizi başlatırken Mega Code Yazılım A.Ş.’nin de kurumsal yapısı buna göre hazırlanmıştır.",
         "title_about_us":"Hakkımızda",
-        "title_desc":"Zaman ve maliyet yönetimisniz için size dijital çözümler üretiyoruz."
+        "title_desc":"Zaman ve maliyet yönetiminiz için size dijital çözümler üretiyoruz."
      },
      "homeheader":{
         "baslık1":"MegaCode Yazılım",
@@ -121,6 +121,12 @@
         "footer_contact_des":"Hedeflerinize ulaşabileceğiniz interaktif çözümler üreten bir teknoloji şirketi mi arıyorsunuz?",
         "footer_contact_des2":"Mega Code Yazılım sayesinde teknolojinin tüm yeniliklerinden yararlanmak için,",
         "footer_contact_":"İletişime Geç"
+        },
+        "projects_services":{
+            "title":"Hizmetlerimiz",
+            "title_des":"İşinizi Kolaylaştıran, İnovatif Çözümler…",
+            "h2_des":"Geniş Hizmet Yelpazesi Sunuyor ve Tam Müşteri Memnuniyeti Sağlıyoruz",
+            "h2_des_p":"MegaCode Yazılım ile teknolojinin hızlı gelişiminin takibine ve kalitenin önceliğine inanan Türkiye’nin ilk ve tek sigorta temalı dijital ajansı olarak hizmet veriyoruz ve dijital dünyanın tüm yenilikçi çözümlerini işinizi büyütmek için kullanıyoruz."
         }
      
     

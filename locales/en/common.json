@@ -120,9 +120,13 @@
         "footer_contact_des":"Are you looking for a technology company that produces interactive solutions where you can reach your goals?",
         "footer_contact_des2":"In order to benefit from all the innovations of technology thanks to Mega Code Software,",
         "footer_contact":"Contact Us"
-
-
-        }
+        },
+        "projects_services":{
+         "title":"Our services",
+         "title_des":"Innovative Solutions That Make Your Job Easier…",
+         "h2_des":"We Offer a Wide Range of Services and Ensure Complete Customer Satisfaction",
+         "h2_des_p":"With MegaCode Software, we serve as Turkey's first and only insurance-themed digital agency, which believes in following the rapid development of technology and the priority of quality, and we use all innovative solutions of the digital world to grow your business."
+     }
 
 
 
