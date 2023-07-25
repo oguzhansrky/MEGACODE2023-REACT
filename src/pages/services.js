@@ -1,14 +1,16 @@
 import { Content } from "@/components/Content";
 import Services from "@/components/home/Services";
+import useTranslation from 'next-translate/useTranslation';
 
 import React from "react";
 
 function hizmetlerimiz() {
+  const { t } = useTranslation("common");
   return (
     <>
       <Content
-        title={"Hizmetlerimiz"}
-        desc={"İşinizi Kolaylaştıran, İnovatif Çözümler…"}
+        title= {t('projects_services.title')}
+        desc={t('projects_services.title_des')}
       >
         <div className="container mt-6">
           <div className="row">
@@ -20,15 +22,10 @@ function hizmetlerimiz() {
             <div className="col-lg-6">
               <div>
                 <h2 className="">
-                  Geniş Hizmet Yelpazesi Sunuyor ve Tam Müşteri Memnuniyeti
-                  Sağlıyoruz
+                {t('projects_services.h2_des')}
                 </h2>
                 <p className="mt-3 fs-5">
-                  MegaCode Yazılım ile teknolojinin hızlı gelişiminin takibine
-                  ve kalitenin önceliğine inanan Türkiye’nin ilk ve tek sigorta
-                  temalı dijital ajansı olarak hizmet veriyoruz ve dijital
-                  dünyanın tüm yenilikçi çözümlerini işinizi büyütmek için
-                  kullanıyoruz.
+                {t('projects_services.h2_des_p')}.
                 </p>
               </div>
             </div>
