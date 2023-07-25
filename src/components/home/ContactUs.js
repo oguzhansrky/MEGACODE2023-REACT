@@ -7,7 +7,7 @@ const ContactUs = () => {
     <section className="contact section-padding bg-gradient style-1">
       <div className="container">
         <div className="section-head mb-60 text-center">
-          <h5 className="text-white text-uppercase wow fadeInUp"> {t('contact.Contact')}</h5>
+          <h5 className="text-white text-uppercase wow fadeInUp"> {t('contact_us.Contact')}</h5>
           {/*           <h2 className="wow fadeInUp text-white">
             İş ortaklarımızın memnuniyeti en iyi referansımızdır
           </h2> */}
@@ -19,7 +19,7 @@ const ContactUs = () => {
                 <h4 className="wow fadeInUp">0850 346 22 01</h4>
                 <ul>
                   <li className="wow fadeInUp">
-                    <strong>{t('contact.Adress1')} : </strong> {t('contact.Adress')}
+                    <strong>{t('contact_us.Adress1')} : </strong> {t('contact_us.Adress')}
                   </li>
                   <li className="wow fadeInUp">
                     <strong>Email : </strong> info@megacode.com.tr
@@ -40,7 +40,7 @@ const ContactUs = () => {
                         type="text"
                         name="name"
                         className="form-control"
-                        placeholder="Adınız Soyadınız"
+                        placeholder={t('contact_us.name_surname')}
                       />
                     </div>
                   </div>
@@ -60,7 +60,7 @@ const ContactUs = () => {
                         type="text"
                         name="tel"
                         className="form-control"
-                        placeholder="Telefon"
+                        placeholder={t('contact_us.telephone')}
                       />
                     </div>
                   </div>
@@ -70,7 +70,7 @@ const ContactUs = () => {
                         type="text"
                         name="firm"
                         className="form-control"
-                        placeholder="Firma İsmi "
+                        placeholder={t('contact_us.company_name')}
                       />
                     </div>
                   </div>
@@ -81,7 +81,7 @@ const ContactUs = () => {
                         className="text-light small"
                         htmlFor="flexCheckDefault"
                       ></label>
-                      <textarea className="w-100" placeholder="Mesajınız..." />
+                      <textarea className="w-100" placeholder={t('contact_us.message')} />
                     </div>
                   </div>
                   <div className="col-lg-12">
@@ -96,11 +96,11 @@ const ContactUs = () => {
                         className="form-check-label text-light small"
                         htmlFor="flexCheckDefault"
                       >
-                        {t('contact.description')}{" "}
+                        {t('contact_us.description')}{" "}
                         <a href="#" className="text-decoration-underline">
-                        {t('contact.des2')}
+                        {t('contact_us.des2')}
                         </a>
-                        {t('contact.des3')}
+                        {t('contact_us.des3')}
                       </label>
                     </div>
                   </div>

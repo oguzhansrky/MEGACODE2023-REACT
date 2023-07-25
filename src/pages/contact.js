@@ -1,14 +1,16 @@
 import { Content } from "@/components/Content";
+import useTranslation from 'next-translate/useTranslation';
 
 import React from "react";
 
 export const Iletisim = () => {
+  const { t } = useTranslation("common");
   return (
     <>
       <Content
-        title={"İletişim"}
-        title_2={" Formu"}
-        desc={"İş ortaklarımızın memnuniyeti en iyi referansımızdır"}
+        title={t('contact.title')}
+        title_2={t('contact.title_2')}
+        desc={t('contact.desc')}
       ></Content>
       <main className="contact-page style-5 ">
         <section className="contact section-padding  pt-0 style-6">
@@ -31,8 +33,7 @@ export const Iletisim = () => {
               <h4 className="fw-normal mb-10 color-000">
                 <font style={{ verticalAlign: "inherit" }}>
                   <font style={{ verticalAlign: "inherit" }}>
-                    Turgut Özal Mahallesi 68. Sokak - Otoport No: 46/222
-                    Esenyurt - Istanbul
+                  {t('contact.adress')}
                   </font>
                 </font>
               </h4>
@@ -44,7 +45,7 @@ export const Iletisim = () => {
                     <p className="text-center text-danger fs-12px mb-30">
                       <font style={{ verticalAlign: "inherit" }}>
                         <font style={{ verticalAlign: "inherit" }}>
-                          Alan zorunludur * olarak işaretleyin
+                        {t('contact.inherit')}
                         </font>
                       </font>
                     </p>
@@ -55,7 +56,7 @@ export const Iletisim = () => {
                             type="text"
                             name="name"
                             className="form-control"
-                            placeholder="İsim"
+                            placeholder={t('contact.place_holder_name')}
                           />
                         </div>
                       </div>
@@ -65,7 +66,7 @@ export const Iletisim = () => {
                             type="text"
                             name="email"
                             className="form-control"
-                            placeholder="E-posta Adresi *"
+                            placeholder={t('contact.place_holder_email')}
                             required
                           />
                         </div>
@@ -76,7 +77,7 @@ export const Iletisim = () => {
                             type="text"
                             name="phone"
                             className="form-control"
-                            placeholder="Telefon Numarası"
+                            placeholder={t('contact.place_holder_telephone')}
                           />
                         </div>
                       </div>
@@ -86,7 +87,7 @@ export const Iletisim = () => {
                             type="text"
                             name="website"
                             className="form-control"
-                            placeholder="Firma İsmi"
+                            placeholder={t('contact.place_holder_company_name')}
                           />
                         </div>
                       </div>
@@ -94,10 +95,10 @@ export const Iletisim = () => {
                         <div className="form-group mb-20">
                           <select name="option" className="form-select">
                             <option value="how can we help" selected>
-                              Nasıl yardım edebiliriz?
+                            {t('contact.how_help')}
                             </option>
-                            <option value="option 1">seçenek 1</option>
-                            <option value="option 2">seçenek 2</option>
+                            <option value="option 1">{t('contact.option1')}</option>
+                            <option value="option 2">{t('contact.option2')}</option>
                           </select>
                         </div>
                       </div>
@@ -107,7 +108,7 @@ export const Iletisim = () => {
                             rows={10}
                             name="message"
                             className="form-control"
-                            placeholder="Nasıl yardım edebiliriz?"
+                            placeholder={t('contact.place_holder_how_help')}
                             defaultValue={""}
                           />
                         </div>
@@ -126,13 +127,13 @@ export const Iletisim = () => {
                           >
                             <font style={{ verticalAlign: "inherit" }}>
                               <font style={{ verticalAlign: "inherit" }}>
-                                Göndererek, kabul ediyorum
+                              {t('contact.accepted_send')}
                               </font>
                             </font>
                             <a href="#" className="text-decoration-underline">
                               <font style={{ verticalAlign: "inherit" }}>
                                 <font style={{ verticalAlign: "inherit" }}>
-                                  Şartlar ve Koşullar
+                                {t('contact.terms')}
                                 </font>
                               </font>
                             </a>
@@ -144,7 +145,7 @@ export const Iletisim = () => {
                           <font style={{ verticalAlign: "inherit" }}>
                             <input
                               type="submit"
-                              defaultValue="İsteğinizi Gönderin"
+                              defaultValue={t('contact.send_req')}
                               className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold text-light"
                             />
                           </font>

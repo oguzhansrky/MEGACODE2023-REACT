@@ -1,8 +1,10 @@
 import { Content } from "@/components/Content";
 import PageHead from "@/layout/head/Head";
 import { Collapse } from "antd";
+import useTranslation from 'next-translate/useTranslation';
 
 export default function SSS() {
+  const { t } = useTranslation("common");
   const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
@@ -11,53 +13,39 @@ export default function SSS() {
   const items = [
     {
       key: "1",
-      label: "Yazılım Geliştirme",
+      label: t('faq.software_dev_label'),
       children: (
         <div className="card-body ">
           <dl>
-            <dt>- Hangi teknolojileri kullanıyorsunuz?</dt>
+            <dt>- {t('faq.software_dev_desc_title')}</dt>
             <dd>
-              Projelerin ve sizin ihtiyaçlarınızı belirliyoruz. Uygulamalarımız
-              tamamen size özel yazıldığı için bu konuda tamamen ihtiyaçlar
-              doğrultusunda güncel ve stabil teknolojileri kullanmaya özen
-              gösteriyoruz.
+            {t('faq.software_dev_desc')}
             </dd>
           </dl>
           <dl>
-            <dt>- Projenin kaynak kodlarını veriyor musunuz?</dt>
+            <dt>-{t('faq.software_dev_desc_title2')}</dt>
             <dd>
-              Evet, projenizin yazılım geliştirme süreci boyunca yazılan tüm
-              kodlara erişim hakkı veriyoruz. Proje tamamlandıktan sonra bütün
-              kodları size teslim ediyoruz.
+            {t('faq.software_dev_desc2')}
             </dd>
           </dl>
           <dl>
-            <dt>- Proje tesliminden sonra yazılım desteği alabilecek miyim?</dt>
+            <dt>- {t('faq.software_dev_desc_title3')}</dt>
             <dd>
-              Proje kapsamında üretilen ve geliştirilen her türlü iş, yayına
-              alındığı süreçten itibaren MegaCode garantisi altındadır. Ancak bu
-              garantiye herhangi tasarımsal veya yapısal bir değişiklik dahil
-              değildir. Projeniz tamamlandıktan sonra ihtiyacınıza göre bakım ve
-              destek hizmeti talep edebilirsiniz.
+            {t('faq.software_dev_desc3')}
             </dd>
           </dl>
           <dl>
             <dt>
-              - Proje uygulama sürecinde hangi aşamada olunduğundan bilgi
-              alabiliyor muyum?
+              - {t('faq.software_dev_desc_title4')}
             </dt>
             <dd>
-              Tabi ki. Proje yöneticisi tarafından belirli periyotlarla
-              gerçekleştirilen toplantılarda, projenin yazılım ve tasarım
-              süreçleri ile ilgili bilgi alabiliyorsunuz.{" "}
+            {t('faq.software_dev_desc4')}{" "}
             </dd>
           </dl>
           <dl>
-            <dt>- UI/UX tasarım hizmeti sunuyor musunuz?</dt>
+            <dt>- {t('faq.software_dev_desc_title5')}</dt>
             <dd>
-              Evet. Kullanıcı deneyimi ve arayüz tasarımı süreçlerine her zaman
-              değer vermekteyiz. İsteğiniz dahilinde projenize özel olarak
-              kullanıcı deneyimi ve arayüz tasarımlarınızı oluşturuyoruz.
+            {t('faq.software_dev_desc5')}
             </dd>
           </dl>
         </div>
@@ -65,36 +53,31 @@ export default function SSS() {
     },
     {
       key: "2",
-      label: "Web Sitesi Tasarımı",
+      label: t('faq.web_design_label'),
       children: (
         <div className="card-body text-justify">
           <dl>
-            <dt>- Web sitem responsive olacak mı?</dt>
+            <dt>- {t('faq.web_design_desc_title')}</dt>
             <dd>
-              Evet. Web sitenizin masaüstü, akıllı telefon ve tabletlere uyumlu
-              olarak görüntülenmesini sağlıyoruz.
+            {t('faq.web_design_desc')}
             </dd>
           </dl>
           <dl>
-            <dt>- Web sitesi için SEO/SEM hizmeti veriyor musunuz?</dt>
+            <dt>- {t('faq.web_design_desc_title2')}</dt>
             <dd>
-              Evet. Web tasarım projelerinizi Google, Bing, Yandex, gibi
-              tarayıcılarda üst sıralara taşıyabilecek özel kodlamalarla %100
-              SEO altyapısına uygun şekilde geliştiriyoruz.
+            {t('faq.web_design_desc2')}
             </dd>
           </dl>
           <dl>
-            <dt>- Web sitesi ücreti bir defaya mahsus bir ücret midir?</dt>
+            <dt>- {t('faq.web_design_desc_title3')}</dt>
             <dd>
-              Evet, web sitesi ücreti bir defaya mahsus bir ücrettir.
-              Tekrarlanmaz. Web sitenizin sahibi siz olursunuz.
+            {t('faq.web_design_desc3')}
             </dd>
           </dl>
           <dl>
-            <dt>- Yönetim panelim olacak mı?</dt>
+            <dt>- {t('faq.web_design_desc_title4')}</dt>
             <dd>
-              Evet, web sitenizin tüm süreçlerini yöneten kişi siz olacaksınız.
-              Saniyeler içerisinde istediğiniz değişikliği yapabileceksiniz.
+            {t('faq.web_design_desc4')}
             </dd>
           </dl>
         </div>
@@ -102,40 +85,33 @@ export default function SSS() {
     },
     {
       key: "3",
-      label: "Mobil Uygulama Geliştirme",
+      label: t('faq.mobil_app_dev_label'),
       children: (
         <div className="card-body text-justify">
           <dl>
-            <dt>- Mobil uygulamam tüm platformlarda çalışır mı?</dt>
+            <dt>- {t('faq.mobil_app_dev_title')}</dt>
             <dd>
-              Evet, size özel geliştirdiğimiz mobil uygulamamız IOS ve Android
-              platformlarında çalışacak şekilde teslim edilmektedir.
+            {t('faq.mobil_app_dev_desc')}
             </dd>
           </dl>
           <dl>
-            <dt>- Hangi teknolojileri kullanıyorsunuz?</dt>
-            <dd>iOS =&gt; Swift, RxSwift, RxFlow, MVVM</dd>
+            <dt>- {t('faq.mobil_app_dev_title2')}</dt>
+            <dd>{t('faq.mobil_app_dev_list1')} =&gt; Swift, RxSwift, RxFlow, MVVM</dd>
             <dd>
               Android =&gt; Kotlin, RxKotlin, Navigation Component, Hilt, MVVM
             </dd>
             <dd>Flutter =&gt; Bloc Pattern</dd>
           </dl>
           <dl>
-            <dt>- Sonradan yazılım desteği alabilecek miyim?</dt>
+            <dt>- {t('faq.mobil_app_dev_title3')}</dt>
             <dd>
-              Proje kapsamında üretilen ve geliştirilen her türlü iş, yayına
-              alındığı süreçten itibaren MegaCode garantisi altındadır. Ancak bu
-              garantiye herhangi tasarımsal veya yapısal bir değişiklik dahil
-              değildir. Projeniz tamamlandıktan sonra ihtiyacınıza göre bakım ve
-              destek hizmeti talep edebilirsiniz.
+            {t('faq.mobil_app_dev_desc3')}
             </dd>
           </dl>
           <dl>
-            <dt>- Projenin kaynak kodlarını veriyor musunuz?</dt>
+            <dt>- {t('faq.mobil_app_dev_title4')}</dt>
             <dd>
-              Evet. Projenizin yazılım geliştirme süreci boyunca yazılan tüm
-              kodlara erişim hakkı veriyoruz. Proje sonunda bütün kodları size
-              teslim ediyoruz.
+            {t('faq.mobil_app_dev_desc4')}
             </dd>
           </dl>
         </div>
@@ -143,42 +119,33 @@ export default function SSS() {
     },
     {
       key: "4",
-      label: "Kurumsal Kimlik Hizmetleri",
+      label: t('faq.commercial_label'),
       children: (
         <div className="card-body text-justify">
           <dl>
-            <dt>- Kurumsal kimlik çalışması neden önemlidir?</dt>
+            <dt>- {t('faq.commercial_desc_title')}</dt>
             <dd>
-              Kurumsal kimlik, şirketinizin görünen yüzünü temsil etmektedir.
-              Şirket imajını, dış çevreye doğru ve etkili bir şekilde yansıtmak
-              gerekir. Bu yönüyle şirketinizin reklamını başarılı bir şekilde
-              yapabilmeniz için gereklidir.{" "}
+            {t('faq.commercial_desc')}{" "}
             </dd>
           </dl>
           <dl>
-            <dt>- Kurumsal kimlik çalışması içeriğinde neler bulunmaktadır?</dt>
+            <dt>- {t('faq.commercial_desc_title2')}</dt>
             <dd>
-              Kurumsal kimlik çalışması içerisinde logo, kartvizit çalışmaları,
-              zarf, kupa, kalem, antetli kağıt, ajanda, takvim vs. çalışmaları
-              bulunmaktadır. Çalışma içeriği istek ve ihtiyaçlarınıza göre
-              genişletilebilir.
+            {t('faq.commercial_desc2')}
             </dd>
           </dl>
           <dl>
             <dt>
-              - Yapacağınız kurumsal kimlik çalışmasını beğenmezsem ne olur?
+              - {t('faq.commercial_desc_title3')}
             </dt>
             <dd>
-              İstekleriniz dikkate alınarak hazırlanan çalışmalar birçok seçenek
-              şeklinde sunulmaktadır. Size en uygun, en beğendiğiniz çalışmayı
-              bulana kadar seçenekler sunmaya devam edeceğiz.{" "}
+            {t('faq.commercial_desc3')}{" "}
             </dd>
           </dl>
           <dl>
-            <dt>- Sadece logo çalışması alabilir miyim?</dt>
+            <dt>- {t('faq.commercial_desc_title4')}</dt>
             <dd>
-              Tabii ki. İstek ve ihtiyaçlarınıza göre çalışmalar satın
-              alabilirsiniz.
+            {t('faq.commercial_desc4')}
             </dd>
           </dl>
         </div>
@@ -186,50 +153,36 @@ export default function SSS() {
     },
     {
       key: "5",
-      label: "Sosyal Medya Yönetimi",
+      label: t('faq.social_media_label'),
       children: (
         <div className="card-body text-justify">
           <dl>
-            <dt>- Hangi sosyal medya hesaplarını yönetiyorsunuz?</dt>
+            <dt>- {t('faq.social_media_desc_title')}</dt>
             <dd>
-              İnstagram, Facebook ve Twitter hesaplarınızın hepsini veya
-              istediğiniz hesapları yönetebiliriz.
+            {t('faq.social_media_desc')}
             </dd>
           </dl>
           <dl>
-            <dt>- Sosyal medya hesaplarımı neden başkası yönetsin?</dt>
+            <dt>- {t('faq.commercial_desc_title2')}</dt>
             <dd>
-              Sosyal medya hesaplarınızın uzman ve işinde ehli kişiler
-              tarafından yönetilmesi firmanızın veya markanızın itibarını ve
-              güvenirliğini olumlu yönde etkileyecektir. Marka bilinirliğini
-              arttıracak, satışlarınızda artış sağlayacağınız bir platform
-              haline getirecektir.
+            {t('faq.commercial_desc2')}
             </dd>
             <dd>
-              Aynı disiplinle, trend ve günceli takip eden uzmanlarımız sizin
-              yerinize sosyal medya hesaplarınızı yönetmekten memnuniyet
-              duyacaktır.
+            {t('faq.commercial_desc2_1')}
             </dd>
           </dl>
           <dl>
             <dt>
-              - Sosyal medya hesaplarının analizlerini nasıl yapıyorsunuz?
-              Avantajları neler olacak?
+            {t('faq.commercial_desc_title3')}
             </dt>
             <dd>
-              Her ay düzenli olarak sosyal medyadaki gelişiminizi takip
-              edebileceğiniz raporlar sunarak, içerik, takipçi, etkileşim, geri
-              dönüş ve reklam analizleriyle rakiplerinizden farkınızı sunacağız.
-              Detaylı raporlarımızda aradığınız soruların cevaplarını
-              bulabileceksiniz.
+            {t('faq.commercial_desc3')}
             </dd>
           </dl>
           <dl>
-            <dt>- Sosyal medya hesaplarını nasıl yönetiyorsunuz?</dt>
+            <dt>- {t('faq.commercial_desc_title4')}</dt>
             <dd>
-              Öncelikle sosyal medyanızın hedef kitlesini ve dilini belirleyerek
-              kimliğinizi yansıtan özgün içerik paylaşımları ile hesaplarınızı
-              programlı bir şekilde yöneteceğiz.
+            {t('faq.commercial_desc4')}
             </dd>
           </dl>
         </div>
@@ -239,10 +192,10 @@ export default function SSS() {
   return (
     <>
       <Content
-        title={"Sıkça Sorulan"}
-        title_2={"Sorular"}
+        title={t('faq.main_title')}
+        title_2={t('faq.main_title2')}
         desc={
-          "Genel konular ve merak edilenler üzerine sorulan soruları aşağıdan okuyabilirsiniz."
+          t('faq.main_description')
         }
       >
         <Collapse accordion items={items} />
