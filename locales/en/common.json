@@ -5,7 +5,7 @@
     },
     "header":{
         "referance": "Referance",
-        "sss":"SSS",
+        "sss":"F.A.Q.",
         "projects": "Projects",
         "acenta365":"Acenta365",
         "digital_signage":"Digital Signage",
@@ -14,7 +14,7 @@
         "single_project":"Single Project",
         "career":"Career",
         "blog":"Blog",
-        "communication":"Communication"
+        "communication":"Contact"
      },
      "topnavbar":{
         "text":"We produce digital solutions for your time and cost management."
@@ -93,13 +93,17 @@
       "social_media_text":"Creates brand personality, target audience and competitor by performing the most accurate social analysis for companies. We determine the media strategy.",
       "main_system_text":"Main Systems and Hardware Infrastructure Support"
      },
-     "contact":{
+     "contact_us":{
       "Contact":"Contact",
       "Adress1":"Adress",
       "Adress":"Turgut Özal Neighborhood, 68th Street - Otoport No: 46/222 Esenyurt - Istanbul.",
       "description":"Mega Code Software and Trade Inc.",
       "des2":"Privacy Notice for Processing of Personal Data",
-      "des3":"'I have read it, I approve."
+      "des3":"'I have read it, I approve.",
+      "name_surname":"Name And Surname",
+     "telephone":"Telephone",
+     "company_name":"Company Name",
+     "message":"Your Message..."
  
      },
      "about1":{
@@ -126,7 +130,80 @@
          "title_des":"Innovative Solutions That Make Your Job Easier…",
          "h2_des":"We Offer a Wide Range of Services and Ensure Complete Customer Satisfaction",
          "h2_des_p":"With MegaCode Software, we serve as Turkey's first and only insurance-themed digital agency, which believes in following the rapid development of technology and the priority of quality, and we use all innovative solutions of the digital world to grow your business."
-     }
+     },
+     "contact":{
+         "title":"Contact",
+         "title_2":"Form",
+         "desc":"The satisfaction of our business partners is our best reference",
+         "adress":"Turgut Özal Neighborhood, 68th Street - Otoport No: 46/222 Esenyurt - Istanbul.",
+         "inherit":"Field is required mark *",
+         "place_holder_name":"Name",
+         "place_holder_email":"E-mail Adress",
+         "place_holder_telephone":"Telephone Number",
+         "place_holder_company_name":"Company Name",
+         "how_help":"How can we help ?",
+         "option1":"option 1",
+         "option2":"option 2",
+         "place_holder_how_help":"How can we help ?",
+         "accepted_send":"By submitting, I accept",
+         "terms":"Terms and Conditions",
+         "send_req":"Submit Your Request"
+
+     },
+     "faq":{
+      "software_dev_label":"Software development",
+      "software_dev_desc_title":"What technologies do you use?",
+      "software_dev_desc":"We determine your needs and projects. Since our applications are written exclusively for you, we take care to use up-to-date and stable technologies in line with your needs.",
+      "software_dev_desc_title2":"Do you provide the source codes of the project?",
+      "software_dev_desc2":"Yes, we give access to all code written during the software development process of your project. After the project is completed, we deliver all the codes to you.",
+      "software_dev_desc_title3":"Will we be able to get software support after project delivery?",
+      "software_dev_desc3":"All kinds of works produced and developed within the scope of the project are under MegaCode guarantee since the publication process. However, this warranty does not include any design or structural changes. After your project is completed, you can request maintenance and support services according to your needs.",
+      "software_dev_desc_title4":"Can I get information about the stage of the project implementation process?",
+      "software_dev_desc4":"Of course. You can get information about the software and design processes of the project at the meetings held periodically by the project manager.",
+      "software_dev_desc_title5":"Do you offer UI/UX design service?",
+      "software_dev_desc5":"Yes. We always value user experience and interface design processes. At your request, we create your user experience and interface designs specifically for your project.",
+      "web_design_label":"Website Design",
+      "web_design_desc_title":"WWill my eb site be responsive?",
+      "web_design_desc":"Yes. We ensure that your website is compatible with desktops, smartphones and tablets.",
+      "web_design_desc_title2":"Do you provide SEO/SEM services for the website?",
+      "web_design_desc2":"Yes. We develop your web design projects in accordance with 100% SEO infrastructure with special coding that can move your web design projects to the top of browsers such as Google, Bing, Yandex.",
+      "web_design_desc_title3":"Is the website fee a one-time fee?",
+      "web_design_desc3":"Yes, the website fee is a one-time fee. It is not repeated. You own your website.",
+      "web_design_desc_title4":"Will I have an admin panel?",
+      "web_design_desc4":"Yes, you will be the one who manages all the processes of your website. You can make any changes you want in seconds.",
+      "mobil_app_dev_label":"Mobile Application Development",
+      "mobil_app_dev_title":"Will my mobile app work on all platforms?",
+      "mobil_app_dev_desc":"Yes, our mobile application, which we developed specifically for you, is delivered to run on IOS and Android platforms.",
+      "mobil_app_dev_title2":"What technologies do you use?",
+      "mobil_app_dev_list1":"IOS",
+      "mobil_app_dev_title3":"Will I get software support later?",
+      "mobil_app_dev_desc3":"All kinds of works produced and developed within the scope of the project are under MegaCode guarantee since the publication process. However, this warranty does not include any design or structural changes. After your project is completed, you can request maintenance and support services according to your needs..",
+      "mobil_app_dev_title4":"Do you provide the source codes of the project?",
+      "mobil_app_dev_desc4":"Yes. We give access to all codes written during the software development process of your project. At the end of the project, we deliver all the codes to you.",
+      "commercial_label":"Corporate Identity Services",
+      "commercial_desc_title":"Why is corporate identity work important?",
+      "commercial_desc":"Corporate identity represents the visible face of your company. It is necessary to accurately and effectively reflect the company image to the external environment. In this respect, it is necessary for you to successfully advertise your company.",
+      "commercial_desc_title2":"What is included in the content of corporate identity work?",
+      "commercial_desc2":" Logo, business card works, envelope, mug, pen, letterhead, agenda, calendar etc. in corporate identity work. has works. The study content can be expanded according to your wishes and needs.",
+      "commercial_desc_title3":"What if I don't like the corporate identity work you're going to do?",
+      "commercial_desc3":"Works prepared considering your wishes are presented in many options. We will continue to offer options until we find the most suitable work for you.",
+      "commercial_desc_title4":"Can I just get logo work?",
+      "commercial_desc4":"Of course. You can buy works according to your wishes and needs.",
+      "social_media_label":"Social media management",
+      "social_media_desc_title":"Which social media accounts do you manage?",
+      "social_media_desc":"We can manage all of your Instagram, Facebook and Twitter accounts or the accounts you want.",
+      "social_media_desc_title2":"Why would someone else manage my social media accounts?",
+      "social_media_desc2":"Managing your social media accounts by experts and competent people will positively affect the reputation and reliability of your company or brand. It will increase brand awareness and make it a platform where you can increase your sales.",
+      "social_media_desc2_1":"Our experts, who follow trends and current events with the same discipline, will be pleased to manage your social media accounts for you.",
+      "social_media_desc_title3":"How do you analyze social media accounts? What will be the advantages?",
+      "social_media_desc3":"We will present you the difference from your competitors with content, follower, interaction, feedback and advertisement analysis by presenting reports on which you can follow your progress in social media regularly every month. You will find the answers to your questions in our detailed reports.",
+      "social_media_desc_title4":"How do you manage social media accounts?",
+      "social_media_desc4":"First of all, we will determine the target audience and language of your social media and programmatically manage your accounts with original content sharing that reflects your identity.",
+      "main_title":"",
+      "main_title2":"F.A.Q.",
+      "main_description":"You can read the questions asked about general topics and curiosities below."
+   }
+
 
 
 

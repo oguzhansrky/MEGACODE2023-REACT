@@ -137,8 +137,9 @@ const Footer = () => {
                 <p>
                   © 2023{" "}
                   <a href="/" className="text-white text-decoration-underline">
-                    Megacode
+                    Megacode{" "}
                   </a>
+                  {" "}
                   {t("footer.footer_privite")}
                 </p>
               </div>

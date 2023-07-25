@@ -92,13 +92,17 @@
         "social_media_text":"Marka kişiliğini oluşturur, hedef kitle ve rakip analizlerini gerçekleştirerek şirketler için en doğru sosyal medya stratejisini belirleriz.",
         "main_system_text":"Ana Sistemler ve Donanım Altyapı Desteği"
     },
-    "contact":{
+    "contact_us":{
      "Contact":"İletişim",
      "Adress1":"Adres",
      "Adress":"Turgut Özal Mahallesi 68. Sokak- Otoport No: 46/222 Esenyurt - Istanbul",
      "description":"Mega Code Yazılım ve Ticaret A.Ş.'nin",
      "des2":"Kişisel Verilerin İşlenmesine İlişkin Aydınlatma Metnini",
-     "des3":"'ni okudum, onaylıyorum"
+     "des3":"'ni okudum, onaylıyorum",
+     "name_surname":"Adınız Soyadınız",
+     "telephone":"Telefon",
+     "company_name":"Firma İsmi",
+     "message":"Mesajınız..."
 
     },
     "about1":{
@@ -126,7 +130,83 @@
             "title_des":"İşinizi Kolaylaştıran, İnovatif Çözümler…",
             "h2_des":"Geniş Hizmet Yelpazesi Sunuyor ve Tam Müşteri Memnuniyeti Sağlıyoruz",
             "h2_des_p":"MegaCode Yazılım ile teknolojinin hızlı gelişiminin takibine ve kalitenin önceliğine inanan Türkiye’nin ilk ve tek sigorta temalı dijital ajansı olarak hizmet veriyoruz ve dijital dünyanın tüm yenilikçi çözümlerini işinizi büyütmek için kullanıyoruz."
+        },
+        "contact":{
+            "title":"İletişim",
+            "title_2":"Formu",
+            "desc":"İş ortaklarımızın memnuniyeti en iyi referansımızdır",
+            "adress":"Turgut Özal Mahallesi 68. Sokak - Otoport No: 46/222 Esenyurt - Istanbul",
+            "inherit":"Alan zorunludur * olarak işaretleyin",
+            "place_holder_name":"İsim",
+            "place_holder_email":"E-posta Adresi",
+            "place_holder_telephone":"Telefon Numarası",
+            "place_holder_company_name":"Firma İsmi",
+            "how_help":"Nasıl yardım edebiliriz?",
+            "option1":"seçenek 1",
+            "option2":"seçenek 2",
+            "place_holder_how_help":"Nasıl yardım edebiliriz?",
+            "accepted_send":"Göndererek, kabul ediyorum",
+            "terms":"Şartlar ve Koşullar",
+            "send_req":"İsteğinizi Gönderin"
+
+        },
+        "faq":{
+         "software_dev_label":"Yazılım Geliştirme",
+         "software_dev_desc_title":"Hangi teknolojileri kullanıyorsunuz?",
+         "software_dev_desc":"Projelerin ve sizin ihtiyaçlarınızı belirliyoruz. Uygulamalarımız tamamen size özel yazıldığı için bu konuda tamamen ihtiyaçlar doğrultusunda güncel ve stabil teknolojileri kullanmaya özen gösteriyoruz.",
+         "software_dev_desc_title2":"Projenin kaynak kodlarını veriyor musunuz?",
+         "software_dev_desc2":"Evet, projenizin yazılım geliştirme süreci boyunca yazılan tüm kodlara erişim hakkı veriyoruz. Proje tamamlandıktan sonra bütün kodları size teslim ediyoruz.",
+         "software_dev_desc_title3":"Proje tesliminden sonra yazılım desteği alabilecek miyim?",
+         "software_dev_desc3":"Proje kapsamında üretilen ve geliştirilen her türlü iş, yayına alındığı süreçten itibaren MegaCode garantisi altındadır. Ancak bu garantiye herhangi tasarımsal veya yapısal bir değişiklik dahil değildir. Projeniz tamamlandıktan sonra ihtiyacınıza göre bakım ve destek hizmeti talep edebilirsiniz.",
+         "software_dev_desc_title4":"Proje uygulama sürecinde hangi aşamada olunduğundan bilgi alabiliyor muyum?",
+         "software_dev_desc4":"Tabi ki. Proje yöneticisi tarafından belirli periyotlarla gerçekleştirilen toplantılarda, projenin yazılım ve tasarım süreçleri ile ilgili bilgi alabiliyorsunuz.",
+         "software_dev_desc_title5":"UI/UX tasarım hizmeti sunuyor musunuz?",
+         "software_dev_desc5":"Evet. Kullanıcı deneyimi ve arayüz tasarımı süreçlerine her zaman değer vermekteyiz. İsteğiniz dahilinde projenize özel olarak kullanıcı deneyimi ve arayüz tasarımlarınızı oluşturuyoruz.",
+         "web_design_label":"Web Sitesi Tasarımı",
+         "web_design_desc_title":"Web sitem responsive olacak mı?",
+         "web_design_desc":"Evet. Web sitenizin masaüstü, akıllı telefon ve tabletlere uyumlu olarak görüntülenmesini sağlıyoruz",
+         "web_design_desc_title2":"Web sitesi için SEO/SEM hizmeti veriyor musunuz?",
+         "web_design_desc2":"Evet. Web tasarım projelerinizi Google, Bing, Yandex, gibi tarayıcılarda üst sıralara taşıyabilecek özel kodlamalarla %100 SEO altyapısına uygun şekilde geliştiriyoruz.",
+         "web_design_desc_title3":"Web sitesi ücreti bir defaya mahsus bir ücret midir?",
+         "web_design_desc3":"Evet, web sitesi ücreti bir defaya mahsus bir ücrettir. Tekrarlanmaz. Web sitenizin sahibi siz olursunuz.",
+         "web_design_desc_title4":"Yönetim panelim olacak mı?",
+         "web_design_desc4":"Evet, web sitenizin tüm süreçlerini yöneten kişi siz olacaksınız. Saniyeler içerisinde istediğiniz değişikliği yapabileceksiniz.",
+         "mobil_app_dev_label":"Mobil Uygulama Geliştirme",
+         "mobil_app_dev_title":"Mobil uygulamam tüm platformlarda çalışır mı?",
+         "mobil_app_dev_desc":"Evet, size özel geliştirdiğimiz mobil uygulamamız IOS ve Android platformlarında çalışacak şekilde teslim edilmektedir.",
+         "mobil_app_dev_title2":"Hangi teknolojileri kullanıyorsunuz?",
+         "mobil_app_dev_list1":"iOS",
+         "mobil_app_dev_title3":"Sonradan yazılım desteği alabilecek miyim?",
+         "mobil_app_dev_desc3":"Proje kapsamında üretilen ve geliştirilen her türlü iş, yayına alındığı süreçten itibaren MegaCode garantisi altındadır. Ancak bu garantiye herhangi tasarımsal veya yapısal bir değişiklik dahil değildir. Projeniz tamamlandıktan sonra ihtiyacınıza göre bakım ve destek hizmeti talep edebilirsiniz.",
+         "mobil_app_dev_title4":"Projenin kaynak kodlarını veriyor musunuz?",
+         "mobil_app_dev_desc4":"Evet. Projenizin yazılım geliştirme süreci boyunca yazılan tüm kodlara erişim hakkı veriyoruz. Proje sonunda bütün kodları size teslim ediyoruz.",
+         "commercial_label":"Kurumsal Kimlik Hizmetleri",
+         "commercial_desc_title":"Kurumsal kimlik çalışması neden önemlidir?",
+         "commercial_desc":"Kurumsal kimlik, şirketinizin görünen yüzünü temsil etmektedir. Şirket imajını, dış çevreye doğru ve etkili bir şekilde yansıtmak gerekir. Bu yönüyle şirketinizin reklamını başarılı bir şekilde yapabilmeniz için gereklidir.",
+         "commercial_desc_title2":"Kurumsal kimlik çalışması içeriğinde neler bulunmaktadır?",
+         "commercial_desc2":" Kurumsal kimlik çalışması içerisinde logo, kartvizit çalışmaları, zarf, kupa, kalem, antetli kağıt, ajanda, takvim vs. çalışmaları bulunmaktadır. Çalışma içeriği istek ve ihtiyaçlarınıza göre genişletilebilir.",
+         "commercial_desc_title3":"Yapacağınız kurumsal kimlik çalışmasını beğenmezsem ne olur?",
+         "commercial_desc3":"İstekleriniz dikkate alınarak hazırlanan çalışmalar birçok seçenek şeklinde sunulmaktadır. Size en uygun, en beğendiğiniz çalışmayı bulana kadar seçenekler sunmaya devam edeceğiz.",
+         "commercial_desc_title4":"Sadece logo çalışması alabilir miyim?",
+         "commercial_desc4":"Tabii ki. İstek ve ihtiyaçlarınıza göre çalışmalar satın alabilirsiniz.",
+         "social_media_label":"Sosyal Medya Yönetimi",
+         "social_media_desc_title":"Hangi sosyal medya hesaplarını yönetiyorsunuz?",
+         "social_media_desc":"İnstagram, Facebook ve Twitter hesaplarınızın hepsini veya istediğiniz hesapları yönetebiliriz.",
+         "social_media_desc_title2":"Sosyal medya hesaplarımı neden başkası yönetsin?",
+         "social_media_desc2":"Sosyal medya hesaplarınızın uzman ve işinde ehli kişiler tarafından yönetilmesi firmanızın veya markanızın itibarını ve güvenirliğini olumlu yönde etkileyecektir. Marka bilinirliğini arttıracak, satışlarınızda artış sağlayacağınız bir platform haline getirecektir.",
+         "social_media_desc2_1":"Aynı disiplinle, trend ve günceli takip eden uzmanlarımız sizin yerinize sosyal medya hesaplarınızı yönetmekten memnuniyet duyacaktır.",
+         "social_media_desc_title3":"Sosyal medya hesaplarının analizlerini nasıl yapıyorsunuz? Avantajları neler olacak?",
+         "social_media_desc3":"Her ay düzenli olarak sosyal medyadaki gelişiminizi takip edebileceğiniz raporlar sunarak, içerik, takipçi, etkileşim, geri dönüş ve reklam analizleriyle rakiplerinizden farkınızı sunacağız. Detaylı raporlarımızda aradığınız soruların cevaplarını bulabileceksiniz.",
+         "social_media_desc_title4":"Sosyal medya hesaplarını nasıl yönetiyorsunuz?",
+         "social_media_desc4":"Öncelikle sosyal medyanızın hedef kitlesini ve dilini belirleyerek kimliğinizi yansıtan özgün içerik paylaşımları ile hesaplarınızı programlı bir şekilde yöneteceğiz.",
+         "main_title":"Sıkça Sorulan",
+         "main_title2":"Sorular",
+         "main_description":"Genel konular ve merak edilenler üzerine sorulan soruları aşağıdan okuyabilirsiniz."
+
+         
+
         }
+
      
     
 
