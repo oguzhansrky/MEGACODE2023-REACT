@@ -9,7 +9,7 @@ export const Blog = ({ blogs, popularBlogs, categories }) => {
     <>
       <main className="blog-page style-5">
         <ProjectSlider
-          slides={popularBlogs.slice(0, 3).map((item) => item.thumbnail)}
+          slides={popularBlogs?.slice(0, 3).map((item) => item.thumbnail)}
         />
         <PopularPost data={popularBlogs} />
         <AllNews blogs={blogs} categories={categories} />

@@ -24,7 +24,7 @@ const Services = () => {
                 </h5>
                 <br></br>
                 <div className="icon">
-                  <img src="assets/img/icons/keep7.png" alt="" />
+                  <img src="assets/img/icons/inovatif cozumler-8.png" alt="" />
                 </div>
                 <div className="info">
                   <div className="text">{t("services.services_text")}</div>

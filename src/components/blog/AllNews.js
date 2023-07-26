@@ -8,10 +8,9 @@ export const AllNews = ({ blogs, categories }) => {
   const [data, setData] = useState();
   const [currentPage, setCurrentPage] = useState("1");
   useEffect(() => {
-    setData(blogs.payload.blogs);
-    setCurrentPage(blogs.meta.current_page ?? "1");
+    setData(blogs?.payload.blogs);
+    setCurrentPage(blogs?.meta.current_page ?? "1");
   }, []);
-  console.log(blogs);
   const paginate = () => {
     console.log("paginate");
   };
@@ -81,10 +80,10 @@ export const AllNews = ({ blogs, categories }) => {
                 ))}
 
               <PaginationComponent
-                itemPerPage={blogs.meta.per_page}
+                itemPerPage={blogs?.meta.per_page}
                 currentPage={currentPage}
                 paginate={paginate}
-                totalItems={blogs.meta.total}
+                totalItems={blogs?.meta.total}
               />
             </div>
             <div className="col-lg-4">

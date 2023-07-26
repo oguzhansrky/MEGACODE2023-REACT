@@ -26,7 +26,7 @@ const ProjectSlider = ({ slides }) => {
               effect="fade"
               speed={1000}
             >
-              {slides.map((item) => (
+              {slides?.map((item) => (
                 <SwiperSlide key={uuid()}>
                   <div className="content-card">
                     <div className="img overlay">
