@@ -341,7 +341,50 @@
             "h3_p5":"Deniz ve gemicilik sektöründe iş arayanları ve iş verenleri buluşturan bir platformdur. SeaCREW sayesinde aranılan işe ve elemana kolayca ulaşılabilir.",
             "h3_p6":"Gemi yedek parçalarının satışının gerçekleştirilebildiği bir yazılımdır. Sistem sayesinde gemi parçalarının satışı gerçekleştirilir ve ihtiyaç duyulan parçalara ulaşılabilir."
    
-         }
+         },
+         "references":{
+            "title":"Referanslar",
+            "desc":"İş ortaklarımızın memnuniyeti en iyi referansımızdır",
+            "text1":"İş Ortaklarımız",
+            "h2_title":"Projelerimizden Örnekler",
+            "digipol_web":"Dijipol Web Sitesi",
+            "digipol_web_design":"Dizayn",
+            "digipol_web_dev":"Geliştirme",
+            "deniz_tic_mobile_app":"Deniz Ticaret Odası Mobile App",
+            "deniz_tic_mobile_app_design":"Dizayn",
+            "deniz_tic_mobile_app_dev":"Geliştirme",
+            "kargotek_web":"Kargotek Web Sitesi",
+            "kargotek_web_design":"Dizayn",
+            "kargotek_web_dev":"Geliştirme",
+            "maxibillion_web":"Maxibillion Web Sitesi",
+            "maxibillion_web_design":"Dizayn",
+            "maxibillion_web_dev":"Geliştirme",
+            "collective_web":"Collective Indigo Web Sitesi",
+            "collective_web_design":"Dizayn",
+            "collective_web_dev":"Geliştirme",
+            "sea365_web":"Sea365 Web Sitesi",
+            "sea365_web_design":"Dizayn",
+            "sea365_web_dev":"Geliştirme",
+            "postkolik_web":"Postkolik Web Sitesi",
+            "postkolik_web_design":"Dizayn",
+            "postkolik_web_dev":"Geliştirme",
+            "flomak_web":"Flomak Web Sitesi",
+            "flomak_web_design":"Dizayn",
+            "flomak_web_dev":"Geliştirme",
+            "demirclub_web":"DemirClub Web Sitesi",
+            "demirclub_web_design":"Dizayn",
+            "demirclub_web_dev":"Geliştirme",
+            "porsche":"Porsche Digital Signate Projesi",
+            "porsche_design":"Dizayn",
+            "porsche_dev":"Geliştirme",
+            "seat":"Seat Digital Signate Projesi",
+            "seat_design":"Dizayn",
+            "seat_dev":"Geliştirme",
+            "deniz":"Deniz Ticaret Odası Toplantı Uygulaması",
+            "deniz_design":"Dizayn",
+            "deniz_dev":"Geliştirme"
+        }
+            
         
 
      

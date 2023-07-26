@@ -334,6 +334,51 @@
          "h3_p6":"It is a software that enables the sale of ship spare parts. Thanks to the system, ship parts are sold and needed parts can be accessed."
 
 
+      },
+      "references":{
+         "title":"References",
+         "desc":"The satisfaction of our business partners is our best reference",
+         "text1":"Our Business Partners",
+         "h2_title":"Examples of Our Projects",
+         "digipol_web":"Digipol Website",
+         "digipol_web_design":"Design",
+         "digipol_web_dev":"Development",
+         "deniz_tic_mobile_app":"Deniz Ticaret Odası Mobile App",
+         "deniz_tic_mobile_app_design":"Design",
+         "deniz_tic_mobile_app_dev":"Development",
+         "kargotek_web":"Kargotek Website",
+         "kargotek_web_design":"Design",
+         "kargotek_web_dev":"Development",
+         "maxibillion_web":"Maxibillion Website",
+         "maxibillion_web_design":"Design",
+         "maxibillion_web_dev":"Development",
+         "collective_web":"Collective Indigo Website",
+         "collective_web_design":"Design",
+         "collective_web_dev":"Development",
+         "sea365_web":"Sea365 Website",
+         "sea365_web_design":"Design",
+         "sea365_web_dev":"Development",
+         "postkolik_web":"Postkolik Website",
+         "postkolik_web_design":"Design",
+         "postkolik_web_dev":"Development",
+         "flomak_web":"Flomak Website",
+         "flomak_web_design":"Design",
+         "flomak_web_dev":"Development",
+         "demirclub_web":"DemirClub Website",
+         "demirclub_web_design":"Design",
+         "demirclub_web_dev":"Development",
+         "porsche":"Porsche Digital Signate Project",
+         "porsche_design":"Design",
+         "porsche_dev":"Development",
+         "seat":"Seat Digital Signate Project",
+         "seat_design":"Design",
+         "seat_dev":"Development",
+         "deniz":"Deniz Ticaret Odası Meeting Application",
+         "deniz_design":"Design",
+         "deniz_dev":"Development"
+
+
+
       }
       
 

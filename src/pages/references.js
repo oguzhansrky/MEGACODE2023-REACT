@@ -1,18 +1,20 @@
 import { Content } from "@/components/Content";
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 
 const referanslar = () => {
+  const { t } = useTranslation("common");
   return (
     <>
       <Content
-        title={"Referanslar"}
-        desc={"İş ortaklarımızın memnuniyeti en iyi referansımızdır"}
+        title={t('references.title')}
+        desc={t('references.desc')}
       >
         <div className="container ">
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <h2>İş Ortaklarımız</h2>
+                <h2>{t('references.text1')}</h2>
               </div>
             </div>
             <div className="text-center mt-3">
@@ -20,7 +22,7 @@ const referanslar = () => {
             </div>
           </div>
           <div className="controller mt-6 text-center">
-            <h2 className="fw-leight">Projelerimizden Örnekler</h2>
+            <h2 className="fw-leight">{t('references.h2_title')}</h2>
           </div>
           <div className="d-flex justify-content-center">
             <img
@@ -39,11 +41,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Dijipol Web Sitesi</p>
+                      <p className="fs-6">{t('references.digipol_web')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.digipol_web_design')} &amp;</a>
+                      <a> {t('references.digipol_web_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -57,11 +59,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Deniz Ticaret Odası Mobile App</p>
+                      <p className="fs-6">{t('references.deniz_tic_mobile_app')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.deniz_tic_mobile_app_design')} &amp;</a>
+                      <a> {t('references.deniz_tic_mobile_app_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -75,11 +77,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Kargotek Web Sitesi</p>
+                      <p className="fs-6">{t('references.kargotek_web')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.kargotek_web_design')} &amp;</a>
+                      <a> {t('references.kargotek_web_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -93,11 +95,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Maxibillion Web Sitesi</p>
+                      <p className="fs-6">{t('references.maxibillion_web')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.maxibillion_web_design')} &amp;</a>
+                      <a> {t('references.maxibillion_web_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -111,11 +113,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Collective Indigo Web Sitesi</p>
+                      <p className="fs-6">{t('references.collective_web')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.collective_web_design')} &amp;</a>
+                      <a> {t('references.collective_web_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -129,11 +131,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Sea365 Web Sitesi</p>
+                      <p className="fs-6">{t('references.sea365_web')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.sea365_web_design')} &amp;</a>
+                      <a> {t('references.sea365_web_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -147,11 +149,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Postkolik Web Sitesi</p>
+                      <p className="fs-6">{t('references.postkolik_web')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.postkolik_web_design')} &amp;</a>
+                      <a> {t('references.postkolik_web_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -165,11 +167,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Flomak Web Sitesi</p>
+                      <p className="fs-6">{t('references.flomak_web')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.flomak_web_design')} &amp;</a>
+                      <a> {t('references.flomak_web_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -183,11 +185,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">DemirClub Web Sitesi</p>
+                      <p className="fs-6">{t('references.demirclub_web')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.demirclub_web_design')} &amp;</a>
+                      <a> {t('references.demirclub_web_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -201,11 +203,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Porsche Digital Signate Projesi</p>
+                      <p className="fs-6">{t('references.porsche')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.porsche_design')} &amp;</a>
+                      <a> {t('references.porsche_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -219,11 +221,11 @@ const referanslar = () => {
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
-                      <p className="fs-6">Seat Digital Signate Projesi</p>
+                      <p className="fs-6">{t('references.seat')}</p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.seat_design')}&amp;</a>
+                      <a> {t('references.seat_dev')}</a>
                     </div>
                   </div>
                 </div>
@@ -238,12 +240,12 @@ const referanslar = () => {
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
                       <p className="fs-6 ">
-                        Deniz Ticaret Odası Toplantı Uygulaması
+                      {t('references.deniz')}
                       </p>
                     </h5>
                     <div className="links">
-                      <a>Design &amp;</a>
-                      <a> Development</a>
+                      <a>{t('references.deniz_design')}&amp;</a>
+                      <a> {t('references.deniz_dev')}</a>
                     </div>
                   </div>
                 </div>
