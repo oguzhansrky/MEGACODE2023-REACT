@@ -14,3 +14,21 @@ export const formatCount = (count) => {
     return count.toString();
   }
 };
+
+export const parseCookies = (data) => {
+  if (!data) return {};
+  const keyValuePairStrings = data.split("; ");
+
+  // Initialize an empty object to store the key-value pairs
+  const resultObject = {};
+
+  // Process each key-value pair
+  keyValuePairStrings.forEach((kvString) => {
+    const [key, value] = kvString.split("=");
+    resultObject[key] = value;
+  });
+
+  // Convert the object to a JSON string
+
+  return resultObject;
+};
