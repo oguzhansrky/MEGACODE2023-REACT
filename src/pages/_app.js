@@ -1,11 +1,8 @@
 import LoadingUI from "@/components/LoadingUI";
-import LayoutProvider from "@/layout/LayoutProvider";
-import "@/styles/globals.css";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import LayoutProvider from "@/layout/LayoutProvider";
 import "@/styles/globals.css";
-import { useRouter } from "next/router";
 import { Provider } from "react-redux";
 import { store, persistor } from "../store/store";
 import { PersistGate } from "redux-persist/integration/react";
@@ -18,7 +15,7 @@ export default function App({ Component, pageProps }) {
   const accessToken = Cookies.get("access_token");
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
+  /*   useEffect(() => {
     const handleStart = (url) => {
       console.log(`Loading: ${url}`);
       setLoading(true);
@@ -38,10 +35,12 @@ export default function App({ Component, pageProps }) {
       router.events.off("routeChangeComplete", handleComplete);
       router.events.off("routeChangeError", handleComplete);
     };
-  }, []);
+  }, []); */
   return (
     <>
-      {loading ? <LoadingUI /> : isAdminRoute && accessToken ? (
+      {loading ? (
+        <LoadingUI />
+      ) : isAdminRoute && accessToken ? (
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
             <AdminLayout>
