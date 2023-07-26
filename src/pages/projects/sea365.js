@@ -1,37 +1,29 @@
 import { Content } from "@/components/Content";
+import useTranslation from 'next-translate/useTranslation';
 
 import { Tabs } from "antd";
 import React from "react";
 
 const Sea365 = () => {
+  const { t } = useTranslation("common");
   const items = [
     {
       key: 1,
-      label: "Sea Nedir?",
+      label: t('sea365.label1'),
       children: (
         <div className="row flex-row-reverse">
           <div className="col-lg-12">
             <div className="details_content">
               <div className="sec_title mb-20">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                  Sea365 Nedir?
+                {t('sea365.label1_text')}
                 </h5>
                 <p className="f_400 f_size_15 mb-20">
-                  Sea365, denizcilik sektörü için hayatlarını kolaylaştırmak ve
-                  her şeyin sistematik şekilde yürümesi için tasarlanan bulut
-                  tabanlı bir sistemdir. Satıcıları ve alıcıları ortak bir
-                  noktada buluşturmakta ve birbirleriyle kolayca iletişime
-                  geçmelerini sağlamaktadır.
+                {t('sea365.label1_description1')}
                 </p>
 
                 <p className="f_400 f_size_15 ">
-                  Sistem sayesinde, gerekli olan malzemeleri online olarak satın
-                  alabilir, bilgi paylaşımında bulunabilir ve karşılaştırmalar
-                  yapabilirsiniz. Ayrıca sistem size gemilerinizi istediğiniz
-                  gibi yönetebilme ve işleri takip edebilme özelliği de
-                  sunmaktadır. Tamamen ihtiyaçlar düşünülerek kurulan Sea365,
-                  denizcilik sektörünün uluslararası standartlara uygun şekilde
-                  çalışmasını amaçlamaktadır.
+                {t('sea365.label1_description2')}
                 </p>
               </div>
             </div>
@@ -41,36 +33,32 @@ const Sea365 = () => {
     },
     {
       key: 2,
-      label: "Sea365 Özellikleri",
+      label: t('sea365.label2'),
       children: (
         <div className="row flex-row-reverse">
           <div className="col-lg-12">
             <div className="details_content">
               <div className="sec_title mb_70">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                  Sea365 Özellikleri
+                {t('sea365.label2_text')}
                 </h5>
                 <p className="f_400 f_size_15 mb-20">
-                  1. Kurumunuz için en faydalı olacak yazılımları tek bir sistem
-                  üzerinde toplamaktadır.
+                {t('sea365.label2_description1')}
                 </p>
                 <p className="f_400 f_size_15 mb-20">
-                  2. Günceldir, sürekli yenilerin ve teknolojiyi takip eder.
+                {t('sea365.label2_description2')}
                 </p>
                 <p className="f_400 f_size_15 mb-20">
-                  3. Hızlı ve güvenilir bir şekilde yönetim imkanı sunar.
+                {t('sea365.label2_description3')}
                 </p>
                 <p className="f_400 f_size_15 mb-20">
-                  4. Operasyon, muhasebe gibi yönetim sistemlerini hızlandırır
-                  ve maliyeti düşürür.
+                {t('sea365.label2_description4')}
                 </p>
                 <p className="f_400 f_size_15 mb-20">
-                  5. Denizcilik sektöründe ihtiyacınız olan ve olacak şeyleri
-                  takip eder.
+                {t('sea365.label2_description5')}.
                 </p>
                 <p className="f_400 f_size_15 mb-20">
-                  6. Uzman kadrosu sayesinde yaşanılabilecek sorunlarda hızlı ve
-                  kalıcı çözümler üretir.
+                {t('sea365.label2_description6')}
                 </p>
               </div>
             </div>
@@ -84,14 +72,14 @@ const Sea365 = () => {
       <Content
         title={"Sea"}
         title_2={"365"}
-        desc={"Tüm operasyonlarını tek sistem üzerinden yönetebilirsiniz!"}
+        desc={t('sea365.label3')}
       >
         <Tabs defaultActiveKey="1" tabPosition={"left"} items={items} />
         <div className="row mt-5">
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
               <h5>
-                <a href="page-services-5.html">Kullanımı Kolay</a>
+                <a href="page-services-5.html">{t('sea365.label3_description1')}</a>
               </h5>
               <br></br>
               <div className="icon">
@@ -99,8 +87,7 @@ const Sea365 = () => {
               </div>
               <div className="info">
                 <div className="text">
-                  Sea365 tanıdık bir windows benzeri arayüzü ile kullanımı
-                  kolay.
+                {t('sea365.label3_description2')}
                 </div>
               </div>
             </div>
@@ -108,7 +95,7 @@ const Sea365 = () => {
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
               <h5>
-                <a href="page-services-5.html">Güvenlik</a>
+                <a href="page-services-5.html">{t('sea365.label3_description3')}</a>
               </h5>
               <br></br>
               <div className="icon">
@@ -116,7 +103,7 @@ const Sea365 = () => {
               </div>
               <div className="info">
                 <div className="text">
-                  Tüm veriler 256 bit şifreleme protokolü ile korunmaktadır.
+                {t('sea365.label3_description4')}
                 </div>
               </div>
             </div>
@@ -124,7 +111,7 @@ const Sea365 = () => {
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
               <h5>
-                <a href="page-services-5.html">Bulut Tabanlı </a>
+                <a href="page-services-5.html">{t('sea365.label3_description5')} </a>
               </h5>
               <br></br>
               <div className="icon">
@@ -132,8 +119,7 @@ const Sea365 = () => {
               </div>
               <div className="info">
                 <div className="text">
-                  Yönetilecek fiziksel bir sunucu veya yazılım yoktur ve
-                  Sea365'e herhangi bir cihazdan erişebilirsiniz.
+                {t('sea365.label3_description6')}
                 </div>
               </div>
             </div>
@@ -141,7 +127,7 @@ const Sea365 = () => {
           <div className="col-lg-3 service-box p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
               <h5>
-                <a href="page-services-5.html">Uzman Ekip Desteği </a>
+                <a href="page-services-5.html">{t('sea365.label3_description7')} </a>
               </h5>
               <br></br>
               <div className="icon">
@@ -149,8 +135,7 @@ const Sea365 = () => {
               </div>
               <div className="info">
                 <div className="text">
-                  Uzman kadromuz sayesinde yaşayabileceğiniz her problemde
-                  yanınızda olur ve çözümler üretiriz.
+                {t('sea365.label3_description8')}
                 </div>
               </div>
             </div>
@@ -167,30 +152,23 @@ const Sea365 = () => {
               </h3>
 
               <h4>
-                Tedarikçileri ve denizcilerin hayatını kolaylaştırmak için
-                tasarlanmıştır.
+              {t('sea365.h4')}
               </h4>
 
               <p className="mb-3 fs-6">
-                Sea365 bulut tabanlı bir yazılımdır. Denizcilik sektöründe
-                faaliyet gösteren alıcılara ve satıcılara kolay erişim sağlamayı
-                amaçlamaktadır.
+              {t('sea365.h4_p')}
               </p>
             </div>
           </div>
         </div>
         <div className="container mt-5">
-          <h3 className="text-center">Sea365 Ürünleri</h3>
+          <h3 className="text-center">{t('sea365.h3')}</h3>
           <div className="row mt-2 ">
             <div className="col-lg-4 col-sm-6 col-md-6 mt-4">
               <div className="mt-5">
                 <img src="/assets/img/layer1.png" alt="" />
                 <p className="mt-3">
-                  Geminin ihtiyacı olabilecek kumanya, sarf ve teknik malzeme
-                  taleplerinin yüklenebildiği ve satın alma işlemlerinin
-                  gerçekleştirilebildiği yazılımdır. Bu sistem sayesinde fiyat
-                  karşılaştırma, satın alma ve teslimat gibi süreçler takip
-                  edilir.{" "}
+                {t('sea365.h3_p')}{" "}
                 </p>
               </div>
             </div>
@@ -198,12 +176,7 @@ const Sea365 = () => {
               <div className="mt-5">
                 <img src="/assets/img/layer2.png" alt="" />
                 <p className="mt-3">
-                  Firmaların ve armatörlerin kendi gemilerini yönetebilecekleri
-                  bir programdır. Uluslararası sertifikalara sahip Türk yazılımı
-                  olan SeaHUB, gemi planlamalarını yapar, envanterleri ve
-                  stokları takip eder, yönetimsel ve muhasebesel işler için
-                  kullanılabilir ve gemi ile alakalı kayıt ve belgelere ulaşım
-                  kolaylığı sağlar..
+                {t('sea365.h3_p2')}.
                 </p>
               </div>
             </div>
@@ -212,11 +185,7 @@ const Sea365 = () => {
                 <img src="/assets/img/layer3.png" alt="" />
                 <p className="mt-3">
                   {" "}
-                  Bütün gemilere mesaj yollama işlemlerini yapan ve gemilerin
-                  kaptanlarıyla iletişime geçmeyi sağlayan otomasyon pazarlama
-                  robotudur. Belirlenmiş limanlara gelen gemileri bulur. Ayrıca
-                  mail, telex atma ve geminin rotası, tipi ağırlığı gibi
-                  özellikleri göstermektedir.{" "}
+                  {t('sea365.h3_p3')}{" "}
                 </p>
               </div>
             </div>
@@ -224,11 +193,7 @@ const Sea365 = () => {
               <div className="mt-5">
                 <img src="/assets/img/layer4.png" alt="" />
                 <p className="mt-3">
-                  Gemilerin yanında taşımak zorunda olduğu yayınlar ve
-                  dokümantasyonlar sistemin içerisinde toplanmaktadır. Bu sayede
-                  eksiksiz bir şekilde gemi yolculuğunu yapabilir. Ayrıca sistem
-                  sayesinde envanterleri satın almak zorunda kalınmıyor ve
-                  kiralama işlemi yapılmış oluyor.{" "}
+                {t('sea365.h3_p4')}{" "}
                 </p>
               </div>
             </div>
@@ -236,9 +201,7 @@ const Sea365 = () => {
               <div className="mt-5">
                 <img src="/assets/img/layer5.png" alt="" />
                 <p className="mt-3">
-                  Deniz ve gemicilik sektöründe iş arayanları ve iş verenleri
-                  buluşturan bir platformdur. SeaCREW sayesinde aranılan işe ve
-                  elemana kolayca ulaşılabilir.{" "}
+                {t('sea365.h3_p5')}{" "}
                 </p>
               </div>
             </div>
@@ -246,9 +209,7 @@ const Sea365 = () => {
               <div className="mt-5">
                 <img src="/assets/img/layer6.png" alt="" />
                 <p className="mt-3">
-                  Gemi yedek parçalarının satışının gerçekleştirilebildiği bir
-                  yazılımdır. Sistem sayesinde gemi parçalarının satışı
-                  gerçekleştirilir ve ihtiyaç duyulan parçalara ulaşılabilir.{" "}
+                {t('sea365.h3_p6')}{" "}
                 </p>
               </div>
             </div>

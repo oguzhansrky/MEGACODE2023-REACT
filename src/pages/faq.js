@@ -168,7 +168,6 @@ export default function SSS() {
             {t('faq.commercial_desc2')}
             </dd>
             <dd>
-            {t('faq.commercial_desc2_1')}
             </dd>
           </dl>
           <dl>
