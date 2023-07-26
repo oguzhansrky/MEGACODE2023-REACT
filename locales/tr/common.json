@@ -288,12 +288,28 @@
             "web_service":"Web Servis Hizmeti",
             "take_offer":"Teklif Alın"
             
+        },
+        "digital_sign":{
+            "desc":"Maliyetlerinizi azaltır, imajınızı güçlendirir!",
+            "text1":"Digital Signage, tek bir yöneticiye yerel ve uzak olarak bağlı bir ağ sistemi üzerinden internetin var olduğu digital ekranlara zengin içerikleri aktarmaya ve sunmayı sağlar. Şirketinizde, showroomlar içerisinde, teknik departmanlarda farklı amaçlar doğrultusunda kullanabileceğiniz dijital ekran yönetim sistemi olma özelliği taşır. Digital Signage ile yurt içi ve yurt dışındaki tüm ekranlar yönetilebilir ve tek bir alanda zengin içerikler müşteriler ile paylaşılabilir.",
+            "digital_sign_title1":"Digital Signage Avantajlarını Keşfedin",
+            "digital_sign_title1_text1":"Geleneksel Yöntemlerden Uzaklaş, Teknolojiyi Yakala",
+            "digital_sign_title1_text2":"Poster ve afişler yerine şirketinizin yayın akışını oluşturun ve istediğiniz zaman yayınlamaya başlayın.",
+            "digital_sign_title2":"Kurumsal İtibarını Güçlendir",
+            "digital_sign_title2_text1":"Sadece kampanya değil; şirket içi mesajlarınızı, özel günleri ve eğitimlerinizi Digital Signage üzerinden yapabilirsiniz.",
+            "digital_sign_title3":"Farklılık Yarat",
+            "digital_sign_title3_text1":"Klasik tüm materyalleri unutun. Dikkat çekici ekranlar, sınırsız ve estetik içerikler ile hedef kitlenizin gözü hep sizde olacak.",
+            "digital_sign_title4":"Kontrol Hep Sende",
+            "digital_sign_title4_text1":"Digital Signage sayesinde sahip olduğunuz tüm ekranları tek bir sistem üzerinden yönetebilirsiniz. Bununla beraber kontrol hep sizde olur.",
+            "digital_sign_title5":"Kârlılık",
+            "digital_sign_title5_text1":"Baskılı materyallerin matbaa, lojistik, operasyonel ve denetim maliyetleri oldukça yüklüdür. Digital Signate ise bu maliyetleri ortadan kaldırır ve hem maliyeti azaltır hem de zamandan tasarruf ettirir.",
+            "digital_sign_title6":"Sınırsız İçerik ve Estetik",
+            "digital_sign_title6_text1":"Digitale Signate sayesinde tek bir alanda sınırsız içerik ve görselleri müşterilerinize sunabilirsiniz. Ayrıca baskılı işler için görsel ve efekt sınırlamanız olacakken, Signate sayesinde istediğiniz görselleri ve efektleri kullanabilirsiniz."
 
 
-
-                
-
+        
         }
+        
 
      
     

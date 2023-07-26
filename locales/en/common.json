@@ -283,10 +283,25 @@
        "mobil_app":"Mobile Application",
        "web_service":"Web Service",
        "take_offer":"Take Offer" 
+      },
+   "digital_sign":{
+       "desc":"It reduces your costs, strengthens your image!",
+       "text1":"Digital Signage enables to transfer and present rich content to digital screens where internet is available through a network system connected to a single administrator locally and remotely. It is a digital screen management system that you can use for different purposes in your company, in showrooms, in technical departments. With Digital Signage, all domestic and international screens can be managed and rich content can be shared with customers in a single area.",
+       "digital_sign_title1":"Discover the Advantages of Digital Signage",
+       "digital_sign_title1_text1":"Move Away From Traditional Methods, Catch The Technology",
+       "digital_sign_title1_text2":"Create your company's feed instead of posters and banners and start publishing whenever you want.",
+       "digital_sign_title2":"Strengthen Your Corporate Reputation",
+       "digital_sign_title2_text1":"It's not just the campaign; You can make your in-company messages, special days and trainings via Digital Signage.",
+       "digital_sign_title3":"Make a Difference",
+       "digital_sign_title3_text1":"Forget all the classic materials. With attractive screens, unlimited and aesthetic content, the eyes of your target audience will always be on you.",
+       "digital_sign_title4":"You Are Always In Control",
+       "digital_sign_title4_text1":"Thanks to Digital Signage, you can manage all the screens you own through a single system. However, you are always in control.",
+       "digital_sign_title5":"Profitability",
+       "digital_sign_title5_text1":"Printing, logistics, operational and inspection costs of printed materials are quite high. Digital Signate, on the other hand, eliminates these costs and both reduces costs and saves time.",
+       "digital_sign_title6":"Unlimited Content and Aesthetics",
+       "digital_sign_title6_text1":"Thanks to Digitale Signate, you can present unlimited content and images to your customers in a single area. In addition, while you will have visual and effect limitations for printed works, you can use the visuals and effects you want thanks to Signate."
+      }
 
-           
-
-   }
 
 
 
