@@ -308,7 +308,40 @@
 
 
         
-        }
+        },
+        "sea365":{
+            "label1":"Sea Nedir?",
+            "label1_text":"Sea365 Nedir?",
+            "label1_description1":"Sea365, denizcilik sektörü için hayatlarını kolaylaştırmak ve her şeyin sistematik şekilde yürümesi için tasarlanan bulut tabanlı bir sistemdir. Satıcıları ve alıcıları ortak bir noktada buluşturmakta ve birbirleriyle kolayca iletişime geçmelerini sağlamaktadır.",
+            "label1_desciption2":"Sistem sayesinde, gerekli olan malzemeleri online olarak satın alabilir, bilgi paylaşımında bulunabilir ve karşılaştırmalar yapabilirsiniz. Ayrıca sistem size gemilerinizi istediğiniz gibi yönetebilme ve işleri takip edebilme özelliği de sunmaktadır. Tamamen ihtiyaçlar düşünülerek kurulan Sea365, denizcilik sektörünün uluslararası standartlara uygun şekilde çalışmasını amaçlamaktadır.",
+            "label2":"Sea365 Özellikleri",
+            "label2_text":"Sea365 Özellikleri",
+            "label2_description1":"1. Kurumunuz için en faydalı olacak yazılımları tek bir sistem üzerinde toplamaktadır.",
+            "label2_description2":"2. Günceldir, sürekli yenilerin ve teknolojiyi takip eder.",
+            "label2_description3":" 3. Hızlı ve güvenilir bir şekilde yönetim imkanı sunar.",
+            "label2_description4":"4. Operasyon, muhasebe gibi yönetim sistemlerini hızlandırır ve maliyeti düşürür.",
+            "label2_description5":"5. Denizcilik sektöründe ihtiyacınız olan ve olacak şeyleri takip eder.",
+            "label2_description6":"6. Uzman kadrosu sayesinde yaşanılabilecek sorunlarda hızlı ve kalıcı çözümler üretir.",
+            "label3":"Tüm operasyonlarını tek sistem üzerinden yönetebilirsiniz!",
+            "label3_description1":"Kullanımı Kolay",
+            "label3_description2":"Sea365 tanıdık bir windows benzeri arayüzü ile kullanımı kolay.",
+            "label3_description3":"Güvenlik",
+            "label3_description4":"Tüm veriler 256 bit şifreleme protokolü ile korunmaktadır.",
+            "label3_description5":"Bulut Tabanlı",
+            "label3_description6":"Yönetilecek fiziksel bir sunucu veya yazılım yoktur ve Sea365'e herhangi bir cihazdan erişebilirsiniz.",
+            "label3_description7":"Uzman Ekip Desteği",
+            "label3_description8":"Uzman kadromuz sayesinde yaşayabileceğiniz her problemde yanınızda olur ve çözümler üretiriz.",
+            "h4":"Tedarikçileri ve denizcilerin hayatını kolaylaştırmak için tasarlanmıştır.",
+            "h4_p":"Sea365 bulut tabanlı bir yazılımdır. Denizcilik sektöründe faaliyet gösteren alıcılara ve satıcılara kolay erişim sağlamayı amaçlamaktadır.",
+            "h3":"Sea365 Ürünleri",
+            "h3_p":"Geminin ihtiyacı olabilecek kumanya, sarf ve teknik malzeme taleplerinin yüklenebildiği ve satın alma işlemlerinin gerçekleştirilebildiği yazılımdır. Bu sistem sayesinde fiyat karşılaştırma, satın alma ve teslimat gibi süreçler takip edilir.",
+            "h3_p2":"Firmaların ve armatörlerin kendi gemilerini yönetebilecekleri bir programdır. Uluslararası sertifikalara sahip Türk yazılımı olan SeaHUB, gemi planlamalarını yapar, envanterleri ve stokları takip eder, yönetimsel ve muhasebesel işler için kullanılabilir ve gemi ile alakalı kayıt ve belgelere ulaşım kolaylığı sağlar..",
+            "h3_p3":"Bütün gemilere mesaj yollama işlemlerini yapan ve gemilerin kaptanlarıyla iletişime geçmeyi sağlayan otomasyon pazarlama robotudur. Belirlenmiş limanlara gelen gemileri bulur. Ayrıca mail, telex atma ve geminin rotası, tipi ağırlığı gibi özellikleri göstermektedir.",
+            "h3_p4":"Gemilerin yanında taşımak zorunda olduğu yayınlar ve dokümantasyonlar sistemin içerisinde toplanmaktadır. Bu sayede eksiksiz bir şekilde gemi yolculuğunu yapabilir. Ayrıca sistem sayesinde envanterleri satın almak zorunda kalınmıyor ve kiralama işlemi yapılmış oluyor.",
+            "h3_p5":"Deniz ve gemicilik sektöründe iş arayanları ve iş verenleri buluşturan bir platformdur. SeaCREW sayesinde aranılan işe ve elemana kolayca ulaşılabilir.",
+            "h3_p6":"Gemi yedek parçalarının satışının gerçekleştirilebildiği bir yazılımdır. Sistem sayesinde gemi parçalarının satışı gerçekleştirilir ve ihtiyaç duyulan parçalara ulaşılabilir."
+   
+         }
         
 
      
