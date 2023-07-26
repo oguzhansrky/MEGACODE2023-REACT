@@ -19,7 +19,7 @@ function isExpired(token) {
       const exp = claims.exp;
       const iat = claims.iat;
       const currentTime = Math.floor(Date.now() / 1000);
-      if (currentTime > exp || currentTime < iat) {
+      if (currentTime + 3 > exp || currentTime + 3 < iat) {
         return true;
       }
     }
@@ -71,11 +71,6 @@ axiosApiInstance.interceptors.request.use(
 
     if (Cookies.get("access_token")) {
       config.headers["Authorization"] = `Bearer ${Cookies.get("access_token")}`;
-    }
-
-    if (config.url.includes("parameters")) {
-      config.headers["Authorization"] =
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbi5sb2NhbEBrdXpleXNvZnR3YXJlLmNvbSIsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJsb2NhbCIsInJvbGVzIjpbXSwiZXhwaXJlc0luIjoiMWgiLCJpYXQiOjE2NzExOTI4NDN9.K0CXFHHFJw42J6k0iWEFkl_1wZvvLPb_q3t1-xJ-xYI";
     }
 
     if (!config.url.includes("login") && credentials) {

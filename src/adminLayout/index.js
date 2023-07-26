@@ -12,13 +12,15 @@ import { useRouter } from "next/router";
 const AdminLayout = (props) => {
   const dispatch = useDispatch();
   const [messageApi, contextHolder] = message.useMessage();
+  const user = useSelector((state) => state.user?.currentUser);
+
   const router = useRouter();
   const handleLogout = async () => {
     try {
-      dispatch(logOut());
       await authService.logout();
       Cookies.remove("access_token");
       Cookies.remove("refresh_token");
+      dispatch(logOut());
       messageApi.success("Başarıyla çıkış yaptınız.");
       router.push("/admin/login");
     } catch (err) {
@@ -44,14 +46,18 @@ const AdminLayout = (props) => {
           <NavMenu />
         </div>
         <div className="w-100">
-          <div className="d-flex justify-content-end mt-2">
+          <div className="d-flex justify-content-end mt-2 d-flex align-items-center">
+            <span>
+              Hoşgeldiniz <b>{user?.full_name}</b>
+            </span>
+
             <a
               onClick={(e) => {
                 e.preventDefault();
                 handleLogout();
               }}
               href="#"
-              className="search-icon me-4"
+              className="search-icon me-4 ms-2"
             >
               <i className="bi bi-box-arrow-right fs-4" />
             </a>
