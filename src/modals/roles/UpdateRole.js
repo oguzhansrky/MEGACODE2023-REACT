@@ -1,25 +1,31 @@
 import { Button, Form, Input, message, Modal, Spin } from "antd";
 import React, { useState } from "react";
 import { LoadingOutlined } from "@ant-design/icons";
-import { userService } from "@/services";
+import { roleService, userService } from "@/services";
+import { pickBy } from "lodash";
+import { useEffect } from "react";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
-
-const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
-  const [createUser] = Form.useForm();
+const UpdateRole = ({ isModalOpen, setIsModalOpen, formData }) => {
+  const [updateRole] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const handleCancel = () => {
-    createUser.resetFields();
+    updateRole.resetFields();
     setIsModalOpen(false);
   };
   const [messageApi, contextHolder] = message.useMessage();
 
   const handleSubmit = async (values) => {
     setLoading(true);
-
+    const sanitizedData = pickBy(values, (value) => value?.length > 0);
     try {
-      await userService.createUser({ ...values, role_id: 1 });
-      messageApi.success("Kullanıcı başarıyla oluşturuldu.");
+      await roleService.updateRole(
+        {
+          ...sanitizedData,
+        },
+        formData?.id
+      );
+      messageApi.success("Rol başarıyla güncellendi.");
       setLoading(false);
       handleCancel();
     } catch (err) {
@@ -29,11 +35,16 @@ const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
     }
   };
 
+  useEffect(() => {
+    updateRole.setFieldsValue({
+      name: formData?.name || "",
+    });
+  }, [updateRole, isModalOpen]);
   return (
     <>
       {contextHolder}
       <Modal
-        title="Kullanıcı Oluştur"
+        title="Rol Güncelle"
         open={isModalOpen}
         onCancel={handleCancel}
         footer={
@@ -45,69 +56,33 @@ const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
           >
             <Button
               className="mt-2 bg-primary text-white"
-              form="create_user"
+              form="update_role"
               htmlType="submit"
             >
               {loading && (
                 <Spin className="text-white mr-2" indicator={antIcon} />
               )}
-              Oluştur
+              Güncelle
             </Button>
           </Form.Item>
         }
       >
         <Form
-          id="create_user"
+          id="update_role"
           className="my-4"
-          form={createUser}
+          form={updateRole}
+          initialValues={formData}
           labelCol={{
             span: 6,
           }}
           wrapperCol={{
             span: 16,
           }}
-          initialValues={{
-            remember: true,
-          }}
           onFinish={handleSubmit}
           autoComplete="off"
         >
-          <Form.Item
-            label="İsim Soyisim"
-            name="full_name"
-            rules={[
-              {
-                required: true,
-                message: "Lütfen isim soyisim giriniz!",
-              },
-            ]}
-          >
+          <Form.Item label="Rol İsmi" name="name">
             <Input />
-          </Form.Item>
-          <Form.Item
-            label="E-Mail"
-            name="email"
-            rules={[
-              {
-                required: true,
-                message: "Lütfen e-mail adresi giriniz!",
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-
-          <Form.Item
-            label="Şifre"
-            name="password"
-            rules={[
-              {
-                required: true,
-                message: "Lütfen şifre giriniz!",
-              },
-            ]}
-          >
-            <Input.Password />
           </Form.Item>
         </Form>
       </Modal>
@@ -115,4 +90,4 @@ const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
   );
 };
 
-export default CreateUser;
+export default UpdateRole;

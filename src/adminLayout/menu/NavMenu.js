@@ -17,10 +17,8 @@ function getItem(label, key, icon, children, type) {
 }
 const items = [
   getItem("Yönetim", "sub1", <CodeSandboxOutlined />, [
-    getItem(<Link href="/admin/users">Kullanıcılar</Link>, "link"),
-    getItem("Option 2", "2"),
-    getItem("Option 3", "3"),
-    getItem("Option 4", "4"),
+    getItem(<Link href="/admin/users">Kullanıcılar</Link>, "user"),
+    getItem(<Link href="/admin/roles">Roller</Link>, "role"),
   ]),
   getItem("Navigation Two", "sub2", <AppstoreOutlined />, [
     getItem("Option 5", "5"),

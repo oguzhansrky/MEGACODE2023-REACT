@@ -2,7 +2,6 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { generateApiEndpoint } from "../utils";
 import { store } from "../store/store";
-import debounce from "lodash/debounce";
 
 let axiosApiInstance = axios.create();
 
@@ -57,8 +56,6 @@ async function refreshToken(credentials) {
   return Cookies.get("access_token");
 }
 
-const debouncedRefreshToken = debounce(refreshToken, 500);
-
 axiosApiInstance.interceptors.request.use(
   async (config) => {
     let credentials = null;
@@ -72,12 +69,11 @@ axiosApiInstance.interceptors.request.use(
     if (Cookies.get("access_token")) {
       config.headers["Authorization"] = `Bearer ${Cookies.get("access_token")}`;
     }
-
     if (!config.url.includes("login") && credentials) {
       // Check if the access token is expired
       if (isExpired(Cookies.get("access_token"))) {
         // Refresh the access token
-        const newAccessToken = await debouncedRefreshToken(credentials);
+        const newAccessToken = await refreshToken(credentials);
         // Update the Authorization header with the new access token
         config.headers["Authorization"] = `Bearer ${newAccessToken}`;
       }

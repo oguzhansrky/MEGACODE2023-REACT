@@ -1,25 +1,24 @@
 import { Button, Form, Input, message, Modal, Spin } from "antd";
 import React, { useState } from "react";
 import { LoadingOutlined } from "@ant-design/icons";
-import { userService } from "@/services";
+import { roleService } from "@/services";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
 
-const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
-  const [createUser] = Form.useForm();
+const CreateRole = ({ isModalOpen, setIsModalOpen }) => {
+  const [createRole] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const handleCancel = () => {
-    createUser.resetFields();
+    createRole.resetFields();
     setIsModalOpen(false);
   };
   const [messageApi, contextHolder] = message.useMessage();
 
   const handleSubmit = async (values) => {
     setLoading(true);
-
     try {
-      await userService.createUser({ ...values, role_id: 1 });
-      messageApi.success("Kullanıcı başarıyla oluşturuldu.");
+      await roleService.createRole({ ...values });
+      messageApi.success("Rol başarıyla oluşturuldu.");
       setLoading(false);
       handleCancel();
     } catch (err) {
@@ -33,7 +32,7 @@ const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
     <>
       {contextHolder}
       <Modal
-        title="Kullanıcı Oluştur"
+        title="Rol Oluştur"
         open={isModalOpen}
         onCancel={handleCancel}
         footer={
@@ -45,7 +44,7 @@ const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
           >
             <Button
               className="mt-2 bg-primary text-white"
-              form="create_user"
+              form="create_role"
               htmlType="submit"
             >
               {loading && (
@@ -57,9 +56,9 @@ const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
         }
       >
         <Form
-          id="create_user"
+          id="create_role"
           className="my-4"
-          form={createUser}
+          form={createRole}
           labelCol={{
             span: 6,
           }}
@@ -73,41 +72,16 @@ const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
           autoComplete="off"
         >
           <Form.Item
-            label="İsim Soyisim"
-            name="full_name"
+            label="Rol İsmi"
+            name="name"
             rules={[
               {
                 required: true,
-                message: "Lütfen isim soyisim giriniz!",
+                message: "Lütfen rol ismi giriniz!",
               },
             ]}
           >
             <Input />
-          </Form.Item>
-          <Form.Item
-            label="E-Mail"
-            name="email"
-            rules={[
-              {
-                required: true,
-                message: "Lütfen e-mail adresi giriniz!",
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-
-          <Form.Item
-            label="Şifre"
-            name="password"
-            rules={[
-              {
-                required: true,
-                message: "Lütfen şifre giriniz!",
-              },
-            ]}
-          >
-            <Input.Password />
           </Form.Item>
         </Form>
       </Modal>
@@ -115,4 +89,4 @@ const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
   );
 };
 
-export default CreateUser;
+export default CreateRole;
