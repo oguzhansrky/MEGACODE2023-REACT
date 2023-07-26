@@ -1,26 +1,21 @@
 import { Content } from "@/components/Content";
 import ProjectSlider from "@/components/projects/ProjectSlider";
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 
 const DigitalSignage = () => {
+  const { t } = useTranslation("common");
   return (
     <Content
       title="Digital"
       title_2=" Signage"
-      desc="Maliyetlerinizi azaltır, imajınızı güçlendirir!"
+      desc={t('digital_sign.desc')}
     >
       <p>
-        Digital Signage, tek bir yöneticiye yerel ve uzak olarak bağlı bir ağ
-        sistemi üzerinden internetin var olduğu digital ekranlara zengin
-        içerikleri aktarmaya ve sunmayı sağlar. Şirketinizde, showroomlar
-        içerisinde, teknik departmanlarda farklı amaçlar doğrultusunda
-        kullanabileceğiniz dijital ekran yönetim sistemi olma özelliği taşır.
-        Digital Signage ile yurt içi ve yurt dışındaki tüm ekranlar
-        yönetilebilir ve tek bir alanda zengin içerikler müşteriler ile
-        paylaşılabilir.
+      {t('digital_sign.text1')}
       </p>
       <h3 className="my-5 text-center">
-        Digital Signage Avantajlarını Keşfedin
+      {t('digital_sign.digital_sign_title1')}
       </h3>
       <section className="services section-padding style-1 p-0">
         <div className="row">
@@ -36,12 +31,11 @@ const DigitalSignage = () => {
                 </div>
                 <div>
                   <h6 className="fw-bold">
-                    Geleneksel Yöntemlerden Uzaklaş, Teknolojiyi Yakala
+                  {t('digital_sign.digital_sign_title1_text1')}
                   </h6>
                   <div className="info">
                     <div className="text">
-                      Poster ve afişler yerine şirketinizin yayın akışını
-                      oluşturun ve istediğiniz zaman yayınlamaya başlayın.
+                    {t('digital_sign.digital_sign_title1_text2')}
                     </div>
                   </div>
                 </div>
@@ -62,13 +56,11 @@ const DigitalSignage = () => {
                   />
                 </div>
                 <div>
-                  <h6 className="fw-bold">Kurumsal İtibarını Güçlendir</h6>
+                  <h6 className="fw-bold">{t('digital_sign.digital_sign_title2')}</h6>
 
                   <div className="info">
                     <div className="text">
-                      Sadece kampanya değil; şirket içi mesajlarınızı, özel
-                      günleri ve eğitimlerinizi Digital Signage üzerinden
-                      yapabilirsiniz.
+                    {t('digital_sign.digital_sign_title2_text1')}
                     </div>
                   </div>
                 </div>
@@ -89,13 +81,11 @@ const DigitalSignage = () => {
                   />
                 </div>
                 <div>
-                  <h6 className="fw-bold">Farklılık Yarat</h6>
+                  <h6 className="fw-bold">{t('digital_sign.digital_sign_title3')}</h6>
 
                   <div className="info">
                     <div className="text">
-                      Klasik tüm materyalleri unutun. Dikkat çekici ekranlar,
-                      sınırsız ve estetik içerikler ile hedef kitlenizin gözü
-                      hep sizde olacak.
+                    {t('digital_sign.digital_sign_title3_text1')}
                     </div>
                   </div>
                 </div>
@@ -116,13 +106,11 @@ const DigitalSignage = () => {
                   />
                 </div>
                 <div>
-                  <h6 className="fw-bold">Kontrol Hep Sende</h6>
+                  <h6 className="fw-bold">{t('digital_sign.digital_sign_title4')}</h6>
 
                   <div className="info">
                     <div className="text">
-                      Digital Signage sayesinde sahip olduğunuz tüm ekranları
-                      tek bir sistem üzerinden yönetebilirsiniz. Bununla beraber
-                      kontrol hep sizde olur.
+                    {t('digital_sign.digital_sign_title4_text1')}
                     </div>
                   </div>
                 </div>
@@ -143,14 +131,11 @@ const DigitalSignage = () => {
                   />
                 </div>
                 <div>
-                  <h6 className="fw-bold">Kârlılık</h6>
+                  <h6 className="fw-bold">{t('digital_sign.digital_sign_title5')}</h6>
 
                   <div className="info">
                     <div className="text">
-                      Baskılı materyallerin matbaa, lojistik, operasyonel ve
-                      denetim maliyetleri oldukça yüklüdür. Digital Signate ise
-                      bu maliyetleri ortadan kaldırır ve hem maliyeti azaltır
-                      hem de zamandan tasarruf ettirir.
+                    {t('digital_sign.digital_sign_title5_text1')}
                     </div>
                   </div>
                 </div>
@@ -171,15 +156,11 @@ const DigitalSignage = () => {
                   />
                 </div>
                 <div>
-                  <h6 className="fw-bold">Sınırsız İçerik ve Estetik</h6>
+                  <h6 className="fw-bold">{t('digital_sign.digital_sign_title6')}</h6>
 
                   <div className="info">
                     <div className="text">
-                      Digitale Signate sayesinde tek bir alanda sınırsız içerik
-                      ve görselleri müşterilerinize sunabilirsiniz. Ayrıca
-                      baskılı işler için görsel ve efekt sınırlamanız olacakken,
-                      Signate sayesinde istediğiniz görselleri ve efektleri
-                      kullanabilirsiniz.
+                    {t('digital_sign.digital_sign_title6_text1')}
                     </div>
                   </div>
                 </div>
