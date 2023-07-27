@@ -106,7 +106,7 @@ const Application = () => {
       },
     },
     {
-      title: "Post",
+      title: "İş İlanı",
       dataIndex: "post_id",
       key: "post_id",
     },
@@ -160,14 +160,12 @@ const Application = () => {
         <div className="d-flex justify-content-between my-4">
           <h3>İş Başvuruları</h3>
         </div>
-
         <Table
           pagination={{ position: ["none", "none"] }}
           columns={columns}
           dataSource={data}
           className=""
         />
-
         <div key={meta} className="d-flex justify-content-center my-4">
           <Pagination
             total={meta?.total}
@@ -180,17 +178,6 @@ const Application = () => {
           />
         </div>
       </div>
-      <CreateBlogComment
-        isModalOpen={createModal}
-        setIsModalOpen={setCreateModal}
-      />
-      <UpdateBlogComment
-        key={formData}
-        isModalOpen={updateModal}
-        setIsModalOpen={setUpdateModal}
-        formData={formData}
-      />
-
       <DeleteConfirm
         isModalOpen={deleteModal}
         setIsModalOpen={setDeleteModal}
