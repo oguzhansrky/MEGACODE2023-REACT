@@ -1,4 +1,4 @@
-import { roleService, userService } from "@/services";
+import { blogService, roleService } from "@/services";
 import { Button, message, Space, Table } from "antd";
 import moment from "moment";
 import { useRouter } from "next/router";
@@ -10,6 +10,11 @@ import PageHead from "@/layout/head/Head";
 import DeleteConfirm from "@/modals/DeleteConfirm";
 import CreateRole from "@/modals/roles/CreateRole";
 import UpdateRole from "@/modals/roles/UpdateRole";
+import Image from "next/image";
+import Link from "next/link";
+import CreateBlog from "@/modals/blogs/CreateBlog";
+import { getBlogs } from "@/services/blogService";
+import UpdateBlog from "@/modals/blogs/UpdateBlog";
 
 const Blogs = () => {
   const router = useRouter();
@@ -41,11 +46,11 @@ const Blogs = () => {
   }, [searchParams]);
   const loadData = async () => {
     try {
-      const roles = await roleService.getRoles(
+      const blogs = await blogService.getBlogs(
         decodeURIComponent(searchParams)
       );
-      setData(roles.payload.roles);
-      setMeta(roles.meta);
+      setData(blogs.payload.blogs);
+      setMeta(blogs.meta);
     } catch (err) {
       console.error(err);
     }
@@ -65,15 +70,52 @@ const Blogs = () => {
       key: "id",
     },
     {
-      title: "İsim",
-      dataIndex: "name",
-      key: "name",
+      title: "Blog",
+      dataIndex: "title",
+      key: "title",
+      render: (blog, field) => (
+        <Link href={`/blog/${field?.slug}`}>
+          <div className="d-flex align-items-center">
+            {field?.thumbnail && (
+              <Image
+                className="me-2"
+                width={80}
+                height={50}
+                src={field?.thumbnail}
+              />
+            )}
+            <span>{blog}</span>
+          </div>
+        </Link>
+      ),
+    },
+    {
+      title: "Kategori",
+      dataIndex: "category",
+      key: "category",
+      render: (category) => <span>{category?.name}</span>,
+    },
+    {
+      title: "Durum",
+      dataIndex: "status",
+      key: "status",
+      render: (status) => {
+        switch (status) {
+          case "public":
+            return <span>Yayında</span>;
+          case "archived":
+            return <span>Arşivde</span>;
+
+          default:
+            break;
+        }
+      },
     },
     {
       title: "Oluşturma Tarihi",
       dataIndex: "created_at",
       key: "created_at",
-      render: (date) => <span>{moment(date).format("DD.MM.YYYY mm:s")}</span>,
+      render: (date) => <span>{moment(date).format("DD.MM.YYYY hh:mm")}</span>,
     },
     {
       title: "İşlem",
@@ -103,8 +145,8 @@ const Blogs = () => {
 
   const handleDelete = async () => {
     try {
-      await roleService.deleteRole(formData?.id);
-      messageApi.success("Rol başarıyla silindi.");
+      await blogService.deleteBlog(formData?.id);
+      messageApi.success("Blog başarıyla silindi.");
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -114,11 +156,11 @@ const Blogs = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Roller"></PageHead>
+      <PageHead title="Bloglar"></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Roller</h3>
-          <Button onClick={() => setCreateModal(true)}>Rol Oluştur</Button>
+          <h3>Bloglar</h3>
+          <Button onClick={() => setCreateModal(true)}>Blog Oluştur</Button>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}
@@ -133,12 +175,12 @@ const Blogs = () => {
             onChange={paginate}
             showSizeChanger
             showQuickJumper
-            showTotal={(total) => `Toplam ${total} kullanıcı`}
+            showTotal={(total) => `Toplam ${total} blog`}
           />
         </div>
       </div>
-      <CreateRole isModalOpen={createModal} setIsModalOpen={setCreateModal} />
-      <UpdateRole
+      <CreateBlog isModalOpen={createModal} setIsModalOpen={setCreateModal} />
+      <UpdateBlog
         key={formData}
         isModalOpen={updateModal}
         setIsModalOpen={setUpdateModal}
