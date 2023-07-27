@@ -1,12 +1,12 @@
 import { Button, Form, Input, message, Modal, Spin } from "antd";
 import React, { useState } from "react";
 import { LoadingOutlined } from "@ant-design/icons";
-import { roleService, userService } from "@/services";
+import { roleService } from "@/services";
 import { pickBy } from "lodash";
 import { useEffect } from "react";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
-const UpdateRole = ({ isModalOpen, setIsModalOpen, formData }) => {
+const UpdateRole = ({ isModalOpen, setIsModalOpen, formData, loadData }) => {
   const [updateRole] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const handleCancel = () => {
@@ -28,6 +28,7 @@ const UpdateRole = ({ isModalOpen, setIsModalOpen, formData }) => {
       messageApi.success("Rol başarıyla güncellendi.");
       setLoading(false);
       handleCancel();
+      loadData();
     } catch (err) {
       setLoading(false);
       messageApi.error(err.response?.data?.message);

@@ -11,6 +11,7 @@ import PageHead from "@/layout/head/Head";
 import DeleteConfirm from "@/modals/DeleteConfirm";
 import CreateRole from "@/modals/roles/CreateRole";
 import UpdateRole from "@/modals/roles/UpdateRole";
+import { parseCookies } from "@/utils";
 
 const Roles = () => {
   const router = useRouter();
@@ -37,7 +38,14 @@ const Roles = () => {
     if (!hasLimit || !hasPage) setSearchParams(params);
   }, [query]);
   useEffect(() => {
-    router.push({ pathname, search: decodeURIComponent(searchParams) });
+    router.replace(
+      {
+        pathname,
+        search: decodeURIComponent(searchParams),
+      },
+      undefined,
+      { shallow: true }
+    );
     if (searchParams.has("page")) loadData();
   }, [searchParams]);
   const loadData = async () => {
@@ -153,5 +161,18 @@ const Roles = () => {
     </>
   );
 };
+
+export async function getServerSideProps(ctx) {
+  const cookies = parseCookies(ctx.req.headers.cookie);
+  if (!cookies.access_token) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false,
+      },
+    };
+  }
+  return { props: {} };
+}
 
 export default Roles;

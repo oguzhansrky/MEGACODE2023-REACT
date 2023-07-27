@@ -5,7 +5,7 @@ import { userService } from "@/services";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
 
-const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
+const CreateUser = ({ isModalOpen, setIsModalOpen, loadData }) => {
   const [createUser] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const handleCancel = () => {
@@ -22,6 +22,7 @@ const CreateUser = ({ isModalOpen, setIsModalOpen }) => {
       messageApi.success("Kullanıcı başarıyla oluşturuldu.");
       setLoading(false);
       handleCancel();
+      loadData();
     } catch (err) {
       setLoading(false);
       messageApi.error(err.response?.data?.message);

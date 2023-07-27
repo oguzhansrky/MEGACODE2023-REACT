@@ -10,6 +10,7 @@ import PageHead from "@/layout/head/Head";
 import CreateUser from "@/modals/users/CreateUser";
 import UpdateUser from "@/modals/users/UpdateUser";
 import DeleteConfirm from "@/modals/DeleteConfirm";
+import { parseCookies } from "@/utils";
 
 const Users = () => {
   const router = useRouter();
@@ -36,7 +37,14 @@ const Users = () => {
     if (!hasLimit || !hasPage) setSearchParams(params);
   }, [query]);
   useEffect(() => {
-    router.push({ pathname, search: decodeURIComponent(searchParams) });
+    router.replace(
+      {
+        pathname,
+        search: decodeURIComponent(searchParams),
+      },
+      undefined,
+      { shallow: true }
+    );
     if (searchParams.has("page")) loadData();
   }, [searchParams]);
   const loadData = async () => {
@@ -55,9 +63,6 @@ const Users = () => {
     params.set("limit", pageSize);
     setSearchParams(params);
   };
-  useEffect(() => {
-    loadData();
-  }, [createModal, updateModal, deleteModal]);
   const columns = [
     {
       title: "#",
@@ -150,8 +155,13 @@ const Users = () => {
           />
         </div>
       </div>
-      <CreateUser isModalOpen={createModal} setIsModalOpen={setCreateModal} />
+      <CreateUser
+        loadData={loadData}
+        isModalOpen={createModal}
+        setIsModalOpen={setCreateModal}
+      />
       <UpdateUser
+        loadData={loadData}
         key={formData}
         isModalOpen={updateModal}
         setIsModalOpen={setUpdateModal}
@@ -165,5 +175,18 @@ const Users = () => {
     </>
   );
 };
+
+export async function getServerSideProps(ctx) {
+  const cookies = parseCookies(ctx.req.headers.cookie);
+  if (!cookies.access_token) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false,
+      },
+    };
+  }
+  return { props: {} };
+}
 
 export default Users;

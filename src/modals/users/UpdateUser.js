@@ -6,7 +6,7 @@ import { pickBy } from "lodash";
 import { useEffect } from "react";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
-const UpdateUser = ({ isModalOpen, setIsModalOpen, formData }) => {
+const UpdateUser = ({ isModalOpen, setIsModalOpen, formData, loadData }) => {
   const [updateUser] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const handleCancel = () => {
@@ -29,6 +29,7 @@ const UpdateUser = ({ isModalOpen, setIsModalOpen, formData }) => {
       messageApi.success("Kullanıcı başarıyla güncellendi.");
       setLoading(false);
       handleCancel();
+      loadData();
     } catch (err) {
       setLoading(false);
       messageApi.error(err.response?.data?.message);
