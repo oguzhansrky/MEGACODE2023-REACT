@@ -1,4 +1,4 @@
-import { blogService, roleService } from "@/services";
+import { blogService, jobPostsService } from "@/services";
 import { Button, message, Space, Table } from "antd";
 import moment from "moment";
 import { useRouter } from "next/router";
@@ -8,16 +8,15 @@ import { useState } from "react";
 import { Pagination } from "antd";
 import PageHead from "@/layout/head/Head";
 import DeleteConfirm from "@/modals/DeleteConfirm";
-import CreateRole from "@/modals/roles/CreateRole";
-import UpdateRole from "@/modals/roles/UpdateRole";
 import Image from "next/image";
 import Link from "next/link";
 import CreateBlog from "@/modals/blogs/CreateBlog";
-import { getBlogs } from "@/services/blogService";
 import UpdateBlog from "@/modals/blogs/UpdateBlog";
 import { parseCookies } from "@/utils";
+import CreateJobPost from "@/modals/jobPosts/CreateJobPost";
+import UpdateJobPost from "@/modals/jobPosts/UpdateJobPost";
 
-const Blogs = () => {
+const JobPosts = () => {
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -54,11 +53,11 @@ const Blogs = () => {
   }, [searchParams]);
   const loadData = async () => {
     try {
-      const blogs = await blogService.getBlogs(
-        decodeURIComponent(searchParams) + "&status=any"
+      const jobPosts = await jobPostsService.getJobPosts(
+        decodeURIComponent(searchParams)
       );
-      setData(blogs.payload.blogs);
-      setMeta(blogs.meta);
+      setData(jobPosts.payload.jobPosts);
+      setMeta(jobPosts.meta);
     } catch (err) {
       console.error(err);
     }
@@ -78,30 +77,24 @@ const Blogs = () => {
       key: "id",
     },
     {
-      title: "Blog",
+      title: "Başlık",
       dataIndex: "title",
       key: "title",
-      render: (blog, field) => (
-        <Link href={`/blog/${field?.slug}`}>
+      render: (title, field) => (
+        <Link href={`/career/${field?.slug}`}>
           <div className="d-flex align-items-center">
-            {field?.thumbnail && (
-              <Image
-                className="me-2"
-                width={70}
-                height={50}
-                src={field?.thumbnail}
-              />
-            )}
-            <span>{blog}</span>
+            <span>{title}</span>
           </div>
         </Link>
       ),
     },
     {
-      title: "Kategori",
-      dataIndex: "category",
-      key: "category",
-      render: (category) => <span>{category?.name}</span>,
+      title: "Bitiş Tarihi",
+      dataIndex: "deadline",
+      key: "deadline",
+      render: (deadline) => (
+        <span>{moment(deadline).format("DD.MM.YYYY")}</span>
+      ),
     },
     {
       title: "Durum",
@@ -153,8 +146,8 @@ const Blogs = () => {
 
   const handleDelete = async () => {
     try {
-      await blogService.deleteBlog(formData?.id);
-      messageApi.success("Blog başarıyla silindi.");
+      await jobPostsService.deleteJobPost(formData?.id);
+      messageApi.success("İş ilanı başarıyla silindi.");
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -164,11 +157,11 @@ const Blogs = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Bloglar"></PageHead>
+      <PageHead title="İş İlanları"></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Bloglar</h3>
-          <Button onClick={() => setCreateModal(true)}>Blog Oluştur</Button>
+          <h3>İş İlanları</h3>
+          <Button onClick={() => setCreateModal(true)}>İş İlanı Oluştur</Button>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}
@@ -183,12 +176,15 @@ const Blogs = () => {
             onChange={paginate}
             showSizeChanger
             showQuickJumper
-            showTotal={(total) => `Toplam ${total} blog`}
+            showTotal={(total) => `Toplam ${total} iş ilanı`}
           />
         </div>
       </div>
-      <CreateBlog isModalOpen={createModal} setIsModalOpen={setCreateModal} />
-      <UpdateBlog
+      <CreateJobPost
+        isModalOpen={createModal}
+        setIsModalOpen={setCreateModal}
+      />
+      <UpdateJobPost
         key={formData}
         isModalOpen={updateModal}
         setIsModalOpen={setUpdateModal}
@@ -215,4 +211,4 @@ export async function getServerSideProps(ctx) {
   }
   return { props: {} };
 }
-export default Blogs;
+export default JobPosts;
