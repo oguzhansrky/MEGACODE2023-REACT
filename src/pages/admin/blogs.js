@@ -15,6 +15,7 @@ import Link from "next/link";
 import CreateBlog from "@/modals/blogs/CreateBlog";
 import { getBlogs } from "@/services/blogService";
 import UpdateBlog from "@/modals/blogs/UpdateBlog";
+import { parseCookies } from "@/utils";
 
 const Blogs = () => {
   const router = useRouter();
@@ -41,13 +42,20 @@ const Blogs = () => {
     if (!hasLimit || !hasPage) setSearchParams(params);
   }, [query]);
   useEffect(() => {
-    router.push({ pathname, search: decodeURIComponent(searchParams) });
+    router.replace(
+      {
+        pathname,
+        search: decodeURIComponent(searchParams),
+      },
+      undefined,
+      { shallow: true }
+    );
     if (searchParams.has("page")) loadData();
   }, [searchParams]);
   const loadData = async () => {
     try {
       const blogs = await blogService.getBlogs(
-        decodeURIComponent(searchParams)
+        decodeURIComponent(searchParams) + "&status=any"
       );
       setData(blogs.payload.blogs);
       setMeta(blogs.meta);
@@ -102,9 +110,9 @@ const Blogs = () => {
       render: (status) => {
         switch (status) {
           case "public":
-            return <span>Yayında</span>;
+            return <span className="text-success fw-bold">Yayında</span>;
           case "archived":
-            return <span>Arşivde</span>;
+            return <span className="text-warning fw-bold">Arşivde</span>;
 
           default:
             break;
@@ -195,4 +203,16 @@ const Blogs = () => {
   );
 };
 
+export async function getServerSideProps(ctx) {
+  const cookies = parseCookies(ctx.req.headers.cookie);
+  if (!cookies.access_token) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false,
+      },
+    };
+  }
+  return { props: {} };
+}
 export default Blogs;

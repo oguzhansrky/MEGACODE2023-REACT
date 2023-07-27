@@ -1,11 +1,11 @@
 import { Button, Form, Input, message, Modal, Spin } from "antd";
 import React, { useState } from "react";
 import { LoadingOutlined } from "@ant-design/icons";
-import { categoriesService, roleService } from "@/services";
+import { categoriesService } from "@/services";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
 
-const CreateCategory = ({ isModalOpen, setIsModalOpen }) => {
+const CreateCategory = ({ isModalOpen, setIsModalOpen, loadData }) => {
   const [createCategory] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const handleCancel = () => {
@@ -21,6 +21,7 @@ const CreateCategory = ({ isModalOpen, setIsModalOpen }) => {
       messageApi.success("Kategori başarıyla oluşturuldu.");
       setLoading(false);
       handleCancel();
+      loadData();
     } catch (err) {
       setLoading(false);
       messageApi.error(err.response?.data?.message);

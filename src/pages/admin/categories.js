@@ -11,6 +11,7 @@ import DeleteConfirm from "@/modals/DeleteConfirm";
 import UpdateRole from "@/modals/roles/UpdateRole";
 import CreateCategory from "@/modals/categories/CreateCategory";
 import UpdateCategory from "@/modals/categories/UpdateCategory";
+import { parseCookies } from "@/utils";
 
 const categories = () => {
   const router = useRouter();
@@ -37,7 +38,14 @@ const categories = () => {
     if (!hasLimit || !hasPage) setSearchParams(params);
   }, [query]);
   useEffect(() => {
-    router.push({ pathname, search: decodeURIComponent(searchParams) });
+    router.replace(
+      {
+        pathname,
+        search: decodeURIComponent(searchParams),
+      },
+      undefined,
+      { shallow: true }
+    );
     if (searchParams.has("page")) loadData();
   }, [searchParams]);
   const loadData = async () => {
@@ -156,5 +164,18 @@ const categories = () => {
     </>
   );
 };
+
+export async function getServerSideProps(ctx) {
+  const cookies = parseCookies(ctx.req.headers.cookie);
+  if (!cookies.access_token) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false,
+      },
+    };
+  }
+  return { props: {} };
+}
 
 export default categories;

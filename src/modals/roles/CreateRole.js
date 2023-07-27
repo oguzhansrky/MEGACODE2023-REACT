@@ -5,7 +5,7 @@ import { roleService } from "@/services";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
 
-const CreateRole = ({ isModalOpen, setIsModalOpen }) => {
+const CreateRole = ({ isModalOpen, setIsModalOpen, loadData }) => {
   const [createRole] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const handleCancel = () => {
@@ -21,6 +21,7 @@ const CreateRole = ({ isModalOpen, setIsModalOpen }) => {
       messageApi.success("Rol başarıyla oluşturuldu.");
       setLoading(false);
       handleCancel();
+      loadData();
     } catch (err) {
       setLoading(false);
       messageApi.error(err.response?.data?.message);

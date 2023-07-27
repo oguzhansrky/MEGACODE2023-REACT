@@ -64,14 +64,16 @@ const UpdateBlog = ({ isModalOpen, setIsModalOpen, formData }) => {
 
   useEffect(() => {
     updateBlog.setFieldsValue(formData);
-    setFileList([
-      {
-        uid: "1",
-        name: formData?.thumbnail.split("/").pop(),
-        status: "done",
-        url: formData?.thumbnail,
-      },
-    ]);
+    if (formData?.thumbnail)
+      setFileList([
+        {
+          uid: "1",
+          name: formData?.thumbnail?.split("/").pop(),
+          status: "done",
+          url: formData?.thumbnail,
+        },
+      ]);
+    else setFileList([]);
   }, [updateBlog, isModalOpen]);
 
   const handleChange = ({ file, fileList }) => {
