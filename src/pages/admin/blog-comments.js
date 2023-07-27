@@ -1,4 +1,4 @@
-import { categoriesService, roleService, userService } from "@/services";
+import { blogcommentService, userService } from "@/services";
 import { Button, message, Space, Table } from "antd";
 import moment from "moment";
 import { useRouter } from "next/router";
@@ -8,11 +8,11 @@ import { useState } from "react";
 import { Pagination } from "antd";
 import PageHead from "@/layout/head/Head";
 import DeleteConfirm from "@/modals/DeleteConfirm";
-import CreateCategory from "@/modals/categories/CreateCategory";
-import UpdateCategory from "@/modals/categories/UpdateCategory";
-import { parseCookies } from "@/utils";
+import CreateBlogComment from "@/modals/blogcomments/CreateBlogComment";
+import _ from "lodash";
+import UpdateBlogComment from "@/modals/blogcomments/UpdateBlogComment";
 
-const categories = () => {
+const blogcomments = () => {
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -21,8 +21,8 @@ const categories = () => {
   const [searchParams, setSearchParams] = useState(new URLSearchParams());
   const [createModal, setCreateModal] = useState(false);
   const [updateModal, setUpdateModal] = useState(false);
-  const [deleteModal, setDeleteModal] = useState(false);
   const [formData, setFormData] = useState(null);
+  const [deleteModal, setDeleteModal] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
   useEffect(() => {
     const hasPage = params.has("page");
@@ -37,23 +37,16 @@ const categories = () => {
     if (!hasLimit || !hasPage) setSearchParams(params);
   }, [query]);
   useEffect(() => {
-    router.replace(
-      {
-        pathname,
-        search: decodeURIComponent(searchParams),
-      },
-      undefined,
-      { shallow: true }
-    );
+    router.push({ pathname, search: decodeURIComponent(searchParams) });
     if (searchParams.has("page")) loadData();
   }, [searchParams]);
   const loadData = async () => {
     try {
-      const categories = await categoriesService.getCategories(
+      const blogcomments = await blogcommentService.getBlogComments(
         decodeURIComponent(searchParams)
       );
-      setData(categories.payload.categories);
-      setMeta(categories.meta);
+      setData(blogcomments.payload.comments);
+      setMeta(blogcomments.meta);
     } catch (err) {
       console.error(err);
     }
@@ -73,9 +66,47 @@ const categories = () => {
       key: "id",
     },
     {
-      title: "İsim",
-      dataIndex: "name",
-      key: "name",
+      title: "İsim Soyisim",
+      dataIndex: "full_name",
+      key: "full_name",
+    },
+    {
+      title: "Yorum",
+      dataIndex: "comment",
+      key: "comment",
+      render: (comment) => {
+        return (
+          <span>
+            {_.truncate(comment, {
+              length: 115,
+              omission: "...",
+            })}
+          </span>
+        );
+      },
+    },
+    {
+      title: "Durum",
+      dataIndex: "status",
+      key: "status",
+      render: (status) => {
+        console.log(status);
+        switch (status) {
+          case "approved":
+            return <span className="text-success">Onaylı</span>;
+          case "unapproved":
+            return <span className="text-danger">Onaylanmadı</span>;
+          case "pending":
+            return <span className="text-warning">Onay Bekliyor</span>;
+          default:
+            return <span>-</span>;
+        }
+      },
+    },
+    {
+      title: "Blog",
+      dataIndex: "blog_id",
+      key: "blog_id",
     },
     {
       title: "Oluşturma Tarihi",
@@ -111,8 +142,8 @@ const categories = () => {
 
   const handleDelete = async () => {
     try {
-      await categoriesService.deleteCategory(formData?.id);
-      messageApi.success("Kategori başarıyla silindi.");
+      await blogcommentService.deleteBlogComment(formData?.id);
+      messageApi.success("Blog Yorumları başarıyla silindi.");
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -122,17 +153,19 @@ const categories = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Kategoriler"></PageHead>
+      <PageHead title="Blog Yorumları"></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Kategoriler</h3>
-          <Button onClick={() => setCreateModal(true)}>Kategori Oluştur</Button>
+          <h3>Blog Yorumları</h3>
         </div>
+
         <Table
           pagination={{ position: ["none", "none"] }}
           columns={columns}
           dataSource={data}
+          className=""
         />
+
         <div key={meta} className="d-flex justify-content-center my-4">
           <Pagination
             total={meta?.total}
@@ -145,16 +178,17 @@ const categories = () => {
           />
         </div>
       </div>
-      <CreateCategory
+      <CreateBlogComment
         isModalOpen={createModal}
         setIsModalOpen={setCreateModal}
       />
-      <UpdateCategory
+      <UpdateBlogComment
         key={formData}
         isModalOpen={updateModal}
         setIsModalOpen={setUpdateModal}
         formData={formData}
       />
+
       <DeleteConfirm
         isModalOpen={deleteModal}
         setIsModalOpen={setDeleteModal}
@@ -164,17 +198,4 @@ const categories = () => {
   );
 };
 
-export async function getServerSideProps(ctx) {
-  const cookies = parseCookies(ctx.req.headers.cookie);
-  if (!cookies.access_token) {
-    return {
-      redirect: {
-        destination: "/admin/login",
-        permanent: false,
-      },
-    };
-  }
-  return { props: {} };
-}
-
-export default categories;
+export default blogcomments;

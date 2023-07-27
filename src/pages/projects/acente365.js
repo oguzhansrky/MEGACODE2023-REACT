@@ -3,30 +3,30 @@ import Clients from "@/components/projects/Clients";
 import PricingTable from "@/components/projects/PricingTable";
 import { Tabs } from "antd";
 import React from "react";
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from "next-translate/useTranslation";
 
 const Acente365 = () => {
   const { t } = useTranslation("common");
   const items = [
     {
       key: 1,
-      label: t('acente365.label1'),
+      label: t("acente365.label1"),
       children: (
         <div className="row flex-row-reverse">
           <div className="col-lg-12">
             <div className="details_content">
               <div className="sec_title mb-20">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                {t('acente365.label1_question')}
+                  {t("acente365.label1_question")}
                 </h5>
                 <p className="f_400 f_size_15">
-                {t('acente365.label1_question_answer1')}
+                  {t("acente365.label1_question_answer1")}
                 </p>
                 <p className="f_400 f_size_15">
-                {t('acente365.label1_question_answer2')}
+                  {t("acente365.label1_question_answer2")}
                 </p>
                 <p className="f_400 f_size_15">
-                {t('acente365.label1_question_answer3')}
+                  {t("acente365.label1_question_answer3")}
                 </p>
               </div>
             </div>
@@ -36,38 +36,38 @@ const Acente365 = () => {
     },
     {
       key: 2,
-      label: t('acente365.label2'),
+      label: t("acente365.label2"),
       children: (
         <div className="row flex-row-reverse">
           <div className="col-lg-12">
             <div className="details_content">
               <div className="sec_title mb_70">
                 <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                {t('acente365.label2_question')}
+                  {t("acente365.label2_question")}
                 </h5>
                 <h5 className="f_p f_size_15 f_500 t_color3 mb-20">
-                {t('acente365.label2_question_answer1')}
-                </h5>
-                <p className="f_400 f_size_15 mb-20">
-                {t('acente365.label2_question_answer2')}
-                </p>
-                <h5 className="f_p f_size_15 f_500 t_color3 mb-20">
-                {t('acente365.label2_question_answer3')}
+                  {t("acente365.label2_question_answer1")}
                 </h5>
                 <p className="f_400 f_size_15 mb-20">
-                {t('acente365.label2_question_answer4')}
+                  {t("acente365.label2_question_answer2")}
                 </p>
                 <h5 className="f_p f_size_15 f_500 t_color3 mb-20">
-                {t('acente365.label2_question_answer5')}
+                  {t("acente365.label2_question_answer3")}
                 </h5>
                 <p className="f_400 f_size_15 mb-20">
-                {t('acente365.label2_question_answer6')}
+                  {t("acente365.label2_question_answer4")}
                 </p>
                 <h5 className="f_p f_size_15 f_500 t_color3 mb-20">
-                {t('acente365.label2_question_answer7')}
+                  {t("acente365.label2_question_answer5")}
+                </h5>
+                <p className="f_400 f_size_15 mb-20">
+                  {t("acente365.label2_question_answer6")}
+                </p>
+                <h5 className="f_p f_size_15 f_500 t_color3 mb-20">
+                  {t("acente365.label2_question_answer7")}
                 </h5>
                 <p className="f_400 f_size_15">
-                {t('acente365.label2_question_answer8')}
+                  {t("acente365.label2_question_answer8")}
                 </p>
               </div>
             </div>
@@ -77,7 +77,7 @@ const Acente365 = () => {
     },
     {
       key: 3,
-      label: t('acente365.label3'),
+      label: t("acente365.label3"),
       children: (
         <div
           className="tab-pane fade active show"
@@ -90,25 +90,25 @@ const Acente365 = () => {
               <div className="details_content">
                 <div className="sec_title mb_70">
                   <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-                  {t('acente365.label3_question')}
+                    {t("acente365.label3_question")}
                   </h5>
                   <h5 className="f_p f_size_15 f_500 t_color3 mb-20">
-                  {t('acente365.label3_question_answer1')}
-                  </h5>
-                  <p className="f_400 f_size_15 mb-20">
-                  {t('acente365.label3_question_answer2')}
-                  </p>
-                  <h5 className="f_p f_size_15 f_500 t_color3 mb-20">
-                  {t('acente365.label3_question_answer3')}
+                    {t("acente365.label3_question_answer1")}
                   </h5>
                   <p className="f_400 f_size_15 mb-20">
-                  {t('acente365.label3_question_answer4')}
+                    {t("acente365.label3_question_answer2")}
                   </p>
                   <h5 className="f_p f_size_15 f_500 t_color3 mb-20">
-                  {t('acente365.label3_question_answer5')}
+                    {t("acente365.label3_question_answer3")}
+                  </h5>
+                  <p className="f_400 f_size_15 mb-20">
+                    {t("acente365.label3_question_answer4")}
+                  </p>
+                  <h5 className="f_p f_size_15 f_500 t_color3 mb-20">
+                    {t("acente365.label3_question_answer5")}
                   </h5>
                   <p className="f_400 f_size_15">
-                  {t('acente365.label3_question_answer6')}
+                    {t("acente365.label3_question_answer6")}
                   </p>
                 </div>
               </div>
@@ -119,17 +119,17 @@ const Acente365 = () => {
     },
     {
       key: 4,
-      label: t('acente365.label4'),
+      label: t("acente365.label4"),
       children: (
         <div className="row ">
           <div className="col-lg-4 d-flex align-items-center">
             <div className="seo_features_content">
               <h6 className="Acente365">Acente365</h6>
               <h3 className="Sigorta-Platformu-Title">
-              {t('acente365.label4_question')}
+                {t("acente365.label4_question")}
               </h3>
               <p className="t_color">
-              {t('acente365.label4_question_answer1')}{" "}
+                {t("acente365.label4_question_answer1")}{" "}
               </p>
             </div>
           </div>
@@ -148,39 +148,23 @@ const Acente365 = () => {
     },
     {
       key: 5,
-      label: t('acente365.label5'),
+      label: t("acente365.label5"),
       children: (
         <div className="row ">
           <div className="col-lg-12 d-flex align-items-center">
             <div className="seo_features_content">
               <h5 className="f_p f_size_22 f_500 t_color3 mb-20">
-              {t('acente365.label5_question')}
+                {t("acente365.label5_question")}
               </h5>
-              <p>
-              {t('acente365.label5_question_answer1')}
-              </p>
-              <p>
-              {t('acente365.label5_question_answer2')}
-              </p>
-              <p>
-              {t('acente365.label5_question_answer3')}
-              </p>
-              <p>
-              {t('acente365.label5_question_answer4')}
-              </p>
-              <p>
-              {t('acente365.label5_question_answer5')}
-              </p>
-              <p> {t('acente365.label5_question_answer6')}</p>
-              <p>
-              {t('acente365.label5_question_answer7')}
-              </p>
-              <p>
-              {t('acente365.label5_question_answer8')}
-              </p>
-              <p>
-              {t('acente365.label5_question_answer9')}
-              </p>
+              <p>{t("acente365.label5_question_answer1")}</p>
+              <p>{t("acente365.label5_question_answer2")}</p>
+              <p>{t("acente365.label5_question_answer3")}</p>
+              <p>{t("acente365.label5_question_answer4")}</p>
+              <p>{t("acente365.label5_question_answer5")}</p>
+              <p> {t("acente365.label5_question_answer6")}</p>
+              <p>{t("acente365.label5_question_answer7")}</p>
+              <p>{t("acente365.label5_question_answer8")}</p>
+              <p>{t("acente365.label5_question_answer9")}</p>
             </div>
           </div>
         </div>
@@ -192,7 +176,7 @@ const Acente365 = () => {
       <Content
         title={"Acente"}
         title_2={"365"}
-        desc= {t('acente365.label_desc')}
+        desc={t("acente365.label_desc")}
       >
         <Tabs defaultActiveKey="1" tabPosition={"left"} items={items} />
         <Clients />
@@ -200,64 +184,56 @@ const Acente365 = () => {
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
               <h5>
-                <a href="page-services-5.html">3.000+ {t('acente365.user')} </a>
+                <a href="page-services-5.html">3.000+ {t("acente365.user")} </a>
               </h5>
               <br></br>
               <div className="icon">
-                <img src="/assets/img/icons/keep7.png" alt="" />
+                <img src="/assets/img/icons/inovatif cozumler-11.png" alt="" />
               </div>
               <div className="info">
-                <div className="text">
-                {t('acente365.text1')}
-                </div>
+                <div className="text">{t("acente365.text1")}</div>
               </div>
             </div>
           </div>
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
               <h5>
-                <a href="page-services-5.html">{t('acente365.text2')}</a>
+                <a href="page-services-5.html">{t("acente365.text2")}</a>
               </h5>
               <br></br>
               <div className="icon">
-                <img src="/assets/img/icons/keep7.png" alt="" />
+                <img src="/assets/img/icons/inovatif cozumler-9.png" alt="" />
               </div>
               <div className="info">
-                <div className="text">
-                {t('acente365.text3')}
-                </div>
+                <div className="text">{t("acente365.text3")}</div>
               </div>
             </div>
           </div>
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
               <h5>
-                <a href="page-services-5.html">{t('acente365.text5')} </a>
+                <a href="page-services-5.html">{t("acente365.text5")} </a>
               </h5>
               <br></br>
               <div className="icon">
-                <img src="/assets/img/icons/keep7.png" alt="" />
+                <img src="/assets/img/icons/inovatif cozumler-3.png" alt="" />
               </div>
               <div className="info">
-                <div className="text">
-                {t('acente365.text4')}
-                </div>
+                <div className="text">{t("acente365.text4")}</div>
               </div>
             </div>
           </div>
           <div className="col-lg-3 service-box p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
               <h5>
-                <a href="page-services-5.html">{t('acente365.support')} </a>
+                <a href="page-services-5.html">{t("acente365.support")} </a>
               </h5>
               <br></br>
               <div className="icon">
-                <img src="/assets/img/icons/keep7.png" alt="" />
+                <img src="/assets/img/icons/inovatif cozumler-2.png" alt="" />
               </div>
               <div className="info">
-                <div className="text">
-                {t('acente365.support_text')}
-                </div>
+                <div className="text">{t("acente365.support_text")}</div>
               </div>
             </div>
           </div>
@@ -269,22 +245,16 @@ const Acente365 = () => {
           <div className="col-lg-6">
             <div className="p_service_item pl_50 pr_20 mt_70">
               <h3 className="f_p f_size_28 l_height50 f_500 t_color2 mb-4">
-              {t('acente365.cloud')}
+                {t("acente365.cloud")}
               </h3>
-              <p className="mb-3 fs-6">
-              {t('acente365.acente_text1')}
-              </p>
-              <p className="mb-3 fs-6">
-              {t('acente365.acente_text2')}
-              </p>
-              <p className="mb-3 fs-6">
-              {t('acente365.acente_text3')}
-              </p>
+              <p className="mb-3 fs-6">{t("acente365.acente_text1")}</p>
+              <p className="mb-3 fs-6">{t("acente365.acente_text2")}</p>
+              <p className="mb-3 fs-6">{t("acente365.acente_text3")}</p>
             </div>
           </div>
         </div>
         <h3 className="f_p f_size_28 l_height50 f_500 t_color2 my-5">
-          {t('acente365.acente_fonc')}
+          {t("acente365.acente_fonc")}
         </h3>
         <img src="https://megacode.com.tr/img/mega/function.png"></img>
 
