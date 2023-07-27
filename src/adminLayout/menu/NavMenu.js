@@ -16,23 +16,26 @@ function getItem(label, key, icon, children, type) {
   };
 }
 const items = [
-  getItem("Yönetim", "sub1", <CodeSandboxOutlined />, [
-    getItem(<Link href="/admin/users">Kullanıcılar</Link>, "user"),
-    getItem(<Link href="/admin/roles">Roller</Link>, "role"),
-  ]),
-  getItem("Navigation Two", "sub2", <AppstoreOutlined />, [
-    getItem("Option 5", "5"),
-    getItem("Option 6", "6"),
-    getItem("Submenu", "sub3", null, [
-      getItem("Option 7", "7"),
-      getItem("Option 8", "8"),
+  getItem("İçerik", "sub1", <AppstoreOutlined />, [
+    getItem(<Link href="/admin/categories">Kategoriler</Link>, "category"),
+    getItem("Blog", "sub34", null, [
+      getItem(<Link href="/admin/blogs">Bloglar</Link>, "blogs"),
+      getItem(
+        <Link href="/admin/blog-comments">Blog Yorumları</Link>,
+        "blog-comments"
+      ),
     ]),
   ]),
-  getItem("Navigation Three", "sub4", <SettingOutlined />, [
-    getItem("Option 9", "9"),
-    getItem("Option 10", "10"),
-    getItem("Option 11", "11"),
-    getItem("Option 12", "12"),
+  getItem("Kariyer", "sub2", <CodeSandboxOutlined />, [
+    getItem(<Link href="/admin/job-posts">İş İlanları</Link>, "job-posts"),
+    getItem(
+      <Link href="/admin/applications">İş Başvuruları</Link>,
+      "applications"
+    ),
+  ]),
+  getItem("Yönetim", "sub3", <SettingOutlined />, [
+    getItem(<Link href="/admin/users">Kullanıcılar</Link>, "user"),
+    getItem(<Link href="/admin/roles">Roller</Link>, "role"),
   ]),
 ];
 
