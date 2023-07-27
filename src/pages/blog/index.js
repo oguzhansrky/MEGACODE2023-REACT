@@ -1,7 +1,7 @@
 import AllNews from "@/components/blog/AllNews";
 import PopularPost from "@/components/blog/PopularPost";
 import ProjectSlider from "@/components/projects/ProjectSlider";
-import { blogService } from "@/services";
+import { blogService, categoriesService } from "@/services";
 import React from "react";
 
 export const Blog = ({ blogs, popularBlogs, categories }) => {
@@ -25,7 +25,7 @@ export async function getServerSideProps(ctx) {
     const popularBlogs = await blogService.getBlogs(
       "page=1&limit=3&sort=view_count"
     );
-    const categories = await blogService.getCategories("page=1&limit=10");
+    const categories = await categoriesService.getCategories("page=1&limit=10");
     return {
       props: {
         blogs: blogs,
