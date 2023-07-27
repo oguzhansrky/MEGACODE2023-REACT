@@ -1,4 +1,4 @@
-import { roleService, userService } from "@/services";
+import { categoriesService, roleService, userService } from "@/services";
 import { Button, message, Space, Table } from "antd";
 import moment from "moment";
 import { useRouter } from "next/router";
@@ -7,12 +7,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Pagination } from "antd";
 import PageHead from "@/layout/head/Head";
-
 import DeleteConfirm from "@/modals/DeleteConfirm";
-import CreateRole from "@/modals/roles/CreateRole";
 import UpdateRole from "@/modals/roles/UpdateRole";
+import CreateCategory from "@/modals/categories/CreateCategory";
+import UpdateCategory from "@/modals/categories/UpdateCategory";
 
-const Roles = () => {
+const categories = () => {
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -104,7 +104,7 @@ const Roles = () => {
 
   const handleDelete = async () => {
     try {
-      await roleService.deleteRole(formData?.id);
+      await categoriesService.deleteCategory(formData?.id);
       messageApi.success("Kategori başarıyla silindi.");
       setDeleteModal(false);
     } catch (err) {
@@ -119,7 +119,7 @@ const Roles = () => {
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
           <h3>Kategoriler</h3>
-          <Button onClick={() => setCreateModal(true)}>Rol Oluştur</Button>
+          <Button onClick={() => setCreateModal(true)}>Kategori Oluştur</Button>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}
@@ -138,8 +138,11 @@ const Roles = () => {
           />
         </div>
       </div>
-      <CreateRole isModalOpen={createModal} setIsModalOpen={setCreateModal} />
-      <UpdateRole
+      <CreateCategory
+        isModalOpen={createModal}
+        setIsModalOpen={setCreateModal}
+      />
+      <UpdateCategory
         key={formData}
         isModalOpen={updateModal}
         setIsModalOpen={setUpdateModal}
@@ -154,4 +157,4 @@ const Roles = () => {
   );
 };
 
-export default Roles;
+export default categories;

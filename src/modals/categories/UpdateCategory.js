@@ -1,24 +1,31 @@
 import { Button, Form, Input, message, Modal, Spin } from "antd";
 import React, { useState } from "react";
 import { LoadingOutlined } from "@ant-design/icons";
-import { categoriesService, roleService } from "@/services";
+import { categoriesService, roleService, userService } from "@/services";
+import { pickBy } from "lodash";
+import { useEffect } from "react";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
-
-const CreateCategory = ({ isModalOpen, setIsModalOpen }) => {
-  const [createCategory] = Form.useForm();
+const UpdateCategory = ({ isModalOpen, setIsModalOpen, formData }) => {
+  const [updateCategory] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const handleCancel = () => {
-    createCategory.resetFields();
+    updateCategory.resetFields();
     setIsModalOpen(false);
   };
   const [messageApi, contextHolder] = message.useMessage();
 
   const handleSubmit = async (values) => {
     setLoading(true);
+    const sanitizedData = pickBy(values, (value) => value?.length > 0);
     try {
-      await categoriesService.createCategory({ ...values });
-      messageApi.success("Kategori başarıyla oluşturuldu.");
+      await categoriesService.updateCategory(
+        {
+          ...sanitizedData,
+        },
+        formData?.id
+      );
+      messageApi.success("Kategori başarıyla güncellendi.");
       setLoading(false);
       handleCancel();
     } catch (err) {
@@ -28,11 +35,16 @@ const CreateCategory = ({ isModalOpen, setIsModalOpen }) => {
     }
   };
 
+  useEffect(() => {
+    updateCategory.setFieldsValue({
+      name: formData?.name || "",
+    });
+  }, [updateCategory, isModalOpen]);
   return (
     <>
       {contextHolder}
       <Modal
-        title="Kategori Oluştur"
+        title="Kategori Güncelle"
         open={isModalOpen}
         onCancel={handleCancel}
         footer={
@@ -44,43 +56,32 @@ const CreateCategory = ({ isModalOpen, setIsModalOpen }) => {
           >
             <Button
               className="mt-2 bg-primary text-white"
-              form="create_category"
+              form="update_category"
               htmlType="submit"
             >
               {loading && (
                 <Spin className="text-white mr-2" indicator={antIcon} />
               )}
-              Oluştur
+              Güncelle
             </Button>
           </Form.Item>
         }
       >
         <Form
-          id="create_category"
+          id="update_category"
           className="my-4"
-          form={createCategory}
+          form={updateCategory}
+          initialValues={formData}
           labelCol={{
             span: 6,
           }}
           wrapperCol={{
             span: 16,
           }}
-          initialValues={{
-            remember: true,
-          }}
           onFinish={handleSubmit}
           autoComplete="off"
         >
-          <Form.Item
-            label="Kategori İsmi"
-            name="name"
-            rules={[
-              {
-                required: true,
-                message: "Lütfen kategori ismi giriniz!",
-              },
-            ]}
-          >
+          <Form.Item label="Kategori İsmi" name="name">
             <Input />
           </Form.Item>
         </Form>
@@ -89,4 +90,4 @@ const CreateCategory = ({ isModalOpen, setIsModalOpen }) => {
   );
 };
 
-export default CreateCategory;
+export default UpdateCategory;
