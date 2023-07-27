@@ -7,10 +7,10 @@ import { useEffect } from "react";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
 const UpdateUser = ({ isModalOpen, setIsModalOpen, formData }) => {
-  console.log(formData);
   const [updateUser] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const handleCancel = () => {
+    updateUser.resetFields();
     setIsModalOpen(false);
   };
   const [messageApi, contextHolder] = message.useMessage();
@@ -28,9 +28,7 @@ const UpdateUser = ({ isModalOpen, setIsModalOpen, formData }) => {
       );
       messageApi.success("Kullanıcı başarıyla güncellendi.");
       setLoading(false);
-      setTimeout(() => {
-        handleCancel();
-      }, 1000);
+      handleCancel();
     } catch (err) {
       setLoading(false);
       messageApi.error(err.response?.data?.message);
@@ -43,7 +41,7 @@ const UpdateUser = ({ isModalOpen, setIsModalOpen, formData }) => {
       full_name: formData?.full_name || "",
       email: formData?.email || "",
     });
-  }, [formData, updateUser]);
+  }, [updateUser, isModalOpen]);
   return (
     <>
       {contextHolder}
@@ -60,7 +58,7 @@ const UpdateUser = ({ isModalOpen, setIsModalOpen, formData }) => {
           >
             <Button
               className="mt-2 bg-primary text-white"
-              form="create_user"
+              form="update_user"
               htmlType="submit"
             >
               {loading && (
@@ -72,7 +70,7 @@ const UpdateUser = ({ isModalOpen, setIsModalOpen, formData }) => {
         }
       >
         <Form
-          id="create_user"
+          id="update_user"
           className="my-4"
           form={updateUser}
           initialValues={formData}

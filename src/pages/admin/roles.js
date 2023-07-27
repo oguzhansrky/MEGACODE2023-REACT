@@ -1,4 +1,4 @@
-import { userService } from "@/services";
+import { roleService, userService } from "@/services";
 import { Button, message, Space, Table } from "antd";
 import moment from "moment";
 import { useRouter } from "next/router";
@@ -7,11 +7,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Pagination } from "antd";
 import PageHead from "@/layout/head/Head";
-import CreateUser from "@/modals/users/CreateUser";
 import UpdateUser from "@/modals/users/UpdateUser";
 import DeleteConfirm from "@/modals/DeleteConfirm";
+import CreateRole from "@/modals/roles/CreateRole";
+import UpdateRole from "@/modals/roles/UpdateRole";
 
-const Users = () => {
+const Roles = () => {
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -20,8 +21,8 @@ const Users = () => {
   const [searchParams, setSearchParams] = useState(new URLSearchParams());
   const [createModal, setCreateModal] = useState(false);
   const [updateModal, setUpdateModal] = useState(false);
-  const [formData, setFormData] = useState(null);
   const [deleteModal, setDeleteModal] = useState(false);
+  const [formData, setFormData] = useState(null);
   const [messageApi, contextHolder] = message.useMessage();
   useEffect(() => {
     const hasPage = params.has("page");
@@ -41,11 +42,11 @@ const Users = () => {
   }, [searchParams]);
   const loadData = async () => {
     try {
-      const users = await userService.getUsers(
+      const roles = await roleService.getRoles(
         decodeURIComponent(searchParams)
       );
-      setData(users.payload.users);
-      setMeta(users.meta);
+      setData(roles.payload.roles);
+      setMeta(roles.meta);
     } catch (err) {
       console.error(err);
     }
@@ -65,26 +66,15 @@ const Users = () => {
       key: "id",
     },
     {
-      title: "İsim Soyisim",
-      dataIndex: "full_name",
-      key: "full_name",
-    },
-    {
-      title: "Email",
-      dataIndex: "email",
-      key: "email",
+      title: "İsim",
+      dataIndex: "name",
+      key: "name",
     },
     {
       title: "Oluşturma Tarihi",
       dataIndex: "created_at",
       key: "created_at",
       render: (date) => <span>{moment(date).format("DD.MM.YYYY mm:s")}</span>,
-    },
-    {
-      title: "Rol",
-      key: "role",
-      dataIndex: "role",
-      render: (role) => <span>{role.name}</span>,
     },
     {
       title: "İşlem",
@@ -114,8 +104,8 @@ const Users = () => {
 
   const handleDelete = async () => {
     try {
-      await userService.deleteUser(formData?.id);
-      messageApi.success("Kullanıcı başarıyla silindi.");
+      await roleService.deleteRole(formData?.id);
+      messageApi.success("Rol başarıyla silindi.");
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -125,13 +115,11 @@ const Users = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Kullanıcılar"></PageHead>
+      <PageHead title="Roller"></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Kullanıcılar</h3>
-          <Button onClick={() => setCreateModal(true)}>
-            Kullanıcı Oluştur
-          </Button>
+          <h3>Roller</h3>
+          <Button onClick={() => setCreateModal(true)}>Rol Oluştur</Button>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}
@@ -150,8 +138,8 @@ const Users = () => {
           />
         </div>
       </div>
-      <CreateUser isModalOpen={createModal} setIsModalOpen={setCreateModal} />
-      <UpdateUser
+      <CreateRole isModalOpen={createModal} setIsModalOpen={setCreateModal} />
+      <UpdateRole
         key={formData}
         isModalOpen={updateModal}
         setIsModalOpen={setUpdateModal}
@@ -166,4 +154,4 @@ const Users = () => {
   );
 };
 
-export default Users;
+export default Roles;
