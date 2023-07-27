@@ -42,11 +42,11 @@ const Roles = () => {
   }, [searchParams]);
   const loadData = async () => {
     try {
-      const roles = await roleService.getRoles(
+      const categories = await categoriesService.getCategories(
         decodeURIComponent(searchParams)
       );
-      setData(roles.payload.roles);
-      setMeta(roles.meta);
+      setData(categories.payload.categories);
+      setMeta(categories.meta);
     } catch (err) {
       console.error(err);
     }
@@ -105,7 +105,7 @@ const Roles = () => {
   const handleDelete = async () => {
     try {
       await roleService.deleteRole(formData?.id);
-      messageApi.success("Rol başarıyla silindi.");
+      messageApi.success("Kategori başarıyla silindi.");
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -115,10 +115,10 @@ const Roles = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Roller"></PageHead>
+      <PageHead title="Kategoriler"></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Roller</h3>
+          <h3>Kategoriler</h3>
           <Button onClick={() => setCreateModal(true)}>Rol Oluştur</Button>
         </div>
         <Table
