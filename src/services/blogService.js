@@ -10,13 +10,3 @@ export async function getBlogs(query) {
 
   return response.data;
 }
-
-/**
- * GET: /categories'
- */
-export async function getCategories(query) {
-  const endpoint = generateApiEndpoint(`categories?${query ?? ""}`);
-  const response = await axios.get(endpoint);
-
-  return response.data;
-}
