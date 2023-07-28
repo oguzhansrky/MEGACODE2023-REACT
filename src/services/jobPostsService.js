@@ -13,10 +13,10 @@ export async function getJobPosts(query) {
 }
 
 /**
- * GET: /job-posts/{id}'
+ * GET: /job-posts/{slug}'
  */
-export async function getJobPost(id) {
-  const endpoint = generateApiEndpoint(`job-posts/${id}`);
+export async function getJobPost(slug) {
+  const endpoint = generateApiEndpoint(`job-posts/${slug}`);
   const response = await axios.get(endpoint);
 
   return response.data;
