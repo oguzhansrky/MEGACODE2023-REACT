@@ -7,10 +7,11 @@ import { useState } from "react";
 import { Pagination } from "antd";
 import PageHead from "@/layout/head/Head";
 import DeleteConfirm from "@/modals/DeleteConfirm";
-import CreateBlogComment from "@/modals/blogcomments/CreateBlogComment";
+
 import _ from "lodash";
-import UpdateBlogComment from "@/modals/blogcomments/UpdateBlogComment";
+
 import { applicationService } from "@/services";
+import { parseCookies } from "@/utils";
 
 const Application = () => {
   const router = useRouter();
@@ -37,7 +38,14 @@ const Application = () => {
     if (!hasLimit || !hasPage) setSearchParams(params);
   }, [query]);
   useEffect(() => {
-    router.push({ pathname, search: decodeURIComponent(searchParams) });
+    router.replace(
+      {
+        pathname,
+        search: decodeURIComponent(searchParams),
+      },
+      undefined,
+      { shallow: true }
+    );
     if (searchParams.has("page")) loadData();
   }, [searchParams]);
   const loadData = async () => {
@@ -45,7 +53,7 @@ const Application = () => {
       const jobapplication = await applicationService.getJobApplication(
         decodeURIComponent(searchParams)
       );
-      setData(jobapplication.payload.comments);
+      setData(jobapplication.payload.applications);
       setMeta(jobapplication.meta);
     } catch (err) {
       console.error(err);
@@ -72,7 +80,7 @@ const Application = () => {
     },
     {
       title: "Soyisim",
-      dataIndex: "Last_name",
+      dataIndex: "last_name",
       key: "Last_name",
     },
     {
@@ -107,8 +115,9 @@ const Application = () => {
     },
     {
       title: "İş İlanı",
-      dataIndex: "post_id",
-      key: "post_id",
+      dataIndex: "post",
+      key: "post",
+      render: (post) => <span>{post?.title}</span>,
     },
     {
       title: "Oluşturma Tarihi",
@@ -121,13 +130,8 @@ const Application = () => {
       key: "action",
       render: (_, record) => (
         <Space size="middle">
-          <a
-            onClick={() => {
-              setFormData(record);
-              setUpdateModal(true);
-            }}
-          >
-            Düzenle
+          <a target="_blank" download={true} href={record?.resume}>
+            CV İndir
           </a>
           <a
             onClick={() => {
@@ -186,5 +190,17 @@ const Application = () => {
     </>
   );
 };
+export async function getServerSideProps(ctx) {
+  const cookies = parseCookies(ctx.req.headers.cookie);
+  if (!cookies.access_token) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false,
+      },
+    };
+  }
+  return { props: {} };
+}
 
 export default Application;

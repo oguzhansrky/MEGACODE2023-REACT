@@ -11,6 +11,7 @@ import DeleteConfirm from "@/modals/DeleteConfirm";
 import CreateBlogComment from "@/modals/blogcomments/CreateBlogComment";
 import _ from "lodash";
 import UpdateBlogComment from "@/modals/blogcomments/UpdateBlogComment";
+import { parseCookies } from "@/utils";
 
 const blogcomments = () => {
   const router = useRouter();
@@ -37,7 +38,14 @@ const blogcomments = () => {
     if (!hasLimit || !hasPage) setSearchParams(params);
   }, [query]);
   useEffect(() => {
-    router.push({ pathname, search: decodeURIComponent(searchParams) });
+    router.replace(
+      {
+        pathname,
+        search: decodeURIComponent(searchParams),
+      },
+      undefined,
+      { shallow: true }
+    );
     if (searchParams.has("page")) loadData();
   }, [searchParams]);
   const loadData = async () => {
@@ -197,5 +205,17 @@ const blogcomments = () => {
     </>
   );
 };
+export async function getServerSideProps(ctx) {
+  const cookies = parseCookies(ctx.req.headers.cookie);
+  if (!cookies.access_token) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false,
+      },
+    };
+  }
+  return { props: {} };
+}
 
 export default blogcomments;
