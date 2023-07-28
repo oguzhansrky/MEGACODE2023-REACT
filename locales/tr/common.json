@@ -383,11 +383,13 @@
             "deniz":"Deniz Ticaret Odası Toplantı Uygulaması",
             "deniz_design":"Dizayn",
             "deniz_dev":"Geliştirme"
-        }
-            
-        
-
-     
-    
-
+        },
+        "job_posts" : {
+            "full_time" : "Tam Zamanlı",
+            "part_time" : "Yarı Zamanlı",
+            "hybrid" : "Hibrit",
+            "on_site" : "İşyerinde",
+            "remote" : "Uzaktan",
+         "deadline" : "Son Başvuru Tarihi: "
+         }
 }   

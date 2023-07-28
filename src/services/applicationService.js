@@ -1,4 +1,5 @@
 import { data } from "autoprefixer";
+import axios from "axios";
 import { generateApiEndpoint } from "../utils";
 import restApiClient from "./client";
 
@@ -24,9 +25,9 @@ export async function getJobApplication(id) {
 /**
  * POST: /applications'
  */
-export async function createJobApplication(query) {
-  const endpoint = generateApiEndpoint(`applications/${query}`);
-  const response = await restApiClient.post(endpoint, data);
+export async function createJobApplication(data) {
+  const endpoint = generateApiEndpoint(`applications`);
+  const response = await axios.post(endpoint, data);
 
   return response.data;
 }

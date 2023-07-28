@@ -8,16 +8,16 @@ const LoadingUI = () => {
       <Head>
         <link rel="stylesheet" href="/assets/css/loading.css" />
       </Head>
-      <div class="contain">
-        <div class="cube-wrapper">
-          <div class="cube-folding">
-            <span class="leaf1"></span>
-            <span class="leaf2"></span>
-            <span class="leaf3"></span>
-            <span class="leaf4"></span>
+      <div className="contain">
+        <div className="cube-wrapper">
+          <div className="cube-folding">
+            <span className="leaf1"></span>
+            <span className="leaf2"></span>
+            <span className="leaf3"></span>
+            <span className="leaf4"></span>
           </div>
-          <div class="loading-container">
-            <div class="loading-text">
+          <div className="loading-container">
+            <div className="loading-text">
               <span>M</span>
               <span>E</span>
               <span>G</span>

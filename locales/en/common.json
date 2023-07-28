@@ -376,15 +376,14 @@
          "deniz":"Deniz Ticaret Odası Meeting Application",
          "deniz_design":"Design",
          "deniz_dev":"Development"
-
-
-
+      },
+      "job_posts" : {
+         "full_time" : "Full-time",
+         "part_time" : "Part-time",
+         "hybrid" : "Hybrid",
+         "on_site" : "On-site",
+         "remote" : "Remote",
+         "deadline" : "Deadline: "
       }
-      
-
-
-
-
-
    
 }

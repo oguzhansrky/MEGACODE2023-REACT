@@ -45,8 +45,19 @@ const App = ({ Component, pageProps }) => {
   const accessToken = Cookies.get("access_token");
   const [loading, setLoading] = useState(null);
   useEffect(() => {
-    const handleStart = (url) => url !== router.asPath && setLoading(true);
-    const handleComplete = (url) => url === router.asPath && setLoading(false);
+    const handleStart = (url) => {
+      const localePrefix = `/${router.locale}`;
+      if (url !== `${localePrefix}${router.asPath}`) {
+        setLoading(true);
+      }
+    };
+
+    const handleComplete = (url) => {
+      const localePrefix = `/${router.locale}`;
+      if (url === `${localePrefix}${router.asPath}` || url === router.asPath) {
+        setLoading(false);
+      }
+    };
 
     router.events.on("routeChangeStart", handleStart);
     router.events.on("routeChangeComplete", handleComplete);
@@ -57,7 +68,7 @@ const App = ({ Component, pageProps }) => {
       router.events.off("routeChangeComplete", handleComplete);
       router.events.off("routeChangeError", handleComplete);
     };
-  });
+  }, [router.asPath, router.locale]);
 
   return (
     <>

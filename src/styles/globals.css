@@ -21468,6 +21468,22 @@ footer.style-15 .foot p {
   transform: translate(-50%, -50%);
 }
 
+.tags span {
+  font-weight: 600; 
+     padding: 6px 15px; 
+     border-radius: 30px; 
+     background-color: #edf5ff; 
+     color: #157efb;
+}
+
+.ant-upload-select {
+  width: 100% !important;
+  min-height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 50px !important;
+}
 
 
 
