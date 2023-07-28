@@ -59,69 +59,44 @@ const Footer = () => {
                     <h6 className="link_title">Links</h6>
                     <ul>
                       <li>
-                        <a href="#">IT Consultations </a>
+                        <a href="#">Anasayfa</a>
                       </li>
                       <li>
-                        <a href="#">Data Security </a>
+                        <a href="#">Hakkımızda</a>
                       </li>
                       <li>
-                        <a href="#">Website Development </a>
+                        <a href="#">Hizmetlerimiz</a>
                       </li>
                       <li>
-                        <a href="#">UI/UX Design </a>
+                        <a href="#">SSS</a>
                       </li>
                       <li>
-                        <a href="#">Cloud Services </a>
+                        <a href="#">Referanslar</a>
                       </li>
                       <li>
-                        <a href="#">Game Development </a>
-                      </li>
-                      <li>
-                        <a href="#">CRM &amp; Software </a>
-                      </li>
-                      <li>
-                        <a href="#">About Iteck </a>
-                      </li>
-                      <li>
-                        <a href="#">Investors </a>
-                      </li>
-                      <li>
-                        <a href="#">Blog </a>
-                      </li>
-                      <li>
-                        <a href="#">Career </a>
-                      </li>
-                      <li>
-                        <a href="#">Contact </a>
-                      </li>
-                      <li>
-                        <a href="#">Affiliate Program </a>
-                      </li>
-                      <li>
-                        <a href="#">How It Works </a>
-                      </li>
-                      <li>
-                        <a href="#">Pricing Plan </a>
-                      </li>
-                      <li>
-                        <a href="#">Covid-19 Update </a>
+                        <a href="#">Projeler</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 mt-4">
                 <div className="cont">
-                  
                   <ul>
                     <li>
-                      <a href="#">Kurumsal</a>
+                      <a href="#">Acenta365</a>
                     </li>
                     <li>
-                      <a href="#">Hizmetlerimiz</a>
+                      <a href="#">Dijital Sinyal</a>
                     </li>
                     <li>
-                      <a href="#">Referanslar</a>
+                      <a href="#">Sea365</a>
+                    </li>
+                    <li>
+                      <a href="#">Kariyer</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
                     </li>
                     <li>
                       <a href="#">İletişim</a>
@@ -138,8 +113,7 @@ const Footer = () => {
                   © 2023{" "}
                   <a href="/" className="text-white text-decoration-underline">
                     Megacode{" "}
-                  </a>
-                  {" "}
+                  </a>{" "}
                   {t("footer.footer_privite")}
                 </p>
               </div>
