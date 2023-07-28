@@ -120,8 +120,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <img src="assets/img/footer/foot_l.png" alt="" className="foot_l" />
-        <img src="assets/img/footer/foot_r.png" alt="" className="foot_r" />
+        <img src="/assets/img/footer/foot_l.png" alt="" className="foot_l" />
+        <img src="/assets/img/footer/foot_r.png" alt="" className="foot_r" />
       </footer>
     </>
   );

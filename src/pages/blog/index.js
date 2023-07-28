@@ -19,9 +19,8 @@ export const Blog = ({ blogs, popularBlogs, categories }) => {
 };
 
 export async function getServerSideProps(ctx) {
-  const { page, limit } = ctx.query;
   try {
-    const blogs = await blogService.getBlogs(`${page ?? "1"}&${limit ?? "10"}`);
+    const blogs = await blogService.getBlogs(ctx.query);
     const popularBlogs = await blogService.getBlogs(
       "page=1&limit=3&sort=view_count"
     );

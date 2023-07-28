@@ -31,19 +31,19 @@ const HomeHeader = () => {
             </div>
             <div className="col-lg-5 offset-lg-1">
               <div className="img">
-                <img src="assets/img/header/head-2.png" alt="" />
+                <img src="/assets/img/header/head-2.png" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
       <img
-        src="assets/img/header/head_shape_r.png"
+        src="/assets/img/header/head_shape_r.png"
         alt=""
         className="head-shape-r wow"
       />
       <img
-        src="assets/img/header/head_shape_l.png"
+        src="/assets/img/header/head_shape_l.png"
         alt=""
         className="head-shape-l wow"
       />

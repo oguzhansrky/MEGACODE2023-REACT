@@ -23,7 +23,7 @@ export const [slug] = () => {
               </div>
               <div className="content-card">
                 <div className="img">
-                  <img src="assets/img/blog/1.jpg" alt="" />
+                  <img src="/assets/img/blog/1.jpg" alt="" />
                 </div>
                 <div className="info">
                   <div className="row">
@@ -108,7 +108,7 @@ export const [slug] = () => {
                     <div className="row">
                       <div className="col-lg-6">
                         <div className="img text-center mt-30">
-                          <img src="assets/img/blog/13.png" alt="" />
+                          <img src="/assets/img/blog/13.png" alt="" />
                           <span className="color-999 fs-12px mt-20">
                             Images by{"{"}" "{"}"}
                             <a href="#" className="color-000">
@@ -120,7 +120,7 @@ export const [slug] = () => {
                       </div>
                       <div className="col-lg-6">
                         <div className="img text-center mt-30">
-                          <img src="assets/img/blog/14.png" alt="" />
+                          <img src="/assets/img/blog/14.png" alt="" />
                           {"{"}" "{"}"}
                           <span className="color-999 fs-12px mt-20">
                             Images by{"{"}" "{"}"}
@@ -144,7 +144,7 @@ export const [slug] = () => {
                       <div className="twitter-header d-flex align-items-center justify-content-between">
                         <div className="twitter-user d-flex align-items-center">
                           <div className="icon-50 rounded-circle img-cover overflow-hidden me-3 flex-shrink-0">
-                            <img src="assets/img/team/3.jpg" alt="" />
+                            <img src="/assets/img/team/3.jpg" alt="" />
                           </div>
                           <div className="inf">
                             <h6 className="fw-bold">Russel B.</h6>
@@ -243,7 +243,7 @@ export const [slug] = () => {
                     <div className="comment-card card p-5 radius-5 border-0 mt-50">
                       <div className="d-flex">
                         <div className="icon-60 rounded-circle img-cover overflow-hidden me-3 flex-shrink-0">
-                          <img src="assets/img/team/3.jpg" alt="" />
+                          <img src="/assets/img/team/3.jpg" alt="" />
                         </div>
                         <div className="inf">
                           <h6 className="fw-bold">Russel B.</h6>
@@ -285,7 +285,7 @@ export const [slug] = () => {
                       <div className="comment-replay-cont border-bottom border-1 brd-gray pb-40 pt-40">
                         <div className="d-flex comment-cont">
                           <div className="icon-60 rounded-circle img-cover overflow-hidden me-3 flex-shrink-0">
-                            <img src="assets/img/team/2.jpg" alt="" />
+                            <img src="/assets/img/team/2.jpg" alt="" />
                           </div>
                           <div className="inf">
                             <div className="title d-flex justify-content-between">
@@ -312,7 +312,7 @@ export const [slug] = () => {
                         </div>
                         <div className="d-flex comment-replay ps-5 mt-30 ms-4">
                           <div className="icon-40 rounded-circle img-cover overflow-hidden me-3 flex-shrink-0">
-                            <img src="assets/img/team/5.jpg" alt="" />
+                            <img src="/assets/img/team/5.jpg" alt="" />
                           </div>
                           <div className="inf">
                             <div className="title d-flex justify-content-between">
@@ -339,7 +339,7 @@ export const [slug] = () => {
                       <div className="comment-replay-cont pb-40 pt-40">
                         <div className="d-flex comment-cont">
                           <div className="icon-60 rounded-circle img-cover overflow-hidden me-3 flex-shrink-0">
-                            <img src="assets/img/team/4.jpg" alt="" />
+                            <img src="/assets/img/team/4.jpg" alt="" />
                           </div>
                           <div className="inf">
                             <div className="title d-flex justify-content-between">
@@ -456,7 +456,7 @@ export const [slug] = () => {
                       className="post-card pb-3 mb-3 border-bottom brd-gray"
                     >
                       <div className="img me-3">
-                        <img src="assets/img/blog/1.jpg" alt="" />
+                        <img src="/assets/img/blog/1.jpg" alt="" />
                       </div>
                       <div className="inf">
                         <h6> Crypto Trend 2023 </h6>
@@ -472,7 +472,7 @@ export const [slug] = () => {
                       className="post-card pb-3 mb-3 border-bottom brd-gray"
                     >
                       <div className="img me-3">
-                        <img src="assets/img/blog/2.jpg" alt="" />
+                        <img src="/assets/img/blog/2.jpg" alt="" />
                       </div>
                       <div className="inf">
                         <h6> How To Become Web Developer </h6>
@@ -488,7 +488,7 @@ export const [slug] = () => {
                       className="post-card pb-3 mb-3 border-bottom brd-gray"
                     >
                       <div className="img me-3">
-                        <img src="assets/img/blog/3.jpg" alt="" />
+                        <img src="/assets/img/blog/3.jpg" alt="" />
                       </div>
                       <div className="inf">
                         <h6> Wireframe for UI/UX </h6>
@@ -501,7 +501,7 @@ export const [slug] = () => {
                     </a>
                     <a href="page-single-post-5.html" className="post-card">
                       <div className="img me-3">
-                        <img src="assets/img/blog/7.png" alt="" />
+                        <img src="/assets/img/blog/7.png" alt="" />
                       </div>
                       <div className="inf">
                         <h6> AI With Fingerprint </h6>
@@ -604,51 +604,51 @@ export const [slug] = () => {
                     </h6>
                     <div className="d-flex justify-content-between flex-wrap">
                       <a
-                        href="assets/img/blog/1.jpg"
+                        href="/assets/img/blog/1.jpg"
                         className="insta-img img-cover"
                         data-fancybox="gallery"
                       >
-                        <img src="assets/img/blog/1.jpg" alt="" />
+                        <img src="/assets/img/blog/1.jpg" alt="" />
                         <i className="fab fa-instagram icon" />
                       </a>
                       <a
-                        href="assets/img/blog/10.png"
+                        href="/assets/img/blog/10.png"
                         className="insta-img img-cover"
                         data-fancybox="gallery"
                       >
-                        <img src="assets/img/blog/10.png" alt="" />
+                        <img src="/assets/img/blog/10.png" alt="" />
                         <i className="fab fa-instagram icon" />
                       </a>
                       <a
-                        href="assets/img/blog/11.png"
+                        href="/assets/img/blog/11.png"
                         className="insta-img img-cover"
                         data-fancybox="gallery"
                       >
-                        <img src="assets/img/blog/11.png" alt="" />
+                        <img src="/assets/img/blog/11.png" alt="" />
                         <i className="fab fa-instagram icon" />
                       </a>
                       <a
-                        href="assets/img/blog/12.png"
+                        href="/assets/img/blog/12.png"
                         className="insta-img img-cover"
                         data-fancybox="gallery"
                       >
-                        <img src="assets/img/blog/12.png" alt="" />
+                        <img src="/assets/img/blog/12.png" alt="" />
                         <i className="fab fa-instagram icon" />
                       </a>
                       <a
-                        href="assets/img/blog/2.jpg"
+                        href="/assets/img/blog/2.jpg"
                         className="insta-img img-cover"
                         data-fancybox="gallery"
                       >
-                        <img src="assets/img/blog/2.jpg" alt="" />
+                        <img src="/assets/img/blog/2.jpg" alt="" />
                         <i className="fab fa-instagram icon" />
                       </a>
                       <a
-                        href="assets/img/blog/3.jpg"
+                        href="/assets/img/blog/3.jpg"
                         className="insta-img img-cover"
                         data-fancybox="gallery"
                       >
-                        <img src="assets/img/blog/3.jpg" alt="" />
+                        <img src="/assets/img/blog/3.jpg" alt="" />
                         <i className="fab fa-instagram icon" />
                       </a>
                     </div>
@@ -698,7 +698,7 @@ export const [slug] = () => {
                         className="img radius-7 overflow-hidden img-cover"
                       >
                         <img
-                          src="assets/img/blog/7.png"
+                          src="/assets/img/blog/7.png"
                           className="card-img-top"
                           alt="..."
                         />
@@ -755,7 +755,7 @@ export const [slug] = () => {
                         className="img radius-7 overflow-hidden img-cover"
                       >
                         <img
-                          src="assets/img/blog/5.png"
+                          src="/assets/img/blog/5.png"
                           className="card-img-top"
                           alt="..."
                         />
@@ -812,7 +812,7 @@ export const [slug] = () => {
                         className="img radius-7 overflow-hidden img-cover"
                       >
                         <img
-                          src="assets/img/blog/1.jpg"
+                          src="/assets/img/blog/1.jpg"
                           className="card-img-top"
                           alt="..."
                         />
@@ -869,7 +869,7 @@ export const [slug] = () => {
                         className="img radius-7 overflow-hidden img-cover"
                       >
                         <img
-                          src="assets/img/blog/7.png"
+                          src="/assets/img/blog/7.png"
                           className="card-img-top"
                           alt="..."
                         />
@@ -926,7 +926,7 @@ export const [slug] = () => {
                         className="img radius-7 overflow-hidden img-cover"
                       >
                         <img
-                          src="assets/img/blog/5.png"
+                          src="/assets/img/blog/5.png"
                           className="card-img-top"
                           alt="..."
                         />
@@ -983,7 +983,7 @@ export const [slug] = () => {
                         className="img radius-7 overflow-hidden img-cover"
                       >
                         <img
-                          src="assets/img/blog/1.jpg"
+                          src="/assets/img/blog/1.jpg"
                           className="card-img-top"
                           alt="..."
                         />
@@ -1040,7 +1040,7 @@ export const [slug] = () => {
                         className="img radius-7 overflow-hidden img-cover"
                       >
                         <img
-                          src="assets/img/blog/7.png"
+                          src="/assets/img/blog/7.png"
                           className="card-img-top"
                           alt="..."
                         />
