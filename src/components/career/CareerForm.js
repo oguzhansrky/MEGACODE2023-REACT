@@ -2,9 +2,11 @@ import { applicationService } from "@/services";
 import { Form, Input, message, Upload } from "antd";
 import React from "react";
 import { useState } from "react";
+import useTranslation from "next-translate/useTranslation";
 const { TextArea } = Input;
 
 const CareerForm = ({ postId }) => {
+  const { t } = useTranslation("common");
   const [resume, setResume] = useState();
   const [application] = Form.useForm();
   const [loading, setLoading] = useState(false);
@@ -33,7 +35,8 @@ const CareerForm = ({ postId }) => {
       if (postId) data.append("post_id", postId);
       if (resume) data.append("resume", resume);
       await applicationService.createJobApplication(data);
-      messageApi.success("Başvurunuz başarıyla oluşturuldu.");
+      messageApi.success(t("career_form.project_complated"));
+
       setLoading(false);
       handleComplete();
     } catch (err) {
@@ -50,7 +53,7 @@ const CareerForm = ({ postId }) => {
           <div className="row">
             <div className="col-lg-6">
               <div className="form-numbers">
-                <h2> Looking For Oppurtunity </h2>
+                <h2> {t("career_form.oppurtunity")} </h2>
                 <div className="career-numbers mt-50">
                   <div className="row gx-5">
                     <div className="col-5">
@@ -58,7 +61,7 @@ const CareerForm = ({ postId }) => {
                         <h3>
                           <span className="counter"> 320 </span>
                         </h3>
-                        <small> Project Completed </small>
+                        <small> {t("career_form.project_complated")} </small>
                       </div>
                     </div>
                     <div className="col-5">
@@ -66,7 +69,7 @@ const CareerForm = ({ postId }) => {
                         <h3>
                           <span className="counter"> 3 </span>B+
                         </h3>
-                        <small> Happy Users</small>
+                        <small> {t("career_form.happy_users")}</small>
                       </div>
                     </div>
                     <div className="col-5">
@@ -74,7 +77,7 @@ const CareerForm = ({ postId }) => {
                         <h3>
                           <span className="counter"> 8 </span>+
                         </h3>
-                        <small> Years of experience </small>
+                        <small> {t("career_form.experience")} </small>
                       </div>
                     </div>
                     <div className="col-5">
@@ -82,7 +85,7 @@ const CareerForm = ({ postId }) => {
                         <h3>
                           <span className="counter"> 2 </span>
                         </h3>
-                        <small> Countries </small>
+                        <small> {t("career_form.countries")} </small>
                       </div>
                     </div>
                   </div>
@@ -92,7 +95,7 @@ const CareerForm = ({ postId }) => {
             <div className="col-lg-6">
               {textMessage ? (
                 <h4 className="h-100 d-flex align-items-center justify-content-center">
-                  Başvurunuz başarıyla gönderildi!
+                  {t("career_form.succes_invitation_send")}
                 </h4>
               ) : (
                 <Form
@@ -115,12 +118,12 @@ const CareerForm = ({ postId }) => {
                       rules={[
                         {
                           required: true,
-                          message: "Lütfen isim giriniz!",
+                          message:t("career_form.enter_name"),
                         },
                       ]}
                     >
                       <Input
-                        placeholder="First Name"
+                        placeholder={t("career_form.place_holder_first")}
                         className="form-control"
                       />
                     </Form.Item>
@@ -130,11 +133,11 @@ const CareerForm = ({ postId }) => {
                       rules={[
                         {
                           required: true,
-                          message: "Lütfen soyisim giriniz!",
+                          message: t("career_form.enter_lastname"),
                         },
                       ]}
                     >
-                      <Input placeholder="Last Name" className="form-control" />
+                      <Input placeholder={t("career_form.place_holder_last")} className="form-control" />
                     </Form.Item>
                     <Form.Item
                       name="email"
@@ -142,11 +145,11 @@ const CareerForm = ({ postId }) => {
                       rules={[
                         {
                           required: true,
-                          message: "Lütfen email giriniz!",
+                          message: t("career_form.enter_email"),
                         },
                       ]}
                     >
-                      <Input placeholder="Email" className="form-control" />
+                      <Input placeholder={t("career_form.place_holder_email")} className="form-control" />
                     </Form.Item>
                     <Form.Item
                       name="phone"
@@ -154,11 +157,11 @@ const CareerForm = ({ postId }) => {
                       rules={[
                         {
                           required: true,
-                          message: "Lütfen telefon numarası giriniz!",
+                          message: t("career_form.enter_num"),
                         },
                       ]}
                     >
-                      <Input placeholder="Phone" className="form-control" />
+                      <Input placeholder={t("career_form.place_holder_phone")} className="form-control" />
                     </Form.Item>
                     <Form.Item className="col-lg-8">
                       <Upload
@@ -168,12 +171,12 @@ const CareerForm = ({ postId }) => {
                         accept=".pdf"
                         listType="picture-card"
                       >
-                        <span id="upload_text">Upload CV</span>
+                        <span id="upload_text">{t("career_form.upload_cv")}</span>
                       </Upload>
                     </Form.Item>
                     <Form.Item className="form-group" name="cover_letter">
                       <TextArea
-                        placeholder="Cover letter"
+                        placeholder={t("career_form.place_holder_cover")}
                         className="form-control w-100"
                         rows={4}
                       />
@@ -185,7 +188,7 @@ const CareerForm = ({ postId }) => {
                     className="btn bg-white sm-butn mt-4 rounded-3"
                   >
                     <span className="text-dark">
-                      Make Request
+                    {t("career_form.make_req")}
                       <i className="fal fa-long-arrow-right ms-2 color-blue5" />
                     </span>
                   </button>

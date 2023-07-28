@@ -8,8 +8,10 @@ import { blogService } from "@/services";
 import { useRef } from "react";
 import Link from "next/link";
 import clsx from "clsx";
+import useTranslation from "next-translate/useTranslation";
 
 export const AllNews = ({ blogs, categories }) => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const { query } = router;
   const [data, setData] = useState();
@@ -124,7 +126,7 @@ export const AllNews = ({ blogs, categories }) => {
                               <span className="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue5 p-2 me-2 text-white">
                                 {item.user.full_name.charAt(0)}
                               </span>
-                              <a>By {item.user.full_name}</a>
+                              <a>{t("blog_allnews.by")} {item.user.full_name}</a>
                             </div>
                             <div className="r-side mt-1">
                               <i className="bi bi-hand-thumbs-up me-1" />
@@ -150,14 +152,14 @@ export const AllNews = ({ blogs, categories }) => {
               <div className="side-blog style-5 ps-lg-5 mt-5 mt-lg-0">
                 <div className="side-categories mb-50">
                   <h6 className="title mb-20 text-uppercase fw-normal">
-                    categories
+                  {t("blog_allnews.categories")}
                   </h6>
                   <a
                     onClick={removeCategoryFilter}
                     style={{ cursor: "pointer" }}
                     className="cat-item"
                   >
-                    <span> ALL </span>
+                    <span> {t("blog_allnews.all")}</span>
                   </a>
                   <>
                     {categories &&

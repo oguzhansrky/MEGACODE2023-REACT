@@ -391,5 +391,62 @@
             "on_site" : "İşyerinde",
             "remote" : "Uzaktan",
          "deadline" : "Son Başvuru Tarihi: "
-         }
+         },
+         "career_form":{
+            "succes_install":"başarıyla yüklendi",
+            "succes_invitation":"Başvurunz başarıyla oluşturuldu.",
+            "oppurtunity":"Fırsat Arıyorum",
+            "project_complated":"Proje Tamamlandı",
+            "happy_users":"Mutlu Kullanıcılar",
+            "experience":"Yılların Deneyimi",
+            "countries":"Ülkeler",
+            "succes_invitation_send":"Başvurnuz başarıyla gönderildi !",
+            "enter_name":"Lütfen isim giriniz!",
+            "enter_lastname":"Lütfen soyisim giriniz!",
+            "enter_email":"Lütfen email giriniz!",
+            "enter_num":"Lütfen telefon numarası giriniz!",
+            "upload_cv":"CV'yi yükle",
+            "make_req":"İstek Yap",
+            "place_holder_first":"Adınız",
+            "place_holder_last":"Soyadınız",
+            "place_holder_email":"Email",
+            "place_holder_phone":"Telefon",
+            "place_holder_cover":"Ön yazı"
+
+         },
+         "career_banner":{
+            "join":"Bize Katılın",
+            "text1":"İşbirliğinin gücünü kucaklayın ve birlikte daha iyi bir gelecek yaratalım",
+            "text2":"Bu dönüştürücü yolda bize katılın "
+         },
+         "career_positions":{
+            "open":"Açık",
+            "position":"Pozisyonlar"
+
+         },
+         "blog_allnews":{
+            "categories":"Kategoriler",
+            "by":"İle",
+            "all":"Tümü"
+         },
+         "popularpost":{
+         "blog_popularpost":"Popüler Postlar",
+         "by":"İle"
+        },
+        "footer_link":{
+         "links":"Linkler",
+         "homepage":"Anasayfa",
+         "about_us":"Hakkımızda",
+         "services":"Hizmetlerimiz",
+         "faq":"SSS",
+         "ref":"Referanslar",
+         "project":"Projeler",
+         "digital_sign":"Digital Sinyal",
+         "career":"Kariyer",
+         "blog":"Blog",
+         "contact":"İletişim"
+   
+   
+      }
+
 }   

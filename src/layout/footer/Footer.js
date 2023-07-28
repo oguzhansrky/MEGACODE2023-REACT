@@ -56,25 +56,25 @@ const Footer = () => {
               <div className="col-lg-4">
                 <div className="links">
                   <div className="cont">
-                    <h6 className="link_title">Links</h6>
+                    <h6 className="link_title">{t("footer_link.links")}</h6>
                     <ul>
                       <li>
-                        <a href="#">Anasayfa</a>
+                        <a href="#">{t("footer_link.homepage")}</a>
                       </li>
                       <li>
-                        <a href="#">Hakkımızda</a>
+                        <a href="#">{t("footer_link.about_us")}</a>
                       </li>
                       <li>
-                        <a href="#">Hizmetlerimiz</a>
+                        <a href="#">{t("footer_link.services")}</a>
                       </li>
                       <li>
-                        <a href="#">SSS</a>
+                        <a href="#">{t("footer_link.faq")}</a>
                       </li>
                       <li>
-                        <a href="#">Referanslar</a>
+                        <a href="#">{t("footer_link.ref")}</a>
                       </li>
                       <li>
-                        <a href="#">Projeler</a>
+                        <a href="#">{t("footer_link.project")}</a>
                       </li>
                     </ul>
                   </div>
@@ -87,19 +87,19 @@ const Footer = () => {
                       <a href="#">Acenta365</a>
                     </li>
                     <li className="mt-2">
-                      <a href="#">Dijital Sinyal</a>
+                      <a href="#">{t("footer_link.digital_sign")}</a>
                     </li>
                     <li className="mt-2">
                       <a href="#">Sea365</a>
                     </li>
                     <li className="mt-2">
-                      <a href="#">Kariyer</a>
+                      <a href="#">{t("footer_link.career")}</a>
                     </li>
                     <li className="mt-2">
                       <a href="#">Blog</a>
                     </li>
                     <li className="mt-2">
-                      <a href="#">İletişim</a>
+                      <a href="#">{t("footer_link.contact")}</a>
                     </li>
                   </ul>
                 </div>

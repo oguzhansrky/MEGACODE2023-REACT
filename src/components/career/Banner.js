@@ -1,6 +1,8 @@
 import React from 'react'
+import useTranslation from "next-translate/useTranslation";
 
 const Banner = () => {
+    const { t } = useTranslation("common");
     return (
         <section className="choose-us section-padding pt-0 style-1">
             <div className="container">
@@ -8,8 +10,8 @@ const Banner = () => {
                     <div className="col-lg-5">
                         <div className="info">
                             <div className="section-head mb-60">
-                                <h6 className="color-main text-uppercase wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>Join Us</h6>
-                                <h3 className="wow fadeInUp fs-4" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>Embrace the power of collaboration and let's craft a better future together<span className="fw-normal mt-4 fs-5">Join us on this transformative path </span>
+                                <h6 className="color-main text-uppercase wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>{t("career_banner.join")}</h6>
+                                <h3 className="wow fadeInUp fs-4" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>{t("career_banner.text1")}<span className="fw-normal mt-4 fs-5">{t("career_banner.text2")}</span>
                                 </h3>
                             </div>
                         </div>
