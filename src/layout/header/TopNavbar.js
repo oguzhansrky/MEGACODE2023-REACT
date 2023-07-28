@@ -72,7 +72,7 @@ const TopNavbar = () => {
                     }
                   </a>
                   <ul
-                    className="dropdown-menu"
+                    className="dropdown-menu p-2  "
                     aria-labelledby="dropdownMenuLink"
                   >
                     {languages
@@ -80,16 +80,21 @@ const TopNavbar = () => {
                       .map((item) => (
                         <li key={uuid()}>
                           <a
-                            className="dropdown-toggle"
+                            className=""
                             href="#"
                             role="button"
                             id="dropdownMenuLink"
                             aria-expanded="false"
-                            onClick={(e) => {
+                            onClick={(e) => { 
                               e.preventDefault(false);
-                              router.push(router.pathname, router.asPath, {
-                                locale: item.value,
-                              });
+                              router.push(
+                                router.pathname,
+                                router.asPath,
+
+                                {
+                                  locale: item.value,
+                                }
+                              );
                             }}
                           >
                             <img className="me-1" src={item.icon} alt="" />
