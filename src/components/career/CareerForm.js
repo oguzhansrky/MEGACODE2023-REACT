@@ -50,7 +50,7 @@ const CareerForm = ({ postId }) => {
           <div className="row">
             <div className="col-lg-6">
               <div className="form-numbers">
-                <h2> Looking For Oppertunity </h2>
+                <h2> Looking For Oppurtunity </h2>
                 <div className="career-numbers mt-50">
                   <div className="row gx-5">
                     <div className="col-5">
