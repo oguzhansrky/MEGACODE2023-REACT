@@ -6,7 +6,14 @@ const Projects = () => {
   return (
     <div className="screenshots style-4">
       <div className="screenshots-slider style-4">
-        <Swiper autoplay={true} loop={true} spaceBetween={30} slidesPerView={5}>
+        <Swiper
+          breakpoints={{
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
+        >
           <SwiperSlide>
             <div className="img">
               <img src="/assets/img/screenshots/1.png" alt="" />
