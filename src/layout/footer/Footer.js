@@ -82,23 +82,23 @@ const Footer = () => {
               </div>
               <div className="col-lg-4 mt-4">
                 <div className="cont">
-                  <ul>
+                  <ul className="mt-3">
                     <li>
                       <a href="#">Acenta365</a>
                     </li>
-                    <li>
+                    <li className="mt-2">
                       <a href="#">Dijital Sinyal</a>
                     </li>
-                    <li>
+                    <li className="mt-2">
                       <a href="#">Sea365</a>
                     </li>
-                    <li>
+                    <li className="mt-2">
                       <a href="#">Kariyer</a>
                     </li>
-                    <li>
+                    <li className="mt-2">
                       <a href="#">Blog</a>
                     </li>
-                    <li>
+                    <li className="mt-2">
                       <a href="#">İletişim</a>
                     </li>
                   </ul>
