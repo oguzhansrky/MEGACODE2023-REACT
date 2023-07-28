@@ -12,10 +12,10 @@ export async function getBlogs(query) {
 }
 
 /**
- * GET: /blogs/{id}'
+ * GET: /blogs/{slug}'
  */
-export async function getBlog(id) {
-  const endpoint = generateApiEndpoint(`blogs/${id}`);
+export async function getBlog(slug) {
+  const endpoint = generateApiEndpoint(`blogs/${slug}`);
   const response = await restApiClient.get(endpoint);
 
   return response.data;

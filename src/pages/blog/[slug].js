@@ -1,6 +1,10 @@
+import { blogService } from "@/services";
+import moment from "moment";
+
 import React from "react";
 
-export const [slug] = () => {
+const PostDetails = ({ data }) => {
+  console.log(data);
   return (
     <>
       <main className="blog-page style-5">
@@ -8,17 +12,18 @@ export const [slug] = () => {
           <div className="container">
             <div className="blog-details-slider mb-100">
               <div className="section-head text-center mb-60 style-5">
-                <h2 className="mb-20 color-000"> Crypto Trend 2023 </h2>
+                <h2 className="mb-20 color-000"> {data?.title} </h2>
                 <small className="d-block date text">
                   <a
                     href="#"
                     className="text-uppercase border-end brd-gray pe-3 me-3 color-blue5 fw-bold"
                   >
-                    {"{"}" "{"}"}
-                    news{"{"}" "{"}"}
+                    {data?.category.name}
                   </a>
                   <i className="bi bi-clock me-1" />
-                  <span className="op-8">Posted on 15 Days ago</span>
+                  <span className="op-8">
+                    {moment(data?.created_at).fromNow()}
+                  </span>
                 </small>
               </div>
               <div className="content-card">
@@ -30,14 +35,11 @@ export const [slug] = () => {
                     <div className="col-lg-6">
                       <div className="cont">
                         <small className="date small mb-20">
-                          {"{"}" "{"}"}
                           <span className="text-uppercase border-end brd-gray pe-3 me-3">
-                            {"{"}" "{"}"}
-                            News{"{"}" "{"}"}
+                            News
                           </span>
-                          {"{"}" "{"}"}
                           <i className="far fa-clock me-1" /> Posted on 3 Days
-                          ago{"{"}" "{"}"}
+                          ago
                         </small>
                         <h2 className="title">
                           Solutions For Big Data Issue, Expert Perspective
@@ -59,9 +61,9 @@ export const [slug] = () => {
                   <div className="l_side d-flex align-items-center">
                     <a href="#" className="me-3 me-lg-5">
                       <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                        a
+                        {data?.user.full_name.charAt(0)}
                       </span>
-                      <span className>By Admin</span>
+                      <span className>{data?.user.full_name}</span>
                     </a>
                     <a href="#" className="me-3 me-lg-5">
                       <i className="bi bi-chat-left-text me-1" />
@@ -69,7 +71,7 @@ export const [slug] = () => {
                     </a>
                     <a href="#">
                       <i className="bi bi-eye me-1" />
-                      <span>774k Views</span>
+                      <span>{data?.view_count}</span>
                     </a>
                   </div>
                   <div className="r-side mt-1">
@@ -675,440 +677,21 @@ export const [slug] = () => {
             </div>
           </div>
         </section>
-        <section className="popular-posts related Posts section-padding pb-100 bg-gray5">
-          <div className="container">
-            <h5 className="fw-bold text-uppercase mb-50">Related Posts</h5>
-            <div className="related-postes-slider position-relative">
-              <div className="swiper-container swiper-container-initialized swiper-container-horizontal">
-                <div
-                  className="swiper-wrapper"
-                  style={{
-                    transitionDuration: "0ms",
-                    transform: "translate3d(-1848px, 0px, 0px)",
-                  }}
-                >
-                  <div
-                    className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-                    data-swiper-slide-index={1}
-                    style={{ width: "448px", marginRight: "80px" }}
-                  >
-                    <div className="card border-0 bg-transparent rounded-0 p-0  d-block">
-                      <a
-                        href="page-single-post-5.html"
-                        className="img radius-7 overflow-hidden img-cover"
-                      >
-                        <img
-                          src="/assets/img/blog/7.png"
-                          className="card-img-top"
-                          alt="..."
-                        />
-                      </a>
-                      <div className="card-body px-0">
-                        <small className="d-block date mt-10 fs-10px fw-bold">
-                          <a
-                            href="#"
-                            className="text-uppercase border-end brd-gray pe-3 me-3 color-blue5"
-                          >
-                            News
-                          </a>
-                          <i className="bi bi-clock me-1" />
-                          <a href="#" className="op-8">
-                            Posted on 3 Days ago
-                          </a>
-                        </small>
-                        <h5 className="fw-bold mt-10 title">
-                          <a href="page-single-post-5.html">
-                            AI With Fingerprint
-                          </a>
-                        </h5>
-                        <p className="small mt-2 op-8">
-                          If there’s one way that wireless technology has
-                          changed the way we work.
-                        </p>
-                        <div className="d-flex small mt-20 align-items-center justify-content-between op-9">
-                          <div className="l_side d-flex align-items-center">
-                            <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                              a
-                            </span>
-                            <a href="#" className="mt-1">
-                              By Admin
-                            </a>
-                          </div>
-                          <div className="r-side mt-1">
-                            <i className="bi bi-chat-left-text me-1" />
-                            <a href="#">24</a>
-                            <i className="bi bi-eye ms-4 me-1" />
-                            <a href="#">774k</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                    data-swiper-slide-index={2}
-                    style={{ width: "448px", marginRight: "80px" }}
-                  >
-                    <div className="card border-0 bg-transparent rounded-0 p-0  d-block">
-                      <a
-                        href="page-single-post-5.html"
-                        className="img radius-7 overflow-hidden img-cover"
-                      >
-                        <img
-                          src="/assets/img/blog/5.png"
-                          className="card-img-top"
-                          alt="..."
-                        />
-                      </a>
-                      <div className="card-body px-0">
-                        <small className="d-block date mt-10 fs-10px fw-bold">
-                          <a
-                            href="#"
-                            className="text-uppercase border-end brd-gray pe-3 me-3 color-blue5"
-                          >
-                            News
-                          </a>
-                          <i className="bi bi-clock me-1" />
-                          <a href="#" className="op-8">
-                            Posted on 3 Days ago
-                          </a>
-                        </small>
-                        <h5 className="fw-bold mt-10 title">
-                          <a href="page-single-post-5.html">
-                            NFT Game! New Oppoturnity
-                          </a>
-                        </h5>
-                        <p className="small mt-2 op-8">
-                          If there’s one way that wireless technology has
-                          changed the way we work.
-                        </p>
-                        <div className="d-flex small mt-20 align-items-center justify-content-between op-9">
-                          <div className="l_side d-flex align-items-center">
-                            <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                              a
-                            </span>
-                            <a href="#" className="mt-1">
-                              By Admin
-                            </a>
-                          </div>
-                          <div className="r-side mt-1">
-                            <i className="bi bi-chat-left-text me-1" />
-                            <a href="#">24</a>
-                            <i className="bi bi-eye ms-4 me-1" />
-                            <a href="#">774k</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="swiper-slide swiper-slide-duplicate-next"
-                    data-swiper-slide-index={0}
-                    style={{ width: "448px", marginRight: "80px" }}
-                  >
-                    <div className="card border-0 bg-transparent rounded-0 p-0  d-block">
-                      <a
-                        href="page-single-post-5.html"
-                        className="img radius-7 overflow-hidden img-cover"
-                      >
-                        <img
-                          src="/assets/img/blog/1.jpg"
-                          className="card-img-top"
-                          alt="..."
-                        />
-                      </a>
-                      <div className="card-body px-0">
-                        <small className="d-block date mt-10 fs-10px fw-bold">
-                          <a
-                            href="#"
-                            className="text-uppercase border-end brd-gray pe-3 me-3 color-blue5"
-                          >
-                            News
-                          </a>
-                          <i className="bi bi-clock me-1" />
-                          <a href="#" className="op-8">
-                            Posted on 3 Days ago
-                          </a>
-                        </small>
-                        <h5 className="fw-bold mt-10 title">
-                          <a href="page-single-post-5.html">
-                            Crypto Trend 2023
-                          </a>
-                        </h5>
-                        <p className="small mt-2 op-8">
-                          If there’s one way that wireless technology has
-                          changed the way we work.
-                        </p>
-                        <div className="d-flex small mt-20 align-items-center justify-content-between op-9">
-                          <div className="l_side d-flex align-items-center">
-                            <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                              a
-                            </span>
-                            <a href="#" className="mt-1">
-                              By Admin
-                            </a>
-                          </div>
-                          <div className="r-side mt-1">
-                            <i className="bi bi-chat-left-text me-1" />
-                            <a href="#">24</a>
-                            <i className="bi bi-eye ms-4 me-1" />
-                            <a href="#">774k</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="swiper-slide swiper-slide-prev"
-                    data-swiper-slide-index={1}
-                    style={{ width: "448px", marginRight: "80px" }}
-                  >
-                    <div className="card border-0 bg-transparent rounded-0 p-0  d-block">
-                      <a
-                        href="page-single-post-5.html"
-                        className="img radius-7 overflow-hidden img-cover"
-                      >
-                        <img
-                          src="/assets/img/blog/7.png"
-                          className="card-img-top"
-                          alt="..."
-                        />
-                      </a>
-                      <div className="card-body px-0">
-                        <small className="d-block date mt-10 fs-10px fw-bold">
-                          <a
-                            href="#"
-                            className="text-uppercase border-end brd-gray pe-3 me-3 color-blue5"
-                          >
-                            News
-                          </a>
-                          <i className="bi bi-clock me-1" />
-                          <a href="#" className="op-8">
-                            Posted on 3 Days ago
-                          </a>
-                        </small>
-                        <h5 className="fw-bold mt-10 title">
-                          <a href="page-single-post-5.html">
-                            AI With Fingerprint
-                          </a>
-                        </h5>
-                        <p className="small mt-2 op-8">
-                          If there’s one way that wireless technology has
-                          changed the way we work.
-                        </p>
-                        <div className="d-flex small mt-20 align-items-center justify-content-between op-9">
-                          <div className="l_side d-flex align-items-center">
-                            <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                              a
-                            </span>
-                            <a href="#" className="mt-1">
-                              By Admin
-                            </a>
-                          </div>
-                          <div className="r-side mt-1">
-                            <i className="bi bi-chat-left-text me-1" />
-                            <a href="#">24</a>
-                            <i className="bi bi-eye ms-4 me-1" />
-                            <a href="#">774k</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="swiper-slide swiper-slide-active"
-                    data-swiper-slide-index={2}
-                    style={{ width: "448px", marginRight: "80px" }}
-                  >
-                    <div className="card border-0 bg-transparent rounded-0 p-0  d-block">
-                      <a
-                        href="page-single-post-5.html"
-                        className="img radius-7 overflow-hidden img-cover"
-                      >
-                        <img
-                          src="/assets/img/blog/5.png"
-                          className="card-img-top"
-                          alt="..."
-                        />
-                      </a>
-                      <div className="card-body px-0">
-                        <small className="d-block date mt-10 fs-10px fw-bold">
-                          <a
-                            href="#"
-                            className="text-uppercase border-end brd-gray pe-3 me-3 color-blue5"
-                          >
-                            News
-                          </a>
-                          <i className="bi bi-clock me-1" />
-                          <a href="#" className="op-8">
-                            Posted on 3 Days ago
-                          </a>
-                        </small>
-                        <h5 className="fw-bold mt-10 title">
-                          <a href="page-single-post-5.html">
-                            NFT Game! New Oppoturnity
-                          </a>
-                        </h5>
-                        <p className="small mt-2 op-8">
-                          If there’s one way that wireless technology has
-                          changed the way we work.
-                        </p>
-                        <div className="d-flex small mt-20 align-items-center justify-content-between op-9">
-                          <div className="l_side d-flex align-items-center">
-                            <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                              a
-                            </span>
-                            <a href="#" className="mt-1">
-                              By Admin
-                            </a>
-                          </div>
-                          <div className="r-side mt-1">
-                            <i className="bi bi-chat-left-text me-1" />
-                            <a href="#">24</a>
-                            <i className="bi bi-eye ms-4 me-1" />
-                            <a href="#">774k</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="swiper-slide swiper-slide-duplicate swiper-slide-next"
-                    data-swiper-slide-index={0}
-                    style={{ width: "448px", marginRight: "80px" }}
-                  >
-                    <div className="card border-0 bg-transparent rounded-0 p-0  d-block">
-                      <a
-                        href="page-single-post-5.html"
-                        className="img radius-7 overflow-hidden img-cover"
-                      >
-                        <img
-                          src="/assets/img/blog/1.jpg"
-                          className="card-img-top"
-                          alt="..."
-                        />
-                      </a>
-                      <div className="card-body px-0">
-                        <small className="d-block date mt-10 fs-10px fw-bold">
-                          <a
-                            href="#"
-                            className="text-uppercase border-end brd-gray pe-3 me-3 color-blue5"
-                          >
-                            News
-                          </a>
-                          <i className="bi bi-clock me-1" />
-                          <a href="#" className="op-8">
-                            Posted on 3 Days ago
-                          </a>
-                        </small>
-                        <h5 className="fw-bold mt-10 title">
-                          <a href="page-single-post-5.html">
-                            Crypto Trend 2023
-                          </a>
-                        </h5>
-                        <p className="small mt-2 op-8">
-                          If there’s one way that wireless technology has
-                          changed the way we work.
-                        </p>
-                        <div className="d-flex small mt-20 align-items-center justify-content-between op-9">
-                          <div className="l_side d-flex align-items-center">
-                            <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                              a
-                            </span>
-                            <a href="#" className="mt-1">
-                              By Admin
-                            </a>
-                          </div>
-                          <div className="r-side mt-1">
-                            <i className="bi bi-chat-left-text me-1" />
-                            <a href="#">24</a>
-                            <i className="bi bi-eye ms-4 me-1" />
-                            <a href="#">774k</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-                    data-swiper-slide-index={1}
-                    style={{ width: "448px", marginRight: "80px" }}
-                  >
-                    <div className="card border-0 bg-transparent rounded-0 p-0  d-block">
-                      <a
-                        href="page-single-post-5.html"
-                        className="img radius-7 overflow-hidden img-cover"
-                      >
-                        <img
-                          src="/assets/img/blog/7.png"
-                          className="card-img-top"
-                          alt="..."
-                        />
-                      </a>
-                      <div className="card-body px-0">
-                        <small className="d-block date mt-10 fs-10px fw-bold">
-                          <a
-                            href="#"
-                            className="text-uppercase border-end brd-gray pe-3 me-3 color-blue5"
-                          >
-                            News
-                          </a>
-                          <i className="bi bi-clock me-1" />
-                          <a href="#" className="op-8">
-                            Posted on 3 Days ago
-                          </a>
-                        </small>
-                        <h5 className="fw-bold mt-10 title">
-                          <a href="page-single-post-5.html">
-                            AI With Fingerprint
-                          </a>
-                        </h5>
-                        <p className="small mt-2 op-8">
-                          If there’s one way that wireless technology has
-                          changed the way we work.
-                        </p>
-                        <div className="d-flex small mt-20 align-items-center justify-content-between op-9">
-                          <div className="l_side d-flex align-items-center">
-                            <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                              a
-                            </span>
-                            <a href="#" className="mt-1">
-                              By Admin
-                            </a>
-                          </div>
-                          <div className="r-side mt-1">
-                            <i className="bi bi-chat-left-text me-1" />
-                            <a href="#">24</a>
-                            <i className="bi bi-eye ms-4 me-1" />
-                            <a href="#">774k</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <span
-                  className="swiper-notification"
-                  aria-live="assertive"
-                  aria-atomic="true"
-                />
-              </div>
-              <div
-                className="swiper-button-next"
-                tabIndex={0}
-                role="button"
-                aria-label="Next slide"
-              />
-              <div
-                className="swiper-button-prev"
-                tabIndex={0}
-                role="button"
-                aria-label="Previous slide"
-              />
-            </div>
-          </div>
-        </section>
       </main>
     </>
   );
 };
+export async function getServerSideProps(ctx) {
+  try {
+    const blogPost = await blogService.getBlog(ctx.query?.slug);
+    return {
+      props: {
+        data: blogPost.payload.blog,
+      },
+    };
+  } catch (err) {
+    console.error(err);
+    return { props: {} };
+  }
+}
+export default PostDetails;

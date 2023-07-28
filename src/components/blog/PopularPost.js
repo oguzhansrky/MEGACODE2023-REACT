@@ -43,7 +43,7 @@ export const PopularPost = ({ data }) => {
                           </a>
                         </small>
                         <h5 className="fw-bold mt-10 title">
-                          <Link href={`/blogs/${item.slug}`}>{item.title}</Link>
+                          <Link href={`/blog/${item.slug}`}>{item.title}</Link>
                         </h5>
                         <p className="small mt-2 op-8 fs-10px">
                           {_.truncate(item.content, {
