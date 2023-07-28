@@ -11,7 +11,7 @@ const CareerPositions = ({ data = [] }) => {
         <div className="container">
           <div className="section-head text-center mb-60 style-5">
             <h2 className="mb-20">
-              Open <span> Positions </span>
+            {t("career_positions.open")} <span> {t("career_positions.position")} </span>
             </h2>
           </div>
           <div className="row">

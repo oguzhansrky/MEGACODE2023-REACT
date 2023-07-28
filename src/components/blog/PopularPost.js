@@ -4,14 +4,16 @@ import moment from "moment";
 import { formatCount } from "@/utils";
 import { v4 as uuid } from "uuid";
 import Link from "next/link";
+import useTranslation from "next-translate/useTranslation";
 
 export const PopularPost = ({ data }) => {
+  const { t } = useTranslation("common");
   return (
     <>
       <section className="popular-posts pt-50 pb-100 border-bottom brd-gray">
         <div className="container">
           <h5 className="post-sc-title text-center text-uppercase mb-70">
-            Popular Posts
+          {t("popularpost.blog_popularpost")}
           </h5>
           <div className="row gx-5">
             {data &&
@@ -56,7 +58,7 @@ export const PopularPost = ({ data }) => {
                             <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
                               a
                             </span>
-                            <a className="mt-1">By {item.user?.full_name}</a>
+                            <a className="mt-1">{t("popularpost.by")}{item.user?.full_name}</a>
                           </div>
                           <div className="r-side mt-1">
                             <i className="bi bi-chat-left-text me-1" />

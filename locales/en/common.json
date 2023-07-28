@@ -384,6 +384,48 @@
          "on_site" : "On-site",
          "remote" : "Remote",
          "deadline" : "Deadline: "
-      }
+      },
+      "career_form":{
+         "succes_install":"successfully uploaded",
+         "succes_invitation":"Your application has been successfully created.",
+         "oppurtunity":"Looking for opportunities",
+         "project_complated":"Project Complated",
+         "happy_users":"Happy Users",
+         "experience":"Years Of Experience",
+         "countries":"Countries",
+         "succes_invitation_send":"Your application has been successfully submitted!",
+         "enter_name":"Please enter name",
+         "enter_lastname":"Please enter lastname",
+         "enter_email":"Please enter email",
+         "enter_num":"Please enter phone number!",
+         "upload_cv":"Upload CV",
+         "make_req":"Make Request",
+         "place_holder_first":"First Name",
+         "place_holder_last":"Last Name",
+         "place_holder_email":"Email",
+         "place_holder_phone":"Phone",
+         "place_holder_cover":"Cover Letter"
+      },
+      "career_banner":{
+         "join":"Join Us",
+         "text1":"Embrace the power of collaboration and let's craft a better future together",
+         "text2":"Join us on this transformative path "
+      },
+      "career_positions":{
+         "open":"Open",
+         "position":"Positions"
+         
+      },
+      "blog_allnews":{
+         "categories":"Categories",
+         "by":"By",
+         "all":"All"
+      },
+      "popularpost":{
+      "blog_popularpost":"Popular Post",
+      "by":"By"
+     }
+
+
    
 }
