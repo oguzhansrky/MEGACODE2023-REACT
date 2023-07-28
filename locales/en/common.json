@@ -424,8 +424,21 @@
       "popularpost":{
       "blog_popularpost":"Popular Post",
       "by":"By"
-     }
+     },
+     "footer_link":{
+      "links":"Links",
+      "homepage":"Homepage",
+      "about_us":"About Us",
+      "services":"Services",
+      "faq":"F.A.Q.",
+      "ref":"References",
+      "project":"Project",
+      "digital_sign":"Digital Signal",
+      "career":"Career",
+      "blog":"Blog",
+      "contact":"Contact"
 
 
+   }
    
 }

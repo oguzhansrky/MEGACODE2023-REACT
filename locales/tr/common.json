@@ -432,6 +432,21 @@
          "popularpost":{
          "blog_popularpost":"Popüler Postlar",
          "by":"İle"
-        }
+        },
+        "footer_link":{
+         "links":"Linkler",
+         "homepage":"Anasayfa",
+         "about_us":"Hakkımızda",
+         "services":"Hizmetlerimiz",
+         "faq":"SSS",
+         "ref":"Referanslar",
+         "project":"Projeler",
+         "digital_sign":"Digital Sinyal",
+         "career":"Kariyer",
+         "blog":"Blog",
+         "contact":"İletişim"
+   
+   
+      }
 
 }   
