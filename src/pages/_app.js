@@ -54,7 +54,11 @@ const App = ({ Component, pageProps }) => {
 
     const handleComplete = (url) => {
       const localePrefix = `/${router.locale}`;
-      if (url === `${localePrefix}${router.asPath}` || url === router.asPath) {
+      if (
+        url === `${localePrefix}${router.asPath}` ||
+        url === router.asPath ||
+        url === localePrefix
+      ) {
         setLoading(false);
       }
     };

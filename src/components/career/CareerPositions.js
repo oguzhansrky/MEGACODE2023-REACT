@@ -1,24 +1,9 @@
-import { jobPostsService } from "@/services";
-import { useState, useEffect } from "react";
 import useTranslation from "next-translate/useTranslation";
 import moment from "moment";
 import Link from "next/link";
 
-const CareerPositions = () => {
-  const [data, setData] = useState([]);
+const CareerPositions = ({ data = [] }) => {
   const { t } = useTranslation("common");
-  useEffect(() => {
-    loadData();
-  }, []);
-
-  const loadData = async () => {
-    try {
-      const JobPosts = await jobPostsService.getJobPosts();
-      setData(JobPosts.payload.jobPosts);
-    } catch (err) {
-      console.error(err);
-    }
-  };
 
   return (
     <>

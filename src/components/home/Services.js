@@ -24,7 +24,7 @@ const Services = () => {
                 </h5>
                 <br></br>
                 <div className="icon">
-                  <img src="assets/img/icons/inovatif cozumler-8.png" alt="" />
+                  <img src="/assets/img/icons/inovatif cozumler-8.png" alt="" />
                 </div>
                 <div className="info">
                   <div className="text">{t("services.services_text")}</div>
@@ -40,7 +40,7 @@ const Services = () => {
                   <a href="page-services-5.html"> {t("services.siber_sec")} </a>
                 </h5>
                 <div className="icon">
-                  <img src="assets/img/icons/inovatif cozumler-4.png"  alt="" />
+                  <img src="/assets/img/icons/inovatif cozumler-4.png" alt="" />
                 </div>
                 <div className="info">
                   <div className="text">{t("services.siber_sec_text")}</div>
@@ -59,7 +59,7 @@ const Services = () => {
                   </a>
                 </h5>
                 <div className="icon">
-                  <img src="assets/img/icons/inovatif cozumler-5.png" alt="" />
+                  <img src="/assets/img/icons/inovatif cozumler-5.png" alt="" />
                 </div>
                 <div className="info">
                   <div className="text">{t("services.mobil_dev_text")}</div>
@@ -75,7 +75,7 @@ const Services = () => {
                   <a href="page-services-5.html">{t("services.app_dev")} </a>
                 </h5>
                 <div className="icon">
-                  <img src="assets/img/icons/inovatif cozumler-9.png" alt="" />
+                  <img src="/assets/img/icons/inovatif cozumler-9.png" alt="" />
                 </div>
                 <div className="info">
                   <div className="text">{t("services.app_dev_text")}</div>
@@ -94,7 +94,7 @@ const Services = () => {
                   </a>
                 </h5>
                 <div className="icon">
-                  <img src="assets/img/icons/inovatif cozumler-7.png" alt="" />
+                  <img src="/assets/img/icons/inovatif cozumler-7.png" alt="" />
                 </div>
                 <div className="info">
                   <div className="text">{t("services.main_system")}</div>
@@ -113,7 +113,7 @@ const Services = () => {
                 </h5>
                 <br></br>
                 <div className="icon">
-                  <img src="assets/img/icons/inovatif cozumler-6.png" alt="" />
+                  <img src="/assets/img/icons/inovatif cozumler-6.png" alt="" />
                 </div>
                 <div className="info">
                   <div className="text">{t("services.social_media_text")}</div>
@@ -124,12 +124,12 @@ const Services = () => {
         </div>
       </div>
       <img
-        src="assets/img/services/ser_shap_l.png"
+        src="/assets/img/services/ser_shap_l.png"
         alt=""
         className="ser_shap_l"
       />
       <img
-        src="assets/img/services/ser_shap_r.png"
+        src="/assets/img/services/ser_shap_r.png"
         alt=""
         className="ser_shap_r"
       />

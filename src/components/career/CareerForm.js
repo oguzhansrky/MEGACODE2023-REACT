@@ -4,7 +4,7 @@ import React from "react";
 import { useState } from "react";
 const { TextArea } = Input;
 
-const CareerForm = () => {
+const CareerForm = ({ postId }) => {
   const [resume, setResume] = useState();
   const [application] = Form.useForm();
   const [loading, setLoading] = useState(false);
@@ -30,7 +30,7 @@ const CareerForm = () => {
       for (const key in formData) {
         if (formData[key]) data.append(key, formData[key]);
       }
-
+      if (postId) data.append("post_id", postId);
       if (resume) data.append("resume", resume);
       await applicationService.createJobApplication(data);
       messageApi.success("Başvurunuz başarıyla oluşturuldu.");
@@ -194,7 +194,7 @@ const CareerForm = () => {
             </div>
           </div>
         </div>
-        <img src="assets/img/careers/map.png" alt="" className="map_img" />
+        <img src="/assets/img/careers/map.png" alt="" className="map_img" />
       </section>
     </>
   );
