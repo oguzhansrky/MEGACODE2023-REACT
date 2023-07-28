@@ -1,4 +1,3 @@
-import { data } from "autoprefixer";
 import { generateApiEndpoint } from "../utils";
 import restApiClient from "./client";
 
@@ -14,8 +13,9 @@ export async function getBlogComments(query) {
 /**
  * GET: /blog-comments/{id}'
  */
-export async function getBlogComment(id) {
-  const endpoint = generateApiEndpoint(`blog-comments/${id}`);
+export async function getBlogComment(id, query) {
+  console.log(id, query);
+  const endpoint = generateApiEndpoint(`blog-comments/${id}?${query ?? ""}`);
   const response = await restApiClient.get(endpoint);
 
   return response.data;
@@ -24,7 +24,7 @@ export async function getBlogComment(id) {
 /**
  * POST: /blog-comments/{id}'
  */
-export async function createBlogComment(id) {
+export async function createBlogComment(id, data) {
   const endpoint = generateApiEndpoint(`blog-comments/${id}`);
   const response = await restApiClient.post(endpoint, data);
 
@@ -45,7 +45,7 @@ export async function updateBlogComment(data, id) {
  * DELETE: /blog-comments/{id}'
  */
 export async function deleteBlogComment(id) {
-  const endpoint = generateApiEndpoint(`blog/${id}`);
+  const endpoint = generateApiEndpoint(`blog-comments/${id}`);
   const response = await restApiClient.delete(endpoint);
 
   return response.data;
