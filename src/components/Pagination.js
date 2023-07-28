@@ -26,7 +26,7 @@ const PaginationComponent = ({
     <>
       {pageNumbers.length > 1 && (
         <div className="pagination style-5 color-5 justify-content-center mt-60">
-          <a href="#" className="px-2">
+          <a style={{ cursor: "pointer" }} className="px-2">
             <span
               onClick={(ev) => {
                 ev.preventDefault();
@@ -46,15 +46,16 @@ const PaginationComponent = ({
             ) {
               return (
                 <a
+                  onClick={() => paginate(item)}
+                  style={{ cursor: "pointer" }}
                   className={`${currentPage === item ? "active" : ""}`}
-                  href="#"
                 >
                   <span>{item}</span>
                 </a>
               );
             } else if (item === currentPage + 4 || item === currentPage - 4) {
               return (
-                <a href="#">
+                <a>
                   <span>...</span>
                 </a>
               );
@@ -62,7 +63,7 @@ const PaginationComponent = ({
               return null;
             }
           })}
-          <a href="#" className="px-2">
+          <a style={{ cursor: "pointer" }} className="px-2">
             <span
               onClick={(ev) => {
                 ev.preventDefault();

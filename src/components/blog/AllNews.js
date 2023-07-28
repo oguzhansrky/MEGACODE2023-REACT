@@ -3,20 +3,80 @@ import moment from "moment";
 import _ from "lodash";
 import { formatCount } from "@/utils";
 import { PaginationComponent } from "../Pagination";
+import { useRouter } from "next/router";
+import { blogService } from "@/services";
+import { useRef } from "react";
+import Link from "next/link";
+import clsx from "clsx";
 
 export const AllNews = ({ blogs, categories }) => {
+  const router = useRouter();
+  const { query } = router;
   const [data, setData] = useState();
+  const [meta, setMeta] = useState();
   const [currentPage, setCurrentPage] = useState("1");
+  const params = new URLSearchParams(query);
+  const [searchParams, setSearchParams] = useState(new URLSearchParams());
+  const loadData = async () => {
+    try {
+      const blogs = await blogService.getBlogs(
+        decodeURIComponent(searchParams)
+      );
+      setData(blogs.payload.blogs);
+      setMeta(blogs.meta);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+  useEffect(() => {
+    const hasPage = params.has("page");
+    const hasLimit = params.has("limit");
+
+    if (!hasPage) {
+      params.append("page", "1");
+    }
+    if (!hasLimit) {
+      params.append("limit", "10");
+    }
+    if (!hasLimit || !hasPage) setSearchParams(params);
+  }, [query]);
+  useEffect(() => {
+    if (searchParams.has("page")) loadData();
+  }, [searchParams]);
   useEffect(() => {
     setData(blogs?.payload.blogs);
     setCurrentPage(blogs?.meta.current_page ?? "1");
   }, []);
-  const paginate = () => {
-    console.log("paginate");
+  const paginate = (pageNumber) => {
+    params.set("page", pageNumber);
+    setCurrentPage(pageNumber);
+    scrollToBlogsTop();
+    setSearchParams(params);
   };
+  const blogsTopRef = useRef(null);
+  const scrollToBlogsTop = () => {
+    blogsTopRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const filterCategory = (categoryId) => {
+    const params = new URLSearchParams(searchParams);
+    const hasCategory = params.has("category");
+    if (hasCategory) params.set("category", categoryId);
+    else params.append("category", categoryId);
+    setSearchParams(params);
+  };
+
+  const removeCategoryFilter = () => {
+    const params = new URLSearchParams(searchParams);
+    params.delete("category");
+    setSearchParams(params);
+  };
+
   return (
     <>
-      <section className="all-news section-padding blog bg-transparent style-3">
+      <section
+        ref={blogsTopRef}
+        className="all-news section-padding blog bg-transparent style-3"
+      >
         <div className="container">
           <div className="row gx-4 gx-lg-5">
             <div className="col-lg-8">
@@ -47,12 +107,12 @@ export const AllNews = ({ blogs, categories }) => {
                               {moment(item.created_at).fromNow()}
                             </a>
                           </small>
-                          <a
-                            href="page-single-post-5.html"
+                          <Link
+                            href={`/blog/${item.slug}`}
                             className="card-title mb-10"
                           >
-                            How To Become A Python Develop Expert
-                          </a>
+                            {item.title}
+                          </Link>
                           <p className="fs-13px color-666">
                             {_.truncate(item.content, {
                               length: 115,
@@ -80,10 +140,10 @@ export const AllNews = ({ blogs, categories }) => {
                 ))}
 
               <PaginationComponent
-                itemPerPage={blogs?.meta.per_page}
+                itemPerPage={meta?.per_page || blogs?.meta.per_page}
                 currentPage={currentPage}
                 paginate={paginate}
-                totalItems={blogs?.meta.total}
+                totalItems={meta?.total || blogs?.meta.total}
               />
             </div>
             <div className="col-lg-4">
@@ -92,12 +152,32 @@ export const AllNews = ({ blogs, categories }) => {
                   <h6 className="title mb-20 text-uppercase fw-normal">
                     categories
                   </h6>
-                  {categories &&
-                    categories.map((item) => (
-                      <a href="#" className="cat-item">
-                        <span> {item.name} </span>
-                      </a>
-                    ))}
+                  <a
+                    onClick={removeCategoryFilter}
+                    style={{ cursor: "pointer" }}
+                    className="cat-item"
+                  >
+                    <span> ALL </span>
+                  </a>
+                  <>
+                    {categories &&
+                      categories.map((item) => {
+                        // Check if the category matches the item id
+                        const category = searchParams.get("category");
+                        const isCategoryMatched = Number(category) === item.id;
+                        return (
+                          <a
+                            onClick={() => filterCategory(item.id)}
+                            style={{ cursor: "pointer" }}
+                            className={clsx("cat-item", {
+                              "color-blue5 fw-bold": isCategoryMatched,
+                            })}
+                          >
+                            <span> {item.name} </span>
+                          </a>
+                        );
+                      })}
+                  </>
                 </div>
               </div>
             </div>
