@@ -22,9 +22,10 @@ const Clients = () => {
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
-          slidesPerView={6}
+          slidesPerView={3}
           loop={true}
           speed={6000}
+        
         >
           <SwiperSlide>
             <a href="#" className="img">
@@ -119,7 +120,7 @@ const Clients = () => {
             delay: 0,
           }}
           modules={[Autoplay]}
-          slidesPerView={6}
+          slidesPerView={3}
           loop={true}
           speed={6000}
           dir="rtl"

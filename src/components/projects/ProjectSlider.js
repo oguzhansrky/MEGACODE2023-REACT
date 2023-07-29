@@ -29,7 +29,7 @@ const ProjectSlider = ({ slides }) => {
               {slides?.map((item) => (
                 <SwiperSlide key={uuid()}>
                   <div className="content-card">
-                    <div className="img overlay">
+                    <div className="img-overlay-container ">
                       <img src={item} alt="" />
                     </div>
                   </div>

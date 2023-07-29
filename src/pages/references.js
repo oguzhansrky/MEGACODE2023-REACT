@@ -30,7 +30,7 @@ const referanslar = () => {
             />
           </div>
           <div className=" row">
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -48,7 +48,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -68,7 +68,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -86,7 +86,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -104,7 +104,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -122,7 +122,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -140,7 +140,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -158,7 +158,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -176,7 +176,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -194,7 +194,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -212,7 +212,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
@@ -230,7 +230,7 @@ const referanslar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 gx-5">
+            <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">

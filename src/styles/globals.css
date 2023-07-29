@@ -19426,6 +19426,10 @@ footer.style-15 .foot p {
     padding: 30px 20px;
   }
 
+  .choose-us-bubbles, .choose-us-brands, .choose-us-img {
+    display: none;
+  }
+
   .signin-page.style-5 .signin .form-content .info .butn {
     width: 100%;
   }
@@ -21483,6 +21487,10 @@ footer.style-15 .foot p {
   align-items: center !important;
   justify-content: center !important;
   height: 50px !important;
+}
+
+.ant-tabs-mobile {
+  display: block;
 }
 
 

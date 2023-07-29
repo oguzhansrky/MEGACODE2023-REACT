@@ -1,4 +1,5 @@
 import { PaginationComponent } from "@/components/Pagination";
+import PageHead from "@/layout/head/Head";
 import { blogcommentService, blogService } from "@/services";
 import { Form, Input, message } from "antd";
 import moment from "moment";
@@ -82,6 +83,7 @@ const PostDetails = ({ data, comments }) => {
   };
   return (
     <>
+      <PageHead title={data.title} />
       {contextHolder}
       <main className="blog-page style-5">
         <section className="all-news section-padding pt-50 blog bg-transparent style-3">
