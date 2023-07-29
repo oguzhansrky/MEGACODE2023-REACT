@@ -164,7 +164,7 @@ const Application = () => {
       <PageHead title={t("admin_panel_applications.pagehead_title_job")}></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>{t("admin_panel_applications.h3")}</h3>
+          <h3>{t("admin_panel_applications.h3_post")}</h3>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}

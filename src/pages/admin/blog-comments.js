@@ -153,7 +153,7 @@ const blogcomments = () => {
   const handleDelete = async () => {
     try {
       await blogcommentService.deleteBlogComment(formData?.id);
-      messageApi.success(t("admin_panel_applications.api_blog_delete"));
+      messageApi.success(t("admin_panel_blog_com.api_blog_delete"));
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -163,10 +163,10 @@ const blogcomments = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title={t("admin_panel_applications.pagehead_title_blog")}></PageHead>
+      <PageHead title={t("admin_panel_blog_com.pagehead_title_blog")}></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>{t("admin_panel_applications.pagehead_title_blog")}</h3>
+          <h3>{t("admin_panel_blog_com.pagehead_title_blog")}</h3>
         </div>
 
         <Table

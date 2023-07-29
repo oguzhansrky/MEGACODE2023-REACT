@@ -622,6 +622,18 @@
           "pagehead_title":"Kullanıcı",
           "h3_text":"Kullanıcı",
           "set_created":"Kullanıcı oluştur"
+       },
+       "admin_nav_bar":{
+         "contents":"İçerik",
+         "blog":"Bloglar",
+         "blog_com":"Blog Yorumları",
+         "career":"Kariyer",
+         "job_post":"İş İlanları",
+         "job_app":"İş Başvuruları",
+         "managment":"Yönetim",
+         "user":"Kullanıcılar",
+         "roles":"Roller"
+
        }
       
 }   
