@@ -11,8 +11,10 @@ import DeleteConfirm from "@/modals/DeleteConfirm";
 import CreateCategory from "@/modals/categories/CreateCategory";
 import UpdateCategory from "@/modals/categories/UpdateCategory";
 import { parseCookies } from "@/utils";
+import useTranslation from "next-translate/useTranslation";
 
 const categories = () => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -73,18 +75,18 @@ const categories = () => {
       key: "id",
     },
     {
-      title: "İsim",
+      title:t("admin_panel_categories.title_name"),
       dataIndex: "name",
       key: "name",
     },
     {
-      title: "Oluşturma Tarihi",
+      title: t("admin_panel_categories.title_created_at"),
       dataIndex: "created_at",
       key: "created_at",
       render: (date) => <span>{moment(date).format("DD.MM.YYYY mm:s")}</span>,
     },
     {
-      title: "İşlem",
+      title: t("admin_panel_categories.title_action"),
       key: "action",
       render: (_, record) => (
         <Space size="middle">
@@ -94,7 +96,7 @@ const categories = () => {
               setUpdateModal(true);
             }}
           >
-            Düzenle
+            {t("admin_panel_categories.text_edit")}
           </a>
           <a
             onClick={() => {
@@ -102,7 +104,7 @@ const categories = () => {
               setDeleteModal(true);
             }}
           >
-            Sil
+            {t("admin_panel_categories.text_delete")}
           </a>
         </Space>
       ),
@@ -112,7 +114,7 @@ const categories = () => {
   const handleDelete = async () => {
     try {
       await categoriesService.deleteCategory(formData?.id);
-      messageApi.success("Kategori başarıyla silindi.");
+      messageApi.success(t("admin_panel_categories.message_api"));
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -122,11 +124,11 @@ const categories = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Kategoriler"></PageHead>
+      <PageHead title={t("admin_panel_categories.pagehead_title_categories")}></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Kategoriler</h3>
-          <Button onClick={() => setCreateModal(true)}>Kategori Oluştur</Button>
+          <h3>{t("admin_panel_categories.h3_categories")}</h3>
+          <Button onClick={() => setCreateModal(true)}>{t("admin_panel_categories.set_created_categories")}</Button>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}

@@ -1,6 +1,8 @@
 import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
 const ChooseUs = () => {
+  const { t } = useTranslation("common");
   return (
     <section className="choose-us section-padding pt-0 style-1">
       <div className="container">
@@ -9,48 +11,47 @@ const ChooseUs = () => {
             <div className="info">
               <div className="section-head mb-60">
                 <h6 className="color-main text-uppercase wow fadeInUp">
-                  Why choose us
+                {t("choose_us.choose")}
                 </h6>
                 <h2 className="wow fadeInUp">
-                  Boost Your Business{" "}
-                  <span className="fw-normal">With New Tech</span>
+                {t("choose_us.boost")}{" "}
+                  <span className="fw-normal">{t("choose_us.text1")}</span>
                 </h2>
               </div>
               <div className="text">
-                Our team can assist you in transforming your business through
-                latest tech capabilities to stay ahead of the curve.
+              {t("choose_us.text2")}
               </div>
               <ul>
                 <li className="wow fadeInUp">
                   <span className="icon">
                     <i className="bi bi-check2" />
                   </span>
-                  <h6>Latest IT Solutions &amp; Integration With Blockchain</h6>
+                  <h6>{t("choose_us.text3")} &amp; {t("choose_us.text3.1")}</h6>
                 </li>
                 <li className="wow fadeInUp">
                   <span className="icon">
                     <i className="bi bi-check2" />
                   </span>
-                  <h6>Over 100+ Payment Gateways Support</h6>
+                  <h6>{t("choose_us.text4")}</h6>
                 </li>
                 <li className="wow fadeInUp">
                   <span className="icon">
                     <i className="bi bi-check2" />
                   </span>
-                  <h6>AI Machine &amp; Deep Learning</h6>
+                  <h6>{t("choose_us.text5")}&amp;{t("choose_us.text5.1")}</h6>
                 </li>
                 <li className="wow fadeInUp">
                   <span className="icon">
                     <i className="bi bi-check2" />
                   </span>
-                  <h6>Dedicated Support 24/7</h6>
+                  <h6>{t("choose_us.text6")}</h6>
                 </li>
               </ul>
               <a
                 href="page-about-5.html"
                 className="btn butn-gard border-0 text-white wow fadeInUp"
               >
-                <span>How We Works</span>
+                <span>{t("choose_us.text7")}</span>
               </a>
             </div>
           </div>

@@ -16,8 +16,10 @@ import CreateBlog from "@/modals/blogs/CreateBlog";
 import { getBlogs } from "@/services/blogService";
 import UpdateBlog from "@/modals/blogs/UpdateBlog";
 import { parseCookies } from "@/utils";
+import useTranslation from "next-translate/useTranslation";
 
 const Blogs = () => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -78,7 +80,7 @@ const Blogs = () => {
       key: "id",
     },
     {
-      title: "Blog",
+      title: t("admin_panel_blog.title_blog"),
       dataIndex: "title",
       key: "title",
       render: (blog, field) => (
@@ -98,13 +100,13 @@ const Blogs = () => {
       ),
     },
     {
-      title: "Kategori",
+      title: t("admin_panel_blog.title_category"),
       dataIndex: "category",
       key: "category",
       render: (category) => <span>{category?.name}</span>,
     },
     {
-      title: "Durum",
+      title: t("admin_panel_blog.title_status"),
       dataIndex: "status",
       key: "status",
       render: (status) => {
@@ -120,13 +122,13 @@ const Blogs = () => {
       },
     },
     {
-      title: "Oluşturma Tarihi",
+      title: t("admin_panel_blog.title_created_at"),
       dataIndex: "created_at",
       key: "created_at",
       render: (date) => <span>{moment(date).format("DD.MM.YYYY hh:mm")}</span>,
     },
     {
-      title: "İşlem",
+      title: t("admin_panel_blog.title_action"),
       key: "action",
       render: (_, record) => (
         <Space size="middle">
@@ -136,7 +138,7 @@ const Blogs = () => {
               setUpdateModal(true);
             }}
           >
-            Düzenle
+            {t("admin_panel_blog.text_edit")}
           </a>
           <a
             onClick={() => {
@@ -144,7 +146,7 @@ const Blogs = () => {
               setDeleteModal(true);
             }}
           >
-            Sil
+            {t("admin_panel_blog.text_delete")}
           </a>
         </Space>
       ),
@@ -154,7 +156,7 @@ const Blogs = () => {
   const handleDelete = async () => {
     try {
       await blogService.deleteBlog(formData?.id);
-      messageApi.success("Blog başarıyla silindi.");
+      messageApi.success(t("admin_panel_blog.message_api"));
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -164,11 +166,11 @@ const Blogs = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Bloglar"></PageHead>
+      <PageHead title={t("admin_panel_blog.pagehead_title_ blog")}></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Bloglar</h3>
-          <Button onClick={() => setCreateModal(true)}>Blog Oluştur</Button>
+          <h3>{t("admin_panel_blog.h3_blog")}</h3>
+          <Button onClick={() => setCreateModal(true)}>{t("admin_panel_blog.set_created_blog")}</Button>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}

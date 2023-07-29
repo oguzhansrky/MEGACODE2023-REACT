@@ -26,7 +26,7 @@ const ContactUs = () => {
                     {t("contact_us.Adress")}
                   </li>
                   <li className="wow fadeInUp">
-                    <strong>Email : </strong> info@megacode.com.tr
+                    <strong>{t("contact_us.email")} : </strong> info@megacode.com.tr
                   </li>
                 </ul>
               </div>

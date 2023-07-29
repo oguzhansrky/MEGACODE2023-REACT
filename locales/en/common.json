@@ -103,7 +103,8 @@
       "name_surname":"Name And Surname",
      "telephone":"Telephone",
      "company_name":"Company Name",
-     "message":"Your Message..."
+     "message":"Your Message...",
+     "email":"E-mail"
  
      },
      "about1":{
@@ -436,9 +437,182 @@
       "digital_sign":"Digital Signal",
       "career":"Career",
       "blog":"Blog",
-      "contact":"Contact"
+      "contact":"Contact",
+      "sea365":"Sea365",
+      "Blog":"Blog",
+      "acenta365":"Acente365"
+      },
+      "slug_js":{
+         "comment_suc":"Your comment has been sent successfully",
+         "posted":"Posted on 3 Days ago",
+         "solutions":"Solutions For Big Data Issue, Expert Perspective",
+         "sol_text_1":"If there’s one way that wireless technology has changed the way we work, it’s that will everyone is now connected",
+         "comment_suc_text":"Your comment has been sent successfully!",
+         "leave_comment":"Leave A Comment",
+         "reply_to":"Replying to",
+         "message1":"Please enter your name and surname!",
+         "placeholder1":"Full Name",
+         "name2":"Comment",
+         "message2":"Please enter your comment!",
+         "placeholder2":"Write your comment here",
+         "submit":"Submit Comment"
 
 
-   }
+      },
+      "chose_us":{
+        "choose":"Why Choose us",
+        "boost":"Boost Your Business",
+        "text1":"With New Tech",
+        "text2":"Our team can assist you in transforming your business through  latest tech capabilities to stay ahead of the curve.",
+        "text3":"Latest IT Solutions &amp;",
+        "text3.1":"Integration With Blockchain",
+        "text4":"Over 100+ Payment Gateways Support",
+        "text5":"AI Machine",
+        "text5.1":" Deep Learning",
+        "text6":"Dedicated Support 24/7",
+        "text7:":"How We Works"
+      },
+      "portfolio":{
+        "port":"Portfolio",
+        "latest_project":"Latest Porjects",
+        "from_our_team":"From Our Team",
+        "infrastructure":"Infrastructure Upgrade",
+        "It":"IT Consultation",
+        "text1":"Trust our top minds to eliminate workflow pain points, implement new tech",
+        "text1.1":"app.",
+        "tags1":"Consultation",
+        "tags2":"Management",
+        "landing_page":"Criftocy Landing Page",
+        "web_dev":"Website Development",
+        "ui/ux":"UI/UX Design",
+        "text2":"Trust our top minds to eliminate workflow pain points, implement new tech",
+        "text2.1":"app.",
+        "tags3":"WordPress",
+        "tags4":"PHP",
+        "tags5":"HTML/CSS",
+        "tags6":"Figma",
+        "ar/vr":"AR/VR War 1986 Game",
+        "game_dev":"Game Developemnt",
+        "text3":"Trust our top minds to eliminate workflow pain points, implement new tech",
+        "text3.1":"app.",
+        "tags7":"VR/AR",
+        "tags8":"iOS",
+        "tags8.1":"Android",
+        "tags9":"Unity 2D/3D"
+        
+      },
+      "pagination":{
+         "next":"Next"
+      },
+      "admin_panel":{
+         "title_name":"Name",
+         "title_lastname":"Last Name",
+         "title_email":"E-mail",
+         "title_telephone":"Phone Number",
+         "title_place":"Place Of Residence",
+         "title_front_write":"Cover Letter",
+         "title_job":"Post",
+         "title_creation_date":"Created Date",
+         "title_progress":"Progress",
+         "cv_down":"Download CV",
+         "delete":"Delete",
+         "job_deleted":"Post Succesful Deleted",
+         "pagehead_title_job":"Job Applications",
+         "h3_post":"Job Applications",
+         "show_total":"Total ",
+         "show_user":"User"
+         
+      },
+      "admin_panel_blog_com":{
+        "title_name":"Name LastName",
+        "title_comment":"Comment",
+        "title_status":"Status",
+        "text_success":"Success",
+        "text_danger":"not approved",
+        "text_warning":"Waiting for approval",
+        "title_blog":"Blog",
+        "title_created_at":"Creation Date",
+        "title_action":"Process",
+        "text_edit":"Edit",
+        "text_delete":"Delete",
+        "api_blog_delete":"Blog Comments have been deleted successfully.",
+        "pagehead_title_blog":"Blog Comment",
+        "text_h3":"Blog Comment"
+
+      },
+      "admin_panel_blog":{
+         "title_blog":"Blog",
+         "title_category":"Categories",
+         "title_status":"Status",
+         "title_created_at":"Creation Date",
+         "title_action":"Process",
+         "text_edit":"Edit",
+         "text_delete":"Delete",
+         "message_api":"The blog has been successfully deleted.",
+         "pagehead_title_blog":"Blogs",
+         "h3_blog":"Blogs",
+         "set_created_blog":"Blog Created"
+
+      },
+      "admin_panel_categories":{
+         "title_name":"Name",
+         "title_created_at":"Creation Date",
+         "title_action":"Process",
+         "text_edit":"Edit",
+         "text_delete":"Delete",
+         "message_api":"The Categories has been succesfuly deleted",
+         "pagehead_title_categories":"Categories",
+         "h3_categories":"Categories",
+         "set_created_categories":"Create Categories"
+      },
+      "admin_panel_job_post":{
+         "title_title":"Title",
+         "title_deadline":"Deadline",
+         "title_status":"Status",
+         "text_success":"On live",
+         "text_warning":"Archive",
+         "title_created_at":"Creation Date",
+         "title_action":"Process",
+         "text_edit":"Edit",
+         "text_delete":"Delete",
+         "message_api":"The job posting has been successfully deleted.",
+         "pagehead_title":"Job Postings",
+         "h3_text":"Job Postings",
+         "set_created":"Job Postings"
+      },
+      "admin_panel_login":{
+         "e-mail":"E-mail",
+         "e-mail_message":"Please enter your e-mail address!",
+         "password":"Password",
+         "password_message":"Please enter your password!",
+         "log_in_text":"Login",
+         "message_api":"You have successfully logged in."
+      },
+      "admin_panel_roles":{
+        "title_name":"Name",
+        "title_created_at":"Creation Date",
+        "title_action":"Action",
+        "text_edit":"Edit",
+        "text_delete":"Delete",
+        "message_api":"Rol succesfuly deleted",
+        "pagehead_title":"Roles",
+        "h3_text":"Roles",
+        "set_created":"Create Roles"
+      },
+      "admin_panel_users":{
+         "title_name":"Name Surname",
+         "title_email":"E-mail",
+         "title_created_at":"Creation Date",
+         "title_role":"Rol",
+         "title_action":"Action",
+         "text_edit":"Edit",
+         "text_delete":"Delete",
+         "message_api":"The user has been successfully deleted.",
+         "pagehead_title":"Users",
+         "h3_text":"Users",
+         "set_created":"Create Users"
+      }
+      
+
    
 }

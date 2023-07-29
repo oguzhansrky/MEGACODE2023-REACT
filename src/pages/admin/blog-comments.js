@@ -12,8 +12,10 @@ import CreateBlogComment from "@/modals/blogcomments/CreateBlogComment";
 import _ from "lodash";
 import UpdateBlogComment from "@/modals/blogcomments/UpdateBlogComment";
 import { parseCookies } from "@/utils";
+import useTranslation from "next-translate/useTranslation";
 
 const blogcomments = () => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -74,12 +76,12 @@ const blogcomments = () => {
       key: "id",
     },
     {
-      title: "İsim Soyisim",
+      title: t("admin_panel_blog_com.title_name"),
       dataIndex: "full_name",
       key: "full_name",
     },
     {
-      title: "Yorum",
+      title: t("admin_panel_blog_com.title_comment"),
       dataIndex: "comment",
       key: "comment",
       render: (comment) => {
@@ -94,36 +96,36 @@ const blogcomments = () => {
       },
     },
     {
-      title: "Durum",
+      title: t("admin_panel_blog_com.title_status"),
       dataIndex: "status",
       key: "status",
       render: (status) => {
         console.log(status);
         switch (status) {
           case "approved":
-            return <span className="text-success">Onaylı</span>;
+            return <span className="text-success"> {t("admin_panel_blog_com.text_success")}</span>;
           case "unapproved":
-            return <span className="text-danger">Onaylanmadı</span>;
+            return <span className="text-danger">{t("admin_panel_blog_com.text_danger")}</span>;
           case "pending":
-            return <span className="text-warning">Onay Bekliyor</span>;
+            return <span className="text-warning">{t("admin_panel_blog_com.text_warning")}</span>;
           default:
             return <span>-</span>;
         }
       },
     },
     {
-      title: "Blog",
+      title: t("admin_panel_blog_com.title_blog"),
       dataIndex: "blog_id",
       key: "blog_id",
     },
     {
-      title: "Oluşturma Tarihi",
+      title: t("admin_panel_blog_com.title_created_at"),
       dataIndex: "created_at",
       key: "created_at",
       render: (date) => <span>{moment(date).format("DD.MM.YYYY mm:s")}</span>,
     },
     {
-      title: "İşlem",
+      title: t("admin_panel_blog_com.title_action"),
       key: "action",
       render: (_, record) => (
         <Space size="middle">
@@ -133,7 +135,7 @@ const blogcomments = () => {
               setUpdateModal(true);
             }}
           >
-            Düzenle
+            {t("admin_panel_blog_com.text_edit")}
           </a>
           <a
             onClick={() => {
@@ -141,7 +143,7 @@ const blogcomments = () => {
               setDeleteModal(true);
             }}
           >
-            Sil
+            {t("admin_panel_blog_com.text_delete")}
           </a>
         </Space>
       ),
@@ -151,7 +153,7 @@ const blogcomments = () => {
   const handleDelete = async () => {
     try {
       await blogcommentService.deleteBlogComment(formData?.id);
-      messageApi.success("Blog Yorumları başarıyla silindi.");
+      messageApi.success(t("admin_panel_applications.api_blog_delete"));
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -161,10 +163,10 @@ const blogcomments = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Blog Yorumları"></PageHead>
+      <PageHead title={t("admin_panel_applications.pagehead_title_blog")}></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Blog Yorumları</h3>
+          <h3>{t("admin_panel_applications.pagehead_title_blog")}</h3>
         </div>
 
         <Table

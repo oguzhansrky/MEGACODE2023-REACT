@@ -74,7 +74,7 @@ const JobPosts = () => {
       key: "id",
     },
     {
-      title: "Başlık",
+      title: t("admin_panel_job_post.title_title"),
       dataIndex: "title",
       key: "title",
       render: (title, field) => (
@@ -86,7 +86,7 @@ const JobPosts = () => {
       ),
     },
     {
-      title: "Bitiş Tarihi",
+      title: t("admin_panel_job_post.title_deadline"),
       dataIndex: "deadline",
       key: "deadline",
       render: (deadline) => (
@@ -94,15 +94,15 @@ const JobPosts = () => {
       ),
     },
     {
-      title: "Durum",
+      title: t("admin_panel_job_post.title_status"),
       dataIndex: "status",
       key: "status",
       render: (status) => {
         switch (status) {
           case "public":
-            return <span className="text-success fw-bold">Yayında</span>;
+            return <span className="text-success fw-bold">{t("admin_panel_job_post.text_success")}</span>;
           case "archived":
-            return <span className="text-warning fw-bold">Arşivde</span>;
+            return <span className="text-warning fw-bold">{t("admin_panel_job_post.text_warning")}</span>;
 
           default:
             break;
@@ -110,13 +110,13 @@ const JobPosts = () => {
       },
     },
     {
-      title: "Oluşturma Tarihi",
+      title: t("admin_panel_job_post.title_created_at"),
       dataIndex: "created_at",
       key: "created_at",
       render: (date) => <span>{moment(date).format("DD.MM.YYYY hh:mm")}</span>,
     },
     {
-      title: "İşlem",
+      title: t("admin_panel_job_post.title_action"),
       key: "action",
       render: (_, record) => (
         <Space size="middle">
@@ -126,7 +126,7 @@ const JobPosts = () => {
               setUpdateModal(true);
             }}
           >
-            Düzenle
+            {t("admin_panel_job_post.text_edit")}
           </a>
           <a
             onClick={() => {
@@ -134,7 +134,7 @@ const JobPosts = () => {
               setDeleteModal(true);
             }}
           >
-            Sil
+            {t("admin_panel_job_post.text_delete")}
           </a>
         </Space>
       ),
@@ -144,7 +144,7 @@ const JobPosts = () => {
   const handleDelete = async () => {
     try {
       await jobPostsService.deleteJobPost(formData?.id);
-      messageApi.success("İş ilanı başarıyla silindi.");
+      messageApi.success(t("admin_panel_job_post.message_api"));
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -154,11 +154,11 @@ const JobPosts = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="İş İlanları"></PageHead>
+      <PageHead title={t("admin_panel_job_post.pagehead_title")}></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>İş İlanları</h3>
-          <Button onClick={() => setCreateModal(true)}>İş İlanı Oluştur</Button>
+          <h3>{t("admin_panel_job_post.h3_text")}</h3>
+          <Button onClick={() => setCreateModal(true)}>{t("admin_panel_job_post.set_created")}</Button>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}

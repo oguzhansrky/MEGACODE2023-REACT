@@ -1,6 +1,8 @@
 import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
 const Portfolio = () => {
+  const { t } = useTranslation("common");
   return (
     <section className="portfolio section-padding bg-gray style-1">
       <div className="container">
@@ -8,10 +10,10 @@ const Portfolio = () => {
           <div className="col offset-lg-1">
             <div className="section-head mb-60">
               <h6 className="color-main text-uppercase wow fadeInUp">
-                Portfolio
+              {t("portfolio.port")}
               </h6>
               <h2 className="wow fadeInUp">
-                Latest Projects <span className="fw-normal">From Our Team</span>
+              {t("portfolio.latest_prject")}<span className="fw-normal">{t("portfolio.from_our_team")}</span>
               </h2>
             </div>
           </div>
@@ -29,19 +31,18 @@ const Portfolio = () => {
                       <h5>
                         <a href="page-single-project-5.html">
                           {" "}
-                          Infrastructure Upgrade{" "}
+                          {t("portfolio.infrastructure")}{" "}
                         </a>
                       </h5>
                       <small className="d-block color-main text-uppercase">
-                        <a href="#">IT Consultation</a>
+                        <a href="#">{t("portfolio.It")}</a>
                       </small>
                       <div className="text">
-                        Trust our top minds to eliminate workflow pain points,
-                        implement new tech &amp; app.
+                      {t("portfolio.text1")}&amp; {t("portfolio.text1.1")}
                       </div>
                       <div className="tags">
-                        <a href="#">Consultation</a>
-                        <a href="#">Management</a>
+                        <a href="#">{t("portfolio.tags1")}</a>
+                        <a href="#">{t("portfolio.tags2")}</a>
                       </div>
                     </div>
                   </div>
@@ -55,22 +56,21 @@ const Portfolio = () => {
                       <h5>
                         <a href="page-single-project-5.html">
                           {" "}
-                          Criftocy Landing Page{" "}
+                          {t("portfolio.landing_page")}{" "}
                         </a>
                       </h5>
                       <small className="d-block color-main text-uppercase">
-                        <a href="#">Website Development,</a>{" "}
-                        <a href="#">UI/UX Design</a>
+                        <a href="#">{t("portfolio.web_dev")}</a>{" "}
+                        <a href="#">{t("portfolio.ui/ux")}</a>
                       </small>
                       <div className="text">
-                        Trust our top minds to eliminate workflow pain points,
-                        implement new tech &amp; app.
+                      {t("portfolio.text2")} &amp; {t("portfolio.text2.1")}
                       </div>
                       <div className="tags">
-                        <a href="#">WordPress</a>
-                        <a href="#">PHP</a>
-                        <a href="#">HTML/CSS</a>
-                        <a href="#">Figma</a>
+                        <a href="#">{t("portfolio.tags3")}</a>
+                        <a href="#">{t("portfolio.tags4")}</a>
+                        <a href="#">{t("portfolio.tags5")}</a>
+                        <a href="#">{t("portfolio.tags6")}</a>
                       </div>
                     </div>
                   </div>
@@ -84,20 +84,19 @@ const Portfolio = () => {
                       <h5>
                         <a href="page-single-project-5.html">
                           {" "}
-                          AR/VR War 1986 Game{" "}
+                          {t("portfolio.ar/vr")}{" "}
                         </a>
                       </h5>
                       <small className="d-block color-main text-uppercase">
-                        <a href="#">Game Developemnt</a>
+                        <a href="#">{t("portfolio.game_dev")}</a>
                       </small>
                       <div className="text">
-                        Trust our top minds to eliminate workflow pain points,
-                        implement new tech &amp; app.
+                      {t("portfolio.text3")}&amp;{t("portfolio.text3.1")}
                       </div>
                       <div className="tags">
-                        <a href="#">VR/AR</a>
-                        <a href="#">iOS &amp; Android</a>
-                        <a href="#">Unity 2D/3D</a>
+                        <a href="#">{t("portfolio.tags7")}</a>
+                        <a href="#">{t("portfolio.tags8")}&amp; {t("portfolio.tags8.1")}</a>
+                        <a href="#">{t("portfolio.tags9")}</a>
                       </div>
                     </div>
                   </div>
@@ -111,22 +110,21 @@ const Portfolio = () => {
                       <h5>
                         <a href="page-single-project-5.html">
                           {" "}
-                          Criftocy Landing Page{" "}
+                          {t("portfolio.landing_page")}{" "}
                         </a>
                       </h5>
                       <small className="d-block color-main text-uppercase">
-                        <a href="#">Website Development,</a>{" "}
-                        <a href="#">UI/UX Design</a>
+                        <a href="#">{t("portfolio.web_dev")}</a>{" "}
+                        <a href="#">{t("portfolio.ui/ux")}</a>
                       </small>
                       <div className="text">
-                        Trust our top minds to eliminate workflow pain points,
-                        implement new tech &amp; app.
+                      {t("portfolio.text3")}&amp;{t("portfolio.text3.1")}
                       </div>
                       <div className="tags">
-                        <a href="#">WordPress</a>
-                        <a href="#">PHP</a>
-                        <a href="#">HTML/CSS</a>
-                        <a href="#">Figma</a>
+                        <a href="#">{t("portfolio.tags3")}</a>
+                        <a href="#">{t("portfolio.tags4")}</a>
+                        <a href="#">{t("portfolio.tags5")}</a>
+                        <a href="#">{t("portfolio.tags6")}</a>
                       </div>
                     </div>
                   </div>

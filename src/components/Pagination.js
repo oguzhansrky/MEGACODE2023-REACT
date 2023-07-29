@@ -1,6 +1,8 @@
 import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
 const PaginationComponent = ({
+  
   itemPerPage,
   totalItems,
   paginate,
@@ -8,6 +10,7 @@ const PaginationComponent = ({
   hidePageNumbers,
   classNames,
 }) => {
+  const { t } = useTranslation("common");
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalItems / itemPerPage); i++) {
     pageNumbers.push(i);
@@ -71,7 +74,7 @@ const PaginationComponent = ({
               }}
               className="text"
             >
-              <span>Next</span>
+              <span>{t("pagination.next")}</span>
               {"   "}
               <i className="fas fa-chevron-right" />
             </span>

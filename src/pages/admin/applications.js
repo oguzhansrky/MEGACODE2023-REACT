@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Pagination } from "antd";
 import PageHead from "@/layout/head/Head";
 import DeleteConfirm from "@/modals/DeleteConfirm";
+import useTranslation from "next-translate/useTranslation";
 
 import _ from "lodash";
 
@@ -14,6 +15,7 @@ import { applicationService } from "@/services";
 import { parseCookies } from "@/utils";
 
 const Application = () => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -74,32 +76,32 @@ const Application = () => {
       key: "id",
     },
     {
-      title: "İsim",
+      title: t("admin_panel_applications.title_name"),
       dataIndex: "first_name",
       key: "first_name",
     },
     {
-      title: "Soyisim",
+      title: t("admin_panel_applications.title_lastname"),
       dataIndex: "last_name",
       key: "Last_name",
     },
     {
-      title: "E-mail",
+      title: t("admin_panel_applications.title_email"),
       dataIndex: "email",
       key: "email",
     },
     {
-      title: "Telefon",
+      title: t("admin_panel_applications.title_telephone"),
       dataIndex: "phone_number",
       key: "phone_number",
     },
     {
-      title: "İkamet Yeri",
+      title: t("admin_panel_applications.title_place"),
       dataIndex: "place_of_residence",
       key: "place_of_residence",
     },
     {
-      title: "Ön Yazı",
+      title: t("admin_panel_applications.title_front_write"),
       dataIndex: "cover_letter",
       key: "cover_letter",
       render: (cover_letter) => {
@@ -114,24 +116,24 @@ const Application = () => {
       },
     },
     {
-      title: "İş İlanı",
+      title: t("admin_panel_applications.title_job"),
       dataIndex: "post",
       key: "post",
       render: (post) => <span>{post?.title}</span>,
     },
     {
-      title: "Oluşturma Tarihi",
+      title: t("admin_panel_applications.title_creation_date"),
       dataIndex: "created_at",
       key: "created_at",
       render: (date) => <span>{moment(date).format("DD.MM.YYYY mm:s")}</span>,
     },
     {
-      title: "İşlem",
+      title: t("admin_panel_applications.title_progress"),
       key: "action",
       render: (_, record) => (
         <Space size="middle">
           <a target="_blank" download={true} href={record?.resume}>
-            CV İndir
+          {t("admin_panel_applications.cv_down")}
           </a>
           <a
             onClick={() => {
@@ -139,7 +141,7 @@ const Application = () => {
               setDeleteModal(true);
             }}
           >
-            Sil
+            {t("admin_panel_applications.delete")}
           </a>
         </Space>
       ),
@@ -149,7 +151,7 @@ const Application = () => {
   const handleDelete = async () => {
     try {
       await applicationService.deleteJobApplication(formData?.id);
-      messageApi.success("İş başvuruları başarıyla silindi.");
+      messageApi.success(t("admin_panel_applications.job_deleted"));
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -159,10 +161,10 @@ const Application = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="İş Başvuruları"></PageHead>
+      <PageHead title={t("admin_panel_applications.pagehead_title_job")}></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>İş Başvuruları</h3>
+          <h3>{t("admin_panel_applications.h3")}</h3>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}

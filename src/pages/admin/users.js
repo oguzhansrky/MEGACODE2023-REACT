@@ -11,8 +11,10 @@ import CreateUser from "@/modals/users/CreateUser";
 import UpdateUser from "@/modals/users/UpdateUser";
 import DeleteConfirm from "@/modals/DeleteConfirm";
 import { parseCookies } from "@/utils";
+import useTranslation from "next-translate/useTranslation";
 
 const Users = () => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -70,29 +72,29 @@ const Users = () => {
       key: "id",
     },
     {
-      title: "İsim Soyisim",
+      title: t("admin_panel_users.title_name"),
       dataIndex: "full_name",
       key: "full_name",
     },
     {
-      title: "Email",
+      title: t("admin_panel_users.title_email"),
       dataIndex: "email",
       key: "email",
     },
     {
-      title: "Oluşturma Tarihi",
+      title: t("admin_panel_users.title_created_at"),
       dataIndex: "created_at",
       key: "created_at",
       render: (date) => <span>{moment(date).format("DD.MM.YYYY mm:s")}</span>,
     },
     {
-      title: "Rol",
+      title: t("admin_panel_users.title_role"),
       key: "role",
       dataIndex: "role",
       render: (role) => <span>{role.name}</span>,
     },
     {
-      title: "İşlem",
+      title: t("admin_panel_users.title_action"),
       key: "action",
       render: (_, record) => (
         <Space size="middle">
@@ -102,7 +104,7 @@ const Users = () => {
               setUpdateModal(true);
             }}
           >
-            Düzenle
+            {t("admin_panel_users.text_edit")}
           </a>
           <a
             onClick={() => {
@@ -110,7 +112,7 @@ const Users = () => {
               setDeleteModal(true);
             }}
           >
-            Sil
+            {t("admin_panel_users.text_delete")}
           </a>
         </Space>
       ),
@@ -120,7 +122,7 @@ const Users = () => {
   const handleDelete = async () => {
     try {
       await userService.deleteUser(formData?.id);
-      messageApi.success("Kullanıcı başarıyla silindi.");
+      messageApi.success(t("admin_panel_users.message_api"));
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -130,12 +132,12 @@ const Users = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Kullanıcılar"></PageHead>
+      <PageHead title={t("admin_panel_users.pagehead_title")}></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Kullanıcılar</h3>
+          <h3>{t("admin_panel_users.h3_text")}</h3>
           <Button onClick={() => setCreateModal(true)}>
-            Kullanıcı Oluştur
+          {t("admin_panel_users.set_created")}
           </Button>
         </div>
         <Table

@@ -4,9 +4,11 @@ import { Form, Input, message } from "antd";
 import moment from "moment";
 import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
+import useTranslation from "next-translate/useTranslation";
 const { TextArea } = Input;
 
 const PostDetails = ({ data, comments }) => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const [comment] = Form.useForm();
   const { query } = router;
@@ -67,7 +69,7 @@ const PostDetails = ({ data, comments }) => {
         ...values,
         parent_id: replyTo?.id || null,
       });
-      messageApi.success("Yorumunuz başarıyla gönderildi.");
+      messageApi.success(t("slug_js.comment_suc"));
       handleComplete();
     } catch (err) {
       messageApi.error(err.response?.data?.message);
@@ -110,18 +112,15 @@ const PostDetails = ({ data, comments }) => {
                       <div className="cont">
                         <small className="date small mb-20">
                           <span className="text-uppercase border-end brd-gray pe-3 me-3">
-                            News
+                          {t("slug_js.news")}
                           </span>
-                          <i className="far fa-clock me-1" /> Posted on 3 Days
-                          ago
+                          <i className="far fa-clock me-1" /> {t("slug_js.posted")}
                         </small>
                         <h2 className="title">
-                          Solutions For Big Data Issue, Expert Perspective
+                        {t("slug_js.solutions")}
                         </h2>
                         <p className="fs-12px mt-10 text-light text-info">
-                          If there’s one way that wireless technology has
-                          changed the way we work, it’s that will everyone is
-                          now connected [...]
+                        {t("slug_js.sol_text_1")} [...]
                         </p>
                       </div>
                     </div>
@@ -178,7 +177,7 @@ const PostDetails = ({ data, comments }) => {
                                     onClick={() => setReplyTo(item)}
                                     className="butn border border-1 rounded-pill border-blue5 mt-20 py-2 px-3 hover-blue5 color-blue5"
                                   >
-                                    <span className="fs-10px">Reply</span>
+                                    <span className="fs-10px">{t("slug_js.reply")}</span>
                                   </a>
                                 </div>
                               </div>
@@ -202,7 +201,7 @@ const PostDetails = ({ data, comments }) => {
                                         onClick={() => setReplyTo(item)}
                                         className="butn border border-1 rounded-pill border-blue5 mt-20 py-2 px-3 hover-blue5 color-blue5"
                                       >
-                                        <span className="fs-10px">Reply</span>
+                                        <span className="fs-10px">{t("slug_js.reply")}</span>
                                       </a>
                                     </div>
                                   </div>
@@ -219,7 +218,7 @@ const PostDetails = ({ data, comments }) => {
                     />
                     {textMessage ? (
                       <h4 className="h-100 d-flex align-items-center justify-content-center my-5">
-                        Yorumunuz başarıyla gönderildi!
+                        {t("slug_js.comment_suc_text")}
                       </h4>
                     ) : (
                       <Form
@@ -235,10 +234,10 @@ const PostDetails = ({ data, comments }) => {
                         }}
                         autoComplete="off"
                       >
-                        <h3 className="color-000 mb-40"> Leave A Comment </h3>
+                        <h3 className="color-000 mb-40"> {t("slug_js.leave_comment")} </h3>
                         {replyTo && (
                           <div className="my-4 border border-2 p-2 d-flex justify-content-between">
-                            Replying to {replyTo?.full_name}
+                            {t("slug_js.reply_to")} {replyTo?.full_name}
                             <i
                               style={{ cursor: "pointer" }}
                               onClick={() => setReplyTo()}
@@ -254,12 +253,12 @@ const PostDetails = ({ data, comments }) => {
                               rules={[
                                 {
                                   required: true,
-                                  message: "Lütfen isim soyisim giriniz!",
+                                  message: t("slug_js.message1"),
                                 },
                               ]}
                             >
                               <Input
-                                placeholder="Full Name"
+                                placeholder={t("slug_js.placeholder1")}
                                 className="form-control fs-12px radius-4 p-3"
                               />
                             </Form.Item>
@@ -271,7 +270,7 @@ const PostDetails = ({ data, comments }) => {
                               rules={[
                                 {
                                   required: true,
-                                  message: "Lütfen email giriniz!",
+                                  message: t("slug_js.email_insert"),
                                 },
                               ]}
                             >
@@ -288,12 +287,12 @@ const PostDetails = ({ data, comments }) => {
                               rules={[
                                 {
                                   required: true,
-                                  message: "Lütfen yorumunuzu giriniz!",
+                                  message: t("slug_js.message2")
                                 },
                               ]}
                             >
                               <TextArea
-                                placeholder="Write your comment here"
+                                placeholder={t("slug_js.placeholder2")}
                                 className="form-control radius-4 fs-12px p-3"
                                 rows={6}
                               />
@@ -307,7 +306,7 @@ const PostDetails = ({ data, comments }) => {
                               href="#"
                               className="btn rounded-pill blue5-3Dbutn hover-blue5 sm-butn fw-bold mt-40"
                             >
-                              <span>Submit Comment </span>
+                              <span>{t("slug_js.submit")} </span>
                             </button>
                           </div>
                         </div>

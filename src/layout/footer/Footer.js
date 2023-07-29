@@ -20,8 +20,7 @@ const Footer = () => {
                     <li className="d-flex">
                       <i className="bi bi-house me-3" />
                       <span>
-                        Turgut Özal Neighborhood, 68th Street - Otoport No:
-                        46/222 Esenyurt - Istanbul.
+                      {t("footer.footer_adress")}
                       </span>
                     </li>
                     <li className="d-flex">
@@ -84,19 +83,19 @@ const Footer = () => {
                 <div className="cont">
                   <ul className="mt-3">
                     <li>
-                      <a href="#">Acenta365</a>
+                      <a href="#">{t("footer_link.acenta365")}</a>
                     </li>
                     <li className="mt-2">
                       <a href="#">{t("footer_link.digital_sign")}</a>
                     </li>
                     <li className="mt-2">
-                      <a href="#">Sea365</a>
+                      <a href="#">{t("footer_link.sea365")}</a>
                     </li>
                     <li className="mt-2">
                       <a href="#">{t("footer_link.career")}</a>
                     </li>
                     <li className="mt-2">
-                      <a href="#">Blog</a>
+                      <a href="#">{t("footer_link.blog")}</a>
                     </li>
                     <li className="mt-2">
                       <a href="#">{t("footer_link.contact")}</a>

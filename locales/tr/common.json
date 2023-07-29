@@ -103,7 +103,8 @@
      "name_surname":"Adınız Soyadınız",
      "telephone":"Telefon",
      "company_name":"Firma İsmi",
-     "message":"Mesajınız..."
+     "message":"Mesajınız...",
+     "email":"E-posta"
 
     },
     "about1":{
@@ -444,9 +445,183 @@
          "digital_sign":"Digital Sinyal",
          "career":"Kariyer",
          "blog":"Blog",
-         "contact":"İletişim"
+         "contact":"İletişim",
+         "sea365":"Sea365",
+         "Blog":"Blog",
+         "acenta365":"Acente365"
    
    
-      }
+      },
+      "slug_js":{
+         "comment_suc":"Yorumunuz başarıyla gönderildi",
+         "news":"Haberler",
+         "posted":"3 Gün önce yayınlandı",
+         "solutions":"Büyük Veri Sorununa Uzman Bakış Açısıyla Çözümler",
+         "sol_text_1":"Kablosuz teknolojinin çalışma şeklimizi değiştirmesinin bir yolu varsa, o da artık herkesin birbirine bağlı olacağıdır.",
+         "reply":"Cevap",
+         "comment_suc_text":"Yorumunuz başarıyla gönderildi!",
+         "leave_comment":"Yorum Yap",
+         "reply_to":"Yanıtlamak",
+         "message1":"Lütfen isim soyisim giriniz!",
+         "placeholder1":"Adınız",
+         "email_insert":"Lütfen email giriniz!",
+         "name2":"Yorum",
+         "message2":"Lütfen yorumunuzu giriniz!",
+         "placeholder2":"Yorumunuzu buraya yazın",
+         "submit":"Yorum Gönder"
+      },
+      "chose_us":{
+        "choose":"Neden bizi seçmelisiniz?",
+        "boost":"İşinizi Artırın",
+        "text1":"Yeni Teknoloji ile",
+        "text2":"Ekibimiz, çağın bir adım önünde olmak için en son teknolojik yeteneklerle işletmenizi dönüştürmenize yardımcı olabilir.",
+        "text3":"En Son BT Çözümleri",
+        "text3.1":"Blockchain ile Entegrasyon",
+        "text4":"100'den Fazla Ödeme Ağ Geçidi Desteği",
+        "text5":"Yapay Zeka Makinesi",
+        "text5.1":"Derin Öğrenme",
+        "text6":"7/24 Özel Destek",
+        "text7:":"Nasıl Çalışıyoruz?"
+      },
+      "portfolio":{
+        "port":"Portföy",
+        "latest_project":"Son Projeler",
+        "from_our_team":"Ekibimizden",
+        "infrastructure":"Altyapı Yükseltmesi",
+        "It":"BT Danışmanlığı",
+        "text1":"İş akışı sorunlu noktalarını ortadan kaldırmak, yeni teknolojiyi uygulamak için en iyi zihinlerimize güvenin",
+        "text1.1":"uygulama",
+        "tags1":"Danışma",
+        "tags2":"Yönetmek",
+        "landing_page":"Criftocy Açılış Sayfası",
+        "web_dev":"Web Sitesi Geliştirme",
+        "ui/ux":"Kullanıcı Arayüzü/UX Tasarımı",
+        "text2":"İş akışı sorunlu noktalarını ortadan kaldırmak, yeni teknolojiyi uygulamak için en iyi zihinlerimize güvenin",
+        "text2.1":"uygulama.",
+        "tags3":"WordPress",
+        "tags4":"PHP",
+        "tags5":"HTML/CSS",
+        "tags6":"Figma",
+        "ar/vr":"AR/VR Savaşı 1986 Oyunu",
+        "game_dev":"Oyun Geliştirme",
+        "text3":"İş akışı sorunlu noktalarını ortadan kaldırmak, yeni teknolojiyi uygulamak için en iyi zihinlerimize güvenin",
+        "text3.1":"uygulama.",
+        "tags7":"VR/AR",
+        "tags8":"IOS",
+        "tags8.1":"Android",
+        "tags9":"Unity 2D/3D"
+        
+      },
+      "pagination":{
+         "next":"İleri"
+      },
+      "admin_panel_applications":{
+         "title_name":"İsim",
+         "title_lastname":"Soy Ad",
+         "title_email":"E-posta",
+         "title_telephone":"Telefon Numarası",
+         "title_place":"İkamet Adresi",
+         "title_front_write":"Ön yazı",
+         "title_job":"İş İlanı",
+         "title_creation_date":"Oluşturma Tarihi",
+         "title_progress":"İşlem",
+         "cv_down":"CV İndir",
+         "delete":"Sil",
+         "job_deleted":"İş başvuruları Başarıyla silindi.",
+         "pagehead_title_job":"İş Başvuruları",
+         "h3_post":"İş Başvuruları",
+         "show_total":"Toplam",
+         "show_user":"Kullanıcı" 
+      },
+      "admin_panel_blog_com":{
+        "title_name":"İsim Soyisim",
+        "title_comment":"Yorum",
+        "title_status":"Durum",
+        "text_success":"Onaylı",
+        "text_danger":"Onaylanmadı",
+        "text_warning":"Onay Bekliyor",
+        "title_blog":"Blog",
+        "title_created_at":"Oluşturma Tarihi",
+        "title_action":"İşlem",
+        "text_edit":"Düzenle",
+        "text_delete":"Sil",
+        "api_blog_delete":"Blog Yorumları başarıyla silindi",
+        "pagehead_title_blog":"Blog Yorumları",
+        "text_h3":"Blog Yorumları"
 
+      },
+      "admin_panel_blog":{
+         "title_blog":"Blog",
+         "title_category":"Kategori",
+         "title_status":"Durum",
+         "title_created_at":"Oluşturma Tarihi",
+         "title_action":"İşlem",
+         "text_edit":"Düzenle",
+         "message_api":"Blog başarıyla silindi",
+         "text_delete":"Sil",
+         "pagehead_title_blog":"Bloglar",
+         "h3_blog":"Bloglar",
+         "set_created_blog":"Blog Oluştur"
+
+      },
+      "admin_panel_categories":{
+         "title_name":"İsim",
+         "title_created_at":"Oluşturma Tarihi",
+         "title_action":"İşlem",
+         "text_edit":"Düzenle",
+         "text_delete":"Sil",
+         "message_api":"Kategori başarıyla silindi.",
+         "pagehead_title_categories":"Kategoriler",
+         "h3_categories":"Kategoriler",
+         "set_created_categories":"Kategori Oluştur"
+      },
+      "admin_panel_job_post":{
+         "title_title":"Başlık",
+         "title_deadline":"son teslim tarihi",
+         "title_status":"Durum",
+         "text_success":"Canlı",
+         "text_warning":"Arşivlenmiş",
+         "title_created_at":"Oluşturulma tarihi",
+         "title_action":"İşlem",
+         "text_edit":"Düzenle",
+         "text_delete":"Sil",
+         "message_api":"İş ilanı başarıyla silindi.",
+         "pagehead_title":"İş ilanı",
+         "h3_text":"İş ilanı",
+         "set_created":"İş ilanı"
+      },
+      "admin_panel_login":{
+         "e-mail":"E-posta",
+         "e-mail_message":"Lütfen e-mail adresinizi giriniz!",
+         "password":"Şifre",
+         "password_message":"Lütfen şifrenizi giriniz!",
+         "log_in_text":"Giriş Yap",
+         "message_api":"Başarıyla giriş yaptınız."
+      },
+       "admin_panel_roles":{
+         "title_name":"İsim",
+         "title_created_at":"Oluşturma Tarihi",
+         "title_action":"İşlem",
+         "text_edit":"Düzenle",
+         "text_delete":"Sil",
+         "message_api":"Rol Başarıyla silindi",
+         "pagehead_title":"Roller",
+         "h3_text":"Roller",
+         "set_created":"Rol Oluştur"
+
+       },
+       "admin_panel_users":{
+          "title_name":"İsim Soyisim",
+          "title_email":"E-posta",
+          "title_created_at":"Oluşturma Tarihi",
+          "title_role":"Rol",
+          "title_action":"İşlem",
+          "text_edit":"Düzenle",
+          "text_delete":"Sil",
+          "message_api":"Kullanıcı başarılı bir şekilde silindi.",
+          "pagehead_title":"Kullanıcı",
+          "h3_text":"Kullanıcı",
+          "set_created":"Kullanıcı oluştur"
+       }
+      
 }   

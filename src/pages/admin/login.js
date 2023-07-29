@@ -7,10 +7,12 @@ import { login } from "@/store/slices/userSlice";
 import { LoadingOutlined } from "@ant-design/icons";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/router";
+import useTranslation from "next-translate/useTranslation";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 16 }} spin />;
 
 const Login = () => {
+  const { t } = useTranslation("common");
   const [loginForm] = Form.useForm();
   const dispatch = useDispatch();
   const router = useRouter();
@@ -24,7 +26,7 @@ const Login = () => {
       Cookies.set("access_token", tokens.accessToken, { path: "/" });
       Cookies.set("refresh_token", tokens.refreshToken, { path: "/" });
       dispatch(login(others));
-      messageApi.success("Başarıyla giriş yaptınız.");
+      messageApi.success(t("admin_panel_login.message_api"));
       loginForm.resetFields();
       setLoading(false);
       setTimeout(() => {
@@ -75,12 +77,12 @@ const Login = () => {
                 autoComplete="off"
               >
                 <Form.Item
-                  label="E-Mail"
+                  label={t("admin_panel_login.e-mail")}
                   name="email"
                   rules={[
                     {
                       required: true,
-                      message: "Lütfen e-mail adresinizi giriniz!",
+                      message: t("admin_panel_login.e-mail_message"),
                     },
                   ]}
                 >
@@ -88,12 +90,12 @@ const Login = () => {
                 </Form.Item>
 
                 <Form.Item
-                  label="Şifre"
+                  label={t("admin_panel_login.password")}
                   name="password"
                   rules={[
                     {
                       required: true,
-                      message: "Lütfen şifrenizi giriniz!",
+                      message: t("admin_panel_login.password_message"),
                     },
                   ]}
                 >
@@ -113,7 +115,7 @@ const Login = () => {
                     {loading && (
                       <Spin className="text-white mr-2" indicator={antIcon} />
                     )}
-                    Giriş Yap
+                   {t("admin_panel_login.log_in_text")}
                   </Button>
                 </Form.Item>
               </Form>

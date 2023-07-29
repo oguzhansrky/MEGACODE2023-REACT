@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Pagination } from "antd";
 import PageHead from "@/layout/head/Head";
+import useTranslation from "next-translate/useTranslation";
 
 import DeleteConfirm from "@/modals/DeleteConfirm";
 import CreateRole from "@/modals/roles/CreateRole";
@@ -14,6 +15,7 @@ import UpdateRole from "@/modals/roles/UpdateRole";
 import { parseCookies } from "@/utils";
 
 const Roles = () => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
@@ -74,18 +76,18 @@ const Roles = () => {
       key: "id",
     },
     {
-      title: "İsim",
+      title: t("admin_panel_roles.title_name"),
       dataIndex: "name",
       key: "name",
     },
     {
-      title: "Oluşturma Tarihi",
+      title: t("admin_panel_roles.title_created_at"),
       dataIndex: "created_at",
       key: "created_at",
       render: (date) => <span>{moment(date).format("DD.MM.YYYY mm:s")}</span>,
     },
     {
-      title: "İşlem",
+      title: t("admin_panel_roles.title_action"),
       key: "action",
       render: (_, record) => (
         <Space size="middle">
@@ -95,7 +97,7 @@ const Roles = () => {
               setUpdateModal(true);
             }}
           >
-            Düzenle
+           {t("admin_panel_roles.text_edit")}
           </a>
           <a
             onClick={() => {
@@ -103,7 +105,7 @@ const Roles = () => {
               setDeleteModal(true);
             }}
           >
-            Sil
+            {t("admin_panel_roles.text_delete")}
           </a>
         </Space>
       ),
@@ -113,7 +115,7 @@ const Roles = () => {
   const handleDelete = async () => {
     try {
       await roleService.deleteRole(formData?.id);
-      messageApi.success("Rol başarıyla silindi.");
+      messageApi.success(t("admin_panel_roles.message_api"));
       setDeleteModal(false);
     } catch (err) {
       console.error(err);
@@ -123,11 +125,11 @@ const Roles = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title="Roller"></PageHead>
+      <PageHead title={t("admin_panel_roles.pagehead_title")}></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
-          <h3>Roller</h3>
-          <Button onClick={() => setCreateModal(true)}>Rol Oluştur</Button>
+          <h3>{t("admin_panel_roles.h3_text")}</h3>
+          <Button onClick={() => setCreateModal(true)}>{t("admin_panel_roles.set_created")}</Button>
         </div>
         <Table
           pagination={{ position: ["none", "none"] }}
