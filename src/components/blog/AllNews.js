@@ -122,18 +122,6 @@ export const AllNews = ({ blogs, categories }) => {
                             })}
                           </p>
                           <div className="auther-comments d-flex small align-items-center justify-content-between op-9">
-                            <div className="l_side d-flex align-items-center">
-                              <span className="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue5 p-2 me-2 text-white">
-                                {item.user.full_name.charAt(0)}
-                              </span>
-                              <a>{t("blog_allnews.by")} {item.user.full_name}</a>
-                            </div>
-                            <div className="r-side mt-1">
-                              <i className="bi bi-hand-thumbs-up me-1" />
-                              <a href="#">{formatCount(item.like_count)}</a>
-                              <i className="bi bi-eye ms-4 me-1" />
-                              <a href="#">{formatCount(item.view_count)}</a>
-                            </div>
                           </div>
                         </div>
                       </div>

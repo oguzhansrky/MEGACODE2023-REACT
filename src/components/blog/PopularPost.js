@@ -13,7 +13,7 @@ export const PopularPost = ({ data }) => {
       <section className="popular-posts pt-50 pb-100 border-bottom brd-gray">
         <div className="container">
           <h5 className="post-sc-title text-center text-uppercase mb-70">
-          {t("popularpost.blog_popularpost")}
+            {t("popularpost.blog_popularpost")}
           </h5>
           <div className="row gx-5">
             {data &&
@@ -53,20 +53,7 @@ export const PopularPost = ({ data }) => {
                             omission: "...",
                           })}
                         </p>
-                        <div className="d-flex small mt-20 align-items-center justify-content-between op-9">
-                          <div className="l_side d-flex align-items-center">
-                            <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                              a
-                            </span>
-                            <a className="mt-1">{t("popularpost.by")}{item.user?.full_name}</a>
-                          </div>
-                          <div className="r-side mt-1">
-                            <i className="bi bi-chat-left-text me-1" />
-                            <a>{formatCount(item.like_count)}</a>
-                            <i className="bi bi-eye ms-4 me-1" />
-                            <a>{formatCount(item.view_count)}</a>
-                          </div>
-                        </div>
+                        <div className="d-flex small mt-20 align-items-center justify-content-between op-9"></div>
                       </div>
                     </div>
                   </div>

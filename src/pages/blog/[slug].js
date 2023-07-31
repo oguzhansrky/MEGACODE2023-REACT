@@ -114,15 +114,14 @@ const PostDetails = ({ data, comments }) => {
                       <div className="cont">
                         <small className="date small mb-20">
                           <span className="text-uppercase border-end brd-gray pe-3 me-3">
-                          {t("slug_js.news")}
+                            {t("slug_js.news")}
                           </span>
-                          <i className="far fa-clock me-1" /> {t("slug_js.posted")}
+                          <i className="far fa-clock me-1" />{" "}
+                          {t("slug_js.posted")}
                         </small>
-                        <h2 className="title">
-                        {t("slug_js.solutions")}
-                        </h2>
+                        <h2 className="title">{t("slug_js.solutions")}</h2>
                         <p className="fs-12px mt-10 text-light text-info">
-                        {t("slug_js.sol_text_1")} [...]
+                          {t("slug_js.sol_text_1")} [...]
                         </p>
                       </div>
                     </div>
@@ -134,20 +133,6 @@ const PostDetails = ({ data, comments }) => {
               <div className="col-lg-12">
                 <div className="d-flex small align-items-center justify-content-between mb-70 fs-12px">
                   <div className="l_side d-flex align-items-center">
-                    <a href="#" className="me-3 me-lg-5">
-                      <span className="icon-20 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-main p-1 me-2 text-white">
-                        {data?.user.full_name.charAt(0)}
-                      </span>
-                      <span className>{data?.user.full_name}</span>
-                    </a>
-                    <a href="#" className="me-3 me-lg-5">
-                      <i className="bi bi-chat-left-text me-1" />
-                      <span>{meta?.total ?? "0"} Comments</span>
-                    </a>
-                    <a href="#">
-                      <i className="bi bi-eye me-1" />
-                      <span>{data?.view_count}</span>
-                    </a>
                   </div>
                 </div>
                 <div ref={commentsTopRef} className="blog-content-info">
@@ -179,7 +164,9 @@ const PostDetails = ({ data, comments }) => {
                                     onClick={() => setReplyTo(item)}
                                     className="butn border border-1 rounded-pill border-blue5 mt-20 py-2 px-3 hover-blue5 color-blue5"
                                   >
-                                    <span className="fs-10px">{t("slug_js.reply")}</span>
+                                    <span className="fs-10px">
+                                      {t("slug_js.reply")}
+                                    </span>
                                   </a>
                                 </div>
                               </div>
@@ -203,7 +190,9 @@ const PostDetails = ({ data, comments }) => {
                                         onClick={() => setReplyTo(item)}
                                         className="butn border border-1 rounded-pill border-blue5 mt-20 py-2 px-3 hover-blue5 color-blue5"
                                       >
-                                        <span className="fs-10px">{t("slug_js.reply")}</span>
+                                        <span className="fs-10px">
+                                          {t("slug_js.reply")}
+                                        </span>
                                       </a>
                                     </div>
                                   </div>
@@ -236,7 +225,10 @@ const PostDetails = ({ data, comments }) => {
                         }}
                         autoComplete="off"
                       >
-                        <h3 className="color-000 mb-40"> {t("slug_js.leave_comment")} </h3>
+                        <h3 className="color-000 mb-40">
+                          {" "}
+                          {t("slug_js.leave_comment")}{" "}
+                        </h3>
                         {replyTo && (
                           <div className="my-4 border border-2 p-2 d-flex justify-content-between">
                             {t("slug_js.reply_to")} {replyTo?.full_name}
@@ -289,7 +281,7 @@ const PostDetails = ({ data, comments }) => {
                               rules={[
                                 {
                                   required: true,
-                                  message: t("slug_js.message2")
+                                  message: t("slug_js.message2"),
                                 },
                               ]}
                             >
