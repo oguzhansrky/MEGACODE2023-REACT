@@ -9,7 +9,7 @@ registry = "https://core.harbor.domain:8443"
       steps {
         checkout scm
       }
-    } 
+    }
 	stage("Build image") {
 		steps {
 			script {
