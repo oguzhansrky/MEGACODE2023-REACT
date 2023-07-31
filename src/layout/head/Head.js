@@ -18,7 +18,7 @@ const PageHead = ({ title }) => {
         name="viewport"
         content="width=device-width, initial-scale=1.0"
       ></meta>
-      <meta name="keywords" content="MegaCode Bilişim "></meta>
+
       <title>{`${title} | Megacode Yazılım` ?? "Megacode Yazılım"}</title>
     </Head>
   );
