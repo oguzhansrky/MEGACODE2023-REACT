@@ -56,7 +56,7 @@ const ContactUs = () => {
                         type="text"
                         name="email"
                         className="form-control"
-                        placeholder=" E-Posta"
+                        placeholder={t("contact_us.email")}
                       />
                     </div>
                   </div>

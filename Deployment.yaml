@@ -1,0 +1,93 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: megacode-2023-frontend
+  namespace: web
+spec:
+  selector:
+    matchLabels:
+      app: megacode-2023-frontend-app
+      version: "1"
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: megacode-2023-frontend-app
+        version: "1"
+    spec:
+      nodeSelector:
+        bot: bot
+      containers:
+        - name: megacode-2023-frontend
+          image: core.harbor.domain:8443/dijipol/megacode-2023-frontend:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: hpa-megacode-2023-frontend
+  namespace: web
+spec:
+  minReplicas: 1
+  maxReplicas: 3
+  metrics:
+    - resource:
+        name: cpu
+        target:
+          averageUtilization: 90
+          type: Utilization
+      type: Resource
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: megacode-2023-frontend
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: megacode-2023-frontend-svc
+  namespace: web
+spec:
+  selector:
+    app: megacode-2023-frontend-app
+  ports:
+    - protocol: TCP
+      name: http
+      port: 80
+      targetPort: 3000
+  type: ClusterIP
+  sessionAffinity: ClientIP
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: megacode-2023-frontend-virtualhost
+  namespace: web
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      add_header Content-Security-Policy upgrade-insecure-requests;
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: yayinoncesi.megacode.com.tr
+      http:
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: megacode-2023-frontend-svc
+                port:
+                  number: 80
