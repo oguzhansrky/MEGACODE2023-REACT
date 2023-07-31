@@ -104,7 +104,8 @@
      "telephone":"Telephone",
      "company_name":"Company Name",
      "message":"Your Message...",
-     "email":"E-mail"
+     "email":"E-mail",
+     "submit":"Send"
  
      },
      "about1":{

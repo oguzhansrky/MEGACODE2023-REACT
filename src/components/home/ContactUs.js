@@ -115,6 +115,7 @@ const ContactUs = () => {
                     <input
                       type="submit"
                       className="btn btn-dark wow fadeInUp text-light fs-14px"
+                      value={t("contact_us.submit")}
                     />
                   </div>
                 </div>

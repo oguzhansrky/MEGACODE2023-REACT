@@ -104,7 +104,8 @@
      "telephone":"Telefon",
      "company_name":"Firma İsmi",
      "message":"Mesajınız...",
-     "email":"E-posta"
+     "email":"E-posta",
+     "submit":"Gönder"
 
     },
     "about1":{
