@@ -25,7 +25,7 @@ spec:
           image: core.harbor.domain:8443/dijipol/megacode-2023-frontend:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 3000
               protocol: TCP
 ---
 apiVersion: autoscaling/v2
@@ -60,7 +60,7 @@ spec:
     - protocol: TCP
       name: http
       port: 80
-      targetPort: 80
+      targetPort: 3000
   type: ClusterIP
   sessionAffinity: ClientIP
   sessionAffinityConfig:
