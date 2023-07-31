@@ -1,11 +1,12 @@
-# Deps stage
-FROM node:lts-alpine AS deps
+FROM node:17-alpine as builder
 WORKDIR /app
-COPY package*.json ./
-RUN npm ci
+COPY package*.json .
+RUN npm install
 COPY . .
-# RUN ./node_modules/.bin/prisma db push
-RUN npm run build
-RUN npm ci --production
-EXPOSE 3000
-CMD [ "npm", "run", "start:server" ]
+RUN npm build
+
+FROM nginx:1.19.0
+WORKDIR /usr/share/nginx/html
+RUN rm -rf ./*
+COPY --from=builder /app/build .
+ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
