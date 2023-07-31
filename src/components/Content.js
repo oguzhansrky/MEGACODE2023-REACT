@@ -9,7 +9,7 @@ export const Content = (props) => {
         {!props.hideTitle && (
           <div className="row justify-content-center">
             <div className="col-lg-8">
-              <div className="section-head text-center mb-60 style-5">
+              <div className="section-head text-center mb-25 style-5">
                 <h2 className="mb-20">
                   {`${props.title}`}
                   <span>{props.title_2 ?? ""}</span>
