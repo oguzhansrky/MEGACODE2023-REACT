@@ -6,13 +6,14 @@ import moment from "moment";
 import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 const { TextArea } = Input;
 
 const PostDetails = ({ data, comments }) => {
   const { t } = useTranslation("common");
   const router = useRouter();
   const [comment] = Form.useForm();
-  const { query } = router;
+  const { query, asPath } = router;
   const [commentData, setCommentData] = useState([]);
   const [meta, setMeta] = useState();
   const [currentPage, setCurrentPage] = useState("1");
@@ -83,7 +84,7 @@ const PostDetails = ({ data, comments }) => {
   };
   return (
     <>
-      <PageHead title={data.title} />
+      <PageHead title={data.title} pathname={asPath} />
       {contextHolder}
       <main className="blog-page style-5">
         <section className="all-news section-padding pt-50 blog bg-transparent style-3">
@@ -106,7 +107,12 @@ const PostDetails = ({ data, comments }) => {
               </div>
               <div className="content-card">
                 <div className="img">
-                  <img src="/assets/img/blog/1.jpg" alt="" />
+                  <Image
+                    src="/assets/img/blog/1.jpg"
+                    width={360}
+                    height={500}
+                    alt="Blog İçeriği"
+                  ></Image>
                 </div>
                 <div className="info">
                   <div className="row">
@@ -132,8 +138,7 @@ const PostDetails = ({ data, comments }) => {
             <div className="row gx-4 gx-lg-5">
               <div className="col-lg-12">
                 <div className="d-flex small align-items-center justify-content-between mb-70 fs-12px">
-                  <div className="l_side d-flex align-items-center">
-                  </div>
+                  <div className="l_side d-flex align-items-center"></div>
                 </div>
                 <div ref={commentsTopRef} className="blog-content-info">
                   {data?.content}

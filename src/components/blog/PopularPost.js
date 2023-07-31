@@ -5,6 +5,7 @@ import { formatCount } from "@/utils";
 import { v4 as uuid } from "uuid";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 
 export const PopularPost = ({ data }) => {
   const { t } = useTranslation("common");
@@ -28,11 +29,15 @@ export const PopularPost = ({ data }) => {
                   >
                     <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                       <div className="img radius-7 overflow-hidden img-cover">
-                        <img
-                          src={item.thumbnail}
-                          className="card-img-top"
-                          alt="..."
-                        />
+                        {item?.thumbnail && (
+                          <Image
+                            src={item?.thumbnail}
+                            width={313}
+                            height={313}
+                            alt="Mail"
+                            className="card-img-top"
+                          ></Image>
+                        )}
                       </div>
                       <div className="card-body px-0">
                         <small className="d-block date mt-10 fs-10px fw-bold">

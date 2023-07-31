@@ -1,12 +1,19 @@
 import { Content } from "@/components/Content";
+import PageHead from "@/layout/head/Head";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 import React from "react";
 
 export const Iletisim = () => {
   const { t } = useTranslation("common");
+  const router = useRouter();
+  const { asPath } = router;
+
   return (
     <>
+      <PageHead pathname={asPath}></PageHead>
       <Content
         title={t("contact.title")}
         title_2={t("contact.title_2")}
@@ -160,16 +167,20 @@ export const Iletisim = () => {
                   </form>
                 </div>
               </div>
-              <img
+              <Image
                 src="/assets/img/icons/contact_a.png"
-                alt=""
+                width={203}
+                height={269}
+                alt="Contact"
                 className="contact_a"
-              />
-              <img
+              ></Image>
+              <Image
                 src="/assets/img/icons/contact_message.png"
-                alt=""
+                width={313}
+                height={313}
+                alt="Mail"
                 className="contact_message"
-              />
+              ></Image>
             </div>
           </div>
         </section>

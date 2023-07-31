@@ -6,23 +6,7 @@ const About = () => {
     <section className="about style-1">
       <div className="container">
         <div className="content">
-          <div className="about-logos d-flex align-items-center justify-content-between border-bottom border-1 brd-light pb-20">
-            <a href="#" className="logo wow fadeInUp" data-wow-delay={0}>
-              <img src="/assets/img/about/about_logos/1.png" alt="" />
-            </a>
-            <a href="#" className="logo wow fadeInUp" data-wow-delay="0.2s">
-              <img src="/assets/img/about/about_logos/2.png" alt="" />
-            </a>
-            <a href="#" className="logo wow fadeInUp" data-wow-delay="0.4s">
-              <img src="/assets/img/about/about_logos/3.png" alt="" />
-            </a>
-            <a href="#" className="logo wow fadeInUp" data-wow-delay="0.6s">
-              <img src="/assets/img/about/about_logos/4.png" alt="" />
-            </a>
-            <a href="#" className="logo wow fadeInUp" data-wow-delay="0.8s">
-              <img src="/assets/img/about/about_logos/5.png" alt="" />
-            </a>
-          </div>
+          <div className="about-logos d-flex align-items-center justify-content-between border-bottom border-1 brd-light pb-20"></div>
           <div className="about-info">
             <div className="row justify-content-between">
               <div className="col-lg-5">

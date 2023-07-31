@@ -1,5 +1,6 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 
 const ContactUs = () => {
   const { t } = useTranslation("common");
@@ -26,7 +27,8 @@ const ContactUs = () => {
                     {t("contact_us.Adress")}
                   </li>
                   <li className="wow fadeInUp">
-                    <strong>{t("contact_us.email")} : </strong> info@megacode.com.tr
+                    <strong>{t("contact_us.email")} : </strong>{" "}
+                    info@megacode.com.tr
                   </li>
                 </ul>
               </div>
@@ -124,11 +126,13 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <img
+      <Image
         src="/assets/img/contact_globe.svg"
-        alt=""
+        width={400}
+        height={986}
+        alt="Contact"
         className="contact_globe"
-      />
+      ></Image>
     </section>
   );
 };
