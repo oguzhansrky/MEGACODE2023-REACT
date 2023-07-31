@@ -611,6 +611,37 @@
          "pagehead_title":"Users",
          "h3_text":"Users",
          "set_created":"Create Users"
+      },
+      "admin_panel_applications":{
+         "title_name":"Name ",
+         "title_lastname":"Last Name",
+         "title_email":"E-mail",
+         "title_telephone":"Phone Number",
+         "title_place":"Place Of Residence",
+         "title_front_write":"Front Write",
+         "title_job":"Job Advertisement",
+         "title_creation_date":"Created Date",
+         "title_progress":"Progress",
+         "cv_down":"CV Download",
+         "delete":"Delete",
+         "job_deleted":"Job applications Successfully deleted.",
+         "pagehead_title_job":"Job Applications",
+         "h3_post":"Job Applications",
+         "show_total":"Total",
+         "show_user":"User" 
+      },
+      "admin_nav_bar":{
+        "contents":"Contents",
+        "categories":"Categories",
+        "blog":"Blogs",
+        "blog_com":"Blogs Comment",
+        "career":"Career",
+        "job_post":"Job Postings",
+        "job_app":"Job Applications",
+        "managment":"Management",
+        "user":"Users",
+        "roles":"Roles"
+
       }
       
 

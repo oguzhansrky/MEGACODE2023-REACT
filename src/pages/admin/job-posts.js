@@ -12,8 +12,10 @@ import Link from "next/link";
 import { parseCookies } from "@/utils";
 import CreateJobPost from "@/modals/jobPosts/CreateJobPost";
 import UpdateJobPost from "@/modals/jobPosts/UpdateJobPost";
+import useTranslation from "next-translate/useTranslation";
 
 const JobPosts = () => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const { pathname, query } = router;
   const [data, setData] = useState([]);
