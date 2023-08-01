@@ -31,7 +31,6 @@ const PricingTable = () => {
                 <small>{t("acente365.pricing_table_bronze_text")}</small>
               </div>
               <div className="price-headItem bg-gray5 px-2">
-<<<<<<< HEAD
                 <h6>{t('acente365.pricing_table_silver')}</h6>
                 <small>
                 {t('acente365.pricing_table_silver_text')}
@@ -40,14 +39,14 @@ const PricingTable = () => {
                 {t('acente365.pricing_table_silver_text2')}
                 </small>
                 <div className="label">{t('acente365.pricing_table_choice')}</div>
-=======
+
                 <h6>{t("acente365.pricing_table_silver")}</h6>
                 <small>{t("acente365.pricing_table_silver_text1")}</small>
                 <small>{t("acente365.pricing_table_silver_text2")}</small>
                 <div className="label">
                   {t("acente365.pricing_table_choice")}
                 </div>
->>>>>>> 9990a5d79863c8d0f2da76b4dcb80a565642fbea
+
               </div>
               <div className="price-headItem px-2">
                 <h6>{t("acente365.pricing_table_gold")}</h6>

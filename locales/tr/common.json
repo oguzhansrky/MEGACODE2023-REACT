@@ -97,6 +97,7 @@
      "Contact":"İletişim",
      "Adress1":"Adres",
      "Adress":"Turgut Özal Mahallesi 68. Sokak- Otoport No: 46/222 Esenyurt - Istanbul",
+     
      "description":"Mega Code Yazılım ve Ticaret A.Ş.'nin",
      "des2":"Kişisel Verilerin İşlenmesine İlişkin Aydınlatma Metnini",
      "des3":"'ni okudum, onaylıyorum",
@@ -139,6 +140,7 @@
             "title_2":"Formu",
             "desc":"İş ortaklarımızın memnuniyeti en iyi referansımızdır",
             "adress":"Turgut Özal Mahallesi 68. Sokak - Otoport No: 46/222 Esenyurt - Istanbul",
+            "adress2":"Teknopark Trakya Teknopark Ayşekadın Yerleşkesi Şükrü Paşa Mahallesi, Zübeyde Hanım Caddesi No:50 Merkez - Edirne",
             "inherit":"Alan zorunludur * olarak işaretleyin",
             "place_holder_name":"İsim",
             "place_holder_email":"E-posta Adresi",

@@ -138,6 +138,7 @@
          "title_2":"Form",
          "desc":"The satisfaction of our business partners is our best reference",
          "adress":"Turgut Özal Neighborhood, 68th Street - Otoport No: 46/222 Esenyurt - Istanbul.",
+         "adress2":"Teknopark Trakya Teknopark Ayşekadın Yerleşkesi Şükrü Paşa Mahallesi, Zübeyde Hanım Caddesi No:50 Merkez - Edirne",
          "inherit":"Field is required mark *",
          "place_holder_name":"Name",
          "place_holder_email":"E-mail Adress",
