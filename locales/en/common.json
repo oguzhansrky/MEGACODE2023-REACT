@@ -442,7 +442,9 @@
       "contact":"Contact",
       "sea365":"Sea365",
       "Blog":"Blog",
-      "acenta365":"Acente365"
+      "acenta365":"Acente365",
+      "projects":"Projects",
+      "support":"Support"
       },
       "slug_js":{
          "comment_suc":"Your comment has been sent successfully",

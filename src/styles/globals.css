@@ -14507,7 +14507,7 @@ footer.style-1 .links {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 footer.style-1 .links li {
@@ -14516,7 +14516,7 @@ footer.style-1 .links li {
 
 footer.style-1 .link_title {
   color: #fff;
-  margin: 10px 0 15px;
+  margin-right: -50px 0 -15px;
 }
 footer.style-1 .project {
   color: #fff;

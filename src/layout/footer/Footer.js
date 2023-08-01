@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container">
           <div className="content">
             <div className="row justify-content-center">
-              <div className="col-lg-4">
+              <div className="col-lg-3">
                 <div className="foot_info">
                   <Link href="/" className="logo mb-3">
                     <Image
@@ -56,7 +56,8 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              
+              <div className="col-lg-3 mt-4 d-flex justify-content-end">
                 <div className="links">
                   <div className="cont">
                     <h6 className="link_title">{t("footer_link.links")}</h6>
@@ -76,17 +77,15 @@ const Footer = () => {
                       <li>
                         <a href="/references">{t("footer_link.ref")}</a>
                       </li>
-                      <li className="mt-2">
-                      <a href="/contact">{t("footer_link.contact")}</a>
-                    </li>
-                     
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 mt-4">
-                <div className="cont">
-                  <ul className="mt-3">
+              <div className="col-lg-3 mt-4 d-flex justify-content-center">
+                <div className="links">
+                  <div className="cont">
+                    <h6 className="link_title">{t("footer_link.projects")}</h6>
+                    <ul>
                     <li>
                       <a href="/projects/acente365">{t("footer_link.acenta365")}</a>
                     </li>
@@ -96,18 +95,30 @@ const Footer = () => {
                     <li className="mt-2">
                       <a href="/projects/sea365">{t("footer_link.sea365")}</a>
                     </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 mt-4 d-flex justify-content-left">
+                <div className="cont">
+                <h6 className="link_title">{t("footer_link.support")}</h6>
+                  <ul className="mt-2">
                     <li className="mt-2">
                       <a href="/career">{t("footer_link.career")}</a>
                     </li>
                     <li className="mt-2">
                       <a href="/blog">{t("footer_link.blog")}</a>
                     </li>
-                    
+                    <li className="mt-2">
+                      <a href="/contact">{t("footer_link.contact")}</a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+          
           <div className="row justify-content-center">
             <div className="col-lg-12">
               <div className="foot">
