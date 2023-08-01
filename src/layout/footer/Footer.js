@@ -62,23 +62,24 @@ const Footer = () => {
                     <h6 className="link_title">{t("footer_link.links")}</h6>
                     <ul>
                       <li>
-                        <a href="#">{t("footer_link.homepage")}</a>
+                        <a href="/">{t("footer_link.homepage")}</a>
                       </li>
                       <li>
-                        <a href="#">{t("footer_link.about_us")}</a>
+                        <a href="/about-us">{t("footer_link.about_us")}</a>
                       </li>
                       <li>
-                        <a href="#">{t("footer_link.services")}</a>
+                        <a href="/services">{t("footer_link.services")}</a>
                       </li>
                       <li>
-                        <a href="#">{t("footer_link.faq")}</a>
+                        <a href="/faq">{t("footer_link.faq")}</a>
                       </li>
                       <li>
-                        <a href="#">{t("footer_link.ref")}</a>
+                        <a href="/references">{t("footer_link.ref")}</a>
                       </li>
-                      <li>
-                        <a href="#">{t("footer_link.project")}</a>
-                      </li>
+                      <li className="mt-2">
+                      <a href="/contact">{t("footer_link.contact")}</a>
+                    </li>
+                     
                     </ul>
                   </div>
                 </div>
@@ -87,23 +88,21 @@ const Footer = () => {
                 <div className="cont">
                   <ul className="mt-3">
                     <li>
-                      <a href="#">{t("footer_link.acenta365")}</a>
+                      <a href="/projects/acente365">{t("footer_link.acenta365")}</a>
                     </li>
                     <li className="mt-2">
-                      <a href="#">{t("footer_link.digital_sign")}</a>
+                      <a href="/projects/digital-signage">{t("footer_link.digital_sign")}</a>
                     </li>
                     <li className="mt-2">
-                      <a href="#">{t("footer_link.sea365")}</a>
+                      <a href="/projects/sea365">{t("footer_link.sea365")}</a>
                     </li>
                     <li className="mt-2">
-                      <a href="#">{t("footer_link.career")}</a>
+                      <a href="/career">{t("footer_link.career")}</a>
                     </li>
                     <li className="mt-2">
-                      <a href="#">{t("footer_link.blog")}</a>
+                      <a href="/blog">{t("footer_link.blog")}</a>
                     </li>
-                    <li className="mt-2">
-                      <a href="#">{t("footer_link.contact")}</a>
-                    </li>
+                    
                   </ul>
                 </div>
               </div>
