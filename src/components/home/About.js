@@ -5,7 +5,34 @@ const About = () => {
   return (
     <section className="about style-1">
       <div className="container">
-        <div className="content">
+        <div className="content ">
+          <div className="row">
+            <div className="col-2">
+              {" "}
+              <img className="mb-3" src="/assets/img/svg/dijipol.svg"></img>
+            </div>
+            <div className="col-2">
+              {" "}
+              <img className="mb-3" src="/assets/img/svg/porsche.svg"></img>
+            </div>
+            <div className="col-2">
+              {" "}
+              <img className="mb-3" src="/assets/img/svg/seat.svg"></img>
+            </div>
+            <div className="col-2">
+              {" "}
+              <img className="mb-3" src="/assets/img/svg/ozser.svg"></img>
+            </div>
+            <div className="col-2">
+              {" "}
+              <img className="mb-3" src="/assets/img/dogus-svg.png"></img>
+            </div>
+            <div className="col-2">
+              {" "}
+              <img className="mb-3" src="/assets/img/svg/flomak.svg"></img>
+            </div>
+          </div>
+
           <div className="about-logos d-flex align-items-center justify-content-between border-bottom border-1 brd-light pb-20"></div>
           <div className="about-info">
             <div className="row justify-content-between">
