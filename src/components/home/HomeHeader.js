@@ -1,5 +1,6 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 
 const HomeHeader = () => {
   const { t } = useTranslation("common");
@@ -31,22 +32,31 @@ const HomeHeader = () => {
             </div>
             <div className="col-lg-5 offset-lg-1">
               <div className="img">
-                <img src="/assets/img/header/head-2.png" alt="" />
+                <Image
+                  src="/assets/img/header/head-2.png"
+                  width={444}
+                  height={445}
+                  alt="Anasayfa Resim"
+                ></Image>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <img
+      <Image
         src="/assets/img/header/head_shape_r.png"
-        alt=""
+        width={591}
+        height={395}
+        alt="Animasyon"
         className="head-shape-r wow"
-      />
-      <img
+      ></Image>
+      <Image
         src="/assets/img/header/head_shape_l.png"
-        alt=""
+        width={199}
+        height={257}
+        alt="Animasyon"
         className="head-shape-l wow"
-      />
+      ></Image>
     </header>
   );
 };

@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import { v4 as uuid } from "uuid";
+import Image from "next/image";
 
 const TopNavbar = () => {
   const router = useRouter();
@@ -58,14 +59,17 @@ const TopNavbar = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img
-                      className="me-1"
+                    <Image
                       src={
                         languages?.find((item) => item.value === router?.locale)
                           ?.icon
                       }
-                      alt=""
-                    />
+                      width={14}
+                      height={14}
+                      alt="Türk Bayrağı"
+                      className="me-1"
+                    ></Image>
+
                     {
                       languages?.find((item) => item.value === router?.locale)
                         ?.name
@@ -85,7 +89,7 @@ const TopNavbar = () => {
                             role="button"
                             id="dropdownMenuLink"
                             aria-expanded="false"
-                            onClick={(e) => { 
+                            onClick={(e) => {
                               e.preventDefault(false);
                               router.push(
                                 router.pathname,
@@ -97,7 +101,14 @@ const TopNavbar = () => {
                               );
                             }}
                           >
-                            <img className="me-1" src={item.icon} alt="" />
+                            <Image
+                              src={item.icon}
+                              width={14}
+                              height={14}
+                              alt="Türk Bayrağı"
+                              className="me-1"
+                            ></Image>
+
                             {item.name}
                           </a>
                         </li>

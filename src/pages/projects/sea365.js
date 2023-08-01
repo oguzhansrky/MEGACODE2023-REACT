@@ -3,9 +3,15 @@ import useTranslation from "next-translate/useTranslation";
 
 import { Tabs } from "antd";
 import React from "react";
+import { useRouter } from "next/router";
+import PageHead from "@/layout/head/Head";
+import Image from "next/image";
 
 const Sea365 = () => {
   const { t } = useTranslation("common");
+  const router = useRouter();
+  const { asPath } = router;
+  console.log(asPath, router);
   const items = [
     {
       key: 1,
@@ -69,6 +75,7 @@ const Sea365 = () => {
   ];
   return (
     <>
+      <PageHead pathname={asPath}></PageHead>
       <Content title={"Sea"} title_2={"365"} desc={t("sea365.label3")}>
         <Tabs defaultActiveKey="1" tabPosition={"left"} items={items} />
         <div className="row mt-5">
@@ -81,7 +88,12 @@ const Sea365 = () => {
               </h5>
               <br></br>
               <div className="icon">
-              <img src="/assets/img/icons/inovatif cozumler.png" alt="" />
+                <Image
+                  src="/assets/img/icons/inovatif cozumler.png"
+                  width={74}
+                  height={74}
+                  alt="Easy "
+                ></Image>
               </div>
               <div className="info">
                 <div className="text">{t("sea365.label3_description2")}</div>
@@ -97,7 +109,12 @@ const Sea365 = () => {
               </h5>
               <br></br>
               <div className="icon">
-              <img src="/assets/img/icons/inovatif cozumler-1.png" alt="" />
+                <Image
+                  src="/assets/img/icons/inovatif cozumler-1.png"
+                  width={74}
+                  height={74}
+                  alt="Security "
+                ></Image>
               </div>
               <div className="info">
                 <div className="text">{t("sea365.label3_description4")}</div>
@@ -113,7 +130,12 @@ const Sea365 = () => {
               </h5>
               <br></br>
               <div className="icon">
-              <img src="/assets/img/icons/inovatif cozumler-10.png" alt="" />
+                <Image
+                  src="/assets/img/icons/inovatif cozumler-10.png"
+                  width={74}
+                  height={74}
+                  alt="Cloud "
+                ></Image>
               </div>
               <div className="info">
                 <div className="text">{t("sea365.label3_description6")}</div>
@@ -129,7 +151,12 @@ const Sea365 = () => {
               </h5>
               <br></br>
               <div className="icon">
-              <img src="/assets/img/icons/inovatif cozumler-2.png" alt="" />
+                <Image
+                  src="/assets/img/icons/inovatif cozumler-2.png"
+                  width={74}
+                  height={74}
+                  alt="Expert "
+                ></Image>
               </div>
               <div className="info">
                 <div className="text">{t("sea365.label3_description8")}</div>
@@ -139,7 +166,12 @@ const Sea365 = () => {
         </div>
         <div className="row align-items-center my-5 ">
           <div className="col-sm-6">
-            <img src="/assets/img/seapc.png" alt="" />
+            <Image
+              src="/assets/img/seapc.png"
+              width={501}
+              height={341}
+              alt="Welcome To Sea365"
+            ></Image>
           </div>
           <div className="col-lg-6">
             <div className="p_service_item pl_50 pr_20 mt_70">
@@ -158,37 +190,73 @@ const Sea365 = () => {
           <div className="row mt-2 ">
             <div className="col-lg-4 col-sm-6 col-md-6 mt-4">
               <div className="mt-5">
-                <img src="/assets/img/layer1.png" alt="" />
+                <Image
+                  src="/assets/img/layer1.png"
+                  width={174}
+                  height={38}
+                  alt="sea supply"
+                ></Image>
+
                 <p className="mt-3">{t("sea365.h3_p")} </p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-6 col-md-6 mt-4">
               <div className="mt-5">
-                <img src="/assets/img/layer2.png" alt="" />
+                <Image
+                  src="/assets/img/layer2.png"
+                  width={174}
+                  height={38}
+                  alt="sea hub"
+                ></Image>
+
                 <p className="mt-3">{t("sea365.h3_p2")}.</p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-6 col-md-6 mt-4 ">
               <div className="mt-5">
-                <img src="/assets/img/layer3.png" alt="" />
+                <Image
+                  src="/assets/img/layer3.png"
+                  width={174}
+                  height={38}
+                  alt="sea robot"
+                ></Image>
+
                 <p className="mt-3"> {t("sea365.h3_p3")} </p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-6 col-md-6 mt-4">
               <div className="mt-5">
-                <img src="/assets/img/layer4.png" alt="" />
+                <Image
+                  src="/assets/img/layer4.png"
+                  width={174}
+                  height={38}
+                  alt="sea publication"
+                ></Image>
+
                 <p className="mt-3">{t("sea365.h3_p4")} </p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-6 col-md-6 mt-4">
               <div className="mt-5">
-                <img src="/assets/img/layer5.png" alt="" />
+                <Image
+                  src="/assets/img/layer5.png"
+                  width={174}
+                  height={38}
+                  alt="sea crew"
+                ></Image>
+
                 <p className="mt-3">{t("sea365.h3_p5")} </p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-6 col-md-6 mt-4">
               <div className="mt-5">
-                <img src="/assets/img/layer6.png" alt="" />
+                <Image
+                  src="/assets/img/layer6.png"
+                  width={174}
+                  height={38}
+                  alt="sea hangar"
+                ></Image>
+
                 <p className="mt-3">{t("sea365.h3_p6")} </p>
               </div>
             </div>

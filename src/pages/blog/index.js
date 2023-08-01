@@ -3,12 +3,16 @@ import PopularPost from "@/components/blog/PopularPost";
 import ProjectSlider from "@/components/projects/ProjectSlider";
 import PageHead from "@/layout/head/Head";
 import { blogService, categoriesService } from "@/services";
+import { useRouter } from "next/router";
 import React from "react";
 
 export const Blog = ({ blogs, popularBlogs, categories }) => {
+  const router = useRouter();
+  const { asPath } = router;
+  console.log(asPath, router);
   return (
     <>
-      <PageHead title={"Blogs"} />
+      <PageHead title={"Blogs"} pathname={asPath} />
       <main className="blog-page style-5">
         <ProjectSlider
           slides={popularBlogs?.slice(0, 3).map((item) => item.thumbnail)}

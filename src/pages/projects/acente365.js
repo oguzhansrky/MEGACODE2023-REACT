@@ -4,6 +4,9 @@ import PricingTable from "@/components/projects/PricingTable";
 import { Tabs } from "antd";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import PageHead from "@/layout/head/Head";
 
 const Acente365 = () => {
   const { t } = useTranslation("common");
@@ -137,10 +140,12 @@ const Acente365 = () => {
             <div className="seo_features_img seo_features_img_two">
               <div className="round_circle"></div>
               <div className="round_circle two"></div>
-              <img
+              <Image
                 src="https://megacode.com.tr/img/mega/agence365_banner.png"
-                alt=""
-              />
+                width={488}
+                height={389}
+                alt="Acenta365"
+              ></Image>
             </div>
           </div>
         </div>
@@ -171,8 +176,13 @@ const Acente365 = () => {
       ),
     },
   ];
+
+  const router = useRouter();
+  const { asPath } = router;
+
   return (
     <>
+      <PageHead pathname={asPath}></PageHead>
       <Content
         title={"Acente"}
         title_2={"365"}
@@ -188,7 +198,12 @@ const Acente365 = () => {
               </h5>
               <br></br>
               <div className="icon">
-                <img src="/assets/img/icons/inovatif cozumler-11.png" alt="" />
+                <Image
+                  src="/assets/img/icons/inovatif cozumler-11.png"
+                  width={75}
+                  height={75}
+                  alt="İnovatif Çözümler"
+                ></Image>
               </div>
               <div className="info">
                 <div className="text">{t("acente365.text1")}</div>
@@ -202,7 +217,12 @@ const Acente365 = () => {
               </h5>
               <br></br>
               <div className="icon">
-                <img src="/assets/img/icons/inovatif cozumler-9.png" alt="" />
+                <Image
+                  src="/assets/img/icons/inovatif cozumler-9.png"
+                  width={75}
+                  height={75}
+                  alt="İnovatif Çözümler"
+                ></Image>
               </div>
               <div className="info">
                 <div className="text">{t("acente365.text3")}</div>
@@ -216,7 +236,12 @@ const Acente365 = () => {
               </h5>
               <br></br>
               <div className="icon">
-                <img src="/assets/img/icons/inovatif cozumler-3.png" alt="" />
+                <Image
+                  src="/assets/img/icons/inovatif cozumler-3.png"
+                  width={75}
+                  height={75}
+                  alt="İnovatif Çözümler"
+                ></Image>
               </div>
               <div className="info">
                 <div className="text">{t("acente365.text4")}</div>
@@ -230,7 +255,12 @@ const Acente365 = () => {
               </h5>
               <br></br>
               <div className="icon">
-                <img src="/assets/img/icons/inovatif cozumler-2.png" alt="" />
+                <Image
+                  src="/assets/img/icons/inovatif cozumler-2.png"
+                  width={75}
+                  height={75}
+                  alt="İnovatif Çözümler"
+                ></Image>
               </div>
               <div className="info">
                 <div className="text">{t("acente365.support_text")}</div>
@@ -240,7 +270,12 @@ const Acente365 = () => {
         </div>
         <div className="row align-items-center my-5">
           <div className="col-sm-6">
-            <img src="/assets/img/header/3d_vector_head8.svg" alt="" />
+            <Image
+              src="/assets/img/header/3d_vector_head8.svg"
+              width={555}
+              height={475}
+              alt="3D Vektör"
+            ></Image>
           </div>
           <div className="col-lg-6">
             <div className="p_service_item pl_50 pr_20 mt_70">
@@ -256,7 +291,12 @@ const Acente365 = () => {
         <h3 className="f_p f_size_28 l_height50 f_500 t_color2 my-5">
           {t("acente365.acente_fonc")}
         </h3>
-        <img src="https://megacode.com.tr/img/mega/function.png"></img>
+        <Image
+          src="https://megacode.com.tr/img/mega/function.png"
+          width={1044}
+          height={248}
+          alt="3D Vektör"
+        ></Image>
 
         <PricingTable />
       </Content>

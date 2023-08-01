@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 
 const Header = () => {
   const { t } = useTranslation("common");
@@ -8,11 +9,12 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-light style-1">
       <div className="container">
         <Link className="navbar-brand" href="/">
-          <img
-            style={{ width: "200px" }}
+          <Image
             src="/assets/img/megacode-logo.png"
-            alt=""
-          />
+            width={200}
+            height={70}
+            alt="MegaCode"
+          ></Image>
         </Link>
         <button
           className="navbar-toggler"
@@ -77,7 +79,6 @@ const Header = () => {
                     >
                       {t("header.digital_signage")}
                     </Link>
-                    
                   </li>
                   <li>
                     <a className="dropdown-item" href="/projects/sea365">

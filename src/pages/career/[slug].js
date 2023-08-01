@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import useTranslation from "next-translate/useTranslation";
 import moment from "moment";
 import PageHead from "@/layout/head/Head";
+import { useRouter } from "next/router";
 
 const CareerDetails = ({ data }) => {
   const { t } = useTranslation("common");
@@ -27,9 +28,12 @@ const CareerDetails = ({ data }) => {
   const scrollToTarget = () => {
     targetRef.current.scrollIntoView({ behavior: "smooth" });
   };
+  const router = useRouter();
+  const { asPath } = router;
+
   return (
     <>
-      <PageHead title={data?.title} />
+      <PageHead title={data?.title} pathname={asPath} />
       <main className="career-details-page style-5 pt-100">
         <section className="jop-details pb-100">
           <div className="container">

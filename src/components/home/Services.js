@@ -1,5 +1,6 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 
 const Services = () => {
   const { t } = useTranslation("common");
@@ -24,7 +25,12 @@ const Services = () => {
                 </h5>
                 <br></br>
                 <div className="icon">
-                  <img src="/assets/img/icons/inovatif cozumler-8.png" alt="" />
+                  <Image
+                    src="/assets/img/icons/inovatif cozumler-8.png"
+                    width={60}
+                    height={60}
+                    alt="İnovatif Çözümler"
+                  ></Image>
                 </div>
                 <div className="info">
                   <div className="text">{t("services.services_text")}</div>
@@ -40,7 +46,12 @@ const Services = () => {
                   <a href="page-services-5.html"> {t("services.siber_sec")} </a>
                 </h5>
                 <div className="icon">
-                  <img src="/assets/img/icons/inovatif cozumler-4.png" alt="" />
+                  <Image
+                    src="/assets/img/icons/inovatif cozumler-4.png"
+                    width={60}
+                    height={60}
+                    alt="İnovatif Çözümler"
+                  ></Image>
                 </div>
                 <div className="info">
                   <div className="text">{t("services.siber_sec_text")}</div>
@@ -59,7 +70,12 @@ const Services = () => {
                   </a>
                 </h5>
                 <div className="icon">
-                  <img src="/assets/img/icons/inovatif cozumler-5.png" alt="" />
+                  <Image
+                    src="/assets/img/icons/inovatif cozumler-5.png"
+                    width={60}
+                    height={60}
+                    alt="İnovatif Çözümler"
+                  ></Image>
                 </div>
                 <div className="info">
                   <div className="text">{t("services.mobil_dev_text")}</div>
@@ -75,7 +91,12 @@ const Services = () => {
                   <a href="page-services-5.html">{t("services.app_dev")} </a>
                 </h5>
                 <div className="icon">
-                  <img src="/assets/img/icons/inovatif cozumler-9.png" alt="" />
+                  <Image
+                    src="/assets/img/icons/inovatif cozumler-9.png"
+                    width={60}
+                    height={60}
+                    alt="İnovatif Çözümler"
+                  ></Image>
                 </div>
                 <div className="info">
                   <div className="text">{t("services.app_dev_text")}</div>
@@ -94,7 +115,12 @@ const Services = () => {
                   </a>
                 </h5>
                 <div className="icon">
-                  <img src="/assets/img/icons/inovatif cozumler-7.png" alt="" />
+                  <Image
+                    src="/assets/img/icons/inovatif cozumler-7.png"
+                    width={60}
+                    height={60}
+                    alt="İnovatif Çözümler"
+                  ></Image>
                 </div>
                 <div className="info">
                   <div className="text">{t("services.main_system")}</div>
@@ -113,7 +139,12 @@ const Services = () => {
                 </h5>
                 <br></br>
                 <div className="icon">
-                  <img src="/assets/img/icons/inovatif cozumler-6.png" alt="" />
+                  <Image
+                    src="/assets/img/icons/inovatif cozumler-6.png"
+                    width={60}
+                    height={60}
+                    alt="İnovatif Çözümler"
+                  ></Image>
                 </div>
                 <div className="info">
                   <div className="text">{t("services.social_media_text")}</div>
@@ -123,16 +154,20 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <img
+      <Image
         src="/assets/img/services/ser_shap_l.png"
-        alt=""
+        width={348}
+        height={1103}
+        alt="Price"
         className="ser_shap_l"
-      />
-      <img
+      ></Image>
+      <Image
         src="/assets/img/services/ser_shap_r.png"
-        alt=""
+        width={217}
+        height={826}
+        alt="Price"
         className="ser_shap_r"
-      />
+      ></Image>
     </section>
   );
 };

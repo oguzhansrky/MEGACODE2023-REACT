@@ -1,11 +1,18 @@
 import { Content } from "@/components/Content";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
+import { useRouter } from "next/router";
+import PageHead from "@/layout/head/Head";
+import Image from "next/image";
 
 const referanslar = () => {
   const { t } = useTranslation("common");
+  const router = useRouter();
+  const { asPath } = router;
+  console.log(asPath, router);
   return (
     <>
+      <PageHead pathname={asPath}></PageHead>
       <Content title={t("references.title")} desc={t("references.desc")}>
         <div className="container ">
           <div className="container">
@@ -15,26 +22,36 @@ const referanslar = () => {
               </div>
             </div>
             <div className="text-center mt-3">
-              <img src="/assets/img/isortaklari.png" alt=""></img>
+              <Image
+                src="/assets/img/isortaklari.png"
+                width={985}
+                height={546}
+                alt="İş Ortakları"
+              ></Image>
             </div>
           </div>
           <div className="controller mt-6 text-center">
             <h2 className="fw-leight">{t("references.h2_title")}</h2>
           </div>
-          <div className="d-flex justify-content-center">
-            <img
-              className="my-5"
-              style={{ width: "50%", height: "50%" }}
+          <div className="d-flex justify-content-center m-3">
+            <Image
               src="/assets/img/about/3d_vector2.svg"
-              alt=""
-            />
+              width={507}
+              height={407}
+              alt="İş Ortakları"
+            ></Image>
           </div>
           <div className=" row">
             <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/Dijipolwebsitesi.png" alt="" />
+                    <Image
+                      src="/assets/img/Dijipolwebsitesi.png"
+                      width={317}
+                      height={260}
+                      alt="Dijipol Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -52,7 +69,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/dto.png" alt="" />
+                    <Image
+                      src="/assets/img/dto.png"
+                      width={317}
+                      height={230}
+                      alt="Deniz Ticaret Odası Mobile"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -72,7 +94,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/Kargotekweb.png" alt="" />
+                    <Image
+                      src="/assets/img/Kargotekweb.png"
+                      width={317}
+                      height={260}
+                      alt="KargoTek Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -90,7 +117,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/Maxibillion.png" alt="" />
+                    <Image
+                      src="/assets/img/Maxibillion.png"
+                      width={317}
+                      height={260}
+                      alt="Maxibillion Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -108,7 +140,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/Collective.png" alt="" />
+                    <Image
+                      src="/assets/img/Collective.png"
+                      width={317}
+                      height={260}
+                      alt="Collective Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -126,7 +163,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/sea365.png" alt="" />
+                    <Image
+                      src="/assets/img/sea365.png"
+                      width={317}
+                      height={260}
+                      alt="Sea365 Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -144,7 +186,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/Postkolik.png" alt="" />
+                    <Image
+                      src="/assets/img/Postkolik.png"
+                      width={317}
+                      height={260}
+                      alt="Postkolik Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -162,7 +209,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/Flomak.png" alt="" />
+                    <Image
+                      src="/assets/img/Flomak.png"
+                      width={317}
+                      height={260}
+                      alt="Flomak Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -180,7 +232,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/Demirclub.png" alt="" />
+                    <Image
+                      src="/assets/img/Demirclub.png"
+                      width={317}
+                      height={260}
+                      alt="DemirClub Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -198,7 +255,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/Porsche.png" alt="" />
+                    <Image
+                      src="/assets/img/Porsche.png"
+                      width={317}
+                      height={260}
+                      alt="Porsche Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -216,7 +278,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/seat.png" alt="" />
+                    <Image
+                      src="/assets/img/seat.png"
+                      width={317}
+                      height={260}
+                      alt="Seat Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">
@@ -234,7 +301,12 @@ const referanslar = () => {
               <div className=" border-end brd-gray">
                 <div className="card border-0 bg-transparent rounded-0 mb-30 mb-lg-0 d-block">
                   <div className="img radius-7 overflow-hidden img-cover">
-                    <img src="/assets/img/denizodasi.png" alt="" />
+                    <Image
+                      src="/assets/img/denizodasi.png"
+                      width={317}
+                      height={260}
+                      alt="Deniz Odası Web Sitesi"
+                    ></Image>
                   </div>
                   <div className="card-body px-0">
                     <h5 className="fw-bold mt-10 title">

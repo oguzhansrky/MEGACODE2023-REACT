@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 
 const Footer = () => {
   const { t } = useTranslation("common");
@@ -13,15 +14,18 @@ const Footer = () => {
               <div className="col-lg-4">
                 <div className="foot_info">
                   <Link href="/" className="logo mb-3">
-                    <img src="/assets/img/logos/logo-footer.png" alt="" />
+                    <Image
+                      src="/assets/img/logos/logo-footer.png"
+                      width={136}
+                      height={16}
+                      alt="MegaCode"
+                    ></Image>
                   </Link>
                   <div className="text mb-4">{t("footer.footer_text")}</div>
                   <ul className="mb-4">
                     <li className="d-flex">
                       <i className="bi bi-house me-3" />
-                      <span>
-                      {t("footer.footer_adress")}
-                      </span>
+                      <span>{t("footer.footer_adress")}</span>
                     </li>
                     <li className="d-flex">
                       <i className="bi bi-envelope me-3" />
@@ -119,8 +123,20 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <img src="/assets/img/footer/foot_l.png" alt="" className="foot_l" />
-        <img src="/assets/img/footer/foot_r.png" alt="" className="foot_r" />
+        <Image
+          src="/assets/img/footer/foot_l.png"
+          width={310}
+          height={348}
+          alt="Footer"
+          className="foot_l"
+        ></Image>
+        <Image
+          src="/assets/img/footer/foot_r.png"
+          width={306}
+          height={192}
+          alt="Footer"
+          className="foot_r"
+        ></Image>
       </footer>
     </>
   );
