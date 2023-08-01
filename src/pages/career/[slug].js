@@ -7,6 +7,12 @@ import PageHead from "@/layout/head/Head";
 import { useRouter } from "next/router";
 
 const CareerDetails = ({ data }) => {
+  const careerdetails = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "careerdetails",
+    "    name": "Kariyer Detay",
+    "    description": "Kariyer Detay Sayfası",
+  };
   const { t } = useTranslation("common");
   let parsedExpectations = undefined;
   let parsedRequirements = undefined;
@@ -33,6 +39,11 @@ const CareerDetails = ({ data }) => {
 
   return (
     <>
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(careerdetails)}
+        </script>
+      </Head>
       <PageHead title={data?.title} pathname={asPath} />
       <main className="career-details-page style-5 pt-100">
         <section className="jop-details pb-100">

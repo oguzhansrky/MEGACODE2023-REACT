@@ -7,8 +7,16 @@ import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import PageHead from "@/layout/head/Head";
+import Head from "next/head";
 
 const Acente365 = () => {
+  const acenta365 = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "acenta365",
+    "    name": "Acenta365",
+    "    description":
+      "Acente365,acente ve brokerlerin tüm operasyonlarını tek bir sistem üzerinden yönetmenizi sağlar ",
+  };
   const { t } = useTranslation("common");
   const items = [
     {
@@ -182,6 +190,9 @@ const Acente365 = () => {
 
   return (
     <>
+      <Head>
+        <script type="application/ld+json">{JSON.stringify(acenta365)}</script>
+      </Head>
       <PageHead pathname={asPath}></PageHead>
       <Content
         title={"Acente"}

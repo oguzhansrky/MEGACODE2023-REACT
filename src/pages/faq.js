@@ -2,9 +2,17 @@ import { Content } from "@/components/Content";
 import PageHead from "@/layout/head/Head";
 import { Collapse } from "antd";
 import useTranslation from "next-translate/useTranslation";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 export default function SSS() {
+  const faq = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "FAQ",
+    "    name": "SSS",
+    "    description":
+      "Genel konular ve merak edilenler hakkında sorulan sorular",
+  };
   const { t } = useTranslation("common");
   const text = `
   A dog is a type of domesticated animal.
@@ -149,6 +157,9 @@ export default function SSS() {
   ];
   return (
     <>
+      <Head>
+        <script type="application/ld+json">{JSON.stringify(faq)}</script>
+      </Head>
       <PageHead pathname={asPath}></PageHead>
       <Content
         title={t("faq.main_title")}

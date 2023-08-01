@@ -5,8 +5,17 @@ import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";
 import PageHead from "@/layout/head/Head";
 import Image from "next/image";
+import Head from "next/head";
 
 const Hakkimizda = () => {
+  const about = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "About",
+    "    name": "Hakkımızda",
+    "    description":
+      "Mega Code Software tecrübeli ve uzman ekibi sayesinde işletmelere sadece yazılım çözümleri değil, dijital çözümler de sunmaktadır. ",
+  };
+
   const { t } = useTranslation("common");
   const items = [
     {
@@ -280,6 +289,10 @@ const Hakkimizda = () => {
 
   return (
     <>
+      <Head>
+        {" "}
+        <script type="application/ld+json">{JSON.stringify(about)}</script>
+      </Head>
       <PageHead pathname={asPath} />
       <Content title={t("about.title_about_us")} desc={t("about.title_desc")}>
         <Tabs defaultActiveKey="1" tabPosition={"left"} items={items} />

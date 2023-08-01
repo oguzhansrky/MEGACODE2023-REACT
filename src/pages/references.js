@@ -4,14 +4,24 @@ import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";
 import PageHead from "@/layout/head/Head";
 import Image from "next/image";
+import Head from "next/head";
 
 const referanslar = () => {
+  const references = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "References",
+    "    name": "Referanslar",
+    "    description": "İş Ortaklarımız ",
+  };
   const { t } = useTranslation("common");
   const router = useRouter();
   const { asPath } = router;
   console.log(asPath, router);
   return (
     <>
+      <Head>
+        <script type="application/ld+json">{JSON.stringify(references)}</script>
+      </Head>
       <PageHead pathname={asPath}></PageHead>
       <Content title={t("references.title")} desc={t("references.desc")}>
         <div className="container ">

@@ -3,15 +3,26 @@ import PopularPost from "@/components/blog/PopularPost";
 import ProjectSlider from "@/components/projects/ProjectSlider";
 import PageHead from "@/layout/head/Head";
 import { blogService, categoriesService } from "@/services";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
 
 export const Blog = ({ blogs, popularBlogs, categories }) => {
+  const blog = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "blog",
+    "    name": "Blog",
+    "    description": "Bloglarımız",
+  };
   const router = useRouter();
   const { asPath } = router;
   console.log(asPath, router);
   return (
     <>
+      <Head>
+        {" "}
+        <script type="application/ld+json">{JSON.stringify(blog)}</script>
+      </Head>
       <PageHead title={"Blogs"} pathname={asPath} />
       <main className="blog-page style-5">
         <ProjectSlider

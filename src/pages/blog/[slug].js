@@ -7,9 +7,16 @@ import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import Head from "next/head";
 const { TextArea } = Input;
 
 const PostDetails = ({ data, comments }) => {
+  const postdetails = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "postdetails",
+    "    name": "Blog İçeriği",
+    "    description": "Blog İçerikleri",
+  };
   const { t } = useTranslation("common");
   const router = useRouter();
   const [comment] = Form.useForm();
@@ -84,6 +91,11 @@ const PostDetails = ({ data, comments }) => {
   };
   return (
     <>
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(postdetails)}
+        </script>
+      </Head>
       <PageHead title={data.title} pathname={asPath} />
       {contextHolder}
       <main className="blog-page style-5">

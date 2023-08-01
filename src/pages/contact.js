@@ -1,18 +1,29 @@
 import { Content } from "@/components/Content";
 import PageHead from "@/layout/head/Head";
 import useTranslation from "next-translate/useTranslation";
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
 import React from "react";
 
 export const Iletisim = () => {
+  const contact = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "contact",
+    "    name": "İletişim",
+    "    description": "İletişim Bilgilerimiz",
+  };
   const { t } = useTranslation("common");
   const router = useRouter();
   const { asPath } = router;
 
   return (
     <>
+      <Head>
+        {" "}
+        <script type="application/ld+json">{JSON.stringify(contact)}</script>
+      </Head>
       <PageHead pathname={asPath}></PageHead>
       <Content
         title={t("contact.title")}

@@ -5,8 +5,15 @@ import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";
 import PageHead from "@/layout/head/Head";
 import Image from "next/image";
+import Head from "next/head";
 
 const DigitalSignage = () => {
+  const digitalsignage = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "digitalsignage",
+    "    name": "Dijita Tabela",
+    "    description": "Maliyetlerinizi Düşürür,imzanızı güçlendirir.",
+  };
   const { t } = useTranslation("common");
   const router = useRouter();
   const { asPath } = router;
@@ -14,6 +21,11 @@ const DigitalSignage = () => {
 
   return (
     <>
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(digitalsignage)}
+        </script>
+      </Head>
       <PageHead pathname={asPath}></PageHead>
       <Content title="Digital" title_2=" Signage" desc={t("digital_sign.desc")}>
         <p>{t("digital_sign.text1")}</p>
@@ -190,7 +202,6 @@ const DigitalSignage = () => {
         </section>
         <ProjectSlider
           slides={[
-      
             "https://megacode.com.tr/img/mega/dijital_slider_1.png",
             "https://megacode.com.tr/img/mega/dijital_slider_2.png",
           ]}

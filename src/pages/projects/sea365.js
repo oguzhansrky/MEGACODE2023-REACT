@@ -6,8 +6,16 @@ import React from "react";
 import { useRouter } from "next/router";
 import PageHead from "@/layout/head/Head";
 import Image from "next/image";
+import Head from "next/head";
 
 const Sea365 = () => {
+  const sea365 = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "sea365",
+    "    name": "SEA 365",
+    "    description":
+      "Tüm işlemleriniz tek bir sistem üzerinden yönetebilirsiniz.",
+  };
   const { t } = useTranslation("common");
   const router = useRouter();
   const { asPath } = router;
@@ -75,6 +83,9 @@ const Sea365 = () => {
   ];
   return (
     <>
+      <Head>
+        <script type="application/ld+json">{JSON.stringify(sea365)}</script>
+      </Head>
       <PageHead pathname={asPath}></PageHead>
       <Content title={"Sea"} title_2={"365"} desc={t("sea365.label3")}>
         <Tabs defaultActiveKey="1" tabPosition={"left"} items={items} />
