@@ -30,7 +30,7 @@ const PricingTable = () => {
               <div className="price-headItem bg-gray5 px-2">
                 <h6>{t('acente365.pricing_table_silver')}</h6>
                 <small>
-                {t('acente365.pricing_table_silver_text1')}
+                {t('acente365.pricing_table_silver_text')}
                 </small>
                 <small>
                 {t('acente365.pricing_table_silver_text2')}
