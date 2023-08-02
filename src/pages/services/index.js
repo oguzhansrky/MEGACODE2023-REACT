@@ -1,6 +1,7 @@
 import { Content } from "@/components/Content";
 import Services from "@/components/home/Services";
 import PageHead from "@/layout/head/Head";
+import { servicesService } from "@/services";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import Image from "next/image";
@@ -8,19 +9,12 @@ import { useRouter } from "next/router";
 
 import React from "react";
 
-function hizmetlerimiz() {
-  const services = {
-    "@context": "https://yayinoncesi.megacode.com.tr/",
-    "@type": "Services",
-"    name": "Hizmetlerimiz",
-"    description":
-      "Geniş Hizmet Yelpazesi Sunuyor ve Eksiksiz Müşteri Memnuniyeti Sağlıyoruz ",
-  };
-
+function hizmetlerimiz({ services }) {
   const { t } = useTranslation("common");
   const router = useRouter();
   const { asPath } = router;
-  console.log(asPath, router);
+  console.log(services);
+
   return (
     <>
       <PageHead pathname={asPath}></PageHead>
@@ -51,10 +45,20 @@ function hizmetlerimiz() {
             </div>
           </div>
         </div>
-        <Services></Services>
+        <Services data={services}></Services>
       </Content>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  try {
+    const services = await servicesService.getServices();
+    return { props: { services: services?.payload?.services } };
+  } catch (err) {
+    console.error(err);
+    return { props: {} };
+  }
 }
 
 export default hizmetlerimiz;
