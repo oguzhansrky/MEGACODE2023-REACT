@@ -4,9 +4,10 @@ import HomeHeader from "@/components/home/HomeHeader";
 import Projects from "@/components/home/Projects";
 import Services from "@/components/home/Services";
 import Head from "@/layout/head/Head";
+import { servicesService } from "@/services";
 import { useRouter } from "next/router";
 
-export default function Home() {
+export default function Home({ services }) {
   const router = useRouter();
   const { asPath } = router;
   console.log(asPath, router);
@@ -17,7 +18,7 @@ export default function Home() {
       </Head>
       <HomeHeader />
       <About />
-      <Services />
+      <Services data={services} />
       {/* <ChooseUs /> */}
       {/* <Portfolio /> */}
       {/* <Blog /> */}
@@ -25,4 +26,14 @@ export default function Home() {
       <ContactUs />
     </>
   );
+}
+
+export async function getServerSideProps() {
+  try {
+    const services = await servicesService.getServices();
+    return { props: { services: services?.payload?.services } };
+  } catch (err) {
+    console.error(err);
+    return { props: {} };
+  }
 }

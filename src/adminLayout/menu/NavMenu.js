@@ -26,6 +26,7 @@ const NavMenu = () => {
   const items = [
     getItem(t("admin_nav_bar.contents"), "sub1", <AppstoreOutlined />, [
       getItem(<Link href="/admin/categories">{t("admin_nav_bar.categories")}</Link>, "category"),
+      getItem(<Link href="/admin/services">Servisler</Link>, "services"), // $translate
       getItem("Blog", "sub34", null, [
         getItem(<Link href="/admin/blogs">{t("admin_nav_bar.blog")}</Link>, "blogs"),
         getItem(

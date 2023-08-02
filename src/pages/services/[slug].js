@@ -1,32 +1,10 @@
+import { servicesService } from "@/services";
 import { Image } from "antd";
 import classnames from "classnames";
 import NextImage from "next/image";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
-
+import React from "react";
 import { v4 as uuid } from "uuid";
-export const ServicesDetails = () => {
-  const [data, setData] = useState();
-  const router = useRouter();
-  const { query } = router;
-  const loadData = async () => {
-    try {
-      const res = {
-        title: "Innovative Digital Solutions",
-        description: `Digital, which provides many conveniences in all areas of
-                life. sustainable, cost-effective solutions for you We
-                produce solutions that provide advantage`,
-        thumbnail: "/assets/img/about/3d_vector2.svg",
-        content: "<p>HTML verisi 1</p>",
-        images:
-          '["/assets/img/single_project/ch_1.png", "/assets/img/single_project/ch_1.png", "/assets/img/single_project/ch_1.png", "/assets/img/single_project/ch_1.png", "/assets/img/single_project/ch_1.png"]',
-      };
-      res.images = JSON.parse(res.images);
-      setData(res);
-    } catch (err) {
-      console.error(err);
-    }
-  };
+export const ServicesDetails = ({ data }) => {
   let columnClass;
 
   if (data?.images.length === 1) {
@@ -38,11 +16,7 @@ export const ServicesDetails = () => {
   } else {
     columnClass = "col-lg-3";
   }
-  useEffect(() => {
-    loadData();
-  }, []);
-  console.log(data);
-
+console.log(data)
   return (
     <>
       <main className="single-project style-5">
@@ -58,25 +32,25 @@ export const ServicesDetails = () => {
               }}
             >
               <div className="row">
-                <div className="col-lg-6">
-                  <div>
-                    <h2 className="mt-5">{data?.title}</h2>
-                    <p className="mt-4 fs-5">{data?.description}</p>
-                  </div>
-                </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-12">
                   <div className="img mb-4 mb-rg-4">
                     {data?.thumbnail && (
                       <NextImage
                         src={data?.thumbnail}
-                        width={600}
-                        height={200}
+                        width={75}
+                        height={75}
                         alt="Servisler"
                         className=""
                       ></NextImage>
                     )}
                   </div>
+                <div className="col-lg-12">
+                  <div>
+                    <h2 className="mt-5 text-light">{data?.title}</h2>
+                    <p className="mt-4 fs-5 text-light">{data?.description}</p>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -101,5 +75,16 @@ export const ServicesDetails = () => {
     </>
   );
 };
+
+export async function getServerSideProps(ctx) {
+  const { slug } = ctx.query;
+  try {
+    const res = await servicesService.getService(slug);
+    res.payload.service.images = JSON.parse(res.payload.service.images)
+    return { props: { data: res.payload.service } };
+  } catch (err) {
+    return { props: {} };
+  }
+}
 
 export default ServicesDetails;
