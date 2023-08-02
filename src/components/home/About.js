@@ -7,27 +7,27 @@ const About = () => {
       <div className="container">
         <div className="content ">
           <div className="row">
-            <div className="col-2">
+            <div className="col-6 col-sm-2">
               {" "}
               <img className="mb-3" src="/assets/img/svg/dijipol.svg"></img>
             </div>
-            <div className="col-2">
+            <div className="col-6 col-sm-2">
               {" "}
               <img className="mb-3" src="/assets/img/svg/porsche.svg"></img>
             </div>
-            <div className="col-2">
+            <div className="col-6 col-sm-2">
               {" "}
               <img className="mb-3" src="/assets/img/svg/seat.svg"></img>
             </div>
-            <div className="col-2">
+            <div className="col-6 col-sm-2">
               {" "}
               <img className="mb-3" src="/assets/img/svg/ozser.svg"></img>
             </div>
-            <div className="col-2">
+            <div className="col-6 col-sm-2">
               {" "}
               <img className="mb-3" src="/assets/img/dogus-svg.png"></img>
             </div>
-            <div className="col-2">
+            <div className="col-6 col-sm-2">
               {" "}
               <img className="mb-3" src="/assets/img/svg/flomak.svg"></img>
             </div>

@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light style-1">
       <div className="container">
-        <Link className="navbar-brand" href="/">
+        <Link className="navbar-brand " href="/">
           <Image
             src="/assets/img/megacode-logo.png"
             width={200}
@@ -103,6 +103,23 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+        </div>
+        <div className="d-flex m-2 gap-4">
+          <div className="d-flex col-6 align-items-center">
+            <i class="fa fa-phone mt-2 color-blue5 me-4"></i>
+            <span className="mt-1 ">
+              <div className="fs-6 fw-light">24/7</div>
+              <div className="color-blue5">0850 346 22 01</div>
+            </span>
+          </div>
+          <div class=" d-flex m-4 col-6 align-items-center">
+            <a href="/contact">
+              <button type="button" class="btn btn-outline-primary fs-6">
+                <span className="">İş</span>
+                <span class="ms-1">Başvurusu</span>
+              </button>
+            </a>
           </div>
         </div>
       </div>
