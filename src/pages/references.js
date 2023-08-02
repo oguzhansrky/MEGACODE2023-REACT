@@ -25,32 +25,54 @@ const referanslar = () => {
       <PageHead pathname={asPath}></PageHead>
       <Content title={t("references.title")} desc={t("references.desc")}>
         <div className="container ">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12 text-center">
-                <h2>{t("references.text1")}</h2>
+          <div className="col-md-12 text-center my-3">
+            <h2>{t("references.text1")}</h2>
+          </div>
+          <div className="container mb-6">
+            <div className="row"></div>
+            <div className="row mt-3 text-center ">
+              <div className="col-6 col-sm-3 mt-3">
+                <img src="/assets/img/svg/dijipol.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-3">
+                <img src="/assets/img/svg/flomak.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-3">
+                <img src="/assets/img/svg/kargotek.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-3">
+                <img src="/assets/img/svg/maxibillion.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-4">
+                <img src="/assets/img/svg/ozser.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-4">
+                <img src="/assets/img/svg/porsche.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-4">
+                <img src="/assets/img/svg/seat.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-4">
+                <img src="/assets/img/svg/tebom.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-4">
+                <img src="/assets/img/svg/karturk.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-4">
+                <img src="/assets/img/svg/collective-indigo.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-4">
+                <img src="/assets/img/svg/dogus.svg"></img>
+              </div>
+              <div className="col-6 col-sm-3 mt-4">
+                <img src="/assets/img/svg/dogus-1.svg"></img>
               </div>
             </div>
-            <div className="text-center mt-3">
-              <Image
-                src="/assets/img/isortaklari.png"
-                width={985}
-                height={546}
-                alt="İş Ortakları"
-              ></Image>
-            </div>
           </div>
-          <div className="controller mt-6 text-center">
+          <div className="controller mt-6 text-center my-5">
             <h2 className="fw-leight">{t("references.h2_title")}</h2>
           </div>
-          <div className="d-flex justify-content-center m-3">
-            <Image
-              src="/assets/img/about/3d_vector2.svg"
-              width={507}
-              height={407}
-              alt="İş Ortakları"
-            ></Image>
-          </div>
+
           <div className=" row">
             <div className="col-md-4 col-12 gx-5">
               <div className=" border-end brd-gray">

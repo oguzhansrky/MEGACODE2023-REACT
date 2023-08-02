@@ -5,12 +5,12 @@ export const Content = (props) => {
   return (
     <>
       <PageHead title={props.title + (props.title_2 ?? "")} />
-      <div className="container my-5">
+      <div className="container my-3">
         {!props.hideTitle && (
           <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <div className="section-head text-center mb-25 style-5">
-                <h2 className="mb-20">
+            <div className="col-lg-18">
+              <div className="section-head text-center mb-50 style-5">
+                <h2 className="mb-10">
                   {`${props.title}`}
                   <span>{props.title_2 ?? ""}</span>
                 </h2>
