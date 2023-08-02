@@ -49,7 +49,7 @@ export const Iletisim = () => {
                   </font>
                 </font>
               </h4>
-              <h2 className="fw-normal mb-10 fs-4 color-000">Merkez</h2>
+              <h2 className="fw-normal mb-10 fs-4 color-000">{t("contact.main")}</h2>
               <h4 className="fw-normal mb-20 fs-6 color-000 ">
                 <font style={{ verticalAlign: "inherit" }}>
                   <font style={{ verticalAlign: "inherit" }}>
@@ -57,12 +57,11 @@ export const Iletisim = () => {
                   </font>
                 </font>
               </h4>
-              <h2 className="fw-normal mb-10 fs-4 color-000">Teknopark</h2>
+              <h2 className="fw-normal mb-10 fs-4 color-000">{t("contact.teknopark")}</h2>
               <h4 className="fw-normal mb-20 fs-6 color-000 ">
                 <font style={{ verticalAlign: "inherit" }}>
                   <font style={{ verticalAlign: "inherit" }}>
-                    Trakya Teknopark Ayşekadın Yerleşkesi Şükrü Paşa Mahallesi,
-                    Zübeyde Hanım Caddesi No:50 Merkez - Edirne
+                  {t("contact.adress2")}
                   </font>
                 </font>
               </h4>

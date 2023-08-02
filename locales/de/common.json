@@ -138,7 +138,7 @@
          "title_2":"Formular",
          "desc":"Die Zufriedenheit unserer Geschäftspartner ist unsere beste Referenz",
          "adress":"Turgut Özal-Viertel, 68. Straße - Otoport Nr. 46/222 Esenyurt - Istanbul.",
-         "adress2":"Technopark Trakya Technopark Ayşekadın Campus Şükrü Paşa Mahallesi, Zübeyde Hanım Caddesi No:50 Merkez - Edirne",
+         "adress2":"Technopark Trakya Technopark Ayşekadın Campus Şükrü Paşa Nachbarschaft, Zübeyde Hanım Straße No:50 Zentrum - Edirne",
          "inherit":"Feld ist Pflichtfeld *",
          "place_holder_name":"Name",
          "place_holder_email":"E-Mail Adresse",
@@ -150,7 +150,9 @@
          "place_holder_how_help":"Wie können wir helfen?",
          "accepted_send":"Mit dem Absenden akzeptiere ich",
          "terms":"Bedingungen und Konditionen",
-         "send_req":"Ihre Anfrage einreichen"
+         "send_req":"Ihre Anfrage einreichen",
+         "main":"Zentrum",
+         "teknopark":"Technopark"
 
      },
      "faq":{

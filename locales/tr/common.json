@@ -152,7 +152,10 @@
             "place_holder_how_help":"Nasıl yardım edebiliriz?",
             "accepted_send":"Göndererek, kabul ediyorum",
             "terms":"Şartlar ve Koşullar",
-            "send_req":"İsteğinizi Gönderin"
+            "send_req":"İsteğinizi Gönderin",
+            "main":"Merkez",
+            "teknopark":"Teknopark"
+            
 
         },
         "faq":{
