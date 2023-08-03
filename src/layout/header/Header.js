@@ -12,7 +12,7 @@ const Header = () => {
           <Image
             src="/assets/img/megacode-logo.png"
             width={200}
-            height={70}
+            height={60}
             alt="MegaCode"
           ></Image>
         </Link>
@@ -97,28 +97,26 @@ const Header = () => {
                   {t("header.blog")}
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/contact">
-                  {t("header.communication")}
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
-        <div className="d-flex m-2 gap-4">
-          <div className="d-flex col-6 align-items-center">
-            <i class="fa fa-phone mt-2 color-blue5 me-4"></i>
-            <span className="mt-1 ">
-              <div className="fs-6 fw-light">24/7</div>
-              <div className="color-blue5">0850 346 22 01</div>
-            </span>
+        <div className="nav-side">
+          <div className="hotline pe-2">
+            <div className="icon me-3">
+              <i className="bi bi-telephone" />
+            </div>
+            <div className="cont">
+              <a href="tel:0850 346 22 01">
+                <h6>0850 346 22 01</h6>
+              </a>
+            </div>
           </div>
-          <div class=" d-flex m-4 col-6 align-items-center">
-            <a href="/contact">
-              <button type="button" class="btn btn-outline-primary fs-6">
-                <span className="">İş</span>
-                <span class="ms-1">Başvurusu</span>
-              </button>
+          <div className="qoute-nav ps-2">
+            <a
+              className="btn sm-butn butn-gard border-0 text-white px-3 py-2"
+              href="/contact"
+            >
+              <span>{t("header.communication")}</span>
             </a>
           </div>
         </div>
