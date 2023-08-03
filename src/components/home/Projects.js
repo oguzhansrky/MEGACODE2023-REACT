@@ -16,70 +16,70 @@ const Projects = () => {
         >
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/1.png" alt="" />
+              <img src="/assets/img/screenshots/1.png" alt="Sea365.net Mobil Uygulaması" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/2.png" alt="" />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="img">
-              <img src="/assets/img/screenshots/3.png" alt="" />
+              <img src="/assets/img/screenshots/5.png" alt="Dijipol" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/4.png" alt="" />
+              <img src="/assets/img/screenshots/3.png" alt="Kargo-Tek" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/5.png" alt="" />
+              <img src="/assets/img/screenshots/4.png" alt="Deniz Ticaret Odası" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="img">
+              <img src="/assets/img/screenshots/2.png" alt="Maxibillion" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/6.png" alt="" />
+              <img src="/assets/img/screenshots/6.png" alt="Postkolik" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/7.png" alt="" />
+              <img src="/assets/img/screenshots/7.png" alt="Flomak" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/8.png" alt="" />
+              <img src="/assets/img/screenshots/8.png" alt="Medibaby Mobil Uygulaması" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/9.png" alt="" />
+              <img src="/assets/img/screenshots/9.png" alt="Porsche" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/10.png" alt="" />
+              <img src="/assets/img/screenshots/10.png" alt="Sigortam Getir" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/image.png" alt="" />
+              <img src="/assets/img/screenshots/image.png" alt="Megacode" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/image10.png" alt="" />
+              <img src="/assets/img/screenshots/image10.png" alt="Megacode" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/seat.png" alt="" />
+              <img src="/assets/img/screenshots/seat.png" alt="Seat" />
             </div>
           </SwiperSlide>
         </Swiper>
