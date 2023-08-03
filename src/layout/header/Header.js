@@ -100,7 +100,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className="nav-side">
+        <div className="nav-side d-none d-xl-block ">
           <div className="hotline pe-2">
             <div className="icon me-3">
               <i className="bi bi-telephone" />
@@ -111,14 +111,14 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <div className="qoute-nav ps-2">
-            <a
-              className="btn sm-butn butn-gard border-0 text-white px-3 py-2"
-              href="/contact"
-            >
-              <span>{t("header.communication")}</span>
-            </a>
-          </div>
+        </div>
+        <div className="qoute-nav ps-2 d-none d-xl-block">
+          <a
+            className="btn sm-butn butn-gard border-0 text-white px-3 py-2"
+            href="/contact"
+          >
+            <span>{t("header.communication")}</span>
+          </a>
         </div>
       </div>
     </nav>
