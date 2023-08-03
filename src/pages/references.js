@@ -32,40 +32,40 @@ const referanslar = () => {
             <div className="row"></div>
             <div className="row mt-3 text-center ">
               <div className="col-6 col-sm-3 mt-3">
-                <img src="/assets/img/svg/dijipol.svg"></img>
+                <img src="/assets/img/svg/dijipol.svg" alt="Dijipol"></img>
               </div>
               <div className="col-6 col-sm-3 mt-3">
-                <img src="/assets/img/svg/flomak.svg"></img>
+                <img src="/assets/img/svg/flomak.svg" alt="Flomak Group"></img>
               </div>
               <div className="col-6 col-sm-3 mt-3">
-                <img src="/assets/img/svg/kargotek.svg"></img>
+                <img src="/assets/img/svg/kargotek.svg" alt="Kargotek"></img>
               </div>
               <div className="col-6 col-sm-3 mt-3">
-                <img src="/assets/img/svg/maxibillion.svg"></img>
+                <img src="/assets/img/svg/maxibillion.svg" alt="Maxibillion"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/ozser.svg"></img>
+                <img src="/assets/img/svg/ozser.svg" alt="ÖzserNeo"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/porsche.svg"></img>
+                <img src="/assets/img/svg/porsche.svg" alt="Porsche"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/seat.svg"></img>
+                <img src="/assets/img/svg/seat.svg" alt="Seat"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/tebom.svg"></img>
+                <img src="/assets/img/svg/tebom.svg" alt="Tebom.net" ></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/karturk.svg"></img>
+                <img src="/assets/img/svg/karturk.svg" alt="Kartürk Sigorta"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/collective-indigo.svg"></img>
+                <img src="/assets/img/svg/collective-indigo.svg" alt="Indigo"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/dogus.svg"></img>
+                <img src="/assets/img/svg/dogus.svg" alt="Doğuş Otomotiv"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/dogus-1.svg"></img>
+                <img src="/assets/img/svg/deniz-tic.svg" alt="Deniz Ticaret Odası"></img>
               </div>
             </div>
           </div>

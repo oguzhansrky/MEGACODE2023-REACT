@@ -9,27 +9,27 @@ const About = () => {
           <div className="row">
             <div className="col-6 col-sm-2">
               {" "}
-              <img className="mb-3" src="/assets/img/svg/dijipol.svg"></img>
+              <img className="mb-3" src="/assets/img/svg/dijipol.svg" alt="Dijipol"></img>
             </div>
             <div className="col-6 col-sm-2">
               {" "}
-              <img className="mb-3" src="/assets/img/svg/porsche.svg"></img>
+              <img className="mb-3" src="/assets/img/svg/porsche.svg" alt="Porsche"></img>
             </div>
             <div className="col-6 col-sm-2">
               {" "}
-              <img className="mb-3" src="/assets/img/svg/seat.svg"></img>
+              <img className="mb-3" src="/assets/img/svg/seat.svg" alt="Seat"></img>
             </div>
             <div className="col-6 col-sm-2">
               {" "}
-              <img className="mb-3" src="/assets/img/svg/ozser.svg"></img>
+              <img className="mb-3" src="/assets/img/svg/ozser.svg" alt="ÖzserNeo Sigorta"></img>
             </div>
             <div className="col-6 col-sm-2">
               {" "}
-              <img className="mb-3" src="/assets/img/dogus-svg.png"></img>
+              <img className="mb-3" src="/assets/img/dogus-svg.png" alt="Doğuş Otomotiv"></img>
             </div>
             <div className="col-6 col-sm-2">
               {" "}
-              <img className="mb-3" src="/assets/img/svg/flomak.svg"></img>
+              <img className="mb-3" src="/assets/img/svg/flomak.svg" alt="Flomak"></img>
             </div>
           </div>
 
