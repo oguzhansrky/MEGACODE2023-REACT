@@ -34,8 +34,8 @@ const HomeHeader = () => {
               <div className="img">
                 <Image
                   src="/assets/img/header/head-2.png"
-                  width={444}
-                  height={445}
+                  width={450}
+                  height={400}
                   alt="Anasayfa Resim"
                 ></Image>
               </div>
