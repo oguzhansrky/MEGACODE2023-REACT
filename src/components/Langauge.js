@@ -11,6 +11,11 @@ export const Langauge = () => {
         lang:'en',
         name:'English',
         flag: toAbsoluteUrl('/assets/img/lang.png'),
+    },
+    {
+        lang:'de',
+        name:'German',
+        flag: toAbsoluteUrl('/assets/img/german_flag.png')
     }
     ]
   return (

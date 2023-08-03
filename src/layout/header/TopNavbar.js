@@ -18,6 +18,11 @@ const TopNavbar = () => {
       value: "en",
       icon: "/assets/img/lang.png",
     },
+    {
+      name: "German",
+      value: "de",
+      icon: "/assets/img/german_flag.png"
+    }
   ];
 
   const { t } = useTranslation("common");
