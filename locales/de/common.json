@@ -648,6 +648,18 @@
         "user":"Benutzer",
         "roles":"Rollen"
 
+      },
+      "acente365_func":{
+        "customer_managment":"Kundenmanagement, CRM",
+        "online":"Online-Vergleich",
+        "policy":"Verwaltung der Politik",
+        "damage_managment":"Forderungsmanagement",
+        "asset_managment":"Vermögensverwaltung",
+        "split_sales_managment":"Cross-Selling-Verwaltung",
+        "front_acc_managment":"Verwaltung der Frontbuchhaltung",
+        "consensus_managment":"Konsensuales Management"
+        
+
       }
       
 

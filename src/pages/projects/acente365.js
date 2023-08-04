@@ -188,6 +188,49 @@ const Acente365 = () => {
   const router = useRouter();
   const { asPath } = router;
 
+  const features = [
+    {
+      img: "/assets/img/acente365/müşteri.svg",
+      alt: "Müşteri Yönetimi, Crm",
+      text: t("acente365_func.customer_managment"),
+    },
+    {
+      img: "/assets/img/acente365/online.svg",
+      alt: "Online Karşılaştırma",
+      text: t("acente365_func.online"),
+    },
+    {
+      img: "/assets/img/acente365/poliçe.svg",
+      alt: "Poliçe Yönetimi",
+      text: t("acente365_func.policy"),
+    },
+    {
+      img: "/assets/img/acente365/hasar.svg",
+      alt: "Hasar Yönetimi",
+      text: t("acente365_func.damage_managment"),
+    },
+    {
+      img: "/assets/img/acente365/varlık.svg",
+      alt: "Varlık Yönetimi",
+      text: t("acente365_func.asset_managment"),
+    },
+    {
+      img: "/assets/img/acente365/çapraz.svg",
+      alt: "Çapraz Satış Yönetimi",
+      text: t("acente365_func.split_sales_managment"),
+    },
+    {
+      img: "/assets/img/acente365/muhasebe.svg",
+      alt: "Ön Muhasebe Yönetimi",
+      text: t("acente365_func.front_acc_managment"),
+    },
+    {
+      img: "/assets/img/acente365/mütabakat.svg",
+      alt: "Mütabakat Yönetimi",
+      text: t("acente365_func.consensus_managment"),
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -302,13 +345,23 @@ const Acente365 = () => {
         <h3 className="f_p f_size_28 l_height50 f_500 t_color2 my-5">
           {t("acente365.acente_fonc")}
         </h3>
-        <Image
-          src="https://megacode.com.tr/img/mega/function.png"
-          width={1044}
-          height={248}
-          alt="3D Vektör"
-        ></Image>
-
+        <div className="container">
+          <div className="row">
+            {features.map((item) => 
+            <div className="col-sm-3 text-center text-md">
+            <div>
+              <Image
+                src={item.img}
+                width={110}
+                height={125}
+                alt={item.alt}
+              ></Image>
+            </div>
+            <a className="text-center">{item.text}</a>
+          </div>
+            )}
+          </div>
+        </div>
         <PricingTable />
       </Content>
     </>
