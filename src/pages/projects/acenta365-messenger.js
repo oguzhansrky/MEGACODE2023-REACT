@@ -3,6 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 
 export const acentamessenger = () => {
   const { t } = useTranslation("common");
@@ -13,39 +14,28 @@ export const acentamessenger = () => {
         <section className="about-app style-5">
           <div className="container">
             <div className="content text-center">
-              <div className="about-cards border-bottom brd-gray">
+              <div className="about-cards brd-gray">
                 <Content title="Acenta365" title_2="Messenger"></Content>
               </div>
-              <div className="img-content pt-70 pb-70 border-bottom brd-gray overflow-hidden">
+              <div className="img-content  brd-gray overflow-hidden">
                 <div className="row justify-content-center">
-                  <div className="col-lg-7">
-                    <div className="img text-center">
-                      <img
-                        src="assets/img/single_project/2mobs.png"
-                        alt=""
-                        className="main-img"
-                      />
-                      <img
-                        src="assets/img/single_project/bubbls.png"
-                        alt=""
-                        className="bubbls"
-                      />
-                      <img
-                        src="assets/img/single_project/circle.png"
-                        alt=""
-                        className="circle"
-                      />
+                  <div className="row container">
+                    <div className="col-12 col-sm-6 text-center">
+                      <Image
+                        src="/assets/img/whatsapp/phone-bg.png"
+                        width={700}
+                        height={600}
+                        alt="MegaCode Phone"
+                      ></Image>
                     </div>
-                    <div className="info mt-30">
-                      <h5 className="lh-4">
-                      {t("acente365_messenger.text1")}
-                      </h5>
+                    <div className="col-12 col-sm-6 info  justify-content-center flex-column mt-200 ">
+                      <h5 className="lh-4">{t("acente365_messenger.text1")}</h5>
                       <a
                         href="https://messenger.acente365.com/auth"
                         target="_blank"
                         className="color-blue4 mt-60"
                       >
-                        https://messenger.acente365.com/auth
+                        Acente365 Messenger
                       </a>
                     </div>
                   </div>
@@ -80,7 +70,10 @@ export const acentamessenger = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="img">
-                  <img src="/assets/img/whatsapp/Anasayfa.png" alt={t("acente365_messenger.homepage")} />
+                  <img
+                    src="/assets/img/whatsapp/Anasayfa.png"
+                    alt={t("acente365_messenger.homepage")}
+                  />
                 </div>
               </SwiperSlide>
 
@@ -96,7 +89,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/EticaretVeriler.png"
-                    alt= {t("acente365_messenger.e-ticaret")}
+                    alt={t("acente365_messenger.e-ticaret")}
                   />
                 </div>
               </SwiperSlide>
