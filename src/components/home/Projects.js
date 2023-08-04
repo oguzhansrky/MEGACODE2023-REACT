@@ -14,9 +14,11 @@ const Projects = () => {
               spaceBetween: 50,
             },
           }}
+          loop
         >
           <SwiperSlide>
             <div className="img">
+<<<<<<< HEAD
                     <Image 
                     src="/assets/img/screenshots/1.png"
                     width={400}
@@ -24,6 +26,12 @@ const Projects = () => {
                     alt="Sea365.net Mobil Uygulaması"
                     >
                     </Image>
+=======
+              <img
+                src="/assets/img/screenshots/1.png"
+                alt="Sea365.net Mobil Uygulaması"
+              />
+>>>>>>> 80313ad3291f07c4b665d660e909f60c96cf73fe
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -52,6 +60,7 @@ const Projects = () => {
 
           <SwiperSlide>
             <div className="img">
+<<<<<<< HEAD
             <Image 
                     src="/assets/img/screenshots/4.png"
                     width={400}
@@ -59,6 +68,12 @@ const Projects = () => {
                     alt="Deniz Ticaret Mobil Uygulaması"
                     >
                     </Image>
+=======
+              <img
+                src="/assets/img/screenshots/4.png"
+                alt="Deniz Ticaret Odası"
+              />
+>>>>>>> 80313ad3291f07c4b665d660e909f60c96cf73fe
             </div>
           </SwiperSlide>
 
@@ -97,6 +112,7 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
+<<<<<<< HEAD
             <Image 
                     src="/assets/img/screenshots/8.png"
                     width={400}
@@ -104,6 +120,12 @@ const Projects = () => {
                     alt="Medibaby Mobil Uygulaması"
                     >
                     </Image>
+=======
+              <img
+                src="/assets/img/screenshots/8.png"
+                alt="Medibaby Mobil Uygulaması"
+              />
+>>>>>>> 80313ad3291f07c4b665d660e909f60c96cf73fe
             </div>
           </SwiperSlide>
           <SwiperSlide>
