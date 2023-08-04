@@ -2,8 +2,10 @@ import { Content } from "@/components/Content";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import useTranslation from "next-translate/useTranslation";
 
 export const acentamessenger = () => {
+  const { t } = useTranslation("common");
   return (
     <>
       <main className="single-project pt-50 style-5">
@@ -35,13 +37,9 @@ export const acentamessenger = () => {
                       />
                     </div>
                     <div className="info mt-30">
-                      <h5 className="lh-4">
-                        Acenta365 Messenger, kurumların çoklu platformlarda
-                        çalışmalarını kolaylaştırmak için kullanılır. Ayrıca,
-                        kullanıcı aktivitelerini takip etmek, hızlı cevap vermek
-                        ve kaynakların optimize edilmesi gibi birçok özellik
-                        içerir.
-                      </h5>
+                      <h5 className="lh-4"> 
+                      {t("acente365_messenger.text1")}
+                       </h5>
                       <a
                         href="https://messenger.acente365.com/auth"
                         target="_blank"
@@ -76,13 +74,13 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/Login.png"
-                    alt="Login Sayfası"
+                    alt= {t("acente365_messenger.login")}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="img">
-                  <img src="/assets/img/whatsapp/Anasayfa.png" alt="Anasayfa" />
+                  <img src="/assets/img/whatsapp/Anasayfa.png" alt= {t("acente365_messenger.homepage")} />
                 </div>
               </SwiperSlide>
 
@@ -90,7 +88,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/UrunSayısı.png"
-                    alt="Ürün Sayısı Sayfası"
+                    alt= {t("acente365_messenger.product_name")}
                   />
                 </div>
               </SwiperSlide>
@@ -98,7 +96,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/EticaretVeriler.png"
-                    alt="E-Ticaret Verileri Sayfası"
+                    alt= {t("acente365_messenger.e-ticaret")}
                   />
                 </div>
               </SwiperSlide>
@@ -107,7 +105,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/MesajlasmaRaporu.png"
-                    alt="Mesajlasma Raporu Sayfası"
+                    alt= {t("acente365_messenger.messenger_rap")}
                   />
                 </div>
               </SwiperSlide>
@@ -115,7 +113,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/OturumYonlendirme.png"
-                    alt="Oturum Yönlendirme Sayfası"
+                    alt= {t("acente365_messenger.session_redirection")}
                   />
                 </div>
               </SwiperSlide>
@@ -123,7 +121,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/Girisim (2).png"
-                    alt="Girişim Sayfası"
+                    alt= {t("acente365_messenger.initiative_page")}
                   />
                 </div>
               </SwiperSlide>

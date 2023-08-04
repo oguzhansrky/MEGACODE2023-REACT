@@ -660,7 +660,17 @@
         "consensus_managment":"Consensus Management"
         
 
-      }
+      },
+      "acente365_messenger":{
+        "text1":"Acenta365 Messenger is a multi-platform solution for organizations to facilitate their work. See also, follow user activities, respond quickly and many features such as optimizing resources includes.",
+        "login":"Login Page",
+        "homepage":"Homepage",
+        "product_name":"Product Count Page",
+        "e-ticaret":"E-Commerce Data Page",
+        "messenger_rap":"Messaging Report Page",
+        "session_redirection":"Session Redirection Page",
+        "initiative_page":"Initiative Page" 
+           }
       
 
    

@@ -654,6 +654,16 @@
          "consensus_managment":"Mütabakat Yönetimi"
          
 
-       }
+       },
+       "acente365_messenger":{
+         "text1":"Acenta365 Messenger, kurumların çoklu platformlarda çalışmalarını kolaylaştırmak için kullanılır. Ayrıca, kullanıcı aktivitelerini takip etmek, hızlı cevap vermek ve kaynakların optimize edilmesi gibi birçok özellik içerir.",
+         "login":"Login Sayfası",
+         "homepage":"Anasayfa",
+         "product_name":"Ürün Sayısı Sayfası",
+         "e-ticaret":"E-Ticaret Verileri Sayfası",
+         "messenger_rap":"Mesajlaşma Raporu Sayfası",
+         "session_redirection":"Oturum Yönlendirme Sayfası",
+         "initiative_page":"Girişim Sayfası" 
+            }
       
 }   

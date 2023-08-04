@@ -660,7 +660,17 @@
         "consensus_managment":"Konsensuales Management"
         
 
-      }
+      },
+      "acente365_messenger":{
+        "text1":"Acenta365 Messenger wird verwendet, um Organisationen die Arbeit auf mehreren Plattformen zu erleichtern. Er umfasst auch viele Funktionen wie die Verfolgung von Nutzeraktivitäten, schnelle Reaktionen und die Optimierung von Ressourcen.",
+        "login":"Login-Seite",
+        "homepage":"Homepage",
+        "product_name":"Produktzählung Seite",
+        "e-ticaret":"E-Commerce Daten Seite",
+        "messenger_rap":"Messaging Report Seite",
+        "session_redirection":"Seite für die Sitzungsumleitung",
+        "initiative_page":"Initiative Seite" 
+           }
       
 
    
