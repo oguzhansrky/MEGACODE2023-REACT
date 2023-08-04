@@ -37,9 +37,9 @@ export const acentamessenger = () => {
                       />
                     </div>
                     <div className="info mt-30">
-                      <h5 className="lh-4"> 
+                      <h5 className="lh-4">
                       {t("acente365_messenger.text1")}
-                       </h5>
+                      </h5>
                       <a
                         href="https://messenger.acente365.com/auth"
                         target="_blank"
@@ -74,13 +74,13 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/Login.png"
-                    alt= {t("acente365_messenger.login")}
+                    alt={t("acente365_messenger.login")}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="img">
-                  <img src="/assets/img/whatsapp/Anasayfa.png" alt= {t("acente365_messenger.homepage")} />
+                  <img src="/assets/img/whatsapp/Anasayfa.png" alt={t("acente365_messenger.homepage")} />
                 </div>
               </SwiperSlide>
 
@@ -88,7 +88,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/UrunSayısı.png"
-                    alt= {t("acente365_messenger.product_name")}
+                    alt={t("acente365_messenger.product_name")}
                   />
                 </div>
               </SwiperSlide>
@@ -105,7 +105,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/MesajlasmaRaporu.png"
-                    alt= {t("acente365_messenger.messenger_rap")}
+                    alt={t("acente365_messenger.messenger_rap")}
                   />
                 </div>
               </SwiperSlide>
@@ -113,7 +113,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/OturumYonlendirme.png"
-                    alt= {t("acente365_messenger.session_redirection")}
+                    alt={t("acente365_messenger.session_redirection")}
                   />
                 </div>
               </SwiperSlide>
@@ -121,7 +121,7 @@ export const acentamessenger = () => {
                 <div className="img">
                   <img
                     src="/assets/img/whatsapp/Girisim (2).png"
-                    alt= {t("acente365_messenger.initiative_page")}
+                    alt={t("acente365_messenger.initiative_page")}
                   />
                 </div>
               </SwiperSlide>
