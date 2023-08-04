@@ -13,10 +13,14 @@ const Projects = () => {
               spaceBetween: 50,
             },
           }}
+          loop
         >
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/1.png" alt="Sea365.net Mobil Uygulaması" />
+              <img
+                src="/assets/img/screenshots/1.png"
+                alt="Sea365.net Mobil Uygulaması"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -33,7 +37,10 @@ const Projects = () => {
 
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/4.png" alt="Deniz Ticaret Odası" />
+              <img
+                src="/assets/img/screenshots/4.png"
+                alt="Deniz Ticaret Odası"
+              />
             </div>
           </SwiperSlide>
 
@@ -54,7 +61,10 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/8.png" alt="Medibaby Mobil Uygulaması" />
+              <img
+                src="/assets/img/screenshots/8.png"
+                alt="Medibaby Mobil Uygulaması"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>

@@ -41,7 +41,10 @@ const referanslar = () => {
                 <img src="/assets/img/svg/kargotek.svg" alt="Kargotek"></img>
               </div>
               <div className="col-6 col-sm-3 mt-3">
-                <img src="/assets/img/svg/maxibillion.svg" alt="Maxibillion"></img>
+                <img
+                  src="/assets/img/svg/maxibillion.svg"
+                  alt="Maxibillion"
+                ></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
                 <img src="/assets/img/svg/ozser.svg" alt="ÖzserNeo"></img>
@@ -53,19 +56,28 @@ const referanslar = () => {
                 <img src="/assets/img/svg/seat.svg" alt="Seat"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/tebom.svg" alt="Tebom.net" ></img>
+                <img src="/assets/img/svg/tebom.svg" alt="Tebom.net"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/karturk.svg" alt="Kartürk Sigorta"></img>
+                <img
+                  src="/assets/img/svg/karturk.svg"
+                  alt="Kartürk Sigorta"
+                ></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/collective-indigo.svg" alt="Indigo"></img>
+                <img
+                  src="/assets/img/svg/collective-indigo.svg"
+                  alt="Indigo"
+                ></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
                 <img src="/assets/img/svg/dogus.svg" alt="Doğuş Otomotiv"></img>
               </div>
               <div className="col-6 col-sm-3 mt-4">
-                <img src="/assets/img/svg/deniz-tic.svg" alt="Deniz Ticaret Odası"></img>
+                <img
+                  src="/assets/img/svg/deniz-tic.svg"
+                  alt="Deniz Ticaret Odası"
+                ></img>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import Image from "next/image";
 
 const Header = () => {
   const { t } = useTranslation("common");
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light style-1">
       <div className="container">
@@ -85,6 +86,14 @@ const Header = () => {
                       Sea365
                     </a>
                   </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      href="/projects/acenta365-messenger"
+                    >
+                      Acenta365 Messenger
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li className="nav-item">
@@ -103,12 +112,12 @@ const Header = () => {
         <div className="nav-side d-none d-xl-block ">
           <div className="hotline pe-2">
             <div className="icon me-3">
-              <i className="bi bi-telephone" />
+              <a href="tel:0850 346 22 01">
+                <i className="bi bi-telephone" />
+              </a>
             </div>
             <div className="cont">
-              <a href="tel:0850 346 22 01">
-                <h6>0850 346 22 01</h6>
-              </a>
+              <h6>0850 346 22 01</h6>
             </div>
           </div>
         </div>
