@@ -2,6 +2,7 @@ import { Content } from "@/components/Content";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Image from "next/image";
 
 export const acentamessenger = () => {
   return (
@@ -14,15 +15,16 @@ export const acentamessenger = () => {
               <div className="about-cards border-bottom brd-gray">
                 <Content title="Acenta365" title_2="Messenger"></Content>
               </div>
-              <div className="img-content pt-70 pb-70 border-bottom brd-gray overflow-hidden">
+              <div className="img-content border-bottom brd-gray overflow-hidden">
                 <div className="row justify-content-center">
-                  <div className="col-lg-7">
-                    <div className="img text-center">
-                      <img
-                        src="assets/img/single_project/2mobs.png"
-                        alt=""
-                        className="main-img"
-                      />
+                  <div className="row container">
+                    <div className="col-12 col-sm-6 img text-center">
+                      <Image
+                        src="/assets/img/whatsapp/phone-bg.png"
+                        width={700}
+                        height={600}
+                        alt="MegaCode Phone"
+                      ></Image>
                       <img
                         src="assets/img/single_project/bubbls.png"
                         alt=""
@@ -34,7 +36,7 @@ export const acentamessenger = () => {
                         className="circle"
                       />
                     </div>
-                    <div className="info mt-30">
+                    <div className="col-12 col-sm-6 info d-flex justify-content-center flex-column">
                       <h5 className="lh-4">
                         Acenta365 Messenger, kurumların çoklu platformlarda
                         çalışmalarını kolaylaştırmak için kullanılır. Ayrıca,
@@ -43,11 +45,11 @@ export const acentamessenger = () => {
                         içerir.
                       </h5>
                       <a
-                        href="https://messenger.acente365.com/auth"
+                        href="https://messenger.acente365.com"
                         target="_blank"
                         className="color-blue4 mt-60"
                       >
-                        https://messenger.acente365.com/auth
+                        Acente365 Messenger
                       </a>
                     </div>
                   </div>
