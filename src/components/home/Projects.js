@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -17,6 +18,13 @@ const Projects = () => {
         >
           <SwiperSlide>
             <div className="img">
+                    <Image 
+                    src="/assets/img/screenshots/1.png"
+                    width={400}
+                    height={300}
+                    alt="Sea365.net Mobil Uygulaması"
+                    >
+                    </Image>
               <img
                 src="/assets/img/screenshots/1.png"
                 alt="Sea365.net Mobil Uygulaması"
@@ -25,18 +33,37 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/5.png" alt="Dijipol" />
+            <Image 
+                    src="/assets/img/screenshots/5.png"
+                    width={400}
+                    height={300}
+                    alt="Dijipol"
+                    >
+                    </Image>
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/3.png" alt="Kargo-Tek" />
+            <Image 
+                    src="/assets/img/screenshots/3.png"
+                    width={400}
+                    height={300}
+                    alt="Kargo-Tek"
+                    >
+                    </Image>
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div className="img">
+            <Image 
+                    src="/assets/img/screenshots/4.png"
+                    width={400}
+                    height={300}
+                    alt="Deniz Ticaret Mobil Uygulaması"
+                    >
+                    </Image>
               <img
                 src="/assets/img/screenshots/4.png"
                 alt="Deniz Ticaret Odası"
@@ -46,21 +73,46 @@ const Projects = () => {
 
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/2.png" alt="Maxibillion" />
+            <Image 
+                    src="/assets/img/screenshots/2.png"
+                    width={400}
+                    height={300}
+                    alt="Maxibillion"
+                    >
+                    </Image>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/6.png" alt="Postkolik" />
+            <Image 
+                    src="/assets/img/screenshots/6.png"
+                    width={400}
+                    height={300}
+                    alt="Postkolik"
+                    >
+                    </Image>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/7.png" alt="Flomak" />
+            <Image 
+                    src="/assets/img/screenshots/7.png"
+                    width={400}
+                    height={300}
+                    alt="Flomak"
+                    >
+                    </Image>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
+                          <Image 
+                    src="/assets/img/screenshots/8.png"
+                    width={400}
+                    height={300}
+                    alt="Medibaby Mobil Uygulaması"
+                    >
+                    </Image>
               <img
                 src="/assets/img/screenshots/8.png"
                 alt="Medibaby Mobil Uygulaması"
@@ -69,27 +121,57 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/9.png" alt="Porsche" />
+            <Image 
+                    src="/assets/img/screenshots/9.png"
+                    width={400}
+                    height={300}
+                    alt="Porsche"
+                    >
+                    </Image>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/10.png" alt="Sigortam Getir" />
+            <Image 
+                    src="/assets/img/screenshots/10.png"
+                    width={400}
+                    height={300}
+                    alt="Sigortam Getir"
+                    >
+                    </Image>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/image.png" alt="Megacode" />
+              <Image 
+              src="/assets/img/screenshots/image.png"
+              width={400}
+              height={300}
+              alt="Megacode"
+              >
+              </Image>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/image10.png" alt="Megacode" />
+            <Image 
+                    src="/assets/img/screenshots/image10.png"
+                    width={400}
+                    height={300}
+                    alt="Megacode"
+                    >
+                    </Image>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="img">
-              <img src="/assets/img/screenshots/seat.png" alt="Seat" />
+            <Image 
+                    src="/assets/img/screenshots/seat.png"
+                    width={400}
+                    height={300}
+                    alt="Seat"
+                    >
+                    </Image>
             </div>
           </SwiperSlide>
         </Swiper>

@@ -642,6 +642,18 @@
          "user":"Kullanıcılar",
          "roles":"Roller"
 
+       },
+       "acente365_func":{
+         "customer_managment":"Müşteri Yönetimi,CRM",
+         "online":"Online Karşılaştırma",
+         "policy":"Poliçe Yönetimi",
+         "damage_managment":"Hasar Yönetimi",
+         "asset_managment":"Varlık Yönetimi",
+         "split_sales_managment":"Çapraz Satış Yönetimi",
+         "front_acc_managment":"Ön Muhasebe Yönetimi",
+         "consensus_managment":"Mütabakat Yönetimi"
+         
+
        }
       
 }   

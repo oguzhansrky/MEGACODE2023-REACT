@@ -648,6 +648,18 @@
         "user":"Users",
         "roles":"Roles"
 
+      },
+      "acente365_func":{
+        "customer_managment":"Customer Management, CRM",
+        "online":"Online Comparison",
+        "policy":"Policy Management",
+        "damage_managment":"Claims Management",
+        "asset_managment":"Asset Management",
+        "split_sales_managment":"Cross-Selling Management",
+        "front_acc_managment":"Front Accounting Management",
+        "consensus_managment":"Consensus Management"
+        
+
       }
       
 
