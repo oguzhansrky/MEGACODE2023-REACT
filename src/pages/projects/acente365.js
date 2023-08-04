@@ -191,42 +191,42 @@ const Acente365 = () => {
   const features = [
     {
       img: "/assets/img/acente365/müşteri.svg",
-      alt: "Müşteri Yönetimi, Crm",
+      alt: t("acente365_func.customer_managment"),
       text: t("acente365_func.customer_managment"),
     },
     {
       img: "/assets/img/acente365/online.svg",
-      alt: "Online Karşılaştırma",
+      alt: t("acente365_func.online"),
       text: t("acente365_func.online"),
     },
     {
       img: "/assets/img/acente365/poliçe.svg",
-      alt: "Poliçe Yönetimi",
+      alt:  t("acente365_func.policy"),
       text: t("acente365_func.policy"),
     },
     {
       img: "/assets/img/acente365/hasar.svg",
-      alt: "Hasar Yönetimi",
+      alt: t("acente365_func.damage_managment"),
       text: t("acente365_func.damage_managment"),
     },
     {
       img: "/assets/img/acente365/varlık.svg",
-      alt: "Varlık Yönetimi",
+      alt: t("acente365_func.asset_managment"),
       text: t("acente365_func.asset_managment"),
     },
     {
       img: "/assets/img/acente365/çapraz.svg",
-      alt: "Çapraz Satış Yönetimi",
+      alt: t("acente365_func.split_sales_managment"),
       text: t("acente365_func.split_sales_managment"),
     },
     {
       img: "/assets/img/acente365/muhasebe.svg",
-      alt: "Ön Muhasebe Yönetimi",
+      alt: t("acente365_func.front_acc_managment"),
       text: t("acente365_func.front_acc_managment"),
     },
     {
       img: "/assets/img/acente365/mütabakat.svg",
-      alt: "Mütabakat Yönetimi",
+      alt: t("acente365_func.consensus_managment"),
       text: t("acente365_func.consensus_managment"),
     },
   ];
