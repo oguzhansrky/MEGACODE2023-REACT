@@ -13,7 +13,7 @@ export const acentamessenger = () => {
           <div className="container">
             <div className="content text-center">
               <div className="about-cards border-bottom brd-gray">
-                <Content title="Acenta365" title_2="Messenger"></Content>
+                <Content title="Acente365" title_2="Messenger"></Content>
               </div>
               <div className="img-content border-bottom brd-gray overflow-hidden">
                 <div className="row justify-content-center">
@@ -38,7 +38,7 @@ export const acentamessenger = () => {
                     </div>
                     <div className="col-12 col-sm-6 info d-flex justify-content-center flex-column">
                       <h5 className="lh-4">
-                        Acenta365 Messenger, kurumların çoklu platformlarda
+                        Acente365 Messenger, kurumların çoklu platformlarda
                         çalışmalarını kolaylaştırmak için kullanılır. Ayrıca,
                         kullanıcı aktivitelerini takip etmek, hızlı cevap vermek
                         ve kaynakların optimize edilmesi gibi birçok özellik
