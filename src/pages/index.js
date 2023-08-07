@@ -10,7 +10,6 @@ import { useRouter } from "next/router";
 export default function Home({ services }) {
   const router = useRouter();
   const { asPath } = router;
-  console.log(asPath, router);
   return (
     <>
       <Head title={"Anasayfa"} pathname={asPath}>

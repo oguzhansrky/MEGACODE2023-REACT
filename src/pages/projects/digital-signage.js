@@ -17,7 +17,6 @@ const DigitalSignage = () => {
   const { t } = useTranslation("common");
   const router = useRouter();
   const { asPath } = router;
-  console.log(asPath, router);
 
   return (
     <>

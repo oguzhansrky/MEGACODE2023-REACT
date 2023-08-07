@@ -11,7 +11,13 @@ import AdminLayout from "@/adminLayout";
 import { useState } from "react";
 
 // Function to determine the layout based on isAdminRoute and accessToken
-const getLayout = (isAdminRoute, accessToken, Component, pageProps) => {
+const getLayout = (
+  isAdminRoute,
+  accessToken,
+  Component,
+  pageProps,
+  loading
+) => {
   if (isAdminRoute && accessToken) {
     return (
       <Provider store={store}>
@@ -32,7 +38,7 @@ const getLayout = (isAdminRoute, accessToken, Component, pageProps) => {
     );
   } else {
     return (
-      <LayoutProvider>
+      <LayoutProvider loading={loading} isAdminRoute={isAdminRoute}>
         <Component {...pageProps} />
       </LayoutProvider>
     );
@@ -74,14 +80,16 @@ const App = ({ Component, pageProps }) => {
     };
   }, [router.asPath, router.locale]);
 
+  useEffect(() => {
+    if (loading) {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    }
+  }, [loading]);
+
   return (
-    <>
-      {!isAdminRoute && loading ? (
-        <LoadingUI />
-      ) : (
-        getLayout(isAdminRoute, accessToken, Component, pageProps)
-      )}
-    </>
+    <>{getLayout(isAdminRoute, accessToken, Component, pageProps, loading)}</>
   );
 };
 

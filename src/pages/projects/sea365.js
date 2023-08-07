@@ -19,7 +19,6 @@ const Sea365 = () => {
   const { t } = useTranslation("common");
   const router = useRouter();
   const { asPath } = router;
-  console.log(asPath, router);
   const items = [
     {
       key: 1,

@@ -14,7 +14,6 @@ export async function getBlogComments(query) {
  * GET: /blog-comments/{id}'
  */
 export async function getBlogComment(id, query) {
-  console.log(id, query);
   const endpoint = generateApiEndpoint(`blog-comments/${id}?${query ?? ""}`);
   const response = await restApiClient.get(endpoint);
 

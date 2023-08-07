@@ -100,14 +100,26 @@ const blogcomments = () => {
       dataIndex: "status",
       key: "status",
       render: (status) => {
-        console.log(status);
         switch (status) {
           case "approved":
-            return <span className="text-success"> {t("admin_panel_blog_com.text_success")}</span>;
+            return (
+              <span className="text-success">
+                {" "}
+                {t("admin_panel_blog_com.text_success")}
+              </span>
+            );
           case "unapproved":
-            return <span className="text-danger">{t("admin_panel_blog_com.text_danger")}</span>;
+            return (
+              <span className="text-danger">
+                {t("admin_panel_blog_com.text_danger")}
+              </span>
+            );
           case "pending":
-            return <span className="text-warning">{t("admin_panel_blog_com.text_warning")}</span>;
+            return (
+              <span className="text-warning">
+                {t("admin_panel_blog_com.text_warning")}
+              </span>
+            );
           default:
             return <span>-</span>;
         }
@@ -163,7 +175,9 @@ const blogcomments = () => {
   return (
     <>
       {contextHolder}
-      <PageHead title={t("admin_panel_blog_com.pagehead_title_blog")}></PageHead>
+      <PageHead
+        title={t("admin_panel_blog_com.pagehead_title_blog")}
+      ></PageHead>
       <div className="mx-5">
         <div className="d-flex justify-content-between my-4">
           <h3>{t("admin_panel_blog_com.pagehead_title_blog")}</h3>

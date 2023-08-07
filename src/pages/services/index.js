@@ -13,7 +13,6 @@ function hizmetlerimiz({ services }) {
   const { t } = useTranslation("common");
   const router = useRouter();
   const { asPath } = router;
-  console.log(services);
 
   return (
     <>

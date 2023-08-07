@@ -16,7 +16,6 @@ export const ServicesDetails = ({ data }) => {
   } else {
     columnClass = "col-lg-3";
   }
-console.log(data)
   return (
     <>
       <main className="single-project style-5">
@@ -32,7 +31,6 @@ console.log(data)
               }}
             >
               <div className="row">
-
                 <div className="col-lg-12">
                   <div className="img mb-4 mb-rg-4">
                     {data?.thumbnail && (
@@ -45,12 +43,14 @@ console.log(data)
                       ></NextImage>
                     )}
                   </div>
-                <div className="col-lg-12">
-                  <div>
-                    <h2 className="mt-5 text-light">{data?.title}</h2>
-                    <p className="mt-4 fs-5 text-light">{data?.description}</p>
+                  <div className="col-lg-12">
+                    <div>
+                      <h2 className="mt-5 text-light">{data?.title}</h2>
+                      <p className="mt-4 fs-5 text-light">
+                        {data?.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ export async function getServerSideProps(ctx) {
   const { slug } = ctx.query;
   try {
     const res = await servicesService.getService(slug);
-    res.payload.service.images = JSON.parse(res.payload.service.images)
+    res.payload.service.images = JSON.parse(res.payload.service.images);
     return { props: { data: res.payload.service } };
   } catch (err) {
     return { props: {} };
