@@ -19,10 +19,10 @@ const TopNavbar = () => {
       icon: "/assets/img/lang.png",
     },
     {
-      name: "German",
+      name: "Germany",
       value: "de",
-      icon: "/assets/img/german_flag.png"
-    }
+      icon: "/assets/img/german_flag.png",
+    },
   ];
 
   const { t } = useTranslation("common");
@@ -81,7 +81,7 @@ const TopNavbar = () => {
                     }
                   </a>
                   <ul
-                    className="dropdown-menu p-2  "
+                    className="dropdown-menu p-2"
                     aria-labelledby="dropdownMenuLink"
                   >
                     {languages
