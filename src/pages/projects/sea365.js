@@ -92,11 +92,7 @@ const Sea365 = () => {
         <div className="row mt-5">
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
-              <h5>
-                <a href="page-services-5.html">
-                  {t("sea365.label3_description1")}
-                </a>
-              </h5>
+              <h5>Easy to Use</h5>
               <br></br>
               <div className="icon">
                 <Image
@@ -113,11 +109,7 @@ const Sea365 = () => {
           </div>
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
-              <h5>
-                <a href="page-services-5.html">
-                  {t("sea365.label3_description3")}
-                </a>
-              </h5>
+              <h5>Security</h5>
               <br></br>
               <div className="icon">
                 <Image
@@ -134,11 +126,7 @@ const Sea365 = () => {
           </div>
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
-              <h5>
-                <a href="page-services-5.html">
-                  {t("sea365.label3_description5")}{" "}
-                </a>
-              </h5>
+              <h5>Cloud Based</h5>
               <br></br>
               <div className="icon">
                 <Image
@@ -155,11 +143,7 @@ const Sea365 = () => {
           </div>
           <div className="col-lg-3 service-box p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
-              <h5>
-                <a href="page-services-5.html">
-                  {t("sea365.label3_description7")}{" "}
-                </a>
-              </h5>
+              <h5>Expert Team Support</h5>
               <br></br>
               <div className="icon">
                 <Image

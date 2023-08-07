@@ -13,22 +13,22 @@ export const acentamessenger = () => {
         {/* ====== start about ====== */}
         <section className="about-app style-5">
           <div className="container">
+            <div className="about-cards brd-gray">
+              <Content title="Acenta365" title_2="Messenger"></Content>
+            </div>
             <div className="content text-center">
-              <div className="about-cards brd-gray">
-                <Content title="Acenta365" title_2="Messenger"></Content>
-              </div>
               <div className="img-content  brd-gray overflow-hidden">
                 <div className="row justify-content-center">
                   <div className="row container">
-                    <div className="col-12 col-sm-6 text-center">
+                    <div className="col-12 col-sm-6 text-center ">
                       <Image
                         src="/assets/img/whatsapp/phone-bg.png"
-                        width={700}
-                        height={600}
+                        width={800}
+                        height={650}
                         alt="MegaCode Phone"
                       ></Image>
                     </div>
-                    <div className="col-12 col-sm-6 info  justify-content-center flex-column mt-200 ">
+                    <div className="col-12 col-md-6 info  justify-content-center flex-column mt-200  ">
                       <h5 className="lh-4">{t("acente365_messenger.text1")}</h5>
                       <a
                         href="https://messenger.acente365.com/auth"
