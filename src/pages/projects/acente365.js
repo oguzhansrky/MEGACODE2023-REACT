@@ -149,7 +149,7 @@ const Acente365 = () => {
               <div className="round_circle"></div>
               <div className="round_circle two"></div>
               <Image
-                src="https://megacode.com.tr/img/mega/agence365_banner.png"
+                src="/assets/img/acente-pc-mobil.png"
                 width={488}
                 height={389}
                 alt="Acenta365"

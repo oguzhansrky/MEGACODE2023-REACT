@@ -11,11 +11,12 @@ const CareerPositions = ({ data = [] }) => {
         <div className="container">
           <div className="section-head text-center mb-60 style-5">
             <h2 className="mb-20">
-            {t("career_positions.open")} <span> {t("career_positions.position")} </span>
+              {t("career_positions.open")}{" "}
+              <span> {t("career_positions.position")} </span>
             </h2>
           </div>
           <div className="row">
-            {data &&
+            {data?.length > 0 ? (
               data.map((item) => (
                 <div className="col-lg-4">
                   <Link
@@ -48,7 +49,12 @@ const CareerPositions = ({ data = [] }) => {
                     </div>
                   </Link>
                 </div>
-              ))}
+              ))
+            ) : (
+              <div className="text-center">
+                <h5>Veri Bulunamadı...</h5>
+              </div>
+            )}
           </div>
         </div>
       </section>

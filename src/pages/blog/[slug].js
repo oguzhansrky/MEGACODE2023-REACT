@@ -224,6 +224,7 @@ const PostDetails = ({ data, comments }) => {
                       paginate={paginate}
                       totalItems={meta?.total || comments?.meta.total}
                     />
+
                     {textMessage ? (
                       <h4 className="h-100 d-flex align-items-center justify-content-center my-5">
                         {t("slug_js.comment_suc_text")}

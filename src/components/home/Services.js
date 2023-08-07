@@ -5,6 +5,8 @@ import Link from "next/link";
 
 const Services = ({ data }) => {
   const { t } = useTranslation("common");
+  const errorMessage = "Veri bulunamadı...";
+
   return (
     <section className="services section-padding style-1">
       <div className="container">
@@ -17,33 +19,41 @@ const Services = ({ data }) => {
         </div>
         <div className="content">
           <div className="row">
-            {data?.map((item, index) => {
-              if (index > 5) return;
-              return (
-                <div className="col-lg-4">
-                  <div
-                    className="service-box mb-4 wow fadeInUp"
-                    data-wow-delay={0}
-                  >
-                    <h5>
-                      <Link href={`/services/${item.slug}`}>{item.title}</Link>
-                    </h5>
-                    <br></br>
-                    <div className="icon">
-                      <Image
-                        src={item.thumbnail}
-                        width={60}
-                        height={60}
-                        alt="İnovatif Çözümler"
-                      ></Image>
-                    </div>
-                    <div className="info">
-                      <div className="text">{item.description}</div>
+            {data?.length > 0 ? (
+              data.map((item, index) => {
+                if (index > 5) return null;
+                return (
+                  <div className="col-lg-4" key={item.slug}>
+                    <div
+                      className="service-box mb-4 wow fadeInUp"
+                      data-wow-delay={0}
+                    >
+                      <h5>
+                        <Link href={`/services/${item.slug}`}>
+                          {item.title}
+                        </Link>
+                      </h5>
+                      <br />
+                      <div className="icon">
+                        <Image
+                          src={item.thumbnail}
+                          width={60}
+                          height={60}
+                          alt="İnovatif Çözümler"
+                        />
+                      </div>
+                      <div className="info">
+                        <div className="text">{item.description}</div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })
+            ) : (
+              <div className="error-message text-center">
+                <h5>{errorMessage}</h5>
+              </div>
+            )}
           </div>
         </div>
       </div>

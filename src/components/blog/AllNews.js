@@ -82,7 +82,7 @@ export const AllNews = ({ blogs, categories }) => {
         <div className="container">
           <div className="row gx-4 gx-lg-5">
             <div className="col-lg-8">
-              {data &&
+              {data?.length > 0 ? (
                 data.map((item) => (
                   <div className="card border-0 bg-transparent rounded-0 border-bottom brd-gray pb-30 mb-30">
                     <div className="row">
@@ -121,13 +121,17 @@ export const AllNews = ({ blogs, categories }) => {
                               omission: "...",
                             })}
                           </p>
-                          <div className="auther-comments d-flex small align-items-center justify-content-between op-9">
-                          </div>
+                          <div className="auther-comments d-flex small align-items-center justify-content-between op-9"></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                ))}
+                ))
+              ) : (
+                <div className="text-center">
+                  <h5>Veri Bulunamadı...</h5>
+                </div>
+              )}
 
               <PaginationComponent
                 itemPerPage={meta?.per_page || blogs?.meta.per_page}
@@ -140,7 +144,7 @@ export const AllNews = ({ blogs, categories }) => {
               <div className="side-blog style-5 ps-lg-5 mt-5 mt-lg-0">
                 <div className="side-categories mb-50">
                   <h6 className="title mb-20 text-uppercase fw-normal">
-                  {t("blog_allnews.categories")}
+                    {t("blog_allnews.categories")}
                   </h6>
                   <a
                     onClick={removeCategoryFilter}
