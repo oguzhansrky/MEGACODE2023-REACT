@@ -4,11 +4,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import Head from "next/head";
+import PageHead from "@/layout/head/Head";
+import { useRouter } from "next/router";
 
 export const acentamessenger = () => {
   const { t } = useTranslation("common");
+  const Acenta365Messenger = {
+    "@context": "https://yayinoncesi.megacode.com.tr/",
+    "@type": "acenta365messenger",
+    "    name": "ACENTA 365 MESSENGER",
+    "    description":
+      "Acenta365 Messenger, kurumların çoklu platformlarda çalışmalarını kolaylaştırmak için kullanılır.",
+  };
+  const router = useRouter();
+  const { asPath } = router;
   return (
     <>
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(Acenta365Messenger)}
+        </script>
+      </Head>
+      <PageHead pathname={asPath}></PageHead>
       <main className="single-project pt-50 style-5">
         {/* ====== start about ====== */}
         <section className="about-app style-5">
