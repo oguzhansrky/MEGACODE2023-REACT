@@ -23,9 +23,17 @@ const Clients = () => {
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
-          slidesPerView={3}
+          slidesPerView={2}
           loop={true}
           speed={6000}
+          breakpoints={{
+            844: {
+              slidesPerView: 4,
+            },
+            1200: {
+              slidesPerView: 7,
+            },
+          }}
         >
           <SwiperSlide>
             <a href="#" className="img">
@@ -62,7 +70,7 @@ const Clients = () => {
               <Image
                 src="/assets/img/logos/4.png"
                 width={100}
-                height={70}
+                height={50}
                 alt="Ana Sigorta"
               ></Image>
             </a>
@@ -81,7 +89,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/6.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Ankara Sigorta"
               ></Image>
@@ -91,7 +99,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/7.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Arex Sigorta"
               ></Image>
@@ -101,7 +109,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/8.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Atlas Mutuel Sigorta"
               ></Image>
@@ -111,7 +119,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/9.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Aveon Sigorta"
               ></Image>
@@ -121,7 +129,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/10.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Axa Sigorta"
               ></Image>
@@ -131,7 +139,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/11.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Bereket Sigorta"
               ></Image>
@@ -141,7 +149,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/12.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Doğa Sigorta"
               ></Image>
@@ -151,7 +159,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/13.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Eureko Sigorta"
               ></Image>
@@ -161,7 +169,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/14.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Gig Sigorta"
               ></Image>
@@ -171,7 +179,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/31.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Tmt Sigorta"
               ></Image>
@@ -181,7 +189,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/32.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Unico Sigorta"
               ></Image>
@@ -191,7 +199,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/33.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Zurich Sigorta"
               ></Image>
@@ -205,16 +213,24 @@ const Clients = () => {
             delay: 0,
           }}
           modules={[Autoplay]}
-          slidesPerView={3}
+          slidesPerView={2}
           loop={true}
           speed={6000}
           dir="rtl"
+          breakpoints={{
+            844: {
+              slidesPerView: 4,
+            },
+            1200: {
+              slidesPerView: 7,
+            },
+          }}
         >
           <SwiperSlide>
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/15.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Gri Sigorta"
               ></Image>
@@ -225,7 +241,7 @@ const Clients = () => {
               {" "}
               <Image
                 src="/assets/img/logos/16.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Groupama Sigorta"
               ></Image>
@@ -235,7 +251,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/17.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Gig Sigorta"
               ></Image>
@@ -245,7 +261,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/18.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Türkiye Sigorta"
               ></Image>
@@ -255,7 +271,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/19.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="HDI Sigorta"
               ></Image>
@@ -265,7 +281,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/20.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Hep İyi Sigorta"
               ></Image>
@@ -275,7 +291,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/21.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Katılım Emeklilik Sigorta"
               ></Image>
@@ -285,7 +301,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/22.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Koru Sigorta"
               ></Image>
@@ -295,7 +311,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/23.png"
-                width={130}
+                width={100}
                 height={50}
                 alt="Mapfre Sigorta"
               ></Image>
@@ -305,7 +321,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/24.png"
-                width={110}
+                width={100}
                 height={50}
                 alt="Neova Sigorta"
               ></Image>
@@ -315,7 +331,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/25.png"
-                width={110}
+                width={100}
                 height={50}
                 alt="Türkiye Nippon Sigorta"
               ></Image>
@@ -325,7 +341,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/26.png"
-                width={110}
+                width={100}
                 height={50}
                 alt="Orient Sigorta"
               ></Image>
@@ -335,7 +351,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/27.png"
-                width={110}
+                width={100}
                 height={50}
                 alt="Quick Sigorta"
               ></Image>
@@ -345,7 +361,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/28.png"
-                width={110}
+                width={100}
                 height={50}
                 alt="Ray Sigorta"
               ></Image>
@@ -355,7 +371,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/29.png"
-                width={110}
+                width={100}
                 height={50}
                 alt="Şeker Sigorta"
               ></Image>
@@ -365,7 +381,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/30.png"
-                width={110}
+                width={100}
                 height={50}
                 alt="Sompo Sigorta"
               ></Image>
@@ -375,7 +391,7 @@ const Clients = () => {
             <a href="#" className="img">
               <Image
                 src="/assets/img/logos/34.png"
-                width={110}
+                width={100}
                 height={50}
                 alt="Ray Sigorta"
               ></Image>

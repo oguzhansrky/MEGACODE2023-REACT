@@ -89,6 +89,7 @@ const TopNavbar = () => {
                       .map((item) => (
                         <li key={uuid()}>
                           <a
+                            style={{ fontSize: "11px" }}
                             className=""
                             href="#"
                             role="button"
