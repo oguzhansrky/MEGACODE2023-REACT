@@ -201,7 +201,7 @@ const Acente365 = () => {
     },
     {
       img: "/assets/img/acente365/poliçe.svg",
-      alt:  t("acente365_func.policy"),
+      alt: t("acente365_func.policy"),
       text: t("acente365_func.policy"),
     },
     {
@@ -247,9 +247,7 @@ const Acente365 = () => {
         <div className="row mt-5">
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
-              <h5>
-                <a href="page-services-5.html">3.000+ {t("acente365.user")} </a>
-              </h5>
+              <h5>3.000+ User</h5>
               <br></br>
               <div className="icon">
                 <Image
@@ -266,9 +264,7 @@ const Acente365 = () => {
           </div>
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
-              <h5>
-                <a href="page-services-5.html">{t("acente365.text2")}</a>
-              </h5>
+              <h5>Access From Any Point</h5>
               <br></br>
               <div className="icon">
                 <Image
@@ -285,9 +281,7 @@ const Acente365 = () => {
           </div>
           <div className="col-lg-3 p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
-              <h5>
-                <a href="page-services-5.html">{t("acente365.text5")} </a>
-              </h5>
+              <h5>Easy Learning</h5>
               <br></br>
               <div className="icon">
                 <Image
@@ -304,9 +298,7 @@ const Acente365 = () => {
           </div>
           <div className="col-lg-3 service-box p-3 text-center">
             <div className="service-box mb-4 wow fadeInUp" data-wow-delay={0}>
-              <h5>
-                <a href="page-services-5.html">{t("acente365.support")} </a>
-              </h5>
+              <h5>Expert Team Support</h5>
               <br></br>
               <div className="icon">
                 <Image
@@ -347,19 +339,19 @@ const Acente365 = () => {
         </h3>
         <div className="container">
           <div className="row">
-            {features.map((item) => 
-            <div className="col-sm-3 text-center text-md">
-            <div>
-              <Image
-                src={item.img}
-                width={110}
-                height={125}
-                alt={item.alt}
-              ></Image>
-            </div>
-            <a className="text-center">{item.text}</a>
-          </div>
-            )}
+            {features.map((item) => (
+              <div className="col-sm-3 text-center text-md">
+                <div>
+                  <Image
+                    src={item.img}
+                    width={110}
+                    height={125}
+                    alt={item.alt}
+                  ></Image>
+                </div>
+                <a className="text-center">{item.text}</a>
+              </div>
+            ))}
           </div>
         </div>
         <PricingTable />
