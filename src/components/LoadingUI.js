@@ -8,7 +8,7 @@ const LoadingUI = ({ children, loading }) => {
     if (!loading) {
       setTimeout(() => {
         container?.classList.add("z-1");
-      }, 1800);
+      }, 800);
     } else {
       container.classList.remove("z-1");
     }
