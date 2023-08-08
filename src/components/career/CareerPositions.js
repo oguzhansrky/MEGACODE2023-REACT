@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CareerPositions = ({ data = [] }) => {
   const { t } = useTranslation("common");
-
+  const errorMessage = "Üzgünüz, beklenmedik bir sorun yaşandı.";
   return (
     <>
       <section className="careers-positions pb-100 my-5">
@@ -52,7 +52,8 @@ const CareerPositions = ({ data = [] }) => {
               ))
             ) : (
               <div className="text-center">
-                <h5>Veri Bulunamadı...</h5>
+                <i class="bi bi-emoji-frown" style={{ fontSize: "25px" }}></i>
+                <h5>{errorMessage}</h5>
               </div>
             )}
           </div>

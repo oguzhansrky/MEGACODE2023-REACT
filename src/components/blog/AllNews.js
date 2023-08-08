@@ -12,6 +12,7 @@ import useTranslation from "next-translate/useTranslation";
 
 export const AllNews = ({ blogs, categories }) => {
   const { t } = useTranslation("common");
+  const errorMessage = "Üzgünüz, beklenmedik bir sorun yaşandı.";
   const router = useRouter();
   const { query } = router;
   const [data, setData] = useState();
@@ -129,7 +130,8 @@ export const AllNews = ({ blogs, categories }) => {
                 ))
               ) : (
                 <div className="text-center">
-                  <h5>Veri Bulunamadı...</h5>
+                  <i class="bi bi-emoji-frown" style={{ fontSize: "25px" }}></i>
+                  <h5>{errorMessage}</h5>
                 </div>
               )}
 

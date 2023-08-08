@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Services = ({ data }) => {
   const { t } = useTranslation("common");
-  const errorMessage = "Veri bulunamadı...";
+  const errorMessage = "Üzgünüz, beklenmedik bir sorun yaşandı.";
 
   return (
     <section className="services section-padding style-1">
@@ -51,6 +51,7 @@ const Services = ({ data }) => {
               })
             ) : (
               <div className="error-message text-center">
+                <i class="bi bi-emoji-frown" style={{ fontSize: "25px" }}></i>
                 <h5>{errorMessage}</h5>
               </div>
             )}
