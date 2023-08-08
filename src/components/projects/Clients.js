@@ -38,7 +38,7 @@ const Clients = () => {
           <SwiperSlide>
             <a href="#" className="img">
               <Image
-                src="/assets/img/logos/1.png"
+                src="/assets/img/svg/Bupa-Acibadem-Sigorta_46505.svg"
                 width={100}
                 height={50}
                 alt="Acıbadem Sigorta"
