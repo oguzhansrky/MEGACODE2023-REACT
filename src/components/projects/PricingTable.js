@@ -265,33 +265,7 @@ const PricingTable = () => {
                 </div>
               </div>
             </div>
-            <div className="price-foot">
-              <div className="price-footTitle"></div>
-              <div className="price-footItem">
-                <Link
-                  href="/iletisim"
-                  className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold"
-                >
-                  <span> {t("acente365.take_offer")}</span>
-                </Link>
-              </div>
-              <div className="price-footItem bg-gray5">
-                <Link
-                  href="/iletisim"
-                  className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold"
-                >
-                  <span> {t("acente365.take_offer")}</span>
-                </Link>
-              </div>
-              <div className="price-footItem">
-                <Link
-                  href="/iletisim"
-                  className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold"
-                >
-                  <span> {t("acente365.take_offer")}</span>
-                </Link>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>
